@@ -40,10 +40,8 @@ class DeepLagEmbed(nn.Module):
         self.p_block = nn.Sequential(
             nn.Linear(seq_len, hidden_dim),
             nn.ReLU(),
-            nn.Dropout(0.5),
             nn.Linear(hidden_dim, hidden_dim),
             nn.ReLU(),
-            nn.Dropout(0.5),
             nn.Linear(hidden_dim, n_classes)
         )
         
@@ -51,10 +49,8 @@ class DeepLagEmbed(nn.Module):
         self.d_block = nn.Sequential(
             nn.Linear(seq_len + n_classes, hidden_dim),
             nn.ReLU(),
-            nn.Dropout(0.5),
             nn.Linear(hidden_dim, hidden_dim),
             nn.ReLU(),
-            nn.Dropout(0.5),
             nn.Linear(hidden_dim, seq_len * max_ar_order)
         )
     

@@ -37,14 +37,12 @@ def plot_confusion_matrix(model, val_loader, device, p_min=2, p_max=6, ax=None):
             x_batch = x_batch.to(device)
             _, _, p_hard, _ = model(x_batch)
             all_p_pred.extend(p_hard.cpu().numpy())
-            all_p_true.extend(p_batch.numpy())
+            all_p_true.extend(p_batch.cpu().numpy())
     
     n_classes = p_max - p_min + 1  # 5 classes for p=2,3,4,5,6
     cm = confusion_matrix(all_p_true, all_p_pred) / np.sum(confusion_matrix(all_p_true, all_p_pred), axis=1, keepdims=True)
     disp = ConfusionMatrixDisplay(cm, display_labels=[f'p={i+p_min}' for i in range(n_classes)])
-    disp.plot(ax=ax, cmap='Blues', colorbar=False)
-    if ax:
-        ax.set_title('P Confusion Matrix')
+    disp.plot(ax=ax, cmap='magma', colorbar=False)
     return cm
 
 def plot_history(history, model=None, val_loader=None, device=None, p_min=2, p_max=6):
@@ -77,13 +75,13 @@ def plot_history(history, model=None, val_loader=None, device=None, p_min=2, p_m
     
     # Train metrics (row 0)     
     for i, (metric, title) in enumerate(zip(metrics, titles)):
-        axes[0, i].plot(history[f'train_{metric}'])
+        axes[0, i].plot(history[f'train_{metric}'], "k")
         axes[0, i].set_title(f'Train {title}')
         axes[0, i].set_xlabel('Epoch')
     
     # Val metrics (row 1, first 5)
     for i, (metric, title) in enumerate(zip(metrics[:5], titles[:5])):
-        axes[1, i].plot(history[f'val_{metric}'])
+        axes[1, i].plot(history[f'val_{metric}'], "k")
         axes[1, i].set_title(f'Val {title}')
         axes[1, i].set_xlabel('Epoch')
     
