@@ -1,15 +1,18 @@
-Stochastic Dynamics
+NeuralFieldManifold
 ===================
 
-Tools for simulating stochastic processes, chaotic systems, 
-and time-varying autoregressive models.
+A Python toolkit for reconstructing intrinsic manifold geometry from local
+field potentials (LFPs) and other autocorrelated neural time series.  The
+package provides generators for time-varying autoregressive and stochastic
+dynamical systems, delay-embedding utilities for state-space reconstruction,
+and geometry-aware deep networks that estimate time-varying AR operators
+for robust manifold recovery under non-stationary conditions.
 
 .. toctree::
    :maxdepth: 1
    :caption: Getting Started
 
    installation
-   quickstart
 
 .. toctree::
    :maxdepth: 1

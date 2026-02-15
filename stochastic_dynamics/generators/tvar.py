@@ -1,16 +1,49 @@
 import numpy as np
 
 def tvar(p, T=600, W=40, P0=0.5, sigma_noise=0.1, burnin=300, max_attempts=100):
-    """Generate one TVAR(p) sample with power constraint and burnin.
-    
-    Args:
-        p (int): Order of the TVAR model.
-        T (int): Length of the desired output time series.
-        W (int): Window size for power constraint.
-        P0 (float): Maximum allowed power in any window of size W.
-        sigma_noise (float): Standard deviation of the Gaussian noise.
-        burnin (int): Number of initial samples to discard.
-        max_attempts (int): Maximum number of attempts to generate a valid sample.
+    """Generate one Time-Varying AR (TVAR) process of order *p*.
+
+    Simulates a TVAR(p) signal with sinusoidally modulated coefficients,
+    a sliding-window power constraint, and an initial burn-in period that
+    is discarded to remove transient effects.
+
+    Parameters
+    ----------
+    p : int
+        Order of the TVAR model (number of autoregressive lags).
+    T : int, optional
+        Length of the desired output time series. Default is 600.
+    W : int, optional
+        Sliding-window size for the power constraint. Default is 40.
+    P0 : float, optional
+        Maximum allowed mean squared power in any window of size *W*.
+        Default is 0.5.
+    sigma_noise : float, optional
+        Standard deviation of the driving Gaussian white noise.
+        Default is 0.1.
+    burnin : int, optional
+        Number of initial samples to discard for stationarity.
+        Default is 300.
+    max_attempts : int, optional
+        Maximum generation attempts before raising an error.
+        Default is 100.
+
+    Returns
+    -------
+    x : np.ndarray
+        Generated time series of shape ``(T,)``.
+    coeffs : np.ndarray
+        Time-varying AR coefficients of shape ``(T, p)``.
+
+    Raises
+    ------
+    ValueError
+        If a valid (power-constrained) sample cannot be generated
+        within *max_attempts* attempts.
+
+    Example
+    -------
+    >>> x, coeffs = tvar(p=4, T=1000)
     """
     
     T_total = T + burnin

@@ -3,6 +3,42 @@ import numpy as np
 
 
 def bench_loop(model, X_val, coef_val, p_val, device, p_min=2, p_max=6, p_max_order=6, batch_size=32):
+    """Evaluate a trained model on validation data and return benchmark metrics.
+
+    Runs the model in inference mode over the validation set and computes
+    coefficient MSE, signal reconstruction MSE, per-order accuracy,
+    and aggregate order-prediction statistics.
+
+    Parameters
+    ----------
+    model : torch.nn.Module
+        Trained model with the standard ``(coeffs, p_logits, p_hard, x_hat)``
+        forward signature.
+    X_val : array-like or torch.Tensor
+        Validation time series of shape ``(N, T)``.
+    coef_val : np.ndarray
+        Ground-truth AR coefficients of shape ``(N, T, max_ar_order)``.
+    p_val : array-like or torch.Tensor
+        Ground-truth 0-indexed order class labels of shape ``(N,)``.
+    device : torch.device
+        Device on which to run inference.
+    p_min : int, optional
+        Minimum AR order corresponding to class index 0. Default is 2.
+    p_max : int, optional
+        Maximum AR order. Default is 6.
+    p_max_order : int, optional
+        Number of leading time steps to skip when computing signal MSE.
+        Default is 6.
+    batch_size : int, optional
+        Inference batch size. Default is 32.
+
+    Returns
+    -------
+    results : dict
+        Dictionary with keys ``'coeff_mse'``, ``'signal_mse'``,
+        ``'p_mae'``, ``'p_mape'``, per-order accuracies
+        (``'p2_acc'``, …, ``'p6_acc'``), and overall ``'p_acc'``.
+    """
     model.eval()
     
     n_classes = p_max - p_min + 1

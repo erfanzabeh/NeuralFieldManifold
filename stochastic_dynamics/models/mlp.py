@@ -3,7 +3,29 @@ import torch.nn as nn
 
 
 class ARMLP(nn.Module):
+    """Simple MLP baseline for time-varying AR coefficient estimation.
+
+    Maps an input sequence directly to ``seq_len × max_ar_order``
+    coefficient values through a three-layer feed-forward network.
+    No AR-order classification is performed.
+    """
+
     def __init__(self, seq_len=600, n_classes=5, max_ar_order=6, hidden_dim=128):
+        """Initialise the AR-MLP model.
+
+        Parameters
+        ----------
+        seq_len : int, optional
+            Length of each input time series. Default is 600.
+        n_classes : int, optional
+            Number of AR-order classes (unused; kept for API
+            compatibility). Default is 5.
+        max_ar_order : int, optional
+            Maximum AR order, i.e. number of coefficient channels.
+            Default is 6.
+        hidden_dim : int, optional
+            Hidden-layer width. Default is 128.
+        """
         super().__init__()
         self.seq_len = seq_len
         self.n_classes = n_classes
@@ -19,6 +41,27 @@ class ARMLP(nn.Module):
         )
     
     def forward(self, x, temperature=1.0):
+        """Forward pass: predict time-varying AR coefficients.
+
+        Parameters
+        ----------
+        x : torch.Tensor
+            Input batch of shape ``(N, seq_len)``.
+        temperature : float, optional
+            Unused; kept for API compatibility. Default is 1.0.
+
+        Returns
+        -------
+        coeffs : torch.Tensor
+            Predicted AR coefficients of shape
+            ``(N, seq_len, max_ar_order)``.
+        p_logits : torch.Tensor
+            Zeros of shape ``(N, n_classes)`` (no order prediction).
+        p_hard : torch.Tensor
+            Zeros of shape ``(N,)`` (no order prediction).
+        x_hat : torch.Tensor
+            Reconstructed signal of shape ``(N, seq_len)``.
+        """
         N = x.shape[0]
         device = x.device
         

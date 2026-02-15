@@ -21,6 +21,52 @@ def train_loop(
     p_max=6,
     device='cuda'
 ):
+    """Train a model with the composite PINN-style loss.
+
+    Optimises the weighted sum of five loss terms (classification,
+    AR reconstruction, energy constraint, smoothness, and order
+    regularisation) using Adam with gradient clipping and
+    ``ReduceLROnPlateau`` scheduling.
+
+    Parameters
+    ----------
+    model : torch.nn.Module
+        Model to train.  Must follow the ``(coeffs, p_logits, p_hard,
+        x_hat)`` forward convention.
+    train_loader : DataLoader
+        Training data yielding ``(x_batch, p_batch)`` tuples.
+    val_loader : DataLoader
+        Validation data yielding ``(x_batch, p_batch)`` tuples.
+    n_epochs : int, optional
+        Number of training epochs. Default is 100.
+    lr : float, optional
+        Initial learning rate for Adam. Default is 1e-3.
+    lambda_p : float, optional
+        Weight for the AR-order cross-entropy loss. Default is 10.0.
+    lambda_ar : float, optional
+        Weight for the signal reconstruction MSE loss. Default is 1.0.
+    lambda_energy : float, optional
+        Weight for the energy constraint loss. Default is 0.1.
+    lambda_smooth : float, optional
+        Weight for the coefficient smoothness loss. Default is 0.05.
+    lambda_order : float, optional
+        Weight for the order regulariser. Default is 0.0 (disabled).
+    P0 : float, optional
+        Target power level for the energy loss. Default is 0.5.
+    W : int, optional
+        Sliding-window size for the energy loss. Default is 40.
+    p_max : int, optional
+        Maximum AR order (controls how many leading time steps are
+        excluded in the AR loss). Default is 6.
+    device : str or torch.device, optional
+        Compute device. Default is ``'cuda'``.
+
+    Returns
+    -------
+    history : dict
+        Dictionary mapping metric names (e.g. ``'train_loss'``,
+        ``'val_p_acc'``) to lists of per-epoch values.
+    """
     params = list(model.parameters())
     
     if len(params) > 0:
@@ -64,6 +110,7 @@ def train_loop(
             
             if has_params:
                 total_loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
                 optimizer.step()
             
             train_losses['total'].append(total_loss.item())

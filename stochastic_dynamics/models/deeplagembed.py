@@ -4,13 +4,32 @@ import torch.nn.functional as F
 
 
 class DeepLagEmbed(nn.Module):
+    """Deep Lag Embedding network for joint AR-order and coefficient estimation.
+
+    The architecture has two blocks:
+
+    * **P-Block** — predicts the AR order class via Gumbel-Softmax, enabling
+      discrete order selection that is differentiable during training.
+    * **D-Block** — conditioned on the input series and the soft order
+      prediction, outputs time-varying AR coefficients that are masked
+      according to the predicted order.
+    """
+
     def __init__(self, seq_len=600, n_classes=5, max_ar_order=6, hidden_dim=128):
-        """
-        Args:
-            seq_len: Length of input sequence
-            n_classes: Number of AR order classes (5 for p∈{2,3,4,5,6})
-            max_ar_order: Maximum AR order for coefficient output (6 for AR(6))
-            hidden_dim: Hidden layer dimension
+        """Initialise the DeepLagEmbed model.
+
+        Parameters
+        ----------
+        seq_len : int, optional
+            Length of each input time series. Default is 600.
+        n_classes : int, optional
+            Number of AR-order classes (e.g., 5 for p ∈ {2, 3, 4, 5, 6}).
+            Default is 5.
+        max_ar_order : int, optional
+            Maximum AR order, i.e. number of coefficient channels.
+            Default is 6.
+        hidden_dim : int, optional
+            Hidden-layer width for both blocks. Default is 128.
         """
         super().__init__()
         self.seq_len = seq_len
@@ -21,8 +40,10 @@ class DeepLagEmbed(nn.Module):
         self.p_block = nn.Sequential(
             nn.Linear(seq_len, hidden_dim),
             nn.ReLU(),
+            nn.Dropout(0.5),
             nn.Linear(hidden_dim, hidden_dim),
             nn.ReLU(),
+            nn.Dropout(0.5),
             nn.Linear(hidden_dim, n_classes)
         )
         
@@ -30,12 +51,38 @@ class DeepLagEmbed(nn.Module):
         self.d_block = nn.Sequential(
             nn.Linear(seq_len + n_classes, hidden_dim),
             nn.ReLU(),
+            nn.Dropout(0.5),
             nn.Linear(hidden_dim, hidden_dim),
             nn.ReLU(),
+            nn.Dropout(0.5),
             nn.Linear(hidden_dim, seq_len * max_ar_order)
         )
     
     def forward(self, x, temperature=1.0):
+        """Forward pass: predict AR order and time-varying coefficients.
+
+        Parameters
+        ----------
+        x : torch.Tensor
+            Input batch of shape ``(N, seq_len)``.
+        temperature : float, optional
+            Temperature for Gumbel-Softmax sampling. Lower values make
+            the order selection closer to argmax. Default is 1.0.
+
+        Returns
+        -------
+        coeffs : torch.Tensor
+            Predicted time-varying AR coefficients of shape
+            ``(N, seq_len, max_ar_order)``, masked by the predicted order.
+        p_logits : torch.Tensor
+            Raw logits for the AR-order classifier of shape
+            ``(N, n_classes)``.
+        p_hard : torch.Tensor
+            Hard (argmax) predicted order class indices of shape ``(N,)``.
+        x_hat : torch.Tensor
+            Reconstructed signal of shape ``(N, seq_len)`` obtained by
+            applying the predicted coefficients to the lagged input.
+        """
         # x: (N, seq_len)
         N = x.shape[0]
         

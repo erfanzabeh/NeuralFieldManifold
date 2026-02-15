@@ -7,8 +7,26 @@ class TAR:
 
     @staticmethod
     def lag_matrix_with_threshold(x, p, d=1):
-        """
-        Returns X (lags), y (target), and z (threshold variable x_{t-d}) aligned.
+        """Build lag matrix, target vector, and threshold variable.
+
+        Parameters
+        ----------
+        x : np.ndarray
+            1-D time series of length *N*.
+        p : int
+            Autoregressive order.
+        d : int, optional
+            Delay for the threshold variable ``z_t = x_{t-d}``.
+            Default is 1.
+
+        Returns
+        -------
+        X : np.ndarray
+            Lag matrix of shape ``(N - p, p)``.
+        y : np.ndarray
+            Target vector of shape ``(N - p,)``.
+        z : np.ndarray
+            Threshold variable of shape ``(N - p,)``.
         """
         N = len(x)
         y = x[p:].copy()
@@ -21,17 +39,61 @@ class TAR:
 
     @staticmethod
     def ols_with_intercept(X, y):
+        """Fit AR coefficients via OLS with an intercept column.
+
+        Parameters
+        ----------
+        X : np.ndarray
+            Lag matrix of shape ``(N, p)``.
+        y : np.ndarray
+            Target vector of shape ``(N,)``.
+
+        Returns
+        -------
+        w : np.ndarray
+            Coefficient vector ``[c, a1, …, ap]`` of shape ``(p + 1,)``.
+        """
         D = np.column_stack([np.ones(len(X)), X])
         w = np.linalg.lstsq(D, y, rcond=None)[0]
         return w  # [c, a1..ap]
 
     @staticmethod
     def predict_from_params(X, w):
+        """Predict target values from lag matrix and fitted parameters.
+
+        Parameters
+        ----------
+        X : np.ndarray
+            Lag matrix of shape ``(N, p)``.
+        w : np.ndarray
+            Coefficient vector ``[c, a1, …, ap]``.
+
+        Returns
+        -------
+        y_hat : np.ndarray
+            Predicted values of shape ``(N,)``.
+        """
         D = np.column_stack([np.ones(len(X)), X])
         return D @ w
 
     @staticmethod
     def aic_bic(y, yhat, k):
+        """Compute the BIC for a single TAR regime.
+
+        Parameters
+        ----------
+        y : np.ndarray
+            Observed values.
+        yhat : np.ndarray
+            Predicted values.
+        k : int
+            Number of estimated parameters.
+
+        Returns
+        -------
+        bic : float
+            Bayesian Information Criterion.
+        """
         n = len(y)
         rss = np.sum((y - yhat)**2)
         sigma2 = rss / max(n,1)
@@ -40,6 +102,31 @@ class TAR:
 
     @staticmethod
     def fit(x, p=8, d=1, thresh=0.0, train_frac=0.8):
+        """Fit a two-regime TAR model to a time series.
+
+        Splits the lag matrix into two regimes based on the threshold
+        variable ``z_t = x_{t-d}`` and fits separate OLS models for each.
+
+        Parameters
+        ----------
+        x : np.ndarray
+            1-D time series.
+        p : int, optional
+            Autoregressive order. Default is 8.
+        d : int, optional
+            Delay for the threshold variable. Default is 1.
+        thresh : float, optional
+            Threshold value separating the two regimes. Default is 0.0.
+        train_frac : float, optional
+            Fraction of samples used for fitting. Default is 0.8.
+
+        Returns
+        -------
+        info : dict
+            Dictionary containing fitted parameters (``w1``, ``w2``),
+            residuals (``r1``, ``r2``), BIC values, and bookkeeping
+            metadata needed for simulation.
+        """
         X, y, z = TAR.lag_matrix_with_threshold(x, p, d=d)
         N = len(y)
         ntr = int(train_frac * N)
@@ -71,6 +158,30 @@ class TAR:
 
     @staticmethod
     def simulate_tar_free_run(info, init_lags, n_steps, seed=0, variance_match_to=None):
+        """Free-run simulation from a fitted two-regime TAR model.
+
+        Generates a synthetic trajectory by recursively applying the
+        regime-specific AR coefficients and bootstrap-resampled residuals.
+
+        Parameters
+        ----------
+        info : dict
+            Output of :meth:`TAR.fit`.
+        init_lags : array-like
+            Initial lag values ``[x_{t-1}, …, x_{t-p}]``.
+        n_steps : int
+            Number of time steps to simulate.
+        seed : int, optional
+            Random seed. Default is 0.
+        variance_match_to : np.ndarray or None, optional
+            If provided, the output is affine-rescaled to match the
+            mean and standard deviation of this reference signal.
+
+        Returns
+        -------
+        out : np.ndarray
+            Simulated trajectory of shape ``(n_steps,)``.
+        """
         rng = np.random.default_rng(seed)
         w1, w2 = info["w1"], info["w2"]
         r1, r2 = info["r1"], info["r2"]

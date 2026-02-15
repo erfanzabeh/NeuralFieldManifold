@@ -3,7 +3,34 @@ import torch.nn as nn
 
 
 class ARTransformer(nn.Module):
+    """Transformer encoder baseline for time-varying AR coefficient estimation.
+
+    Projects each scalar time step to a *d_model*-dimensional embedding,
+    adds learnable positional encodings, passes through a stack of
+    Transformer encoder layers, and projects each position to
+    ``max_ar_order`` coefficient values.
+    """
+
     def __init__(self, seq_len=600, n_classes=5, max_ar_order=6, d_model=64, nhead=4, num_layers=2):
+        """Initialise the AR-Transformer model.
+
+        Parameters
+        ----------
+        seq_len : int, optional
+            Length of each input time series. Default is 600.
+        n_classes : int, optional
+            Number of AR-order classes (unused; kept for API
+            compatibility). Default is 5.
+        max_ar_order : int, optional
+            Maximum AR order, i.e. number of coefficient channels.
+            Default is 6.
+        d_model : int, optional
+            Transformer hidden dimension. Default is 64.
+        nhead : int, optional
+            Number of attention heads. Default is 4.
+        num_layers : int, optional
+            Number of Transformer encoder layers. Default is 2.
+        """
         super().__init__()
         self.seq_len = seq_len
         self.n_classes = n_classes
@@ -28,6 +55,27 @@ class ARTransformer(nn.Module):
         self.output_proj = nn.Linear(d_model, max_ar_order)
     
     def forward(self, x, temperature=1.0):
+        """Forward pass: predict time-varying AR coefficients.
+
+        Parameters
+        ----------
+        x : torch.Tensor
+            Input batch of shape ``(N, seq_len)``.
+        temperature : float, optional
+            Unused; kept for API compatibility. Default is 1.0.
+
+        Returns
+        -------
+        coeffs : torch.Tensor
+            Predicted AR coefficients of shape
+            ``(N, seq_len, max_ar_order)``.
+        p_logits : torch.Tensor
+            Zeros of shape ``(N, n_classes)`` (no order prediction).
+        p_hard : torch.Tensor
+            Zeros of shape ``(N,)`` (no order prediction).
+        x_hat : torch.Tensor
+            Reconstructed signal of shape ``(N, seq_len)``.
+        """
         N = x.shape[0]
         device = x.device
         

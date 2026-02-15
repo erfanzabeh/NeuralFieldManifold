@@ -8,8 +8,8 @@ Initial release.
 
 **Features:**
 
-- Generators: Lorenz, Ornstein-Uhlenbeck, TVAR, TVVAR, Noise
-- Embedders: Delay embedding
-- Tools: PSD, ACF, Hilbert, Envelope, Spectrogram, Bandpass, Notch, Downsample, Bicoherence, Surrogates
-- Models: AR-OLS, Neural ODE, Lag Attention, Transformer AR, MLP-TVAR, Neural Operator
-- Processing: Mouse LFP pipeline (ripple detection), Monkey LFP pipeline (V1/V4)
+- Generators: Lorenz, Ornstein-Uhlenbeck (exact & Euler), TVAR, TVVAR, colored/white/pink/brown noise
+- Embedders: Delay embedding (Takens)
+- Models: AR (OLS), TAR, DeepLagEmbed, AR-MLP, AR-Transformer, Analytical AR
+- Utilities: Bicoherence, composite PINN-style losses, training loop, benchmark loop
+- Plotting: Training history, confusion matrix, coefficient visualisation, TVAR sample plots

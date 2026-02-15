@@ -1,23 +1,3 @@
-"""
-Ornstein-Uhlenbeck Generator
-============================
-
-Mean-reverting stochastic process defined by the SDE:
-    dx = -θ(x - μ)dt + σdW
-
-where:
-- θ = reversion rate (1/θ = characteristic time scale)
-- μ = long-term mean
-- σ = noise strength
-- W = Wiener process
-
-Supports two methods:
-- exact: Analytical solution (statistically exact)
-- euler: Euler-Maruyama approximation (first-order)
-
-Source: ornstein_uhlenbeck_how_to_simulate.ipynb
-"""
-
 import jax
 import jax.numpy as jnp
 from jax import random

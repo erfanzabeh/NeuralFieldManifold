@@ -4,6 +4,11 @@ color_main = "black"
 color_alt = "darkred"
 
 def set_pub_style():
+    """Apply publication-quality matplotlib style defaults.
+
+    Configures global ``rcParams`` for clean, journal-ready figures
+    with appropriate font sizes, line widths, and minimal spines.
+    """
     plt.rcParams.update({
         "figure.dpi": 120,
         "savefig.dpi": 300,
@@ -22,7 +27,21 @@ def set_pub_style():
     })
 
 def prettify(ax, title=None, xlabel=None, ylabel=None, add_legend=False):
-    """Unified styling for axes."""
+    """Apply unified publication styling to a matplotlib Axes.
+
+    Parameters
+    ----------
+    ax : matplotlib.axes.Axes
+        The axes object to style.
+    title : str, optional
+        Title text for the axes.
+    xlabel : str, optional
+        Label for the x-axis.
+    ylabel : str, optional
+        Label for the y-axis.
+    add_legend : bool, optional
+        If True, add a frameless legend. Default is False.
+    """
     if title: ax.set_title(title, pad=10)
     if xlabel: ax.set_xlabel(xlabel, labelpad=5)
     if ylabel: ax.set_ylabel(ylabel, labelpad=5)

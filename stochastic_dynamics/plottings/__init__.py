@@ -3,6 +3,29 @@ import torch
 import numpy as np
 
 def plot_confusion_matrix(model, val_loader, device, p_min=2, p_max=6, ax=None):
+    """Plot a normalised confusion matrix for AR-order predictions.
+
+    Parameters
+    ----------
+    model : torch.nn.Module
+        Trained model with the standard forward signature.
+    val_loader : DataLoader
+        Validation data yielding ``(x_batch, p_batch)`` tuples.
+    device : torch.device
+        Device on which to run inference.
+    p_min : int, optional
+        Minimum AR order corresponding to class 0. Default is 2.
+    p_max : int, optional
+        Maximum AR order. Default is 6.
+    ax : matplotlib.axes.Axes or None, optional
+        Axes to draw on. If *None*, a new figure is created.
+
+    Returns
+    -------
+    cm : np.ndarray
+        Row-normalised confusion matrix of shape
+        ``(n_classes, n_classes)``.
+    """
     from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
     
     model.eval()
@@ -25,6 +48,28 @@ def plot_confusion_matrix(model, val_loader, device, p_min=2, p_max=6, ax=None):
     return cm
 
 def plot_history(history, model=None, val_loader=None, device=None, p_min=2, p_max=6):
+    """Plot training and validation metrics over epochs.
+
+    Produces a 2×6 grid of subplots showing per-epoch loss
+    components and accuracy for both training and validation.
+    If a *model* and *val_loader* are supplied, the final subplot
+    displays a confusion matrix.
+
+    Parameters
+    ----------
+    history : dict
+        Training history as returned by :func:`train_loop`.
+    model : torch.nn.Module or None, optional
+        Trained model for generating the confusion matrix.
+    val_loader : DataLoader or None, optional
+        Validation data for the confusion matrix.
+    device : torch.device or None, optional
+        Compute device for confusion matrix inference.
+    p_min : int, optional
+        Minimum AR order for confusion matrix labels. Default is 2.
+    p_max : int, optional
+        Maximum AR order for confusion matrix labels. Default is 6.
+    """
     fig, axes = plt.subplots(2, 6, figsize=(20, 8))
     
     metrics = ['loss', 'p', 'ar', 'energy', 'smooth', 'p_acc']
@@ -54,6 +99,31 @@ def plot_history(history, model=None, val_loader=None, device=None, p_min=2, p_m
     plt.show()   
 
 def plot_coefficients_by_p(model, X, coeffs_true, p_true, device, p_max=6, p_min=2, title=""):
+    """Visualise predicted vs. true AR coefficients for each order class.
+
+    Creates one subplot per AR-order class showing the true
+    coefficient trajectories (black) overlaid with the model
+    predictions (dark red) for one sample per class.
+
+    Parameters
+    ----------
+    model : torch.nn.Module
+        Trained model.
+    X : array-like or torch.Tensor
+        Input time series of shape ``(N, T)``.
+    coeffs_true : np.ndarray
+        Ground-truth coefficients of shape ``(N, T, max_ar_order)``.
+    p_true : array-like or torch.Tensor
+        0-indexed order class labels of shape ``(N,)``.
+    device : torch.device
+        Compute device.
+    p_max : int, optional
+        Maximum AR order. Default is 6.
+    p_min : int, optional
+        Minimum AR order. Default is 2.
+    title : str, optional
+        Overall figure title.
+    """
     model.eval()
     
     n_classes = p_max - p_min + 1  # 5 classes for p=2,3,4,5,6
@@ -100,6 +170,26 @@ def plot_coefficients_by_p(model, X, coeffs_true, p_true, device, p_max=6, p_min
     plt.show()
     
 def plot_tvar_sample(x, coeffs, p, W=40, P0=0.5):
+    """Plot a single TVAR sample: coefficients, signal, and local power.
+
+    Produces a three-panel figure showing (top to bottom) the
+    time-varying AR coefficients, the generated signal, and the
+    sliding-window power with the constraint threshold.
+
+    Parameters
+    ----------
+    x : np.ndarray
+        Time series of shape ``(T,)``.
+    coeffs : np.ndarray
+        AR coefficient array of shape ``(T, p)``.
+    p : int
+        AR order (number of coefficient tracks to plot).
+    W : int, optional
+        Sliding-window size for power computation. Default is 40.
+    P0 : float, optional
+        Power constraint threshold (shown as a dashed line).
+        Default is 0.5.
+    """
     T = len(x)
     
     # Compute sliding window power

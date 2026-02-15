@@ -3,13 +3,56 @@ import torch.nn as nn
 
 
 class AnalyticalAR(nn.Module):
+    """Non-learned AR baseline that solves least-squares per sample.
+
+    This module has **no trainable parameters**. For each input sequence it
+    builds the lag matrix, solves the normal equations via
+    ``torch.linalg.lstsq``, and returns fixed (time-invariant) AR
+    coefficients together with the reconstructed signal.
+    """
+
     def __init__(self, seq_len=600, n_classes=5, max_ar_order=6):
+        """Initialise the analytical AR baseline.
+
+        Parameters
+        ----------
+        seq_len : int, optional
+            Length of each input time series. Default is 600.
+        n_classes : int, optional
+            Number of AR-order classes (kept for API compatibility).
+            Default is 5.
+        max_ar_order : int, optional
+            Maximum autoregressive order used for the lag matrix.
+            Default is 6.
+        """
         super().__init__()
         self.seq_len = seq_len
         self.n_classes = n_classes
         self.max_ar_order = max_ar_order
     
     def forward(self, x, temperature=1.0):
+        """Run the analytical AR fit on a batch of sequences.
+
+        Parameters
+        ----------
+        x : torch.Tensor
+            Input batch of shape ``(N, seq_len)``.
+        temperature : float, optional
+            Unused; kept for API compatibility with learned models.
+
+        Returns
+        -------
+        coeffs : torch.Tensor
+            Time-invariant AR coefficients broadcast to shape
+            ``(N, seq_len, max_ar_order)``.  The first *max_ar_order*
+            time steps are zeroed out.
+        p_logits : torch.Tensor
+            Zeros of shape ``(N, n_classes)`` (no order prediction).
+        p_hard : torch.Tensor
+            Zeros of shape ``(N,)`` (no order prediction).
+        x_hat : torch.Tensor
+            Reconstructed signal of shape ``(N, seq_len)``.
+        """
         N = x.shape[0]
         device = x.device
         p = self.max_ar_order
