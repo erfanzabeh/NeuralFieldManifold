@@ -45,3 +45,6 @@ docs = [
     "nbclient==0.10.4",
     "jupyter-cache==1.0.1",
 ]
+
+[tool.setuptools.packages.find]
+include = ["stochastic_dynamics*"]
