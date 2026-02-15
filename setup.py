@@ -1,13 +1,5 @@
 from setuptools import setup, find_packages
 
-setup(
-    name="stochastic_dynamics",
-    version="0.1.0",
-    packages=find_packages(),
-    install_requires=[
-        "numpy>=1.21",
-        "jax>=0.4",
-        "jaxlib>=0.4",
-    ],
-    python_requires=">=3.10",
-)
+# NOTE: All project metadata and dependencies are defined in pyproject.toml.
+# This file exists only for legacy editable-install compatibility.
+setup()

@@ -25,6 +25,7 @@ dependencies = [
     "seaborn==0.13.2",
     "plotly==6.5.2",
     "tqdm==4.67.1",
+    "scikit-learn>=1.4",
 ]
 
 [project.optional-dependencies]
