@@ -23,7 +23,7 @@ for robust manifold recovery under non-stationary conditions.
    tutorials/mouse.ipynb
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Documentation
 
    api

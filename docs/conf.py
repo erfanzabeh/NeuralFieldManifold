@@ -10,9 +10,9 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
-project = 'Stochastic Dynamics'
-copyright = '2026, Erfan'
-author = 'Erfan'
+project = 'NeuralFieldManifold'
+copyright = '2026, Erfan Zabeh'
+author = 'Erfan Zabeh'
 release = '0.1.0'
 
 # -- General configuration ---------------------------------------------------
@@ -29,6 +29,11 @@ extensions = [
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+# Suppress myst-nb deprecation warning with Sphinx 9.x
+suppress_warnings = ["mystnb.unknown_mime_type"]
+import warnings
+warnings.filterwarnings("ignore", message=".*is deprecated.*Check CHANGES for Sphinx API.*")
+
 # -- Options for HTML output -------------------------------------------------
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
@@ -38,11 +43,13 @@ html_theme_options = {
     "use_repository_button": True,
     "use_download_button": True,
     "use_fullscreen_button": True,
-    "show_toc_level": 2,
+    "show_toc_level": 3,
     "navigation_with_keys": True,
+    "toc_title": "On this page",
+    "show_nav_level": 2,
 }
 
-html_title = "Stochastic Dynamics"
+html_title = "Neural Field Manifold"
 
 # --- FIX 1: LOAD PLOTLY JAVASCRIPT ---
 # This ensures the browser can actually draw the plots
