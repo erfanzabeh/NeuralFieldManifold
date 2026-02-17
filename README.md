@@ -101,4 +101,10 @@ If you use this package in your research, please cite:
 }
 ```
 
+## Thanks to Our Contributors 
+
+<a href="https://github.com/erfanzabeh/NeuralFieldManifold/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=erfanzabeh/NeuralFieldManifold" />
+</a>
+
 ---
