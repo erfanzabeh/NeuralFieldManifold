@@ -39,6 +39,7 @@ NeuralFieldManifold
    tutorials/monkey.ipynb
    tutorials/mouse.ipynb
    tutorials/model.ipynb
+   tutorials/upcoming.ipynb
 
 .. toctree::
    :maxdepth: 3

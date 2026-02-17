@@ -11,7 +11,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 project = 'NeuralFieldManifold'
-copyright = '2026, Erfan Zabeh'
+copyright = ''
 author = 'Erfan Zabeh'
 release = '0.1.0'
 

@@ -26,8 +26,18 @@ Standard manifold learning methods break down on signals with strong temporal au
 **NeuralFieldManifold** provides a principled solution grounded in dynamical systems theory: model the signal as a (time-varying) autoregressive process, then exploit the analytical link between oscillatory spectral structure and the topology of delay embeddings. The core theoretical result is that *K* sustained oscillatory modes produce a *K*-torus in the lag-embedded state space — and aperiodic background only adds thickness, not topology.
 
 <p align="center">
-  <!-- TODO: Replace with actual conceptual figure from the paper (e.g., Figure 1) -->
   <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/overview.jpg" alt="Conceptual framework" width="85%">
+</p>
+
+---
+
+## Physics-Informed Reconstruction of the Manifold
+
+To recover the predicted toroidal geometry from real, nonstationary neural recordings, we introduce **DeepLagField** — a deep learning model that estimates time-varying autoregressive (TVAR) coefficients with physics-informed constraints. It features time-varying AR estimation via a neural network backbone with adaptive order selection and physics-informed losses — bounded energy, temporal smoothness of coefficients, and autoregressive reconstruction error.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/arch.jpg" alt="Conceptual framework" width="85%">
+  <sub>The input local field potential (LFP) signal is processed by two coupled modules. The order block predicts a soft selection over candidate autoregressive orders, producing a sparse mask that determines the effective lag set. Conditioned on this mask, the dynamic block outputs time-varying autoregressive coefficients $\{\phi_k(t)\}$, enabling a locally stationary TVAR representation.</sub>
 </p>
 
 ---
@@ -101,7 +111,7 @@ If you use this package in your research, please cite:
 }
 ```
 
-## Thanks to Our Contributors 
+## Contributors 
 
 <a href="https://github.com/erfanzabeh/NeuralFieldManifold/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=erfanzabeh/NeuralFieldManifold" />
