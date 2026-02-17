@@ -24,12 +24,3 @@ Requirements
 - Python ≥ 3.10
 - PyTorch, JAX, NumPy, SciPy, scikit-learn, and other dependencies
   listed in ``pyproject.toml``
-
-Install documentation dependencies
------------------------------------
-
-To build the documentation locally:
-
-.. code-block:: bash
-
-   pip install -e ".[docs]"

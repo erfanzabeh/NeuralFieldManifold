@@ -102,9 +102,3 @@ If you use this package in your research, please cite:
 ```
 
 ---
-
-<p align="center">
-  <a href="https://www.columbia.edu/">Columbia University</a> &
-  <a href="https://www.utsouthwestern.edu/">UT Southwestern Medical Center</a>
-</p>
-

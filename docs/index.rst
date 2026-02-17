@@ -23,14 +23,18 @@ NeuralFieldManifold
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :caption: Getting Started
 
    installation
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :caption: Tutorials
 
+   tutorials/autocorrelated_manifolds.ipynb
+   tutorials/intrinsic_extrinsic.ipynb
    tutorials/simulations.ipynb
    tutorials/monkey.ipynb
    tutorials/mouse.ipynb
@@ -38,12 +42,14 @@ NeuralFieldManifold
 
 .. toctree::
    :maxdepth: 3
+   :hidden:
    :caption: Documentation
 
    api
 
 .. toctree::
    :maxdepth: 1
+   :hidden:
    :caption: Development
 
    changelog
