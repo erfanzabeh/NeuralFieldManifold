@@ -220,6 +220,8 @@ notebooks/data/*
 *.npz
 *.pt
 *.pyc
+*.npy
+*.mat
 
 *.DS_Store
 */__pycache__/*
