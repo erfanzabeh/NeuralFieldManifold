@@ -30,7 +30,7 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # Suppress myst-nb deprecation warning with Sphinx 9.x
-suppress_warnings = ["mystnb.unknown_mime_type"]
+suppress_warnings = ["mystnb.unknown_mime_type", "myst.header"]
 import warnings
 warnings.filterwarnings("ignore", message=".*is deprecated.*Check CHANGES for Sphinx API.*")
 

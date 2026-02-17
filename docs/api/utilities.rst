@@ -1,6 +1,6 @@
 Utilities
 =========
 
-.. autofunction:: stochastic_dynamics.utils.train_loop
-.. autofunction:: stochastic_dynamics.utils.bench_loop
-.. autofunction:: stochastic_dynamics.utils.bicoherence
+.. autofunction:: NeuralFieldManifold.utils.train_loop
+.. autofunction:: NeuralFieldManifold.utils.bench_loop
+.. autofunction:: NeuralFieldManifold.utils.bicoherence

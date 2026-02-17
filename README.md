@@ -1,6 +1,5 @@
 <p align="center">
-  <!-- TODO: Replace with actual logo path -->
-  <img src="docs/_static/logo.jpg" alt="NeuralFieldManifold" width="400">
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/logo.jpg" alt="NeuralFieldManifold" width="400">
 </p>
 
 <h1 align="center">NeuralFieldManifold</h1>
@@ -12,10 +11,11 @@
   <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
   <!-- TODO: Replace with actual arXiv link -->
   <a href="https://arxiv.org/abs/XXXX.XXXXX"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg"></a>
-  <!-- TODO: Replace with actual docs link -->
-  <a href="https://neuralfield-manifold.readthedocs.io/"><img alt="Docs" src="https://img.shields.io/badge/docs-readthedocs-blue.svg"></a>
+  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/"><img alt="Docs" src="https://img.shields.io/badge/docs-readthedocs-blue.svg"></a>
   <a href="https://github.com/your-org/NeuralFieldManifold/actions"><img alt="CI" src="https://img.shields.io/badge/CI-passing-brightgreen.svg"></a>
 </p>
+
+<!-- docs-start -->
 
 ---
 
@@ -27,7 +27,7 @@ Standard manifold learning methods break down on signals with strong temporal au
 
 <p align="center">
   <!-- TODO: Replace with actual conceptual figure from the paper (e.g., Figure 1) -->
-  <img src="docs/_static/overview.jpg" alt="Conceptual framework" width="85%">
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/overview.jpg" alt="Conceptual framework" width="85%">
 </p>
 
 ---
@@ -70,17 +70,17 @@ coeffs_hat, p_logits, p_hard, x_hat = model(
 ## Gallery
 
 <p align="center">
-  <img src="docs/_static/monkey.jpg" alt="Monkey LFP manifold" width="100%"><br>
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/monkey.jpg" alt="Monkey LFP manifold" width="100%"><br>
   <sub>Monkey LFP manifold after lag embedding</sub>
 </p>
 
 <p align="center">
-  <img src="docs/_static/mouse1.jpg" alt="Mouse LFP manifold" width="100%"><br>
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/mouse1.jpg" alt="Mouse LFP manifold" width="100%"><br>
   <sub>Mouse LFP manifold reconstruction</sub>
 </p>
 
 <p align="center">
-  <img src="docs/_static/mouse2.jpg" alt="Mouse EEG manifold" width="100%"><br>
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/mouse2.jpg" alt="Mouse EEG manifold" width="100%"><br>
   <sub>Mouse EEG manifold reconstruction</sub>
 </p>
 
