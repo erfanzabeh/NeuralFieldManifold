@@ -52,6 +52,10 @@ html_theme_options = {
 html_title = "Neural Field Manifold"
 html_logo = "https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/logo.jpg"
 
+html_theme_options["logo"] = {
+    "text": "Neural Field Manifold",
+}
+
 # --- FIX 1: LOAD PLOTLY JAVASCRIPT ---
 # This ensures the browser can actually draw the plots
 html_js_files = [
