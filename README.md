@@ -36,7 +36,7 @@ Standard manifold learning methods break down on signals with strong temporal au
 To recover the predicted toroidal geometry from real, nonstationary neural recordings, we introduce **DeepLagField** — a deep learning model that estimates time-varying autoregressive (TVAR) coefficients with physics-informed constraints. It features time-varying AR estimation via a neural network backbone with adaptive order selection and physics-informed losses — bounded energy, temporal smoothness of coefficients, and autoregressive reconstruction error.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/arch.jpg" alt="Conceptual framework" width="85%">
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/arch.jpg" alt="Conceptual framework" width="85%"><br>
   <sub>The input local field potential (LFP) signal is processed by two coupled modules. The order block predicts a soft selection over candidate autoregressive orders, producing a sparse mask that determines the effective lag set. Conditioned on this mask, the dynamic block outputs time-varying autoregressive coefficients $\{\phi_k(t)\}$, enabling a locally stationary TVAR representation.</sub>
 </p>
 
