@@ -62,8 +62,10 @@ def bench_loop(model, X_val, coef_val, p_val, device, p_min=2, p_max=6, p_max_or
     all_coeffs_pred = np.concatenate(all_coeffs_pred, axis=0)
     all_p_pred = np.concatenate(all_p_pred, axis=0)
     all_x_hat = np.concatenate(all_x_hat, axis=0)
-    p_true = p_val.numpy() if torch.is_tensor(p_val) else p_val
-    X_np = X_val.numpy() if torch.is_tensor(X_val) else X_val
+    p_true = p_val.cpu().numpy() if torch.is_tensor(p_val) else p_val
+    X_np = X_val.cpu().numpy() if torch.is_tensor(X_val) else X_val
+    # p_true = p_val.numpy() if torch.is_tensor(p_val) else p_val
+    # X_np = X_val.numpy() if torch.is_tensor(X_val) else X_val
     
     coeff_mse = float(np.mean((all_coeffs_pred - coef_val) ** 2))
     signal_mse = float(np.mean((all_x_hat[:, p_max_order:] - X_np[:, p_max_order:]) ** 2))
