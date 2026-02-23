@@ -9,22 +9,21 @@ description = "Tools for simulating stochastic processes, chaotic systems, and t
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "numpy==2.4.1",
-    "scipy==1.17.0",
-    "matplotlib==3.10.8",
-    "pandas==3.0.0",
-    "jax==0.9.0",
-    "jaxlib==0.9.0",
-    "flax==0.12.2",
-    "optax==0.2.6",
-    "torch==2.10.0",
-    "torchvision==0.25.0",
-    "mne==1.11.0",
-    "statsmodels==0.14.6",
-    "PyWavelets==1.9.0",
-    "seaborn==0.13.2",
-    "plotly==6.5.2",
-    "tqdm==4.67.1",
+    "numpy>=1.24,<3",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "pandas>=2.0",
+    "jax>=0.4.20",
+    "jaxlib>=0.4.20",
+    "flax>=0.7",
+    "optax>=0.1.7",
+    "torch>=2.0",
+    "mne>=1.4",
+    "statsmodels>=0.14",
+    "PyWavelets>=1.4",
+    "seaborn>=0.13",
+    "plotly>=5.15",
+    "tqdm>=4.65",
     "scikit-learn>=1.4",
 ]
 
@@ -47,4 +46,4 @@ docs = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["src*"]
+include = ["NeuralFieldManifold*"]
