@@ -166,6 +166,80 @@ def plot_coefficients_by_p(model, X, coeffs_true, p_true, device, p_max=6, p_min
     plt.suptitle(title)
     plt.tight_layout()
     plt.show()
+
+def plot_coefficients_by_p_cutoff(model, X, coeffs_true, p_true, device, p_max=6, p_min=2, cutoff=500, title=""):
+    """Visualise predicted vs. true AR coefficients, truncated at *cutoff*.
+
+    Identical to :func:`plot_coefficients_by_p` but only plots the first
+    *cutoff* time-steps so that late-window artefacts are excluded.
+
+    Parameters
+    ----------
+    model : torch.nn.Module
+        Trained model.
+    X : array-like or torch.Tensor
+        Input time series of shape ``(N, T)``.
+    coeffs_true : np.ndarray
+        Ground-truth coefficients of shape ``(N, T, max_ar_order)``.
+    p_true : array-like or torch.Tensor
+        0-indexed order class labels of shape ``(N,)``.
+    device : torch.device
+        Compute device.
+    p_max : int, optional
+        Maximum AR order. Default is 6.
+    p_min : int, optional
+        Minimum AR order. Default is 2.
+    cutoff : int, optional
+        Number of initial time-steps to display. Default is 500.
+    title : str, optional
+        Overall figure title.
+    """
+    model.eval()
+
+    n_classes = p_max - p_min + 1
+    fig, axes = plt.subplots(1, n_classes, figsize=(4 * n_classes, 4))
+
+    with torch.no_grad():
+        for p_idx in range(n_classes):
+            ax = axes[p_idx]
+            p_actual = p_idx + p_min
+
+            mask = (p_true == p_idx).numpy() if torch.is_tensor(p_true) else (p_true == p_idx)
+            if not mask.any():
+                ax.set_title(f'p={p_actual} (no example)')
+                continue
+
+            idx = np.where(mask)[0][0]
+
+            if torch.is_tensor(X):
+                x = X[idx:idx+1].clone().detach().to(device)
+            else:
+                x = torch.from_numpy(X[idx:idx+1]).float().to(device)
+
+            coeffs_pred, _, p_hard, _ = model(x)
+            coeffs_pred = coeffs_pred.cpu().numpy()[0]  # (T, max_ar_order)
+            p_pred = p_hard.item() + p_min
+
+            # Truncate to cutoff
+            t = min(cutoff, coeffs_true.shape[1])
+
+            for k in range(p_actual):
+                label = 'True' if k == 0 else None
+                ax.plot(coeffs_true[idx, :t, k], 'k-', alpha=0.7, label=label)
+
+            for k in range(p_pred):
+                label = 'Pred' if k == 0 else None
+                ax.plot(coeffs_pred[:t, k], color='darkred', alpha=0.7, label=label)
+
+            ax.set_xlim(0, t)
+            ax.set_title(f'True p={p_actual}, Pred p={p_pred}')
+            ax.set_xlabel('Time')
+            ax.set_ylabel('Coefficient')
+            ax.legend()
+
+    plt.suptitle(title)
+    plt.tight_layout()
+    plt.show()
     
 def plot_tvar_sample(x, coeffs, p, W=40, P0=0.5):
     """Plot a single TVAR sample: coefficients, signal, and local power.

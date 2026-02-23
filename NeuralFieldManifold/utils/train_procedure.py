@@ -2,7 +2,7 @@ from tqdm import tqdm
 import torch
 import numpy as np
 
-from .losses import loss_p, loss_ar, loss_energy, loss_smooth, loss_order
+from .losses import loss_p, loss_ar, loss_energy, loss_p_one, loss_smooth, loss_order
 
 
 def train_loop(
@@ -79,15 +79,15 @@ def train_loop(
         has_params = False
     
     history = {
-        'train_loss': [], 'train_p': [], 'train_ar': [], 'train_energy': [], 'train_smooth': [], 'train_order': [], 'train_p_acc': [],
-        'val_loss': [], 'val_p': [], 'val_ar': [], 'val_energy': [], 'val_smooth': [], 'val_order': [], 'val_p_acc': []
+        'train_loss': [], 'train_p': [], 'train_ar': [], 'train_energy': [], 'train_smooth': [], 'train_order': [], 'train_p_acc': [], 'train_p_one': [],
+        'val_loss': [], 'val_p': [], 'val_ar': [], 'val_energy': [], 'val_smooth': [], 'val_order': [], 'val_p_acc': [], 'val_p_one': []
     }
     
     pbar = tqdm(total=n_epochs, desc='Training')
     for epoch in range(n_epochs):
         # Train
         model.train()
-        train_losses = {'total': [], 'p': [], 'ar': [], 'energy': [], 'smooth': [], 'order': []}
+        train_losses = {'total': [], 'p': [], 'ar': [], 'energy': [], 'smooth': [], 'order': [], 'p_one': []}
         train_correct = 0
         train_total = 0
         
@@ -105,6 +105,7 @@ def train_loop(
             l_energy = loss_energy(x_hat, P0, W)
             l_smooth = loss_smooth(coeffs)
             l_order = loss_order(p_logits)
+            l_p_one = loss_p_one(p_logits, p_batch)
             
             total_loss = lambda_p * l_p + lambda_ar * l_ar + lambda_energy * l_energy + lambda_smooth * l_smooth + lambda_order * l_order
             
@@ -119,13 +120,14 @@ def train_loop(
             train_losses['energy'].append(l_energy.item())
             train_losses['smooth'].append(l_smooth.item())
             train_losses['order'].append(l_order.item())
+            train_losses['p_one'].append(l_p_one)
             
             train_correct += (p_hard == p_batch).sum().item()
             train_total += p_batch.shape[0]
         
         # Validate
         model.eval()
-        val_losses = {'total': [], 'p': [], 'ar': [], 'energy': [], 'smooth': [], 'order': []}
+        val_losses = {'total': [], 'p': [], 'ar': [], 'energy': [], 'smooth': [], 'order': [], 'p_one': []}
         val_correct = 0
         val_total = 0
         
@@ -141,6 +143,7 @@ def train_loop(
                 l_energy = loss_energy(x_hat, P0, W)
                 l_smooth = loss_smooth(coeffs)
                 l_order = loss_order(p_logits)
+                l_p_one = loss_p_one(p_logits, p_batch)
                 
                 total_loss = lambda_p * l_p + lambda_ar * l_ar + lambda_energy * l_energy + lambda_smooth * l_smooth + lambda_order * l_order
                 
@@ -150,6 +153,7 @@ def train_loop(
                 val_losses['energy'].append(l_energy.item())
                 val_losses['smooth'].append(l_smooth.item())
                 val_losses['order'].append(l_order.item())
+                val_losses['p_one'].append(l_p_one)
                 
                 val_correct += (p_hard == p_batch).sum().item()
                 val_total += p_batch.shape[0]
@@ -161,6 +165,7 @@ def train_loop(
         history['train_smooth'].append(np.mean(train_losses['smooth']))
         history['train_order'].append(np.mean(train_losses['order']))
         history['train_p_acc'].append(train_correct / train_total)
+        history['train_p_one'].append(np.mean(train_losses['p_one']))
         
         history['val_loss'].append(np.mean(val_losses['total']))
         history['val_p'].append(np.mean(val_losses['p']))
@@ -169,6 +174,7 @@ def train_loop(
         history['val_smooth'].append(np.mean(val_losses['smooth']))
         history['val_order'].append(np.mean(val_losses['order']))
         history['val_p_acc'].append(val_correct / val_total)
+        history['val_p_one'].append(np.mean(val_losses['p_one']))
         
         if has_params:
             scheduler.step(history['val_loss'][-1])

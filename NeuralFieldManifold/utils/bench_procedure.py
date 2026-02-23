@@ -94,5 +94,5 @@ def bench_loop(model, X_val, coef_val, p_val, device, p_min=2, p_max=6, p_max_or
         results[f'p{p_actual}_acc'] = float(acc)
     
     results['p_acc'] = float((all_p_pred == p_true).mean())
-    
+    results['p_acc_one'] = float((abs(all_p_pred - p_true) <= 1).mean())
     return results

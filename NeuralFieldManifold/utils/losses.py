@@ -1,6 +1,28 @@
 import torch
 import torch.nn.functional as F
 
+def loss_p_one(p_logits, p_true):
+    """Within-one accuracy for AR-order classification.
+
+    Returns the fraction of predictions whose argmax class index is
+    within 1 of the true class index.
+
+    Parameters
+    ----------
+    p_logits : torch.Tensor
+        Raw logits of shape ``(N, n_classes)``.
+    p_true : torch.Tensor
+        Ground-truth class indices of shape ``(N,)``.
+
+    Returns
+    -------
+    float
+        Fraction in [0, 1]; 1 means every prediction is within 1 of truth.
+    """
+    p_pred = p_logits.argmax(dim=-1)
+    return float((torch.abs(p_pred - p_true) <= 1).float().mean())
+
+
 def loss_p(p_logits, p_true):
     """Cross-entropy loss for AR-order classification.
 
