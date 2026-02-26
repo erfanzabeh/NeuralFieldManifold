@@ -105,7 +105,7 @@ If you use this package in your research, please cite:
 @inproceedings{fallah2026neuralfieldmanifold,
   title     = {{NeuralFieldManifold}: Reconstruction of {LFP} Manifold with Lag Embedding},
   author    = {Fallah, Kasra and Chen, Haoyu Novak and Singha, Rudramani and Kong, Eunji and Turi, Georgo and Losonczy, Attila and Zabeh, Erfan},
-  booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+  booktitle = {Preprint},
   year      = {2026},
   url       = {https://arxiv.org/abs/XXXX.XXXXX},
 }
