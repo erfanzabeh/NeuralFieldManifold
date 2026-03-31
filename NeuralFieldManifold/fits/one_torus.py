@@ -3,7 +3,7 @@ from scipy import optimize
 from plotly import graph_objects as go
 
 
-def one_torus_fit(points, lam=1.0, hole_ratio=0.5, n_modes=3):
+def one_torus_fit(points, lam=0.1, hole_ratio=0.5, n_modes=3):
     """
     Fit an elliptical annular band (one-torus) to a 3-D point cloud.
 

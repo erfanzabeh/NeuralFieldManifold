@@ -3,7 +3,7 @@ from scipy import optimize
 from plotly import graph_objects as go
 
 
-def two_torus_fit(points, lam=1.0, hole_ratio=0.75, n_modes=3):
+def two_torus_fit(points, lam=0.1, hole_ratio=0.75, n_modes=3):
     """
     Fit an elliptical torus to a 3-D point cloud.
 
