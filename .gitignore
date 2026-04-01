@@ -225,3 +225,5 @@ notebooks/data/*
 
 *.DS_Store
 */__pycache__/*
+# Rebuttal materials (not tracked)
+rebuttal/
