@@ -227,3 +227,5 @@ notebooks/data/*
 */__pycache__/*
 # Rebuttal materials (not tracked)
 rebuttal/
+
+*.mp4
