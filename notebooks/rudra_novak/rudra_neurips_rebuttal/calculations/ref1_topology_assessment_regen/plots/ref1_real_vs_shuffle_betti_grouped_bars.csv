@@ -1,0 +1,55 @@
+signature_sort_index,signature,condition,count,n,percent,sem_percent,color
+0,111,Real,79,200,39.5,5.2,#8B0000
+0,111,Fourier phase shuffle,100,200,50.0,6.9,#2f6f9f
+0,111,IAAFT shuffle,58,200,29.0,3.3,#4b8f5a
+0,111,Aperiodic 1/f shuffle,94,200,47.0,2.7,#d1892f
+0,111,Envelope phase reset,104,200,52.0,6.8,#7e62a3
+0,111,One-mode ablation,69,200,34.5,4.2,#5c677d
+1,121,Real,93,200,46.5,4.3,#8B0000
+1,121,Fourier phase shuffle,67,200,33.5,4.7,#2f6f9f
+1,121,IAAFT shuffle,78,200,39.0,4.3,#4b8f5a
+1,121,Aperiodic 1/f shuffle,46,200,23.0,3.4,#d1892f
+1,121,Envelope phase reset,64,200,32.0,4.4,#7e62a3
+1,121,One-mode ablation,73,200,36.5,2.5,#5c677d
+2,131,Real,23,200,11.5,2.1,#8B0000
+2,131,Fourier phase shuffle,26,200,13.0,3.0,#2f6f9f
+2,131,IAAFT shuffle,41,200,20.5,2.5,#4b8f5a
+2,131,Aperiodic 1/f shuffle,24,200,12.0,2.8,#d1892f
+2,131,Envelope phase reset,26,200,13.0,2.7,#7e62a3
+2,131,One-mode ablation,40,200,20.0,3.6,#5c677d
+3,141,Real,2,200,1.0,0.8,#8B0000
+3,141,Fourier phase shuffle,6,200,3.0,1.6,#2f6f9f
+3,141,IAAFT shuffle,19,200,9.5,2.5,#4b8f5a
+3,141,Aperiodic 1/f shuffle,1,200,0.5,0.4,#d1892f
+3,141,Envelope phase reset,5,200,2.5,1.4,#7e62a3
+3,141,One-mode ablation,8,200,4.0,1.7,#5c677d
+4,101,Real,0,200,0.0,0.0,#8B0000
+4,101,Fourier phase shuffle,1,200,0.5,0.4,#2f6f9f
+4,101,IAAFT shuffle,2,200,1.0,0.5,#4b8f5a
+4,101,Aperiodic 1/f shuffle,35,200,17.5,3.9,#d1892f
+4,101,Envelope phase reset,1,200,0.5,0.4,#7e62a3
+4,101,One-mode ablation,0,200,0.0,0.0,#5c677d
+5,110,Real,2,200,1.0,0.8,#8B0000
+5,110,Fourier phase shuffle,0,200,0.0,0.0,#2f6f9f
+5,110,IAAFT shuffle,0,200,0.0,0.0,#4b8f5a
+5,110,Aperiodic 1/f shuffle,0,200,0.0,0.0,#d1892f
+5,110,Envelope phase reset,0,200,0.0,0.0,#7e62a3
+5,110,One-mode ablation,7,200,3.5,1.7,#5c677d
+6,120,Real,1,200,0.5,0.4,#8B0000
+6,120,Fourier phase shuffle,0,200,0.0,0.0,#2f6f9f
+6,120,IAAFT shuffle,0,200,0.0,0.0,#4b8f5a
+6,120,Aperiodic 1/f shuffle,0,200,0.0,0.0,#d1892f
+6,120,Envelope phase reset,0,200,0.0,0.0,#7e62a3
+6,120,One-mode ablation,2,200,1.0,0.8,#5c677d
+7,151,Real,0,200,0.0,0.0,#8B0000
+7,151,Fourier phase shuffle,0,200,0.0,0.0,#2f6f9f
+7,151,IAAFT shuffle,1,200,0.5,0.4,#4b8f5a
+7,151,Aperiodic 1/f shuffle,0,200,0.0,0.0,#d1892f
+7,151,Envelope phase reset,0,200,0.0,0.0,#7e62a3
+7,151,One-mode ablation,1,200,0.5,0.4,#5c677d
+8,161,Real,0,200,0.0,0.0,#8B0000
+8,161,Fourier phase shuffle,0,200,0.0,0.0,#2f6f9f
+8,161,IAAFT shuffle,1,200,0.5,0.4,#4b8f5a
+8,161,Aperiodic 1/f shuffle,0,200,0.0,0.0,#d1892f
+8,161,Envelope phase reset,0,200,0.0,0.0,#7e62a3
+8,161,One-mode ablation,0,200,0.0,0.0,#5c677d

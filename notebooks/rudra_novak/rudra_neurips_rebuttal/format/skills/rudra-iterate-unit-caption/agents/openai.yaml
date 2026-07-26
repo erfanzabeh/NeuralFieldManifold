@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rudra Unit Caption"
+  short_description: "Draft compact-unit captions"
+  default_prompt: "Use $rudra-iterate-unit-caption to draft or critique a source-checked caption.md for this compact unit."

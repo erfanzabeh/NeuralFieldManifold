@@ -1,0 +1,19 @@
+name: project-template
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - h5py
+  - ipykernel
+  - joblib
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pandas
+  - pip
+  - scikit-learn
+  - scipy
+  - seaborn
+  - tqdm
+  - pip:
+      - -e .

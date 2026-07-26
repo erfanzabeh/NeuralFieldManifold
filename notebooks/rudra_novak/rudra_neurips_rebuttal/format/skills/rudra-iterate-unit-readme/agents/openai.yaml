@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rudra Unit README"
+  short_description: "Iterate compact-unit READMEs"
+  default_prompt: "Use $rudra-iterate-unit-readme to audit and rewrite a compact-unit README against the project documentation standard."

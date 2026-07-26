@@ -229,3 +229,6 @@ notebooks/data/*
 rebuttal/
 
 *.mp4
+*.dat
+*.pkl
+notebooks/rudra_novak/rudra_neurips_rebuttal/data/

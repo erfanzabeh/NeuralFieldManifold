@@ -1,0 +1,143 @@
+{
+  "n_windows": 800,
+  "n_psd_matched_null_reps": 5,
+  "state_r2_leave_session": {
+    "all non-F1 features": 0.3838454684522092,
+    "native spectrum": 0.3722396989317503,
+    "spectrum + torus": 0.3724274707672799,
+    "torus shape": 0.2296921305903844
+  },
+  "top_residual_torus_eta2": [
+    {
+      "torus_feature": "torus_frac_inside",
+      "spectrum_to_torus_loso_r2": 0.6911826429633908,
+      "raw_state_eta2": 0.209048276887261,
+      "residual_state_eta2": 0.0341221793386698
+    },
+    {
+      "torus_feature": "torus_u_x",
+      "spectrum_to_torus_loso_r2": 0.039004494670442,
+      "raw_state_eta2": 0.0441780106085844,
+      "residual_state_eta2": 0.0123161481659981
+    },
+    {
+      "torus_feature": "torus_u_z",
+      "spectrum_to_torus_loso_r2": 0.0390270604630726,
+      "raw_state_eta2": 0.0442191674513329,
+      "residual_state_eta2": 0.0122582662420157
+    },
+    {
+      "torus_feature": "torus_u_y",
+      "spectrum_to_torus_loso_r2": 0.0386210337943385,
+      "raw_state_eta2": 0.0442010749116652,
+      "residual_state_eta2": 0.0121983843494416
+    },
+    {
+      "torus_feature": "torus_R2",
+      "spectrum_to_torus_loso_r2": 0.6427363087830982,
+      "raw_state_eta2": 0.1853906796266618,
+      "residual_state_eta2": 0.0090405687706135
+    }
+  ],
+  "psd_null_effects": [
+    {
+      "feature": "torus_R1",
+      "real_mean": 2.1182419791194973,
+      "null_mean": 2.080987534191883,
+      "paired_delta": 0.03725444492761478,
+      "paired_dz": 0.12513137801884902,
+      "fraction_real_gt_null_mean": 0.55
+    },
+    {
+      "feature": "torus_R2",
+      "real_mean": 0.2594579173345568,
+      "null_mean": 0.2619164417332057,
+      "paired_delta": -0.0024585243986489595,
+      "paired_dz": -0.06387004395164644,
+      "fraction_real_gt_null_mean": 0.365
+    },
+    {
+      "feature": "torus_r",
+      "real_mean": 0.08520044900733335,
+      "null_mean": 0.08160206165535781,
+      "paired_delta": 0.003598387351975557,
+      "paired_dz": 0.24270202814028308,
+      "fraction_real_gt_null_mean": 0.54625
+    },
+    {
+      "feature": "torus_mean_error",
+      "real_mean": 0.5538646126453911,
+      "null_mean": 0.5109695209418592,
+      "paired_delta": 0.042895091703531875,
+      "paired_dz": 0.36498143919027565,
+      "fraction_real_gt_null_mean": 0.655
+    },
+    {
+      "feature": "torus_frac_inside",
+      "real_mean": 0.07373340430861719,
+      "null_mean": 0.062248058617234425,
+      "paired_delta": 0.01148534569138277,
+      "paired_dz": 0.5411471490448728,
+      "fraction_real_gt_null_mean": 0.69125
+    }
+  ],
+  "conditional_r2_drop": [
+    {
+      "permuted_group": "spectrum",
+      "mean": 0.5456093756516864,
+      "sem": 0.006202136524757892
+    },
+    {
+      "permuted_group": "torus",
+      "mean": 0.20396265375915065,
+      "sem": 0.0036395033959630576
+    }
+  ],
+  "domain_stability": [
+    {
+      "feature_set": "native spectrum",
+      "domain": "session",
+      "state_to_domain_distance_ratio": 1.8139054709133924
+    },
+    {
+      "feature_set": "native spectrum",
+      "domain": "channel",
+      "state_to_domain_distance_ratio": 3.6582936258637044
+    },
+    {
+      "feature_set": "native spectrum",
+      "domain": "mouse",
+      "state_to_domain_distance_ratio": 1.945533693739926
+    },
+    {
+      "feature_set": "torus shape",
+      "domain": "session",
+      "state_to_domain_distance_ratio": 1.4964949951338238
+    },
+    {
+      "feature_set": "torus shape",
+      "domain": "channel",
+      "state_to_domain_distance_ratio": 3.0320898651162382
+    },
+    {
+      "feature_set": "torus shape",
+      "domain": "mouse",
+      "state_to_domain_distance_ratio": 3.3165269646462563
+    },
+    {
+      "feature_set": "spectrum + torus",
+      "domain": "session",
+      "state_to_domain_distance_ratio": 1.758743975248977
+    },
+    {
+      "feature_set": "spectrum + torus",
+      "domain": "channel",
+      "state_to_domain_distance_ratio": 3.4957497436190406
+    },
+    {
+      "feature_set": "spectrum + torus",
+      "domain": "mouse",
+      "state_to_domain_distance_ratio": 2.0464138516114256
+    }
+  ]
+}

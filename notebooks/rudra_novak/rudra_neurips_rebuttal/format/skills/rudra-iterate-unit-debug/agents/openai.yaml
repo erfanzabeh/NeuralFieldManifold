@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rudra Unit Debug"
+  short_description: "Hypothesis-led unit debugging"
+  default_prompt: "Use $rudra-iterate-unit-debug to investigate this uncertain failure with an isolated compact debug unit and hypothesis chain."

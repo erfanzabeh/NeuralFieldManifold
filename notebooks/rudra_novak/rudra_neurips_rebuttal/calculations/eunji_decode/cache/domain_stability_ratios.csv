@@ -1,0 +1,10 @@
+feature_set,domain,state_to_domain_distance_ratio
+native spectrum,session,1.8139054709133924
+native spectrum,channel,3.6582936258637044
+native spectrum,mouse,1.945533693739926
+torus shape,session,1.4964949951338238
+torus shape,channel,3.0320898651162382
+torus shape,mouse,3.3165269646462563
+spectrum + torus,session,1.758743975248977
+spectrum + torus,channel,3.4957497436190406
+spectrum + torus,mouse,2.0464138516114256

@@ -1,0 +1,65 @@
+{
+  "raw_fs_hz": 20000,
+  "target_fs_hz": 400,
+  "window_sec": 2.0,
+  "window_samples": 800,
+  "n_raw_label_rows": 18,
+  "n_exclusive_intervals": 19,
+  "n_all_windows": 5554,
+  "n_balanced_windows": 768,
+  "class_counts_all": {
+    "Mobile": 2875,
+    "Immobile": 256,
+    "Sleep": 2423
+  },
+  "class_counts_balanced": {
+    "Mobile": 256,
+    "Immobile": 256,
+    "Sleep": 256
+  },
+  "band_names": [
+    "delta",
+    "theta",
+    "alpha",
+    "beta"
+  ],
+  "torus_fit_failures_imputed": 7,
+  "scores": [
+    {
+      "feature_set": "band_power",
+      "accuracy": 0.6419270833333334,
+      "f1_mobile": 0.7338709677419355,
+      "f1_immobile": 0.5590551181102362,
+      "f1_sleep": 0.6353383458646616
+    },
+    {
+      "feature_set": "lag_embed_stats",
+      "accuracy": 0.5520833333333334,
+      "f1_mobile": 0.7831325301204819,
+      "f1_immobile": 0.2169811320754717,
+      "f1_sleep": 0.5960912052117264
+    },
+    {
+      "feature_set": "torus_6",
+      "accuracy": 0.5598958333333334,
+      "f1_mobile": 0.7605633802816901,
+      "f1_immobile": 0.30973451327433627,
+      "f1_sleep": 0.5826235093696763
+    },
+    {
+      "feature_set": "all_torus_15",
+      "accuracy": 0.5625,
+      "f1_mobile": 0.772,
+      "f1_immobile": 0.34541577825159914,
+      "f1_sleep": 0.5573192239858906
+    }
+  ],
+  "probe_order_from_tutorial": [
+    18,
+    19,
+    12,
+    13
+  ],
+  "channel_interpretation": "Channels are used as direct NumPy columns, matching dat_file_check.ipynb.",
+  "exclusive_label_rule": "When spreadsheet intervals overlap, sleep and immobile windows are kept before mobile windows so no decoded window has two labels."
+}

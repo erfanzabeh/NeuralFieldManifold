@@ -1,0 +1,49 @@
+{
+  "analysis_windows": 800,
+  "edge_buffer_sec": 2.0,
+  "max_per_session_channel_state": 24,
+  "native_psd_fs_hz": 20000,
+  "primary_torus_fs_hz": 2000,
+  "torus_band_hz": [
+    0.5,
+    200.0
+  ],
+  "torus_tau_ms": 2.0,
+  "n_null_per_kind": 100,
+  "class_counts": {
+    "Mobile": 250,
+    "Immobile": 226,
+    "Sleep": 324
+  },
+  "torus_fit_failure_fraction": 0.13625,
+  "best_leave_session": [
+    {
+      "split": "leave_session_out",
+      "feature_set": "spectrum_plus_torus",
+      "n_folds": 6,
+      "macro_f1_mean": 0.6770669805296182,
+      "macro_f1_sem": 0.04424880463438534,
+      "accuracy_mean": 0.7294956116729275,
+      "accuracy_sem": 0.037108749877743735
+    },
+    {
+      "split": "leave_session_out",
+      "feature_set": "all_features",
+      "n_folds": 6,
+      "macro_f1_mean": 0.675838634889354,
+      "macro_f1_sem": 0.04727777168362941,
+      "accuracy_mean": 0.7252592857110306,
+      "accuracy_sem": 0.036854938302148976
+    },
+    {
+      "split": "leave_session_out",
+      "feature_set": "native_spectrum",
+      "n_folds": 6,
+      "macro_f1_mean": 0.6430002688797327,
+      "macro_f1_sem": 0.04656107573330029,
+      "accuracy_mean": 0.7038089135986597,
+      "accuracy_sem": 0.038123948831529246
+    }
+  ],
+  "leave_session_torus_gain_over_native_spectrum": 0.034066711649885506
+}

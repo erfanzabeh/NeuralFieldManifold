@@ -1,0 +1,32 @@
+# Template: replace project-template and project_package before the first real install.
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-template"
+version = "0.1.0"
+description = "Shared helpers for project compact units."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "h5py",
+  "joblib",
+  "matplotlib>=3.8",
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "scipy",
+  "seaborn",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+notebook = [
+  "ipykernel",
+  "jupyterlab",
+]
+
+[tool.setuptools.packages.find]
+include = ["project_package*"]
