@@ -1,0 +1,10 @@
+{
+  "session_id": "session_m0060_0120",
+  "status": "insufficient_classes",
+  "n_windows": 1800,
+  "wake_count": 697,
+  "nrem_count": 1103,
+  "rem_count": 0,
+  "torus_fit_failures_imputed": 0,
+  "reason": "All three classes need at least 5 windows for 5-fold CV."
+}

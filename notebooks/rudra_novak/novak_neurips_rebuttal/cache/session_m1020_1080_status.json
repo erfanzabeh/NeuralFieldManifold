@@ -1,0 +1,9 @@
+{
+  "session_id": "session_m1020_1080",
+  "status": "ok",
+  "n_windows": 1800,
+  "wake_count": 1047,
+  "nrem_count": 675,
+  "rem_count": 78,
+  "torus_fit_failures_imputed": 0
+}

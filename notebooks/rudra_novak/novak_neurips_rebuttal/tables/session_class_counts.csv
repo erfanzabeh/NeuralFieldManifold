@@ -1,0 +1,25 @@
+session_id,status,n_windows,wake_count,nrem_count,rem_count,torus_fit_failures_imputed,reason
+session_m0000_0060,insufficient_classes,1800,1800,0,0,0,All three classes need at least 5 windows for 5-fold CV.
+session_m0060_0120,insufficient_classes,1800,697,1103,0,0,All three classes need at least 5 windows for 5-fold CV.
+session_m0120_0180,ok,1800,620,1138,42,0,
+session_m0180_0240,ok,1800,817,884,99,0,
+session_m0240_0300,ok,1800,724,946,130,0,
+session_m0300_0360,ok,1800,1005,770,25,0,
+session_m0360_0420,ok,1800,619,1064,117,0,
+session_m0420_0480,ok,1800,792,889,119,0,
+session_m0480_0540,ok,1800,895,825,80,0,
+session_m0540_0600,ok,1800,955,755,90,0,
+session_m0600_0660,ok,1800,866,787,147,0,
+session_m0660_0720,ok,1800,1109,657,34,0,
+session_m0720_0780,ok,1800,601,1061,138,0,
+session_m0780_0840,insufficient_classes,1800,1667,133,0,0,All three classes need at least 5 windows for 5-fold CV.
+session_m0840_0900,ok,1800,1045,705,50,0,
+session_m0900_0960,ok,1800,711,971,118,0,
+session_m0960_1020,ok,1800,1144,625,31,0,
+session_m1020_1080,ok,1800,1047,675,78,0,
+session_m1080_1140,ok,1800,548,1106,146,0,
+session_m1140_1200,ok,1800,998,780,22,0,
+session_m1200_1260,ok,1800,712,1011,77,0,
+session_m1260_1320,ok,1800,412,1175,213,0,
+session_m1320_1380,ok,1800,916,778,106,0,
+session_m1380_1440,ok,1800,626,1114,60,0,
