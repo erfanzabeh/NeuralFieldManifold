@@ -53,3 +53,7 @@ cd /home/nochen/code/NeuralFieldManifold
 - `tables/eeg_torus_betti_summary.csv`: topology summary for the selected EEG
   session.
 - `plots/topology/session_m0900_0960/`: topology diagnostic plots.
+- `motor_lfp_reaching/`: public macaque motor-cortex LFP reaching analysis for
+  the reviewer-requested repeated movement setting, including single-band power,
+  all-band power, torus geometry decoding comparisons, and a PSD-based
+  dataset-level lag-embedding order diagnostic.

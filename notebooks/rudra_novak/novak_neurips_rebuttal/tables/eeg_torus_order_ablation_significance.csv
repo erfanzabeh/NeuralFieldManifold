@@ -1,0 +1,2 @@
+comparison,feature_left,feature_right,n_pairs,mean_left_f1,mean_right_f1,mean_difference_left_minus_right,wilcoxon_statistic,p_value,significance
+torus_features_15d vs no_r_geometry_11d,torus_features_15d,no_r_geometry_11d,21,0.6697563098214887,0.651266928976027,0.018489380845461874,65.0,0.08219528198242188,ns

@@ -1,0 +1,4 @@
+freq_hz,band,median_residual_log_psd,prominence,bootstrap_support,included_for_order,exclusion_reason
+19.0,beta,0.07442754169141899,0.04306813351443307,0.878,True,
+32.0,low_gamma,0.19123076260135613,0.3858435342344804,1.0,True,
+50.0,line_noise,-2.2794679157777202,0.4685513769685974,,False,within 50 Hz line-noise band

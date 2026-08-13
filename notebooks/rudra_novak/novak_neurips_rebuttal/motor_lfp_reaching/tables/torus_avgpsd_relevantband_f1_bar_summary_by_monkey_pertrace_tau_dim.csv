@@ -1,0 +1,7 @@
+analysis_set,analysis_label,monkey,feature_role,feature_label,mean_f1,std_f1,n_lfps
+full_6_direction_lfps_by_monkey,Monkey M,M,torus_features,Torus features,0.1752879814937258,0.033670234447092884,135
+full_6_direction_lfps_by_monkey,Monkey M,M,average_psd,Average PSD,0.15076449678269865,0.027188985350779796,135
+full_6_direction_lfps_by_monkey,Monkey M,M,relevant_band,Relevant band,0.154735257855407,0.02965279583025187,135
+full_6_direction_lfps_by_monkey,Monkey T,T,torus_features,Torus features,0.18768696223967327,0.027717553733580074,102
+full_6_direction_lfps_by_monkey,Monkey T,T,average_psd,Average PSD,0.16877596134055328,0.030788282586529117,102
+full_6_direction_lfps_by_monkey,Monkey T,T,relevant_band,Relevant band,0.15890294684549522,0.02588700758344234,102

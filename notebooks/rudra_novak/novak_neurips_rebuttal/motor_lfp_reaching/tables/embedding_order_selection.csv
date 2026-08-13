@@ -1,0 +1,2 @@
+epoch,n_lfps,frequency_range_hz,line_exclusion_hz,robust_peak_count,robust_peak_frequencies_hz,oscillatory_mode_count_K,ar_order_2K,recommended_lag_embedding_dimension_2K_plus_1
+movement,341,2-55,48-52,2,"19.0, 32.0",2,4,5

@@ -1,0 +1,2 @@
+analysis_label,n_sessions,selected_band,selected_band_label,selected_band_mean_f1
+Mouse EEG valid sessions,21,low_gamma,Low gamma (30-50 Hz),0.6369893763038506

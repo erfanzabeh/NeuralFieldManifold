@@ -1,0 +1,4 @@
+analysis_level,analysis_label,monkey,session_id,n_lfps,selected_band,selected_band_label,selected_band_mean_f1
+full_6_direction_lfps,Full 6-direction LFPs,,,237,delta,Delta (2-4 Hz),0.16628943880866096
+monkey,Monkey M,M,,135,beta,Beta (13-30 Hz),0.15473525785540704
+monkey,Monkey T,T,,102,delta,Delta (2-4 Hz),0.1927985855352198

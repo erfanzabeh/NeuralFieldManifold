@@ -1,0 +1,4 @@
+analysis_set,analysis_label,monkey,comparison,feature_left,feature_right,n_pairs,mean_left,mean_right,mean_difference_left_minus_right,wilcoxon_statistic,p_uncorrected,p_holm,significance
+full_6_direction_lfps,Full 6-direction LFPs,M+T,torus_features vs average_psd,torus_features,average_psd,237,0.18062425168818422,0.15851626633924365,0.02210798534894052,6295.0,1.485656588024262e-13,2.971313176048524e-13,***
+full_6_direction_lfps,Full 6-direction LFPs,M+T,torus_features vs relevant_band,torus_features,relevant_band,237,0.18062425168818422,0.15652894678785,0.024095304900334166,5587.0,7.722338170450197e-16,2.316701451135059e-15,***
+full_6_direction_lfps,Full 6-direction LFPs,M+T,relevant_band vs average_psd,relevant_band,average_psd,237,0.15652894678785,0.15851626633924365,-0.00198731955139365,13312.0,0.45493096945876754,0.45493096945876754,ns

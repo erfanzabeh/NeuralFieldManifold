@@ -1,0 +1,7 @@
+analysis_set,analysis_label,monkey,comparison,feature_left,feature_right,n_pairs,mean_left,mean_right,mean_difference_left_minus_right,wilcoxon_statistic,p_uncorrected,p_holm,significance
+full_6_direction_lfps_by_monkey,Monkey M,M,torus_features vs average_psd,torus_features,average_psd,135,0.17528798149372576,0.15076449678269865,0.024523484711027152,1984.0,1.0437294020740431e-08,3.131188206222129e-08,***
+full_6_direction_lfps_by_monkey,Monkey M,M,torus_features vs relevant_band,torus_features,relevant_band,135,0.17528798149372576,0.154735257855407,0.02055272363831879,2182.0,1.2325282576659576e-07,2.465056515331915e-07,***
+full_6_direction_lfps_by_monkey,Monkey M,M,relevant_band vs average_psd,relevant_band,average_psd,135,0.154735257855407,0.15076449678269865,0.003970761072708362,4020.0,0.2106169641448512,0.2106169641448512,ns
+full_6_direction_lfps_by_monkey,Monkey T,T,torus_features vs average_psd,torus_features,average_psd,102,0.18768696223967327,0.1687759613405533,0.01891100089911998,1244.0,3.930264004508059e-06,7.860528009016119e-06,***
+full_6_direction_lfps_by_monkey,Monkey T,T,torus_features vs relevant_band,torus_features,relevant_band,102,0.18768696223967327,0.15890294684549522,0.02878401539417806,823.0,1.7397477277266415e-09,5.219243183179924e-09,***
+full_6_direction_lfps_by_monkey,Monkey T,T,relevant_band vs average_psd,relevant_band,average_psd,102,0.15890294684549522,0.1687759613405533,-0.009873014495058077,1925.0,0.0191943600876454,0.0191943600876454,*

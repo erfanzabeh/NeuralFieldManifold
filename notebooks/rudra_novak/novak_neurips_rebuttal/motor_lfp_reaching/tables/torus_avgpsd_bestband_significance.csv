@@ -1,0 +1,10 @@
+analysis_level,analysis_label,comparison,feature_left,feature_right,n_pairs,mean_left,mean_right,mean_difference_left_minus_right,wilcoxon_statistic,p_uncorrected,p_holm,significance
+full_6_direction_lfps,Full 6-direction LFPs,torus_features vs average_psd,torus_features,average_psd,237,0.18767343632540068,0.1585162663392437,0.029157169986156955,4520.0,1.2080058631483978e-19,3.624017589445193e-19,***
+full_6_direction_lfps,Full 6-direction LFPs,torus_features vs best_single_band,torus_features,best_single_band,237,0.18767343632540068,0.16628943880866096,0.021383997516739705,6751.0,3.4794900131452144e-12,6.958980026290429e-12,***
+full_6_direction_lfps,Full 6-direction LFPs,best_single_band vs average_psd,best_single_band,average_psd,237,0.16628943880866096,0.1585162663392437,0.00777317246941725,11024.0,0.0035833043182995033,0.0035833043182995033,**
+monkey,Monkey M,torus_features vs average_psd,torus_features,average_psd,135,0.18192060032547774,0.15076449678269868,0.031156103542779083,1246.0,2.0682572515821472e-13,6.204771754746441e-13,***
+monkey,Monkey M,torus_features vs best_single_band,torus_features,best_single_band,135,0.18192060032547774,0.15473525785540704,0.027185342470070716,1571.0,3.345007868470897e-11,6.690015736941793e-11,***
+monkey,Monkey M,best_single_band vs average_psd,best_single_band,average_psd,135,0.15473525785540704,0.15076449678269868,0.003970761072708367,4020.0,0.2106169641448512,0.2106169641448512,ns
+monkey,Monkey T,torus_features vs average_psd,torus_features,average_psd,102,0.19528748397235746,0.1687759613405533,0.026511522631804126,1026.0,9.154190171657874e-08,1.8308380343315748e-07,***
+monkey,Monkey T,torus_features vs best_single_band,torus_features,best_single_band,102,0.19528748397235746,0.1927985855352198,0.0024888984371376727,2447.0,0.5490370938295341,0.5490370938295341,ns
+monkey,Monkey T,best_single_band vs average_psd,best_single_band,average_psd,102,0.1927985855352198,0.1687759613405533,0.024022624194666442,910.0,1.0043705664776362e-08,3.013111699432909e-08,***
