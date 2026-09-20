@@ -1,0 +1,3 @@
+panel,monkey,enhanced,baseline,n_lfps,n_days,n_animals,mean_difference,ci_low,ci_high,day_mean_difference,statistic,p_raw,p_holm
+E,M,torus_power_frequency,power_frequency,115,48,1,0.0007982767312993,-0.009610962373495,0.0103731576473291,0.0022882205809791,535.0,0.5933963803088957,1.0
+E,M,torus_all_bands,all_bands,115,48,1,0.001431762030608,-0.0071246453525552,0.0109763327561668,0.0021444232050208,575.0,0.8989257426266732,1.0

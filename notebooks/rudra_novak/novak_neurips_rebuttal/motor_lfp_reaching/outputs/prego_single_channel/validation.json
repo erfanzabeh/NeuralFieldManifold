@@ -1,0 +1,212 @@
+{
+  "status": "passed",
+  "main_recordings": 210,
+  "analysis_recordings": 614,
+  "n_predictions": 597456,
+  "n_planned_tests": 8,
+  "exports": [
+    {
+      "name": "A_task_window",
+      "width_inches": 7.200000339084202,
+      "height_inches": 3.5,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "B_geometry_M_R1",
+      "width_inches": 3.3000000847710504,
+      "height_inches": 2.4499999152289496,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "B_geometry_M_R2",
+      "width_inches": 3.3000000847710504,
+      "height_inches": 2.4499999152289496,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "B_geometry_M_r",
+      "width_inches": 3.3000000847710504,
+      "height_inches": 2.4499999152289496,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "B_preview_M",
+      "width_inches": 9.5,
+      "height_inches": 2.5999999576144748,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "C_confusion_M_power_frequency",
+      "width_inches": 3.4000000423855252,
+      "height_inches": 3.0,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "C_confusion_M_torus",
+      "width_inches": 3.4000000423855252,
+      "height_inches": 3.0,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "D_decoding_M",
+      "width_inches": 3.600000169542101,
+      "height_inches": 3.5500000847710504,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "E_added_value_M",
+      "width_inches": 3.4499999152289496,
+      "height_inches": 3.1999999152289496,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "F_direction_f1_M",
+      "width_inches": 3.6999999152289496,
+      "height_inches": 2.8000000847710504,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "S1_delay_robustness_M",
+      "width_inches": 3.5,
+      "height_inches": 2.9000000423855252,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "S2_dimensionality_M",
+      "width_inches": 3.3499999576144748,
+      "height_inches": 2.9000000423855252,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "B_geometry_T_R1",
+      "width_inches": 3.3000000847710504,
+      "height_inches": 2.4499999152289496,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "B_geometry_T_R2",
+      "width_inches": 3.3000000847710504,
+      "height_inches": 2.4499999152289496,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "B_geometry_T_r",
+      "width_inches": 3.3000000847710504,
+      "height_inches": 2.4499999152289496,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "B_preview_T",
+      "width_inches": 9.5,
+      "height_inches": 2.5999999576144748,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "C_confusion_T_power_frequency",
+      "width_inches": 3.4000000423855252,
+      "height_inches": 3.0,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "C_confusion_T_torus",
+      "width_inches": 3.4000000423855252,
+      "height_inches": 3.0,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "D_decoding_T",
+      "width_inches": 3.600000169542101,
+      "height_inches": 3.5500000847710504,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "E_added_value_T",
+      "width_inches": 3.4499999152289496,
+      "height_inches": 3.1999999152289496,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "F_direction_f1_T",
+      "width_inches": 3.6999999152289496,
+      "height_inches": 2.8000000847710504,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "S1_delay_robustness_T",
+      "width_inches": 3.5,
+      "height_inches": 2.9000000423855252,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    },
+    {
+      "name": "S2_dimensionality_T",
+      "width_inches": 3.3499999576144748,
+      "height_inches": 2.9000000423855252,
+      "minimum_font_pt": 8.0,
+      "vector_pdf": true,
+      "png_dpi": 600
+    }
+  ],
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.1",
+    "pandas": "3.0.5",
+    "h5py": "3.16.0",
+    "joblib": "1.5.3"
+  },
+  "source_sha256": {
+    "run_prego_single_channel.py": "8711b4d92cc88f9f290564085239041188067e38b13891114e5deeb7a7ee2424",
+    "freeze_prego_results.py": "04174cdb39e618e66f1099a579090ca5a24cd6775cb859f543d98da1133df59f",
+    "prego_decoding.py": "f4dc3f5b890874ea08d87cf98ffaee4fc81d534954a5ee1f8eae57bce60aec49",
+    "prego_statistics.py": "c6ca9637dd215f65c27d93352e72060634e96beb4dcb8a38b8f1d4bbe5ceb238",
+    "validate_prego_results.py": "33214d018beb94a1d58a3299f21f109ddaec762e008a1702c9551ca57791612f",
+    "plot_prego_panels.py": "be8368dfb6d53c3f923a331df2f37be8c9daea897ae9e8e5b6a54034527fd6b3",
+    "motor_lfp_utils.py": "15df7c7e8d20e48b3dedcbd95edcfb71623bfed242788ed55ac4f4174a6e634d",
+    "select_trace_embedding_parameters.py": "70e1715a5cfb13a8ca1f50cc5a243290bbb3c3b79cd3fafa592f007d479c1a1d"
+  }
+}
