@@ -1,0 +1,19 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-8",
+  "monkey": "T",
+  "session": "y070316009-12",
+  "day": "2007-03-16",
+  "lfp": "8",
+  "raw_trials": 404,
+  "valid_trials": 404,
+  "go_sample_zero_based": 4500,
+  "old_converted_go_sample": 4500,
+  "start_sample": 4000,
+  "end_sample_exclusive": 4500,
+  "source_pair_index": 153,
+  "source_sha256": "ac7bce7e0b0989b45e6f0587e3cfae92a8d5b0b6e2904b4a9d523621f6750040",
+  "n_trials": 198,
+  "status": "ok",
+  "short_delay_ms": 700,
+  "sampling_rate_hz": 1000
+}

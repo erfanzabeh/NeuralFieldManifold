@@ -1,0 +1,1 @@
+Held-out predictions; each recording's matrix is row-normalized before equal-weight averaging. Diagonal entries are class recall, not F1.

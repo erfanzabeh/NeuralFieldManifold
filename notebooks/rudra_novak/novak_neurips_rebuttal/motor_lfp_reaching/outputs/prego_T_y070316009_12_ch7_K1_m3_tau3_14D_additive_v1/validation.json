@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "n_trials": 198,
+  "prediction_count": 1188,
+  "feature_dimensions": [
+    1,
+    15,
+    1,
+    15,
+    5,
+    14
+  ],
+  "parent_files_unchanged": 326,
+  "original_geometry_and_all_band_predictions": "exact match",
+  "original_bootstrap_indices": "exact match",
+  "original_geometry_and_all_band_bootstraps": "exact match",
+  "projection_training_trials": 158,
+  "projection_heldout_trials": 40,
+  "refitted_geometry": false
+}

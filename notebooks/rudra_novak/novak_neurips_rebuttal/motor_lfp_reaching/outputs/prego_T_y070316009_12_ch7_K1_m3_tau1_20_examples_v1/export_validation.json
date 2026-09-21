@@ -1,0 +1,16 @@
+{
+  "pdf_files": 137,
+  "pdf_pages": 266,
+  "all_pages_nonblank": true,
+  "no_out_of_page_text": true,
+  "png_files": 134,
+  "png_dpi": 300,
+  "svg_text_editable": true,
+  "full_suite_passed": 138,
+  "preexisting_failures": [
+    "test_powerpoint_is_single_editable_poster",
+    "test_required_sources_and_metric_caveats",
+    "test_rendered_text_stays_inside_its_editable_box"
+  ],
+  "tau16_exactly_matches_previous_fits": true
+}

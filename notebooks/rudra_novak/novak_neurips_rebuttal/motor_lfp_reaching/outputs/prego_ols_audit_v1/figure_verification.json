@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "standalone_figures": 435,
+  "recording_figure_pairs": 210,
+  "all_formats_present": true,
+  "all_text_inside_pdf_page": true,
+  "all_png_nonblank": true,
+  "plotted_sweep_tables_match_source": true,
+  "heldout_summary_markers_match_source": true,
+  "note": "Superscripts/exponents can be smaller than 8 pt; primary labels are >=8 pt. Representative figures also inspected visually."
+}

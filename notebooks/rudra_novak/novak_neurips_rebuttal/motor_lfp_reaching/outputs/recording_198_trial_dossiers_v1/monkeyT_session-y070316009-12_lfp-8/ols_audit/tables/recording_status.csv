@@ -1,0 +1,2 @@
+recording,monkey,session,day,lfp,raw_trials,valid_trials,go_sample_zero_based,old_converted_go_sample,start_sample,end_sample_exclusive,source_pair_index,source_sha256,n_trials,status,short_delay_ms,seconds
+monkeyT_session-y070316009-12_lfp-8,T,y070316009-12,2007-03-16,8,404,404,4500,4500,4000,4500,153,ac7bce7e0b0989b45e6f0587e3cfae92a8d5b0b6e2904b4a9d523621f6750040,198,ok,700,16.240888286964037

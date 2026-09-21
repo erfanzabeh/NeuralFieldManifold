@@ -1,0 +1,73 @@
+{
+  "sources": {
+    "direction_order": "https://gin.g-node.org/kilavik.b/Macaque_MotorCortex_LFP_Spike_VisuoMotorBehavior/raw/master/README.md",
+    "target_layout": "https://gin.g-node.org/kilavik.b/Macaque_MotorCortex_LFP_Spike_VisuoMotorBehavior/raw/master/Setup%26Task.pdf"
+  },
+  "mapping": [
+    {
+      "direction": 1,
+      "target_event_code": 101,
+      "target_position": "upper right",
+      "reach_side": "Rightward"
+    },
+    {
+      "direction": 2,
+      "target_event_code": 102,
+      "target_position": "right",
+      "reach_side": "Rightward"
+    },
+    {
+      "direction": 3,
+      "target_event_code": 103,
+      "target_position": "lower right",
+      "reach_side": "Rightward"
+    },
+    {
+      "direction": 4,
+      "target_event_code": 104,
+      "target_position": "lower left",
+      "reach_side": "Leftward"
+    },
+    {
+      "direction": 5,
+      "target_event_code": 105,
+      "target_position": "left",
+      "reach_side": "Leftward"
+    },
+    {
+      "direction": 6,
+      "target_event_code": 106,
+      "target_position": "upper left",
+      "reach_side": "Leftward"
+    }
+  ],
+  "input_sha256": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_decoding_v1/tables/features_geometry.csv": "e9a4c09c96823918b20b01fb26497ca78b06aa0b06908c219b862ec06d7535fb",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_decoding_v1/tables/fit_diagnostics.csv": "78bb5e1997fe8a6081a0ec48016d6d1498f64d28adcffb0cbf786ca270ea9606",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/recording_198_trial_dossiers_v1/monkeyT_session-y070316009-12_lfp-7/inputs/full_converted_recording.npz": "44496fb78e75ccd2c39d68a2c83ce090386f26f1ff06cee63278859768038cd4"
+  },
+  "renderer_sha256": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/plot_prego_radius_left_right.py": "9c86d328079d26f92dfb47d11804740dc97f830f698fe97946bb4a96823dbbe7",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/plot_prego_radius_pair.py": "c7372f44637929ba962c6b99a262f5b6301a28c06a2c78ef471cd1b692a3e9a7",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/plot_prego_fixed_geometry_decoding.py": "7bca3c136adf7a35d90357bd4d9eb5f281a8d915a45e4ea5f4b985a053610287"
+  },
+  "included_counts": {
+    "Leftward": 99,
+    "Rightward": 98
+  },
+  "excluded_original_trials": [
+    128
+  ],
+  "previous_files_unchanged": 409,
+  "outputs": {
+    "figures/geometry_r1_r2_left_right.pdf": "0adf328415780befe0ed67e36b2e9657c5f87d65759bf01931a606185eb6ceec",
+    "figures/geometry_r1_r2_left_right.svg": "2af93469d81e7466f9bb6acfb53c5f6425d549f27d7462df12198ae21d5d78d3",
+    "figures/geometry_r1_r2_left_right.csv": "afcfa39db5c26f8617910a30e02256f3e0bb4bd6f08e996e65ce94f64ae76716",
+    "figures/geometry_r1_r2_left_right.png": "618b23fd35504f26cc9b2af4d56742f3caddff7298797456194a15ef4e0c3973",
+    "figures/geometry_r1_r2_left_right.caption.txt": "af4d10359228b4631d8356dc113742d5fc542dcc79d65841e323e128cac12379",
+    "previews/geometry_r1_r2_left_right.png": "1796c14290f257f4a636c6122c6fef40306aa3e9fc242c942c07fabc661c8d1e",
+    "tables/geometry_r1_r2_left_right_density.npz": "cb670b4dd17b55751d8b2a2d37abff1dff4a08bc17692fd51d75bec3cbde777f",
+    "tables/geometry_r1_r2_left_right_trial_accounting.csv": "dd06529b723f2137ad6a66687cb14f724d04e2aafe8ebcfeac2ceae1148dd205",
+    "tables/geometry_r1_r2_left_right_mapping.csv": "fe76592fa6952868d5feb75d97125d0a8d854450921797252d122d096096bfcc"
+  }
+}

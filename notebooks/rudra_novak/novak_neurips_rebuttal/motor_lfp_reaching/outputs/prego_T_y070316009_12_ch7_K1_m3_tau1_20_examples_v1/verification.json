@@ -1,0 +1,11 @@
+{
+  "n_example_trials": 6,
+  "n_delays": 20,
+  "n_results": 120,
+  "unchanged_source_files": 468,
+  "epochs_reused_exactly": true,
+  "clouds_and_metrics_reproduced": true,
+  "no_decoding": true,
+  "no_pca_reduction": true,
+  "no_new_preprocessing": true
+}

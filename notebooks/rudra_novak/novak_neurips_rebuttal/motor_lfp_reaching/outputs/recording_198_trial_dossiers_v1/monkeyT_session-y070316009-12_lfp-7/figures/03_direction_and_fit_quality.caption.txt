@@ -1,0 +1,1 @@
+Per-class F1 from saved predictions; geometric residual is not decoding error.

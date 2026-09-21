@@ -1,0 +1,1 @@
+Parameters selected using training trials only. Peaks imply candidate modes, not independently proven toroidal topology. Red: selected peaks/delay. Full curves and peak-support values are saved in fold_0.json.

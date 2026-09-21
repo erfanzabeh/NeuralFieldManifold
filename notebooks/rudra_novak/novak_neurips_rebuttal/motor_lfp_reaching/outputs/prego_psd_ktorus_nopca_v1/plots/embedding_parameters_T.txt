@@ -1,0 +1,1 @@
+Selection counts across outer training folds of geometry-evaluable recordings. Folds are not independent biological replicates. K is PSD-derived, m=2K+1, and delay is the first AMI local minimum passing sample-count and delay-map conditioning checks. No PCA.

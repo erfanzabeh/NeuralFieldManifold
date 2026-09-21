@@ -1,0 +1,37 @@
+method,true_direction,predicted_direction,predicted_position,count,prediction_fraction
+geometry,1,1,Upper right,5,0.1515151515151515
+geometry,1,2,Right,8,0.2424242424242424
+geometry,1,3,Lower right,3,0.0909090909090909
+geometry,1,4,Lower left,4,0.1212121212121212
+geometry,1,5,Left,7,0.2121212121212121
+geometry,1,6,Upper left,6,0.1818181818181818
+geometry,2,1,Upper right,5,0.1515151515151515
+geometry,2,2,Right,12,0.3636363636363636
+geometry,2,3,Lower right,3,0.0909090909090909
+geometry,2,4,Lower left,1,0.0303030303030303
+geometry,2,5,Left,4,0.1212121212121212
+geometry,2,6,Upper left,8,0.2424242424242424
+geometry,3,1,Upper right,3,0.0909090909090909
+geometry,3,2,Right,10,0.303030303030303
+geometry,3,3,Lower right,8,0.2424242424242424
+geometry,3,4,Lower left,1,0.0303030303030303
+geometry,3,5,Left,7,0.2121212121212121
+geometry,3,6,Upper left,4,0.1212121212121212
+geometry,4,1,Upper right,5,0.1515151515151515
+geometry,4,2,Right,9,0.2727272727272727
+geometry,4,3,Lower right,7,0.2121212121212121
+geometry,4,4,Lower left,0,0.0
+geometry,4,5,Left,6,0.1818181818181818
+geometry,4,6,Upper left,6,0.1818181818181818
+geometry,5,1,Upper right,5,0.1515151515151515
+geometry,5,2,Right,3,0.0909090909090909
+geometry,5,3,Lower right,4,0.1212121212121212
+geometry,5,4,Lower left,3,0.0909090909090909
+geometry,5,5,Left,17,0.5151515151515151
+geometry,5,6,Upper left,1,0.0303030303030303
+geometry,6,1,Upper right,5,0.1515151515151515
+geometry,6,2,Right,7,0.2121212121212121
+geometry,6,3,Lower right,5,0.1515151515151515
+geometry,6,4,Lower left,6,0.1818181818181818
+geometry,6,5,Left,3,0.0909090909090909
+geometry,6,6,Upper left,7,0.2121212121212121

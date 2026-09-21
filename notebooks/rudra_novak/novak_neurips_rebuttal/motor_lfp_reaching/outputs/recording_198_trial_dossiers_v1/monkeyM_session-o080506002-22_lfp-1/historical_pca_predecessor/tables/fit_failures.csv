@@ -1,0 +1,6 @@
+recording,monkey,analysis,embedding_fold,raw_trial_index,nfev,cost,mse,action
+monkeyM_session-o080506002-22_lfp-1,M,matched_long,0,321,1200,92.99681321203978,0.4617724042126277,training_median_imputation
+monkeyM_session-o080506002-22_lfp-1,M,matched_long,1,321,1200,92.99681321203978,0.4617724042126277,training_median_imputation
+monkeyM_session-o080506002-22_lfp-1,M,matched_long,2,321,1200,92.99681321203978,0.4617724042126277,training_median_imputation
+monkeyM_session-o080506002-22_lfp-1,M,matched_long,3,321,1200,92.99681321203978,0.4617724042126277,training_median_imputation
+monkeyM_session-o080506002-22_lfp-1,M,matched_long,4,321,1200,92.99681321203978,0.4617724042126277,training_median_imputation

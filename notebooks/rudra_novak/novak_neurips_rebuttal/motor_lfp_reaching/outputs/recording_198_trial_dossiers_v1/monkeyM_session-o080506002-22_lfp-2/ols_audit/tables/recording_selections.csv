@@ -1,0 +1,3 @@
+recording,family,monkey,n_valid_folds,modal_p,p_agreement,modal_m,m_agreement,modal_tau,tau_agreement,boundary_folds
+monkeyM_session-o080506002-22_lfp-2,ar,M,5,16,1.0,0,1.0,1,1.0,0
+monkeyM_session-o080506002-22_lfp-2,embedding,M,5,0,1.0,9,1.0,1,1.0,5

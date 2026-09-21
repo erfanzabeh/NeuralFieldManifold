@@ -1,0 +1,3 @@
+monkey,recording,outer_fold,trial_index,original_trial_number,p,m,tau_ms,selection_rule
+M,monkeyM_session-o080430002-12_lfp-1,0,84,56,17,9,1,fold-0 inner-validation AR NMSE nearest animal median; lowest fold-0 test original trial number
+T,monkeyT_session-y070425007-12_lfp-6,0,65,14,16,9,1,fold-0 inner-validation AR NMSE nearest animal median; lowest fold-0 test original trial number

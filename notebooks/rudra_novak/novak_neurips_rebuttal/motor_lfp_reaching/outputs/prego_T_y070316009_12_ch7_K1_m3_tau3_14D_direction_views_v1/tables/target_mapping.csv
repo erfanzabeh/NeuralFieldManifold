@@ -1,0 +1,7 @@
+direction,target_event_code,position,schematic_x,schematic_y
+1,101,Upper right,0.5,0.8660254037844386
+2,102,Right,1.0,0.0
+3,103,Lower right,0.5,-0.8660254037844386
+4,104,Lower left,-0.5,-0.8660254037844386
+5,105,Left,-1.0,0.0
+6,106,Upper left,-0.5,0.8660254037844386

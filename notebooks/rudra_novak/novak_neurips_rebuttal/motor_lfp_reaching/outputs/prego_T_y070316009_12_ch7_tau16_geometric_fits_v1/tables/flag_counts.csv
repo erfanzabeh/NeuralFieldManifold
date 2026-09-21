@@ -1,0 +1,9 @@
+model,flag,count
+one_torus,active_optimizer_bound,37
+one_torus,near_optimizer_bound,58
+one_torus,nearly_circular_orientation,63
+two_torus,active_optimizer_bound,132
+two_torus,collapsed_hole,99
+two_torus,near_optimizer_bound,163
+two_torus,nearly_circular_orientation,76
+two_torus,nonconvergence,1

@@ -1,0 +1,5 @@
+recording,day,difference,monkey,enhanced,baseline
+monkeyM_session-o080506002-22_lfp-2,2008-05-06,-0.0535190161666998,M,torus,power_frequency
+monkeyM_session-o080506002-22_lfp-2,2008-05-06,0.0043717814196432,M,torus,all_bands
+monkeyM_session-o080506002-22_lfp-2,2008-05-06,-0.0452965902687743,M,torus_power_frequency,power_frequency
+monkeyM_session-o080506002-22_lfp-2,2008-05-06,0.0077866088949865,M,torus_all_bands,all_bands

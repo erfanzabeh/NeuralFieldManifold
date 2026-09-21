@@ -1,0 +1,16 @@
+{
+  "wall_seconds": 13.779100106097758,
+  "recordings": [
+    "monkeyM_session-o080509010-19_lfp-1",
+    "monkeyM_session-o080506002-22_lfp-1",
+    "monkeyT_session-y070130005-13_lfp-1",
+    "monkeyT_session-y070316009-12_lfp-7"
+  ],
+  "jobs": 8,
+  "projected_compute_minutes": 4.793297085814629,
+  "provisional_range_minutes": [
+    4.793297085814629,
+    9.586594171629258
+  ],
+  "selection": "median and maximum trial count per animal; no model scores used"
+}

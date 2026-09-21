@@ -1,0 +1,1 @@
+Same label-blind held-out example, monkeyT_session-y070306001-5_lfp-5. Pairwise displays of the original delay coordinates, not PCA scores and not a reduced fitting space. The complete m-dimensional cloud is used in fitting. Lines follow sample time; this short trajectory does not establish full torus phase coverage.

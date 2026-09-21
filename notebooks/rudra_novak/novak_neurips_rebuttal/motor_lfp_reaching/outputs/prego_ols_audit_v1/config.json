@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "fs": 1000,
+  "epoch_samples": 500,
+  "origins": [
+    200,
+    489
+  ],
+  "orders": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "dimensions": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "delays": [
+    1,
+    2,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    40,
+    50,
+    75,
+    100
+  ],
+  "max_span": 200,
+  "inner_folds": 3,
+  "outer_folds": 5,
+  "seed": 20260921,
+  "horizons": [
+    1,
+    10
+  ],
+  "preprocessing": "per-trial detrend, median/MAD, 2-55 Hz zero-phase",
+  "interpretation": "offline prediction of preprocessed signals",
+  "selection": "10ms inner-fold NMSE; one-SE; simpler dimension/order first"
+}

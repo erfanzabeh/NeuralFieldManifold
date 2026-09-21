@@ -1,0 +1,5 @@
+recording,day,difference,monkey,enhanced,baseline
+monkeyM_session-o080506002-22_lfp-2,2008-05-06,-0.0594454478665649,M,ktorus,power_frequency
+monkeyM_session-o080506002-22_lfp-2,2008-05-06,-0.0015546502802217,M,ktorus,all_bands
+monkeyM_session-o080506002-22_lfp-2,2008-05-06,-0.0115904470467852,M,ktorus_power_frequency,power_frequency
+monkeyM_session-o080506002-22_lfp-2,2008-05-06,0.0569674289175597,M,ktorus_all_bands,all_bands

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "window_ms": [
+    -500,
+    0
+  ],
+  "delay": "short",
+  "directions": 6,
+  "embedding_bootstraps": 120,
+  "peak_support": 0.5,
+  "dimension_rule": "2*K+1",
+  "tau_range_samples": [
+    1,
+    100
+  ],
+  "minimum_embedding_points": 300,
+  "maximum_condition": 100.0,
+  "frequency_fit_half_width_hz": 2.0,
+  "fit_max_nfev": 120,
+  "null_permutations": 200,
+  "minimum_trials_per_direction": 15,
+  "geometry_model": "affine_product_of_circles",
+  "pca": false,
+  "pinn": false,
+  "feature_schema": "per_mode_full_gram_upper_triangle_plus_coordinate_rmse_plus_normalized_error",
+  "classifier": "median_imputer_standard_scaler_shrinkage_lda",
+  "source_recordings": 341
+}

@@ -1,0 +1,110 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "n_trials": 198,
+  "n_per_direction": 33,
+  "fs_hz": 1000,
+  "window_ms": [
+    -500,
+    0
+  ],
+  "K": 1,
+  "m": 3,
+  "tau_ms": 3,
+  "points_per_trial": 494,
+  "geometry_columns": [
+    "R1",
+    "R2",
+    "mse",
+    "mean_error",
+    "frac_inside",
+    "normal_x",
+    "normal_y",
+    "normal_z",
+    "u_x",
+    "u_y",
+    "u_z",
+    "v_x",
+    "v_y",
+    "v_z"
+  ],
+  "dimensions": [
+    1,
+    1,
+    2,
+    5,
+    14
+  ],
+  "methods": [
+    "peak_power",
+    "peak_frequency",
+    "power_frequency",
+    "all_bands",
+    "geometry"
+  ],
+  "fitter": "one_torus_fit",
+  "lam": 0.1,
+  "hole_ratio": 0.5,
+  "angular_regularization_harmonics": 3,
+  "max_nfev": 6000,
+  "loss": "huber",
+  "width_feature": false,
+  "pca": false,
+  "pinn": false,
+  "geometry_input": "Frozen detrended, median/MAD-normalized, zero-phase 2-55 Hz epochs; no re-filtering",
+  "spectral_input": "Saved raw pre-GO epochs, linear detrend; no geometry normalization or bandpass",
+  "spectral_peak": {
+    "band_hz": [
+      12,
+      40
+    ],
+    "window": "hamming",
+    "nperseg": 300,
+    "noverlap": 200,
+    "nfft": 10000,
+    "power": "log10 peak PSD",
+    "frequency": "Hz at peak"
+  },
+  "spectral_bands": {
+    "bands_hz": {
+      "delta": [
+        2.0,
+        4.0
+      ],
+      "theta": [
+        4.0,
+        8.0
+      ],
+      "alpha": [
+        8.0,
+        13.0
+      ],
+      "beta": [
+        13.0,
+        30.0
+      ],
+      "low_gamma": [
+        30.0,
+        55.0
+      ]
+    },
+    "window": "hann",
+    "nperseg": 500,
+    "noverlap": 250,
+    "nfft": 10000,
+    "power": "log10 integrated PSD"
+  },
+  "lda": {
+    "imputation": "training median",
+    "scaling": "training StandardScaler",
+    "solver": "lsqr",
+    "shrinkage": "auto"
+  },
+  "folds": "saved five stratified trial folds; no regeneration",
+  "permutations": 1000,
+  "permutation_seed": 52000,
+  "permutation_scheme": "within each saved fold",
+  "bootstraps": 2000,
+  "bootstrap_seed": 42000,
+  "bootstrap_scheme": "class-stratified held-out predictions",
+  "inference": "Exploratory single selected recording; delay visually chosen before this run; conditional intervals"
+}

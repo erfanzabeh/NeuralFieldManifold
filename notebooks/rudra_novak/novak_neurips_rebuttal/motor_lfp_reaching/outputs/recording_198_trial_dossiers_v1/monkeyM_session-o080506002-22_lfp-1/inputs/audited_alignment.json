@@ -1,0 +1,19 @@
+{
+  "recording": "monkeyM_session-o080506002-22_lfp-1",
+  "monkey": "M",
+  "session": "o080506002-22",
+  "day": "2008-05-06",
+  "lfp": "1",
+  "raw_trials": 410,
+  "valid_trials": 410,
+  "go_sample_zero_based": 5000,
+  "old_converted_go_sample": 4500,
+  "start_sample": 4500,
+  "end_sample_exclusive": 5000,
+  "source_pair_index": 168,
+  "source_sha256": "f83fa2a94b1ddb2e6569e95b088d253765c9653b823f4b506a7f409bd2e8792d",
+  "n_trials": 198,
+  "status": "ok",
+  "short_delay_ms": 1000,
+  "sampling_rate_hz": 1000
+}
