@@ -1,0 +1,15 @@
+{
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/run_stage_geometry_decoding.py": "510c8888a9ee42af8790d50d5aeabc24b11cb686ba8a8a592439765f6847314b",
+  "/home/nochen/code/NeuralFieldManifold/NeuralFieldManifold/fits/one_torus.py": "b801df2c0c3f9d373162ecc3941511c8e37b06272a12ea93ee14db5e2d56a8b1",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/stage_geometry_decoding.py": "08fce104de22421fc6f936005bd7b00bac04689124ad2ce73c31c8c569be524b",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/prego_geometric_fits.py": "eb7b1b8a36bc05e9bc3a50d5b15e0cf2953642c368b228d941b70118f537b7a3",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/prego_fixed_geometry_decoding.py": "d5c9f9cf83b9c828b67cbb01a37d8cf4de4e4792065b5f250d5ec653dca1f3aa",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/prego_decoding.py": "f4dc3f5b890874ea08d87cf98ffaee4fc81d534954a5ee1f8eae57bce60aec49",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/motor_lfp_utils.py": "15df7c7e8d20e48b3dedcbd95edcfb71623bfed242788ed55ac4f4174a6e634d",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/convert_motor_lfp.py": "61f803157ea75412396bdb785420a7662cd6af8874781c8ccf0c689c330fb24f",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/select_trace_embedding_parameters.py": "70e1715a5cfb13a8ca1f50cc5a243290bbb3c3b79cd3fafa592f007d479c1a1d",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_decoding_v1/inputs/selected_trials.csv": "22ce063f4e1e46333c2569c6affe5fd08a3f4dc4743797a81a9235cad2f5e7ba",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_decoding_v1/inputs/alignment.json": "a5deb1dbe3dee269d2f711e4c05d796062643de7fc3494c0b29e4cdb9c81981d",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/lfp_converted_data/monkeyT_session-y070316009-12_lfp-7.npz": "44496fb78e75ccd2c39d68a2c83ce090386f26f1ff06cee63278859768038cd4",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/raw_data/MonkeyT.mat": "65e4714be82c009f3d2169bd32585c284fcc3fd59497df145d3cc2cc983cd235"
+}

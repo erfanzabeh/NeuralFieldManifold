@@ -1,0 +1,132 @@
+{
+  "plot_source_sha256": "88a14a0991be647d208274fc33252323c8f49e56c38ea2015e4fac5945697dc5",
+  "exports": [
+    {
+      "file": "distribution_R1.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [
+        "10"
+      ],
+      "sha256": "8e504d916ae797531bdb09f042fd11fbe013b963837e303d06a64911fcd5ca45"
+    },
+    {
+      "file": "distribution_R2.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [
+        "3.0"
+      ],
+      "sha256": "9b4ded1ee86165cdc214cf48ac9c3c9a7c20b01b4d41a1a71b044aec65de3547"
+    },
+    {
+      "file": "distribution_band_half_width.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [
+        "3.0"
+      ],
+      "sha256": "066ff7198962567823ca6585a54c92c0dc8f9abb156e39b42372431a6e02e1d7"
+    },
+    {
+      "file": "distribution_mse.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [
+        "0.032"
+      ],
+      "sha256": "0b51d2646030d9dcb5bf1222b764269ed30fa1b3d179c6dbbcdaa4a66a72895a"
+    },
+    {
+      "file": "distribution_mean_error.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "475b30c6416cc16b63aa7a780731591b87b27b114c8776b9dd2c80cb77d8e19e"
+    },
+    {
+      "file": "distribution_frac_inside.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [
+        "1.25"
+      ],
+      "sha256": "3937f947d9a2cf8be548bb438e9d94105852bcbd416512c8d3b190f96168764a"
+    },
+    {
+      "file": "orientation_normal.png",
+      "pixels": [
+        4860,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "40d3cd1eb9e55e416fd6d39e075206cfe0072a07932f09f6c5c96e7ac9c606f0"
+    },
+    {
+      "file": "orientation_u.png",
+      "pixels": [
+        4860,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "a922e02aa969d2b1cfd05a1bf0bc8f641d4d394602543943ecb3d48b6b1c0df7"
+    },
+    {
+      "file": "orientation_v.png",
+      "pixels": [
+        4860,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "fd241702d2f1b58debf3b84c567d674420d760747983fe3b52cfa5bb7ae1cfac"
+    }
+  ]
+}

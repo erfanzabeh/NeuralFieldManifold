@@ -1,0 +1,694 @@
+{
+  "plot_source_sha256": "a80fe8a3f819df9f9acafb7bdc0358762f9fd49532a6dfbfae3a2b95bba31d74",
+  "exports": [
+    {
+      "file": "distribution_R1.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "8e504d916ae797531bdb09f042fd11fbe013b963837e303d06a64911fcd5ca45"
+    },
+    {
+      "file": "distribution_R2.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "9b4ded1ee86165cdc214cf48ac9c3c9a7c20b01b4d41a1a71b044aec65de3547"
+    },
+    {
+      "file": "distribution_band_half_width.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "066ff7198962567823ca6585a54c92c0dc8f9abb156e39b42372431a6e02e1d7"
+    },
+    {
+      "file": "distribution_mse.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "0b51d2646030d9dcb5bf1222b764269ed30fa1b3d179c6dbbcdaa4a66a72895a"
+    },
+    {
+      "file": "distribution_mean_error.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "475b30c6416cc16b63aa7a780731591b87b27b114c8776b9dd2c80cb77d8e19e"
+    },
+    {
+      "file": "distribution_frac_inside.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "3937f947d9a2cf8be548bb438e9d94105852bcbd416512c8d3b190f96168764a"
+    },
+    {
+      "file": "orientation_normal.png",
+      "pixels": [
+        4860,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "40d3cd1eb9e55e416fd6d39e075206cfe0072a07932f09f6c5c96e7ac9c606f0"
+    },
+    {
+      "file": "orientation_u.png",
+      "pixels": [
+        4860,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "a922e02aa969d2b1cfd05a1bf0bc8f641d4d394602543943ecb3d48b6b1c0df7"
+    },
+    {
+      "file": "orientation_v.png",
+      "pixels": [
+        4860,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "fd241702d2f1b58debf3b84c567d674420d760747983fe3b52cfa5bb7ae1cfac"
+    },
+    {
+      "file": "geometry_trial_6_observed.png",
+      "pixels": [
+        5040,
+        3630
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "e04abe183775c82783eae24cb8b7637491b38cffef3ff98ecd2f6c06c64d08e2"
+    },
+    {
+      "file": "geometry_trial_6_pre_TC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "54a383dcd4ee85300bb8151540bcd7c42d9c65949af4ac984f84ae2f93158a23"
+    },
+    {
+      "file": "geometry_trial_6_post_TC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "f2302860773c976ad68ac01d09e4346e88445501239521f4c392fc4380a91a69"
+    },
+    {
+      "file": "geometry_trial_6_pre_SC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "6cdbcd3451dd2b8b79b85d21d42cfb5003c6776541bc40db3971feaa0039ca59"
+    },
+    {
+      "file": "geometry_trial_6_post_SC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "68373e9c7464cc3828733ddb8ad0053291cadcd7645647aca6d68d25603a417e"
+    },
+    {
+      "file": "geometry_trial_6_pre_GO_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "630ded4d577ef9383d617abdad7846fbf9254c13a60b5c93cb95ff3f0efab52e"
+    },
+    {
+      "file": "geometry_trial_6_post_GO_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "67b2db97b2e76c36ce0c767bd6baee51a6c9407574f5fe69802f2784272f3dd0"
+    },
+    {
+      "file": "geometry_trial_6_fitted.png",
+      "pixels": [
+        5040,
+        3630
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "dec4de0ffa2a704b31209164865c4e223c697158495015fc6ce7f5ab72d8412c"
+    },
+    {
+      "file": "geometry_trial_6_pre_TC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "2b389cae7e6cb88ab627d9e83749cdfb3535864713f6e57b5c0171172bf8295f"
+    },
+    {
+      "file": "geometry_trial_6_post_TC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "6fed5c5430ee7170fedd05ad593ba488524e271e3b5621cf8ebd6105f3e796fb"
+    },
+    {
+      "file": "geometry_trial_6_pre_SC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "2fb5b416787ee4a748ae1c152a207eedd33f0b04be571d2e3d2628495c46e028"
+    },
+    {
+      "file": "geometry_trial_6_post_SC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "376ac55b01209c1f18596e1f64eabcdccab8fb91d12eccc66c5c3c4f8c966025"
+    },
+    {
+      "file": "geometry_trial_6_pre_GO_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "4dd06f758c47f6be3f52e7477865f803813febec8fd86cef5605e3670b2fa015"
+    },
+    {
+      "file": "geometry_trial_6_post_GO_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "3e20a8f790c75dd4cc8469f08345ecb4871588e709d4e3b9c66e1290f9aea423"
+    },
+    {
+      "file": "geometry_trial_9_observed.png",
+      "pixels": [
+        5040,
+        3630
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "1e97003c281b62eb630b5a58598131d77e39d69314dd811aed7accee4f023b21"
+    },
+    {
+      "file": "geometry_trial_9_pre_TC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "2d4dee16b2400b648c4c44accbb954c15163c85bd9ead877c968990272287bb6"
+    },
+    {
+      "file": "geometry_trial_9_post_TC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "f0f0022d50fdbe277ab501427a31e12bbc5fd087d0337b69186ad279107c5ade"
+    },
+    {
+      "file": "geometry_trial_9_pre_SC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "f1258e60b416892321d2ea0712316aa5c4bea4c3ebc76e59e8d38823caa63812"
+    },
+    {
+      "file": "geometry_trial_9_post_SC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "f0ef9db8ed72d3a43265ac7975f2e835c3876edea8c440572c4ab385cb977d38"
+    },
+    {
+      "file": "geometry_trial_9_pre_GO_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "5b85d2fb6a8ff44f03d33c039cd581ffec7c8d1d3e1272c085d4a55b787726f7"
+    },
+    {
+      "file": "geometry_trial_9_post_GO_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "a01755fce48a9a1a82d8e6312564c2b92e60618a4aaff3d4b04f6104300bb123"
+    },
+    {
+      "file": "geometry_trial_9_fitted.png",
+      "pixels": [
+        5040,
+        3630
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "f8c27db3775b506fae9b793df85da7be2d639363bd0abb8f0cda273caad5cb52"
+    },
+    {
+      "file": "geometry_trial_9_pre_TC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "d18191312ab9e1380e8a259142ddc43082deb6a13df3dd0883bdf6eefa6f0e82"
+    },
+    {
+      "file": "geometry_trial_9_post_TC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "d241819c50d8424193f7b7663def76cffc049ab0fdbd8545a4b7cd82f07511c0"
+    },
+    {
+      "file": "geometry_trial_9_pre_SC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "ba592193a6a53f16a71998137748f04b76ed8ff5fe165a11ee5ad405de1d3e33"
+    },
+    {
+      "file": "geometry_trial_9_post_SC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "1a3cf6f2b5ae1e1f5de7fb52ef550f5005854d85347f571ceaa9c167fdf9ddf6"
+    },
+    {
+      "file": "geometry_trial_9_pre_GO_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "c336714d8ea0deac7c843373b22f6d32cab52c016091a356a745c417da379cad"
+    },
+    {
+      "file": "geometry_trial_9_post_GO_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "343ab963df8d168597dec5409cb9d879acebf2b1ce99664491ef8edfb215b349"
+    },
+    {
+      "file": "geometry_trial_10_observed.png",
+      "pixels": [
+        5040,
+        3630
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "a84c4c1500ab13804696a4a96bb96b22e42aaf758324ba247e9ee1fc4eb0a8d2"
+    },
+    {
+      "file": "geometry_trial_10_pre_TC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "9a39b25c4c46f3a324896198f5b66b4216dcc13dedf86d4cde3a0a2a630be784"
+    },
+    {
+      "file": "geometry_trial_10_post_TC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "7e1d034ed38fa7cab23059452b274c53c3715b039434258d339e20ede97f9aee"
+    },
+    {
+      "file": "geometry_trial_10_pre_SC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "efb248dd4769e4d3486e1d668edca0b61a17b4bd6d9afd4165a8af31700921ab"
+    },
+    {
+      "file": "geometry_trial_10_post_SC_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "bfcc975e689649ffaa2be6226ea2c37f7dbf8854c1d300077db3e1dbf8ebf544"
+    },
+    {
+      "file": "geometry_trial_10_pre_GO_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "a09c69e8399524355f1ca2bdd1ae35f7ac6e02bd066becf4028992217f36a51f"
+    },
+    {
+      "file": "geometry_trial_10_post_GO_observed.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "bac0376d40a0aab48e017566e78668b84754400fd3b3d83359e55eeb3448f65a"
+    },
+    {
+      "file": "geometry_trial_10_fitted.png",
+      "pixels": [
+        5040,
+        3630
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "9ee863ec257023f72c17108315768a77d44ed915d7e11d1afd9281fadae1ac96"
+    },
+    {
+      "file": "geometry_trial_10_pre_TC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "89af077a80c64dfd9a270866598193d9b17d161780d9abcfce4d06eae61c9fc8"
+    },
+    {
+      "file": "geometry_trial_10_post_TC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "c00588921e5f498bcdda55eebf786f8b4c9b4b74c9dec57a5d20585b61ff1999"
+    },
+    {
+      "file": "geometry_trial_10_pre_SC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "630da00c53f29c72d86cf69c815158e7eb7b40d6fc0304acbe439544051569a6"
+    },
+    {
+      "file": "geometry_trial_10_post_SC_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "1b2a0d68315b0017c9dfd6fee785aca161456a87ece0ec24c71277d7d6043957"
+    },
+    {
+      "file": "geometry_trial_10_pre_GO_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "f47582eb338f96b07325f23e7d104c246dd93553d92dc1925e00a1d4456d8331"
+    },
+    {
+      "file": "geometry_trial_10_post_GO_fitted.png",
+      "pixels": [
+        1800,
+        1740
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "d9bc64c7e65ec950d8b55a9ddab9f96b4f0c5030309320df90c44bc762fdae93"
+    },
+    {
+      "file": "stage_confusion.png",
+      "pixels": [
+        2460,
+        2190
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "b998fcd0e85cd0f2000beda06f83f768c1ed08314fa406c2861ec8d93e65d557"
+    },
+    {
+      "file": "stage_f1.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "40134a9d91b754ccb0caeee7d025d6442b8d7d8c2b7444be197a41e05bfd4c2f"
+    }
+  ]
+}

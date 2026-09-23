@@ -1,0 +1,11 @@
+{
+  "row_index": 30,
+  "original_trial_number": 569,
+  "cloud_sha256": "330ed1fe64c8abc9a5a18bcd7647085c48f8bfadd177bdbf82a8106bf9b95478",
+  "config_sha256": "a2989018f8ce11accabe1d566cda1902667052b07643ca1f4132f36bb75ffeda",
+  "n_points": 494,
+  "status": "success",
+  "reason": "",
+  "diagram_sha256": "50c9b9aa71a516275f36eff845b50c3355f7e8b5ea82047b6d1eb70310afd32d",
+  "elapsed_seconds": 16.49908165598754
+}

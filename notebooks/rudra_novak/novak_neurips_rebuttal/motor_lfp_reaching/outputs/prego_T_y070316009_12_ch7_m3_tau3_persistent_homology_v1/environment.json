@@ -1,0 +1,11 @@
+{
+  "python": "3.11.15",
+  "machine": "x86_64",
+  "packages": {
+    "ripser": "0.6.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0"
+  }
+}

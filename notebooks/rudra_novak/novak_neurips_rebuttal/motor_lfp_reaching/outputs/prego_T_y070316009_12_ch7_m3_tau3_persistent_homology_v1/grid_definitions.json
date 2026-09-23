@@ -1,0 +1,14 @@
+{
+  "H0": {
+    "max_distance": 1.097337007522583,
+    "fallback_to_H0": false
+  },
+  "H1": {
+    "max_distance": 2.6949431896209717,
+    "fallback_to_H0": false
+  },
+  "H2": {
+    "max_distance": 2.5411205291748047,
+    "fallback_to_H0": false
+  }
+}

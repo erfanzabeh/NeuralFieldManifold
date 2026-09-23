@@ -1,0 +1,7 @@
+stage_name,n_windows,usable,unusable
+pre_TC,198,197,1
+post_TC,198,195,3
+pre_SC,198,196,2
+post_SC,198,198,0
+pre_GO,198,196,2
+post_GO,198,195,3

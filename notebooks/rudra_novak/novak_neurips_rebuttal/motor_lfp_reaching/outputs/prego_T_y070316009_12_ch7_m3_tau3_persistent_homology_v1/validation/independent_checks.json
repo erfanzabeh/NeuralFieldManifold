@@ -1,0 +1,184 @@
+{
+  "passed": true,
+  "trials": 198,
+  "successes": 198,
+  "failures": 0,
+  "radius_trials": 197,
+  "csv_intervals": 129862,
+  "betti_rows": 304128,
+  "png_checks": [
+    {
+      "name": "loop_lifetime",
+      "width": 2160,
+      "height": 1740,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "loop_lifetime_normalized",
+      "width": 2160,
+      "height": 1740,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "radius_r1",
+      "width": 2160,
+      "height": 1740,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "radius_r2",
+      "width": 2160,
+      "height": 1740,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "betti_h0",
+      "width": 2160,
+      "height": 1740,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "betti_h1",
+      "width": 2160,
+      "height": 1740,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "betti_h2",
+      "width": 2160,
+      "height": 1740,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "geometry_direction_1",
+      "width": 2160,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "persistence_direction_1",
+      "width": 1980,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "geometry_direction_2",
+      "width": 2160,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "persistence_direction_2",
+      "width": 1980,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "geometry_direction_3",
+      "width": 2160,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "persistence_direction_3",
+      "width": 1980,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "geometry_direction_4",
+      "width": 2160,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "persistence_direction_4",
+      "width": 1980,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "geometry_direction_5",
+      "width": 2160,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "persistence_direction_5",
+      "width": 1980,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "geometry_direction_6",
+      "width": 2160,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "name": "persistence_direction_6",
+      "width": 1980,
+      "height": 1950,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    }
+  ],
+  "protected_files_unchanged": 25822,
+  "independent_event_count_validation": true
+}

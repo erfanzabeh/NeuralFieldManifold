@@ -1,0 +1,22 @@
+{
+  "distance": 0.22000855207443237,
+  "objective": "abs(mean_1-mean_4)+abs(mean_2-mean_5)+abs(mean_3-mean_6)",
+  "score": 11.121212121212121,
+  "n_thresholds": 61115,
+  "selection": "post_hoc_exploratory",
+  "search_domain": "All nonnegative distances; changes at every saved H1 birth/death event.",
+  "tie_rule": "Smallest distance attaining the exact maximum.",
+  "maximizing_intervals": [
+    {
+      "start_inclusive": 0.22000855207443237,
+      "end_exclusive": 0.2200101912021637
+    },
+    {
+      "start_inclusive": 0.22001203894615173,
+      "end_exclusive": 0.2200136035680771
+    }
+  ],
+  "reference_distance": 0.23,
+  "reference_score": 6.45454545454546,
+  "n_trials": 198
+}

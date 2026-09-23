@@ -1,0 +1,7 @@
+true_stage,pre_TC,post_TC,pre_SC,post_SC,pre_GO,post_GO
+pre_TC,48,31,26,22,30,41
+post_TC,28,35,45,24,43,23
+pre_SC,28,26,59,28,39,18
+post_SC,34,12,29,46,20,57
+pre_GO,32,27,51,27,37,24
+post_GO,23,1,3,25,3,143

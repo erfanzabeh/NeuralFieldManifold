@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "trials": 198,
+  "windows": 1188,
+  "points_per_cloud": 294,
+  "features": 15,
+  "protected_files_unchanged": 26554,
+  "fit_checkpoint_count": 1188,
+  "usable_fits": 1177,
+  "permutation_count": 1000,
+  "bootstrap_count": 2000,
+  "checks": [
+    "exact raw event slices",
+    "direct observed delayed coordinates",
+    "native half-width",
+    "saved folds grouped by trial",
+    "training-only imputation and scaling",
+    "saved models reproduce predictions",
+    "all null scores reproduce predictions",
+    "three null refits reproduced",
+    "all clustered bootstrap scores reproduced",
+    "native 3D fit distances reproduced",
+    "protected files and inputs unchanged"
+  ]
+}

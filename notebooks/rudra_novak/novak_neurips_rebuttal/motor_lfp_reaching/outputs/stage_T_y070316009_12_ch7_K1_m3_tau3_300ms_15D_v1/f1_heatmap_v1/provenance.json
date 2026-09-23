@@ -1,0 +1,26 @@
+{
+  "input_hashes": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_v1/heldout_predictions.npz": "2e1f2bafa5d770813c227dddef0ee183ed55035e0c2a784fdc4eadac38b753db",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_v1/tables/per_stage_f1.csv": "fedc811fea66c3f4bfe5d91eb0573c829c817cf67bbb8ea09f5bd09b305e4fc3",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_v1/config.json": "9e99584311a03f944b3c93d1d5e1692699450d643c7885e86e39499a67be0ec8",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_v1/tables/summary.csv": "8a18f2837b2891126f35791d2c276e278190ee85737af9947b9c41dc2ffdc6dd"
+  },
+  "source_sha256": "ea580f49f0745382c50cc37eec24df96507ea678f6544a6e2def7d509cecf1cd",
+  "inputs_unchanged": true,
+  "sklearn_f1_verified": true,
+  "exports": [
+    {
+      "file": "stage_f1_heatmap.png",
+      "pixels": [
+        3720,
+        960
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "120fdf606d5962fcc2329cc85a0197851028c44b39e58100917bba85e2892679"
+    }
+  ]
+}

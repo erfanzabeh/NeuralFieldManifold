@@ -1,0 +1,31 @@
+{
+  "plot_source_sha256": "88a14a0991be647d208274fc33252323c8f49e56c38ea2015e4fac5945697dc5",
+  "exports": [
+    {
+      "file": "stage_confusion.png",
+      "pixels": [
+        2460,
+        2190
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "b998fcd0e85cd0f2000beda06f83f768c1ed08314fa406c2861ec8d93e65d557"
+    },
+    {
+      "file": "stage_f1.png",
+      "pixels": [
+        2580,
+        1830
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "sha256": "40134a9d91b754ccb0caeee7d025d6442b8d7d8c2b7444be197a41e05bfd4c2f"
+    }
+  ]
+}

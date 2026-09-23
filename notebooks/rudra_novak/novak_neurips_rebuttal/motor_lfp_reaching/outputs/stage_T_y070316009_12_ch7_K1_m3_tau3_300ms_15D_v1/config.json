@@ -1,0 +1,97 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "n_trials": 198,
+  "n_windows": 1188,
+  "fs_hz": 1000,
+  "stage_names": [
+    "pre_TC",
+    "post_TC",
+    "pre_SC",
+    "post_SC",
+    "pre_GO",
+    "post_GO"
+  ],
+  "event_codes": {
+    "TC": 202,
+    "SC": 204,
+    "GO": 207
+  },
+  "time_indexing": "MATLAB one-based samples converted to zero-based; half-open windows",
+  "window_offsets_ms": [
+    [
+      -300,
+      0
+    ],
+    [
+      0,
+      300
+    ]
+  ],
+  "samples_per_window": 300,
+  "m": 3,
+  "tau_samples": 3,
+  "tau_ms": 3,
+  "points_per_cloud": 294,
+  "preprocessing": {
+    "detrend": "linear",
+    "normalization": "per-window median/MAD; std fallback",
+    "filter": "fourth-order Butterworth SOS, sosfiltfilt default odd padding",
+    "band_hz": [
+      2,
+      55
+    ],
+    "dtype": "float32 after filtering"
+  },
+  "fitter": {
+    "name": "one_torus_fit",
+    "K_assumed": 1,
+    "lam": 0.1,
+    "hole_ratio": 0.5,
+    "n_regularization_harmonics": 3,
+    "loss": "huber",
+    "max_nfev": 6000,
+    "initialization": "native full-dimensional SVD; no coordinate reduction"
+  },
+  "feature_columns": [
+    "R1",
+    "R2",
+    "band_half_width",
+    "mse",
+    "mean_error",
+    "frac_inside",
+    "normal_x",
+    "normal_y",
+    "normal_z",
+    "u_x",
+    "u_y",
+    "u_z",
+    "v_x",
+    "v_y",
+    "v_z"
+  ],
+  "n_features": 15,
+  "half_width_definition": "(R1_out-R1_in+R2_out-R2_in)/4",
+  "folds": "saved trial assignments; all six stages grouped by trial",
+  "classifier": {
+    "imputation": "training median",
+    "scale": "training StandardScaler",
+    "solver": "lsqr",
+    "shrinkage": "auto"
+  },
+  "permutations": 1000,
+  "permutation_seed": 52000,
+  "permutation_scheme": "stage labels within trial",
+  "bootstraps": 2000,
+  "bootstrap_seed": 42000,
+  "bootstrap_scheme": "whole trials stratified by reach direction, all six windows retained",
+  "example_original_trials": [
+    6,
+    9,
+    10
+  ],
+  "pca": false,
+  "betti": false,
+  "pinn": false,
+  "parameter_selection": false,
+  "spectral_features": false
+}

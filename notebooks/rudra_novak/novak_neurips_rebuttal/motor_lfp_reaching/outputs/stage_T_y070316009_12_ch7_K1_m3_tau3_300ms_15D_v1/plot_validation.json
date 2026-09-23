@@ -1,0 +1,486 @@
+{
+  "passed": true,
+  "n_pngs": 53,
+  "all_feature_points_and_quartiles_reproduced": true,
+  "png_checks": [
+    {
+      "file": "distribution_R1.png",
+      "nonwhite_fraction": 0.07581882492481044,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "distribution_R2.png",
+      "nonwhite_fraction": 0.07531431355106537,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "distribution_band_half_width.png",
+      "nonwhite_fraction": 0.07894205108654213,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "distribution_mse.png",
+      "nonwhite_fraction": 0.07369170161392807,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "distribution_mean_error.png",
+      "nonwhite_fraction": 0.07425784724869743,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "distribution_frac_inside.png",
+      "nonwhite_fraction": 0.046529842843224464,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "orientation_normal.png",
+      "nonwhite_fraction": 0.027944633650253063,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "orientation_u.png",
+      "nonwhite_fraction": 0.02852514072182016,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "orientation_v.png",
+      "nonwhite_fraction": 0.027726928716711605,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_observed.png",
+      "nonwhite_fraction": 0.028016091652455288,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_pre_TC_observed.png",
+      "nonwhite_fraction": 0.026880906768837802,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_post_TC_observed.png",
+      "nonwhite_fraction": 0.028050127713920816,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_pre_SC_observed.png",
+      "nonwhite_fraction": 0.028052681992337163,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_post_SC_observed.png",
+      "nonwhite_fraction": 0.0290389527458493,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_pre_GO_observed.png",
+      "nonwhite_fraction": 0.026055555555555554,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_post_GO_observed.png",
+      "nonwhite_fraction": 0.024985312899106004,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_fitted.png",
+      "nonwhite_fraction": 0.03223867462503826,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_pre_TC_fitted.png",
+      "nonwhite_fraction": 0.030589080459770115,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_post_TC_fitted.png",
+      "nonwhite_fraction": 0.0319757343550447,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_pre_SC_fitted.png",
+      "nonwhite_fraction": 0.033164112388250316,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_post_SC_fitted.png",
+      "nonwhite_fraction": 0.034211366538952744,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_pre_GO_fitted.png",
+      "nonwhite_fraction": 0.030208492975734354,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_6_post_GO_fitted.png",
+      "nonwhite_fraction": 0.027455619412515963,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_observed.png",
+      "nonwhite_fraction": 0.026315263019808473,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_pre_TC_observed.png",
+      "nonwhite_fraction": 0.025530970625798212,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_post_TC_observed.png",
+      "nonwhite_fraction": 0.02751309067688378,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_pre_SC_observed.png",
+      "nonwhite_fraction": 0.02364176245210728,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_post_SC_observed.png",
+      "nonwhite_fraction": 0.025442528735632183,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_pre_GO_observed.png",
+      "nonwhite_fraction": 0.026793422733077905,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_post_GO_observed.png",
+      "nonwhite_fraction": 0.024287994891443166,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_fitted.png",
+      "nonwhite_fraction": 0.02992030696576151,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_pre_TC_fitted.png",
+      "nonwhite_fraction": 0.029488505747126435,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_post_TC_fitted.png",
+      "nonwhite_fraction": 0.030249361430395912,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_pre_SC_fitted.png",
+      "nonwhite_fraction": 0.02613793103448276,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_post_SC_fitted.png",
+      "nonwhite_fraction": 0.02804310344827586,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_pre_GO_fitted.png",
+      "nonwhite_fraction": 0.03229565772669221,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_9_post_GO_fitted.png",
+      "nonwhite_fraction": 0.027956577266922095,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_observed.png",
+      "nonwhite_fraction": 0.027331649831649832,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_pre_TC_observed.png",
+      "nonwhite_fraction": 0.026653895274584928,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_post_TC_observed.png",
+      "nonwhite_fraction": 0.028262771392081738,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_pre_SC_observed.png",
+      "nonwhite_fraction": 0.025649106002554278,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_post_SC_observed.png",
+      "nonwhite_fraction": 0.02636015325670498,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_pre_GO_observed.png",
+      "nonwhite_fraction": 0.030165389527458494,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_post_GO_observed.png",
+      "nonwhite_fraction": 0.021956577266922093,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_fitted.png",
+      "nonwhite_fraction": 0.031131116358389086,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_pre_TC_fitted.png",
+      "nonwhite_fraction": 0.030463282247765008,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_post_TC_fitted.png",
+      "nonwhite_fraction": 0.03223499361430396,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_pre_SC_fitted.png",
+      "nonwhite_fraction": 0.02884514687100894,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_post_SC_fitted.png",
+      "nonwhite_fraction": 0.031102171136653894,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_pre_GO_fitted.png",
+      "nonwhite_fraction": 0.035316091954022986,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "geometry_trial_10_post_GO_fitted.png",
+      "nonwhite_fraction": 0.02316698595146871,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "stage_confusion.png",
+      "nonwhite_fraction": 0.3876253851579612,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    },
+    {
+      "file": "stage_f1.png",
+      "nonwhite_fraction": 0.01864637607489304,
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "edge_clear": true
+    }
+  ],
+  "minimum_configured_font_points": 8,
+  "visual_review_sheets": "inspection/contact_*.png"
+}
