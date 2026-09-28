@@ -1,0 +1,17 @@
+{
+  "trials": 198,
+  "windows": 1188,
+  "exact_three_trial_reproduction": true,
+  "failures": [
+    {
+      "trial_index": 79,
+      "reason": "Nonpositive/nonfinite trial envelope; no clipping or fallback"
+    },
+    {
+      "trial_index": 107,
+      "reason": "Nonpositive/nonfinite trial envelope; no clipping or fallback"
+    }
+  ],
+  "finite_windows": 1176,
+  "offline": true
+}

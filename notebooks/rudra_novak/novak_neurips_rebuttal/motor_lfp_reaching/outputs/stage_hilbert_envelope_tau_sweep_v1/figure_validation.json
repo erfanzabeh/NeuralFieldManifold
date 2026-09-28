@@ -1,0 +1,39 @@
+{
+  "pngs": {
+    "ami_delay_selection.png": [
+      3360,
+      1680
+    ],
+    "stage_f1_tau_heatmap.png": [
+      4800,
+      1620
+    ],
+    "tau_21_feature_comparison.png": [
+      4920,
+      1920
+    ],
+    "tau_21_per_stage_f1.png": [
+      3120,
+      1740
+    ],
+    "tau_21_recall_confusion.png": [
+      2460,
+      2160
+    ],
+    "tau_23_feature_comparison.png": [
+      4920,
+      1920
+    ],
+    "tau_23_per_stage_f1.png": [
+      3120,
+      1740
+    ],
+    "tau_23_recall_confusion.png": [
+      2460,
+      2160
+    ]
+  },
+  "plotted_scores_match_predictions": true,
+  "plotted_intervals_match_bootstrap": true,
+  "plotting_invokes_no_fitting_ami_or_decoding": true
+}

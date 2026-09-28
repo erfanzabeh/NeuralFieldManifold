@@ -1,0 +1,8 @@
+{
+  "scope": "pooled",
+  "bins": 64,
+  "n_windows": 1176,
+  "selected_tau_ms": 23,
+  "lower_edge": -2191.127084147344,
+  "upper_edge": 2210.050740117421
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "training_fold_1",
+  "bins": 48,
+  "n_windows": 936,
+  "selected_tau_ms": 23,
+  "lower_edge": -2160.323222943992,
+  "upper_edge": 2210.0991745796186
+}

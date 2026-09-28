@@ -1,0 +1,10 @@
+{
+  "tau_ms": 23,
+  "permutation_p": 0.000999000999000999,
+  "null_median": 0.16257931940333775,
+  "sensitivity": {
+    "complete_trials": 121,
+    "macro_f1": 0.30122476464376874
+  },
+  "inference": "fixed-delay descriptive; no correction for tau selection"
+}

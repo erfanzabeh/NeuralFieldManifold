@@ -1,0 +1,11 @@
+{
+  "trials": 198,
+  "windows": 1188,
+  "delays": 25,
+  "all_clouds_and_checkpoints_verified": true,
+  "all_sweep_scores_reproduced": true,
+  "train_only_imputation_verified": true,
+  "selected_null_refits_verified": true,
+  "protected_results_unchanged": true,
+  "sources_unchanged": true
+}

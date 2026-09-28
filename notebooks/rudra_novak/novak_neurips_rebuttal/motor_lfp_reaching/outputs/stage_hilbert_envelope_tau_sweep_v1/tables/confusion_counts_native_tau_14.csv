@@ -1,0 +1,7 @@
+,pre_TC,post_TC,pre_SC,post_SC,pre_GO,post_GO
+pre_TC,43,37,26,36,35,21
+post_TC,32,47,25,25,55,14
+pre_SC,29,37,22,34,63,13
+post_SC,21,22,13,62,25,55
+pre_GO,14,40,42,31,64,7
+post_GO,1,5,4,36,17,135
