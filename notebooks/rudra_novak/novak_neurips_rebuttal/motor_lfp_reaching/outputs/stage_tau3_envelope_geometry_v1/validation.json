@@ -1,0 +1,52 @@
+{
+  "trials": [
+    6,
+    9,
+    10
+  ],
+  "stages_per_trial": 6,
+  "windows": 18,
+  "points_per_cloud": 294,
+  "saved_mad_signals_and_clouds_exact": true,
+  "raw_window_identity_verified": true,
+  "cue_offset_anchors_verified": true,
+  "no_envelope_clipping_or_fallback": true,
+  "whole_trial_envelope_positive": true,
+  "amplitude_scaling_test_passed": true,
+  "previous_results_unchanged": true,
+  "fitter_called": false,
+  "decoder_called": false,
+  "ripser_called": false,
+  "pca_called": false,
+  "exports": [
+    {
+      "name": "envelope_geometry_trial_6.png",
+      "sha256": "31d2710640400b74e19396ed9452386aabb71d06906611107f85d7d261d097c1"
+    },
+    {
+      "name": "mad_vs_envelope_trial_6.png",
+      "sha256": "6c8380b33dceca8d9c6b687db08b621008eafe84cde5a570fd1c1938234fc62c"
+    },
+    {
+      "name": "envelope_geometry_trial_9.png",
+      "sha256": "b091b070039da29801b4a62337d285553b15fc05f098bedb9f35eb1d20c5aede"
+    },
+    {
+      "name": "mad_vs_envelope_trial_9.png",
+      "sha256": "8d5aa456d0562e612c235fb590e25b5a1c23262eabdd85fb3956f8ab605827ef"
+    },
+    {
+      "name": "envelope_geometry_trial_10.png",
+      "sha256": "4184939857fca156698669f8facd6c22815f5266139720dd64107f2edd36a63d"
+    },
+    {
+      "name": "mad_vs_envelope_trial_10.png",
+      "sha256": "cbdd139ee2aee62f5ef5ffa12bb65eda534fb0da8cb5853ca9fe5599ee487500"
+    }
+  ],
+  "source_sha256": "dce719db629cb4e814dd4df5b18bc5c8fd12f023cb6d6e654cff0a803a8b55f2",
+  "plot_only_processing_blocked": true,
+  "plot_only_png_hashes_exact": true,
+  "exported_png_dpi_verified": true,
+  "all_pngs_visually_inspected": true
+}

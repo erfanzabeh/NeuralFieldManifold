@@ -1,0 +1,146 @@
+[
+  {
+    "file": "geometry_all_15/pca.png",
+    "height_px": 2760,
+    "sha256": "a0f63545789ca8a7355c8f7342a9dddb976900d879fa143e18688300ab32cd8c",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_all_15/lda.png",
+    "height_px": 2760,
+    "sha256": "0471413fddfb596bf42553574ce45bda1f5f5770a29caabbcdbb39715a80ae8d",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_all_15/umap.png",
+    "height_px": 2760,
+    "sha256": "566e0ba3964dcdeb34f9a36f835e7e34464862c3a9669dac5c465c904b11dd68",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_radii_width_3/pca.png",
+    "height_px": 2760,
+    "sha256": "b6ce178a40f1b1bbd99df0e6b02ab0f1eeb13e52f77ab6439caf872b602d15a0",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_radii_width_3/lda.png",
+    "height_px": 2760,
+    "sha256": "bbb0abd762f2c223b05d19b3502d8b6bffe6f7384d235dc4e1f3909233744619",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_radii_width_3/umap.png",
+    "height_px": 2760,
+    "sha256": "4227ba0e86c553aa62f28c5abc87b1b6a08c95128bf460b2174d0e9cdf04a446",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_orientation_9/pca.png",
+    "height_px": 2760,
+    "sha256": "3788a37373c6c99f5251672a96391882ea80dac29dd0cc8c71ba3031f084f4a1",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_orientation_9/lda.png",
+    "height_px": 2760,
+    "sha256": "aea42272abd8a530cf97cdd2f3449deaaab9a227d5f8ad957f39b7e90d3db0ec",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_orientation_9/umap.png",
+    "height_px": 2760,
+    "sha256": "8ffca9eb5eb3dc59e8704c8b85198e5658432b2aba02c73841998ac5033d2f4d",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_fit_quality_3/pca.png",
+    "height_px": 2760,
+    "sha256": "480b6d2a82029a70d2011700d7a92bdff359930fab1d797ce38ed76ac0d49192",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_fit_quality_3/lda.png",
+    "height_px": 2760,
+    "sha256": "9d0505178475230df64de7f04cf16329292de93bfecfb277ae4cfe0e75a9cd0e",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_fit_quality_3/umap.png",
+    "height_px": 2760,
+    "sha256": "eb431528cbaafc4d4d4f3c37496e1c75aae957dec29f8a823ab762ffa4eee0d8",
+    "width_px": 3810
+  },
+  {
+    "file": "betti_raw_3/pca.png",
+    "height_px": 2760,
+    "sha256": "d011774419c51c737998e562b97c116db35162865b5138cac8c76e0afaf47f81",
+    "width_px": 3810
+  },
+  {
+    "file": "betti_raw_3/lda.png",
+    "height_px": 2760,
+    "sha256": "c32830af99f413300fc79836045443fcfd1d469dddd3087b0fe3ae8dc90e37bd",
+    "width_px": 3810
+  },
+  {
+    "file": "betti_raw_3/umap.png",
+    "height_px": 2760,
+    "sha256": "f4cf657923e74b2e1e8e159e136d5f88f22c8ee55ade685bd8f8db2c76df7542",
+    "width_px": 3810
+  },
+  {
+    "file": "betti_rms_normalized_3/pca.png",
+    "height_px": 2760,
+    "sha256": "7f0385cc2a0d3366b3e649f0faa843e6e37290575e62afc0127521139043c708",
+    "width_px": 3810
+  },
+  {
+    "file": "betti_rms_normalized_3/lda.png",
+    "height_px": 2760,
+    "sha256": "ffa7aeb90b423414809dd1d7d79ba594d5b7e09fbc074ab972de8002ae1fe236",
+    "width_px": 3810
+  },
+  {
+    "file": "betti_rms_normalized_3/umap.png",
+    "height_px": 2760,
+    "sha256": "d6e0a951e744f82aa1ee7ef129959304d37d7bde9c455c6a3be61d8f3312aa00",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_plus_betti_raw_18/pca.png",
+    "height_px": 2760,
+    "sha256": "6be0ee1104baf9bc6c33a2965c6309248b052e78c36661dd5128be3ca2f4a5a7",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_plus_betti_raw_18/lda.png",
+    "height_px": 2760,
+    "sha256": "fec96d03da29e3013df38368d43fe1b6686dbfeff69b4793ead7aa9719f59ac5",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_plus_betti_raw_18/umap.png",
+    "height_px": 2760,
+    "sha256": "060a9d6e2f79dad54da5ced14e65046606a2d91408e8e0a6609b4bbcd594a6c2",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_plus_betti_rms_normalized_18/pca.png",
+    "height_px": 2760,
+    "sha256": "7a9040d70e7f49ba8733f654e36a5925ba306cd8019db9994adc16f9580cd250",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_plus_betti_rms_normalized_18/lda.png",
+    "height_px": 2760,
+    "sha256": "74d313ff10f94efa3b6104a3dc28a01732522a2ac01d1f2f3961e5053b5d27a7",
+    "width_px": 3810
+  },
+  {
+    "file": "geometry_plus_betti_rms_normalized_18/umap.png",
+    "height_px": 2760,
+    "sha256": "e79bc4f8651bdee95627ddd6d5ea0fc43e510c2c456e7d5dbdf17b5b9e61b5b2",
+    "width_px": 3810
+  }
+]

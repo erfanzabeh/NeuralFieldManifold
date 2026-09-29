@@ -1,0 +1,66 @@
+[
+  {
+    "file": "sc_radii_width.png",
+    "pixels": [
+      5613,
+      3273
+    ],
+    "sha256": "ca572b44f6184cec947aed6339182c40eff097fb51801c8c3354569342c58160"
+  },
+  {
+    "file": "sc_orientation.png",
+    "pixels": [
+      5492,
+      4199
+    ],
+    "sha256": "60407d7608ee2c36493ed7730b877f7aead19b5e495fc9f2ba9cb2a70fcdcf42"
+  },
+  {
+    "file": "sc_fit_quality.png",
+    "pixels": [
+      5493,
+      1922
+    ],
+    "sha256": "c69c80091388930413ac39da0bcb46f48d5042fa7376de6a56ff1ccff650872d"
+  },
+  {
+    "file": "sc_example_clouds_trials_6_9_10.png",
+    "pixels": [
+      3839,
+      5124
+    ],
+    "sha256": "d13235a91303984b3e7f9f1596002fb73fbfd307b5c5bd00e3902e020b04a541"
+  },
+  {
+    "file": "go_radii_width.png",
+    "pixels": [
+      5613,
+      3273
+    ],
+    "sha256": "a72a1d389d93b127f5865ccb494282a849dcb36069978dd4e02de4faa39da95c"
+  },
+  {
+    "file": "go_orientation.png",
+    "pixels": [
+      5493,
+      4199
+    ],
+    "sha256": "fc2857c0afa9e50d07c4f9a3c085b499110cf8ac9ee420918f796c2daa64f61b"
+  },
+  {
+    "file": "go_fit_quality.png",
+    "pixels": [
+      5493,
+      1922
+    ],
+    "sha256": "1c21a8be6a8e44b313558e66b25a2e95667cf72f51985133350f8996563abaee"
+  },
+  {
+    "file": "go_example_clouds_trials_6_9_10.png",
+    "pixels": [
+      3839,
+      5124
+    ],
+    "sha256": "86fae6171317f5e2316d93e2c588c4a4465d6dc0185bfda1d2775d92c0f5c75e"
+  }
+]

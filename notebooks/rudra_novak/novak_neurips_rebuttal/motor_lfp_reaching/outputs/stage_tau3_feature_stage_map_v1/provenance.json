@@ -1,0 +1,34 @@
+{
+  "source": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/tables/features.csv",
+  "source_sha256": "bad5fbff988021f1e998c647672fbbc806276fcddd7ae2eaad470feafec8de62",
+  "source_config_sha256": "2b564127b0e580e6b43bc8281d3f3eff0a6b401d44ddfd65d830acccc9156c72",
+  "figure_sha256": "32a530cdbf03428e1baaca96ee99ef56d85e7c8761e8ff2c300ca3eea49caa0b",
+  "features": [
+    "R1",
+    "R2",
+    "band_half_width",
+    "normal_x",
+    "normal_y",
+    "normal_z",
+    "u_x",
+    "u_y",
+    "u_z",
+    "v_x",
+    "v_y",
+    "v_z",
+    "mse",
+    "mean_error",
+    "frac_inside"
+  ],
+  "stages": [
+    "pre_TC",
+    "post_TC",
+    "pre_SC",
+    "post_SC",
+    "pre_GO",
+    "post_GO"
+  ],
+  "scaling": "(stage median - pooled median) / (pooled IQR / 1.349)",
+  "n_windows": 1188,
+  "n_usable": 1177
+}

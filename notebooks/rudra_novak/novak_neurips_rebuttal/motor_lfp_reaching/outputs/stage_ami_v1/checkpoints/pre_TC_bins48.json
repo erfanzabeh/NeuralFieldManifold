@@ -1,0 +1,10 @@
+{
+  "scope": "pre_TC",
+  "bins": 48,
+  "role": "stage_descriptive",
+  "n_windows": 198,
+  "selected_tau_ms": 21,
+  "lower_bin_edge": -2.544287917613983,
+  "upper_bin_edge": 2.604970965385439,
+  "status": "ok"
+}

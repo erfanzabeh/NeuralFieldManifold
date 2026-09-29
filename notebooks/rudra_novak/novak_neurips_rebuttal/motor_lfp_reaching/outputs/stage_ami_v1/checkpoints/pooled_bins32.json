@@ -1,0 +1,10 @@
+{
+  "scope": "pooled",
+  "bins": 32,
+  "role": "bin_sensitivity",
+  "n_windows": 1188,
+  "selected_tau_ms": 26,
+  "lower_bin_edge": -2.593692572116852,
+  "upper_bin_edge": 2.5770688033103966,
+  "status": "ok"
+}

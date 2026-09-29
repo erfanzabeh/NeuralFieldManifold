@@ -1,0 +1,61 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "source": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2",
+  "original_trial_numbers": [
+    6,
+    9,
+    10
+  ],
+  "sampling_rate_hz": 1000,
+  "delay": "short",
+  "dimension": 3,
+  "delay_ms": 3,
+  "window_samples": 300,
+  "points_per_cloud": 294,
+  "stage_names": [
+    "pre_TC",
+    "post_TC",
+    "pre_SC",
+    "post_SC",
+    "pre_GO",
+    "post_GO"
+  ],
+  "stage_labels": [
+    "Pre-TC",
+    "Post-TC",
+    "Pre-SC",
+    "Post-SC",
+    "Pre-GO",
+    "Post-GO"
+  ],
+  "stage_colors": [
+    "#9AB7D3",
+    "#376D9B",
+    "#E8B1A3",
+    "#BE5A47",
+    "#9DC5B5",
+    "#38816A"
+  ],
+  "selection": "previously established trials 6, 9, 10",
+  "normalization": "full-trial Hilbert envelope; second-order 3-Hz zero-phase smoothing; multiply by one full-trial median envelope",
+  "normalization_formula": "window_bandpassed / (trial_envelope_window + 1e-6) * trial_median_envelope",
+  "envelope_context": "each complete 6301-sample trial; never concatenated",
+  "window_preprocessing": "same per-window linear detrend, median centering and fourth-order 2-55 Hz zero-phase filtering; no per-window amplitude division",
+  "full_trial_preprocessing": "linear detrend, median centering, fourth-order 2-55 Hz zero-phase filter",
+  "difference_from_legacy_mouse": "same envelope division/rescaling family, but fixed macaque band and existing per-window filtering retained; envelope estimated on full trial",
+  "display": "fixed camera; common limits across six stages within each normalization/trial; MAD and envelope rows have separate limits because their units differ",
+  "camera": {
+    "elevation": 24,
+    "azimuth": -58
+  },
+  "geometric_fitting": false,
+  "decoding": false,
+  "pca": false,
+  "persistent_homology": false,
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.1",
+    "pandas": "3.0.5"
+  }
+}

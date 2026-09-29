@@ -1,0 +1,13 @@
+{
+  "model": "one_torus",
+  "cloud_sha256": "771a8fbc918841087b887c758b4a44b850bd9f1517f079fc88e83b52378874f5",
+  "status": "failed",
+  "reason": "ValueError: Expected finite Nx3 cloud",
+  "warnings": [],
+  "elapsed_seconds": 2.45729461312294e-05,
+  "window_index": 479,
+  "original_trial_number": 43,
+  "stage_name": "post_GO",
+  "tau_ms": 15,
+  "point_count": 270
+}

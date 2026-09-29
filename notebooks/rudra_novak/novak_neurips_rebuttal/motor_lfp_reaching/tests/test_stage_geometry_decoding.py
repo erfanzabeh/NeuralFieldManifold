@@ -29,15 +29,26 @@ def dataset():
     return x, labels, folds, ids, reach
 
 
-def test_exact_immediate_onset_slices_and_no_overlap():
-    intervals = core.stage_intervals([1000, 1900, 2700])
-    np.testing.assert_array_equal(intervals, [[700, 1000], [1000, 1300], [1600, 1900],
-                                             [1900, 2200], [2400, 2700], [2700, 3000]])
+def test_post_cues_start_at_recorded_offsets_and_pre_cues_end_at_onsets():
+    intervals = core.stage_intervals([1000, 1195, 1900, 1954, 2700])
+    np.testing.assert_array_equal(intervals, [[700, 1000], [1195, 1495], [1600, 1900],
+                                             [1954, 2254], [2400, 2700], [2700, 3000]])
     assert (np.diff(intervals, axis=1) == 300).all()
     with pytest.raises(ValueError, match="overlap"):
-        core.stage_intervals([1000, 1500, 2700])
+        core.stage_intervals([1000, 1200, 1500, 1555, 2700])
     with pytest.raises(ValueError):
-        core.stage_intervals([1000.1, 1900, 2700])
+        core.stage_intervals([1000.1, 1195, 1900, 1954, 2700])
+
+
+def test_offset_changes_only_the_two_post_cue_windows():
+    first = core.stage_intervals([1000, 1194, 1900, 1953, 2700])
+    second = core.stage_intervals([1000, 1205, 1900, 1954, 2700])
+    np.testing.assert_array_equal(first[[0, 2, 4, 5]], second[[0, 2, 4, 5]])
+    np.testing.assert_array_equal(second-first, [[0, 0], [11, 11], [0, 0], [1, 1], [0, 0], [0, 0]])
+    with pytest.raises(ValueError, match="ordered"):
+        core.stage_intervals([1000, 999, 1900, 1954, 2700])
+    with pytest.raises(ValueError, match="offset"):
+        core.stage_intervals([1000, 1900, 2700])
 
 
 def test_cloud_uses_only_observed_window_and_all_coordinates():

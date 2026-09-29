@@ -1,0 +1,1 @@
+Minor-axis vector: x: mean and SEM across usable geometric fits in each corrected task stage. Trial counts in stage order: 197, 198, 196, 195, 196, 195. All 15 values are the frozen features used in the geometric decoder; no imputation enters these descriptive plots. Repeated stages belong to the same trials.

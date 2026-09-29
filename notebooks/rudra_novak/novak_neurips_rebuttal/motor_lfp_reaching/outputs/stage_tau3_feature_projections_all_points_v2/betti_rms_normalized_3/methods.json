@@ -1,0 +1,50 @@
+{
+  "columns": [
+    "beta0",
+    "beta1",
+    "beta2"
+  ],
+  "dimensions": 3,
+  "imputation": "median fitted on all 1188 windows",
+  "imputer_statistics": [
+    47.77664313129293,
+    5.379783321683732,
+    0.02317867826116285
+  ],
+  "methods": {
+    "lda": {
+      "shrinkage": "auto",
+      "solver": "eigen",
+      "uses_stage_labels": true
+    },
+    "pca": {
+      "explained_variance_ratio": [
+        0.5856067552620737,
+        0.3287659843071446
+      ],
+      "uses_stage_labels": false
+    },
+    "umap": {
+      "metric": "euclidean",
+      "min_dist": 0.1,
+      "n_jobs": 1,
+      "n_neighbors": 30,
+      "random_state": 42,
+      "uses_stage_labels": false
+    }
+  },
+  "missing_rows_imputed": 0,
+  "n_windows": 1188,
+  "scaler_mean": [
+    47.58766224440799,
+    5.361790835112391,
+    0.030469107561209574
+  ],
+  "scaler_scale": [
+    6.539825002513563,
+    0.7051365626145457,
+    0.027365735408246085
+  ],
+  "scaling": "StandardScaler fitted on all 1188 windows",
+  "title": "Betti: RMS-normalized distance"
+}

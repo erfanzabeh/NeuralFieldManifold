@@ -1,0 +1,64 @@
+{
+  "source": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2",
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "n_trials": 198,
+  "n_windows": 1188,
+  "n_points": 294,
+  "fs_hz": 1000,
+  "m": 3,
+  "tau_ms": 3,
+  "stages": [
+    "pre_TC",
+    "post_TC",
+    "pre_SC",
+    "post_SC",
+    "pre_GO",
+    "post_GO"
+  ],
+  "anchors": [
+    "TC_on",
+    "TC_off",
+    "SC_on",
+    "SC_off",
+    "GO",
+    "GO"
+  ],
+  "event_codes": [
+    202,
+    203,
+    204,
+    206,
+    207,
+    207
+  ],
+  "window_samples": 300,
+  "post_SC_definition": "spatial instruction ends at distractor onset (206)",
+  "input_transform": "none; reuse exact frozen observed clouds",
+  "ripser_version": "0.6.15",
+  "parameters": {
+    "maxdim": 2,
+    "coeff": 2,
+    "thresh": "infinity",
+    "n_perm": null,
+    "metric": "euclidean",
+    "distance_matrix": false,
+    "do_cocycles": false
+  },
+  "pilot_original_trials": [
+    6,
+    9,
+    10
+  ],
+  "pilot_all_six_stages": true,
+  "sequential": true,
+  "timeout_seconds": 600,
+  "grid_points": 512,
+  "betti_interval": "birth <= distance < death",
+  "normalized_distance": "birth and death divided by centered RMS radius; no Ripser rerun",
+  "empty_dimension_grid": "use shared finite H0 death maximum; 1.0 only if all clouds coincide",
+  "matched_sensitivity": "trials with six successful PH calculations, only if failures occur",
+  "assumed_topology": null,
+  "fitter_calls": 0,
+  "decoder_calls": 0,
+  "significance_tests": false
+}

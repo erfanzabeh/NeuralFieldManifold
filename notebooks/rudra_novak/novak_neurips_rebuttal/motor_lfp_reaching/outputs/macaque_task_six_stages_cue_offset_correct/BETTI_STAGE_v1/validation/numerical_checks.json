@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "windows": 1188,
+  "trials": 198,
+  "successes": 1188,
+  "failures": 0,
+  "by_stage": {
+    "post_GO": {
+      "success": 198
+    },
+    "post_SC": {
+      "success": 198
+    },
+    "post_TC": {
+      "success": 198
+    },
+    "pre_GO": {
+      "success": 198
+    },
+    "pre_SC": {
+      "success": 198
+    },
+    "pre_TC": {
+      "success": 198
+    }
+  },
+  "geometry_unusable_included": 11,
+  "undefined_normalizations": 0,
+  "saved_tables_reproduced": true,
+  "checkpoint_resume_verified": true,
+  "protected_files_unchanged": 29210,
+  "inputs_match_frozen_delayed_samples": true,
+  "cue_offset_anchors_verified": true,
+  "all_points_used": true,
+  "geometric_fit_calls": 0,
+  "decoder_calls": 0
+}

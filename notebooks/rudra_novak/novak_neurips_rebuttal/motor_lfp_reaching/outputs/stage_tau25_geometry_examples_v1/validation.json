@@ -1,0 +1,45 @@
+{
+  "original_trial_numbers": [
+    6,
+    9,
+    10
+  ],
+  "windows": 18,
+  "saved_tau3_clouds_exact": true,
+  "tau25_coordinates_verified": true,
+  "cue_offset_anchors_verified": true,
+  "no_smoothing_or_resampling": true,
+  "previous_results_unchanged": true,
+  "fitter_called": false,
+  "decoder_called": false,
+  "exports": [
+    {
+      "path": "tau25_trial_6.png",
+      "sha256": "7e5aa1378258a2f908926589e8b549c2a177a7175006f0d2f30b2dd8a514b353"
+    },
+    {
+      "path": "tau3_vs_tau25_trial_6.png",
+      "sha256": "ccd6e857ed67657a50987c435f5c1ab1910d6e2ddddbfd1bd4def5d6f4d5ae0e"
+    },
+    {
+      "path": "tau25_trial_9.png",
+      "sha256": "891b0bff06f49203c5f77340b45cea4b4ada68f64401854b5d39a0dc6072625b"
+    },
+    {
+      "path": "tau3_vs_tau25_trial_9.png",
+      "sha256": "91cc35ca27fde3e62fa25b36f0523b08a3cc3d8a095524bd7d5556cfabac5dc4"
+    },
+    {
+      "path": "tau25_trial_10.png",
+      "sha256": "579591299576b8ea3653cbab77018bacf4463d2c6e563ccb5b8939efd99acfc3"
+    },
+    {
+      "path": "tau3_vs_tau25_trial_10.png",
+      "sha256": "7d9bb5a826a7f4f69652f1a542deaee9f5d02f734e8c130dd999351e7fc20e20"
+    }
+  ],
+  "sources": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/plot_stage_tau25_geometry_examples.py": "49d743e00754d2e01d8955c0853240f243abdea59128fcafd3e89540e5fe84b9",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/motor_lfp_utils.py": "15df7c7e8d20e48b3dedcbd95edcfb71623bfed242788ed55ac4f4174a6e634d"
+  }
+}

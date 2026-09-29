@@ -1,0 +1,110 @@
+[
+  {
+    "stem": "sc_box_radii_width",
+    "png_pixels": [
+      5733,
+      1923
+    ],
+    "png_sha256": "fe94df095278e8c949f97f897b26639d0bc66be92e30f29564e792f7fcbb274f",
+    "pdf_sha256": "78732586f0a88f58fd1679302ea3c6029d85e4f8e65743452c21dc703d727e8e"
+  },
+  {
+    "stem": "sc_density_radii_width",
+    "png_pixels": [
+      5733,
+      2240
+    ],
+    "png_sha256": "f117b23fc8a2be3ebe703f71867631255b5dc6e1377005f78e68fe0bed0f85c7",
+    "pdf_sha256": "e053b3ba11b5c7f4898a6c5296c62855457dfcf7801e47fb3f45c14cb26e5087"
+  },
+  {
+    "stem": "sc_box_orientation",
+    "png_pixels": [
+      5733,
+      4533
+    ],
+    "png_sha256": "380dde1561872b11bf7cbcb5f003da3ff55cde8585b66d360cbfee8ccf536d3c",
+    "pdf_sha256": "e1830176f176b88b9c3e60ae0805a388e66f2e02ef716a3ca5ebadd8e1d1eff0"
+  },
+  {
+    "stem": "sc_density_orientation",
+    "png_pixels": [
+      5733,
+      4699
+    ],
+    "png_sha256": "c709d6db79a7f5337287b50dd5b29bbb60483e9728073273a0bd3afaedd4eb30",
+    "pdf_sha256": "e8aa6ea564d911997894ab1b1f8aa68f8e65ec1e54d5a998fd577515c7c00cfd"
+  },
+  {
+    "stem": "sc_box_fit_quality",
+    "png_pixels": [
+      5733,
+      1923
+    ],
+    "png_sha256": "eb70ae38c03492ad10e1030077c06865cd0218ddec69c7b1312599febb09119e",
+    "pdf_sha256": "34e01f143ff36fb5fd19c4cfe514d047be07545b9cca24b66735e9ddb46959c7"
+  },
+  {
+    "stem": "sc_density_fit_quality",
+    "png_pixels": [
+      5733,
+      2240
+    ],
+    "png_sha256": "dcef7b5e2073f6921f10b96a33bdb2ead09db2ef4e0675b6c12779939f996cd0",
+    "pdf_sha256": "e6b7a56623a8ea3fc5012d04acba4c5f2d606effc255d2e64e2a86fc215cfa69"
+  },
+  {
+    "stem": "go_box_radii_width",
+    "png_pixels": [
+      5733,
+      1923
+    ],
+    "png_sha256": "b0b3ddad6546e62af5e936fc59b99af34b4d259773aac9d85c03211b70b3f0fa",
+    "pdf_sha256": "a0f3544b39c775b0392e571275c88ecb3387fd2646b1c5244c77bf9ba5e05c91"
+  },
+  {
+    "stem": "go_density_radii_width",
+    "png_pixels": [
+      5733,
+      2240
+    ],
+    "png_sha256": "3eba0e5d719d6a68eb863a9ec64fc287a2884997ae458cae8d8ee69173a0f3ec",
+    "pdf_sha256": "d5fcd427f4da19d77af80c3df2989b3af9c4e1810384b2561d143ace3a27969a"
+  },
+  {
+    "stem": "go_box_orientation",
+    "png_pixels": [
+      5733,
+      4533
+    ],
+    "png_sha256": "df7e12cbb3301c38acd83266dc1b2a681bda4f45d03a30a93e8b6e1690a56746",
+    "pdf_sha256": "35439d2fdac49bc924b432514bbe941a734dac737a799643daa4a8c8d7d21d14"
+  },
+  {
+    "stem": "go_density_orientation",
+    "png_pixels": [
+      5733,
+      4699
+    ],
+    "png_sha256": "b621214c6230a1719cf6125401ea74601624d5e83daa768911a6a5978c39cddd",
+    "pdf_sha256": "c1b0cace90d9669a88fb3756aafa06225a73c28dab9dde0bd67cca3e796a418a"
+  },
+  {
+    "stem": "go_box_fit_quality",
+    "png_pixels": [
+      5733,
+      1923
+    ],
+    "png_sha256": "8835da86ea86078f0f1e1be086273e09c3999f4ba5204e15c8947c81394d33c4",
+    "pdf_sha256": "7ca989c070316bb224d8d9c45473213fda076f27c9814ad26b03808adf0b50b2"
+  },
+  {
+    "stem": "go_density_fit_quality",
+    "png_pixels": [
+      5733,
+      2240
+    ],
+    "png_sha256": "2715f14ea792e6e8d3c338f1658ef512307e31f8a73b20471353c13ff8a27eb3",
+    "pdf_sha256": "01023c0249052b8405e0ff9589e48a3ca16c046d85e6622c330291a0e05910a4"
+  }
+]

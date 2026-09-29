@@ -1,0 +1,98 @@
+[
+  {
+    "file": "geometry_all_15/pca.png",
+    "sha256": "41670fba610b6fb126ea72429c9f986b661dab9ba8739bb165f08b6012ec309f"
+  },
+  {
+    "file": "geometry_all_15/lda.png",
+    "sha256": "fbf3ebab1515e575491dfb3cd1cbffb7de58737dcb50849e45424a25f8a11c20"
+  },
+  {
+    "file": "geometry_all_15/umap.png",
+    "sha256": "21218f9bf3f6d8b811b64d5c23856eedf6fcaf0344415b15c1b0e09e0493a702"
+  },
+  {
+    "file": "geometry_radii_width_3/pca.png",
+    "sha256": "19d2e78fb15b2f1de4d2fd8e8f0ef50a7279b69e38a8c660f1639018a7816a69"
+  },
+  {
+    "file": "geometry_radii_width_3/lda.png",
+    "sha256": "8562d28ec5add40ed3cd57f61e861668df1c5758bd85c13edb247de685949af5"
+  },
+  {
+    "file": "geometry_radii_width_3/umap.png",
+    "sha256": "182fab7416456f245f73f5bd182d6a41759a99db40879f6c52eb8b5d3f9584ce"
+  },
+  {
+    "file": "geometry_orientation_9/pca.png",
+    "sha256": "4680485f473bc8cef0b50d102b3419c676eddf7d55af4bbee2c4a2039c61fc17"
+  },
+  {
+    "file": "geometry_orientation_9/lda.png",
+    "sha256": "33aa49b2c77dc75d963bf78406a1e770f32eecc6f9dc36238c8791303561bfb7"
+  },
+  {
+    "file": "geometry_orientation_9/umap.png",
+    "sha256": "fd6647f8fbd0559f31900f924f87d3779ff247a5aeaf8c5b5d3002785b30d112"
+  },
+  {
+    "file": "geometry_fit_quality_3/pca.png",
+    "sha256": "abb3fa1f6059110eab307597e51a31cf42b3b3a44ceee439740ba6b75e120d41"
+  },
+  {
+    "file": "geometry_fit_quality_3/lda.png",
+    "sha256": "5f34acdde610717bd5aa2ad57ab8a99c25caf286635063e6418f6957ba284314"
+  },
+  {
+    "file": "geometry_fit_quality_3/umap.png",
+    "sha256": "42c1696a2dac4f5075778aa6b1c03a9c32330c0990fc1f0c9dcf018785be20c5"
+  },
+  {
+    "file": "betti_raw_3/pca.png",
+    "sha256": "fdb8d29cd2c12f10ca4688e5090ec880333fdb558313009bbd643ecab07a5fa9"
+  },
+  {
+    "file": "betti_raw_3/lda.png",
+    "sha256": "452a2f8cc2d86e498c4510b5f716b18afc88d207f1e0860ff0d4fccb8a4c8ce5"
+  },
+  {
+    "file": "betti_raw_3/umap.png",
+    "sha256": "8390595762096eae8ae0ecca05181ca1033a08365097c00edf5173a58c562093"
+  },
+  {
+    "file": "betti_rms_normalized_3/pca.png",
+    "sha256": "5bb721f81856fad834af0208bbd39f32adc5643f6be9166be4d842497e0d6e73"
+  },
+  {
+    "file": "betti_rms_normalized_3/lda.png",
+    "sha256": "17fe0783892d8d4245eb6cea6ece19784edfa1517eb3c2278cd4aa5c6d5a1694"
+  },
+  {
+    "file": "betti_rms_normalized_3/umap.png",
+    "sha256": "2aaf52401dd16b864023504c32bfa85ee68fb1c0cf87c2064935cce877067c1d"
+  },
+  {
+    "file": "geometry_plus_betti_raw_18/pca.png",
+    "sha256": "5af508cd61cf2a62c7b2acdec15f1466afb0c5b99c837be6ee36538a65f88056"
+  },
+  {
+    "file": "geometry_plus_betti_raw_18/lda.png",
+    "sha256": "ccf571fa661f4cecc77f431e33ffcb5634dc16c6219cbf64918cddedf1f4af87"
+  },
+  {
+    "file": "geometry_plus_betti_raw_18/umap.png",
+    "sha256": "d5938fa3fbf72c7d4fe7950f737a8295565d9f3e347d7b2f0456a77e73197210"
+  },
+  {
+    "file": "geometry_plus_betti_rms_normalized_18/pca.png",
+    "sha256": "4d365ab7efd7cf3c388c5d2e5f996d24eeeb40a99b20432e6dda78a6ff6162d7"
+  },
+  {
+    "file": "geometry_plus_betti_rms_normalized_18/lda.png",
+    "sha256": "e220dfb1226d7eb8250063ff3887fc3f33d2e0f9a00ce9c457a4aaffc5226316"
+  },
+  {
+    "file": "geometry_plus_betti_rms_normalized_18/umap.png",
+    "sha256": "fac03e5869d3ecd1a9e72e2d8c852e88db2f2baf5d0784216dc7fb4012b3e929"
+  }
+]

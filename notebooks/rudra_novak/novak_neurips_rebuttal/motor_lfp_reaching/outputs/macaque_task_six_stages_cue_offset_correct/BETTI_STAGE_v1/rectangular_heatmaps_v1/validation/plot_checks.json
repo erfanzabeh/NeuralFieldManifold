@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "n_trials": 198,
+  "n_windows": 1188,
+  "windows_per_stage": 198,
+  "grid_points": 512,
+  "homology_dimension": 1,
+  "source_sha256": "74e2f2b3f5f4e04c8e1002dc33254466ce53cfa606cb769c2226dd76e66857b4",
+  "shared_color_limit": 3.0,
+  "prior_files_unchanged": 29210,
+  "ph_files_unchanged": 3686,
+  "imported_ripser": false,
+  "fitter_calls": 0,
+  "decoder_calls": 0,
+  "panels": [
+    {
+      "file": "betti_h1_stage_deviation_raw.png",
+      "sha256": "262e284ebb2cb44d072afd9d5e514d310596c86b3b16e4c5c01a38c0d230480a",
+      "pixels": [
+        3180,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "distance_convention": "raw",
+      "distance_limits": [
+        0.0,
+        4.176454067230225
+      ],
+      "color_limits": [
+        -3.0,
+        3.0
+      ],
+      "zoom": false
+    },
+    {
+      "file": "betti_h1_stage_deviation_raw_zoom.png",
+      "sha256": "6c3112fefbb885672a95c20b52b8bfd99258022a32d835f04fdf70bbd695ca45",
+      "pixels": [
+        3180,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "distance_convention": "raw",
+      "distance_limits": [
+        0.0,
+        1.0
+      ],
+      "color_limits": [
+        -3.0,
+        3.0
+      ],
+      "zoom": true
+    },
+    {
+      "file": "betti_h1_stage_deviation_rms_normalized.png",
+      "sha256": "3ccbf0c5f13b6278b956e9c3b9df4431bf026d7f701803faf14b81754dc0677d",
+      "pixels": [
+        3180,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "distance_convention": "rms_normalized",
+      "distance_limits": [
+        0.0,
+        1.6694791279164953
+      ],
+      "color_limits": [
+        -3.0,
+        3.0
+      ],
+      "zoom": false
+    },
+    {
+      "file": "betti_h1_stage_deviation_rms_normalized_zoom.png",
+      "sha256": "5b2f183d50747180199bdfffa8517b15b7828bc887143036900fa4869d9e4c07",
+      "pixels": [
+        3180,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": [],
+      "distance_convention": "rms_normalized",
+      "distance_limits": [
+        0.0,
+        1.0
+      ],
+      "color_limits": [
+        -3.0,
+        3.0
+      ],
+      "zoom": true
+    }
+  ]
+}

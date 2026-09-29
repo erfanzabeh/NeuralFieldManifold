@@ -1,0 +1,46 @@
+[
+  {
+    "filename": "f1_matrix_native.png",
+    "pixels": [
+      7020,
+      2610
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "filename": "recall_confusion_native.png",
+    "pixels": [
+      3090,
+      2670
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "filename": "f1_matrix_matched260.png",
+    "pixels": [
+      7020,
+      2610
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  {
+    "filename": "recall_confusion_matched260.png",
+    "pixels": [
+      3090,
+      2670
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  }
+]

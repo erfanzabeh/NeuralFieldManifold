@@ -1,0 +1,38 @@
+{
+  "raw_H0": {
+    "max_distance": 1.3185725212097168,
+    "fallback_to_H0": false,
+    "degenerate_unit_grid": false,
+    "points": 512
+  },
+  "raw_H1": {
+    "max_distance": 4.176454067230225,
+    "fallback_to_H0": false,
+    "degenerate_unit_grid": false,
+    "points": 512
+  },
+  "raw_H2": {
+    "max_distance": 3.2059061527252197,
+    "fallback_to_H0": false,
+    "degenerate_unit_grid": false,
+    "points": 512
+  },
+  "rms_normalized_H0": {
+    "max_distance": 0.5533847013447807,
+    "fallback_to_H0": false,
+    "degenerate_unit_grid": false,
+    "points": 512
+  },
+  "rms_normalized_H1": {
+    "max_distance": 1.6694791279164953,
+    "fallback_to_H0": false,
+    "degenerate_unit_grid": false,
+    "points": 512
+  },
+  "rms_normalized_H2": {
+    "max_distance": 1.6086106450405964,
+    "fallback_to_H0": false,
+    "degenerate_unit_grid": false,
+    "points": 512
+  }
+}

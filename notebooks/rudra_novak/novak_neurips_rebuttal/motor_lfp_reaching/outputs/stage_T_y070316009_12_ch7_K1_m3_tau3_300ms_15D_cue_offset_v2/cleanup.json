@@ -1,0 +1,11 @@
+{
+  "deleted": [
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_v1",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_six_stages_v1"
+  ],
+  "archive": "/home/nochen/code/NeuralFieldManifold_archives/stage_onset_57d5b2a/superseded_stage_and_cartoon.tar.gz",
+  "archive_sha256": "95f05e4cd7e681619e1a875f71b92a3e13bd7efb573e2a6dd32f44921c6771e7",
+  "historical_commit": "57d5b2a90a7430234e1275ca6ea178a3d943a4fa",
+  "raw_inputs_deleted": false,
+  "earlier_analyses_deleted": false
+}

@@ -1,0 +1,131 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "original_trial_number": 3,
+  "raw_trial_index": 340,
+  "direction": 5,
+  "delay": "long",
+  "sampling_rate_hz": 1000,
+  "source_pair_index": 156,
+  "source_condition_index": 11,
+  "source_trial_index": 2,
+  "selection": "lowest original trial ID among long-delay trials",
+  "event_samples_zero_based": {
+    "TC_on": 1321,
+    "TC_off": 1516,
+    "SC_on": 2981,
+    "SC_off": 3035,
+    "GO": 4500
+  },
+  "window_intervals_zero_based_half_open": [
+    [
+      1021,
+      1321
+    ],
+    [
+      1516,
+      1816
+    ],
+    [
+      2681,
+      2981
+    ],
+    [
+      3035,
+      3335
+    ],
+    [
+      4200,
+      4500
+    ],
+    [
+      4500,
+      4800
+    ]
+  ],
+  "raw_trial_codes": [
+    11,
+    202,
+    203,
+    204,
+    206,
+    207,
+    214,
+    215,
+    105,
+    121,
+    201,
+    51,
+    71,
+    92,
+    209
+  ],
+  "raw_trial_times": [
+    647.0,
+    1322.0,
+    1517.0,
+    2982.0,
+    3036.0,
+    4501.0,
+    4763.0,
+    4958.0,
+    5252.0,
+    5254.0,
+    5256.0,
+    5258.0,
+    5260.0,
+    5262.0,
+    5291.0
+  ],
+  "processed_windows_sha256": "c51118325e92ba896f4c8b9e632eea07cfc72072032cc38152758d465dbfb8dc",
+  "delays_ms": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "dimension": 3,
+  "pages": 20,
+  "cloud_count": 120,
+  "common_axis_limits": [
+    -3.9313149547576907,
+    3.9313149547576907
+  ],
+  "camera": {
+    "elevation": 24,
+    "azimuth": -58
+  },
+  "preprocessing": "per-window linear detrend, median/MAD normalization, fourth-order 2-55 Hz sosfiltfilt; float32",
+  "preprocessing_applied_once_per_window": true,
+  "post_cues_at_offsets": true,
+  "fitting": false,
+  "decoding": false,
+  "pca": false,
+  "smoothing": false,
+  "pdf": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/long_delay_trial_v1/long_delay_trial_3_tau_01_to_20_geometries.pdf",
+  "pdf_sha256": "5907fef08371218079f3ef94b0ee116cdc242c8f34480a252cf83b7dc1840eed",
+  "protected_file_hashes": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/lfp_converted_data/monkeyT_session-y070316009-12_lfp-7.npz": "44496fb78e75ccd2c39d68a2c83ce090386f26f1ff06cee63278859768038cd4",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_ami_v1/config.json": "06941847368a2970c27e6599be9eaca20b362ea9801392ce1ecfcaaaa71c71bc",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/windows.npz": "f323d6b5eae57ff3a298559c43947d7746074e8331dd7f8429e872499b1c85b1",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/features.npz": "348e5de483f66e721cf3088374a5af952d5e773a18627d592da2771eb3b9c6d7",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/heldout_predictions.npz": "8428ce2904b534d28bc28654785332c1da0adf247087bab272f0a7cf0d85dbf9"
+  },
+  "previous_results_unchanged": true,
+  "source_sha256": "565501c88c071c40dcded52a122fce757a8553decfb66e24165e3e3b1372d9d2"
+}

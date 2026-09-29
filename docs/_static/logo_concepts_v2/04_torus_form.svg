@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-label="NeuralFieldManifold Torus Form logo">
+  <defs>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DC8C76"/>
+      <stop offset="0.48" stop-color="#BA5549"/>
+      <stop offset="1" stop-color="#9E3934"/>
+    </linearGradient>
+    <linearGradient id="lower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#81342F"/>
+      <stop offset="1" stop-color="#20313B"/>
+    </linearGradient>
+    <mask id="hole">
+      <rect width="260" height="260" fill="white"/>
+      <ellipse cx="120" cy="114" rx="43" ry="25" fill="black"/>
+    </mask>
+  </defs>
+  <g mask="url(#hole)">
+    <path d="M225 141 A105 66 0 1 0 15 141 A105 66 0 1 0 225 141 Z M163 141 A43 25 0 1 0 77 141 A43 25 0 1 0 163 141 Z" fill="url(#lower)" fill-rule="evenodd"/>
+    <path d="M225 114 A105 66 0 1 0 15 114 A105 66 0 1 0 225 114 Z M163 114 A43 25 0 1 0 77 114 A43 25 0 1 0 163 114 Z" fill="url(#top)" fill-rule="evenodd"/>
+  </g>
+  <ellipse cx="120" cy="114" rx="44" ry="26" fill="none" stroke="#7A302D" stroke-width="3"/>
+  <path d="M40 84 C73 53 157 46 201 77" fill="none" stroke="#F0B49F" stroke-width="5" stroke-linecap="round" opacity=".72"/>
+  <text x="277" y="151" font-family="DejaVu Sans, Arial, sans-serif" font-size="53" font-weight="700" fill="#20313B"><tspan>NeuralField</tspan><tspan fill="#AA3D35">Manifold</tspan></text>
+</svg>

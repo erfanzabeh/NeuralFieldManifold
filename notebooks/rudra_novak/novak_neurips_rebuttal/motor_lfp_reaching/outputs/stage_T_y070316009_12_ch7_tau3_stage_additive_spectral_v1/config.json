@@ -1,0 +1,74 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "task": "corrected six-stage decoding, 198 short-delay trials",
+  "stage_anchors": [
+    "TC_on",
+    "TC_off",
+    "SC_on",
+    "SC_off",
+    "GO",
+    "GO"
+  ],
+  "m": 3,
+  "tau_ms": 3,
+  "K_assumed": 1,
+  "geometry_refit": false,
+  "methods": [
+    "relevant_band",
+    "geometry_relevant_band",
+    "average_psd",
+    "geometry_average_psd",
+    "geometry",
+    "all_bands",
+    "geometry_all_bands"
+  ],
+  "spectral_input": "saved raw 300-ms windows, linearly detrended",
+  "spectral_welch": {
+    "fs_hz": 1000,
+    "window": "hann",
+    "nperseg": 300,
+    "noverlap": 150,
+    "nfft": 10000,
+    "detrend": false
+  },
+  "relevant_band": "log10 integrated beta PSD over 13-30 Hz, 1D",
+  "average_psd": "log10 mean PSD density over 2-55 Hz, 1D",
+  "all_bands": [
+    {
+      "name": "delta",
+      "low_hz": 2.0,
+      "high_hz": 4.0
+    },
+    {
+      "name": "theta",
+      "low_hz": 4.0,
+      "high_hz": 8.0
+    },
+    {
+      "name": "alpha",
+      "low_hz": 8.0,
+      "high_hz": 13.0
+    },
+    {
+      "name": "beta",
+      "low_hz": 13.0,
+      "high_hz": 30.0
+    },
+    {
+      "name": "low_gamma",
+      "low_hz": 30.0,
+      "high_hz": 55.0
+    }
+  ],
+  "decoder": "same five trial-grouped folds; training-only median imputation, StandardScaler, LDA(lsqr, shrinkage=auto)",
+  "uncertainty": "2000 existing direction-stratified whole-trial bootstrap samples of held-out predictions; conditional on fitted models",
+  "nominal_chance": 0.16666666666666666,
+  "source_hashes": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/config.json": "2b564127b0e580e6b43bc8281d3f3eff0a6b401d44ddfd65d830acccc9156c72",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/features.npz": "348e5de483f66e721cf3088374a5af952d5e773a18627d592da2771eb3b9c6d7",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/windows.npz": "f323d6b5eae57ff3a298559c43947d7746074e8331dd7f8429e872499b1c85b1",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/window_metadata.csv": "1ccd405fc3d88e50b825632de81588e685e547aedf7906a6806c6e876f9b0efe",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/heldout_predictions.npz": "8428ce2904b534d28bc28654785332c1da0adf247087bab272f0a7cf0d85dbf9",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/bootstrap.npz": "9a6981e229a5706dde336799446f76a60148b7b9df7504f46a4df5bb47d3f3f2"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "betti_definition": "saved distance-averaged beta0/beta1/beta2 per window",
+  "feature_sets": [
+    "geometry_all_15",
+    "geometry_radii_width_3",
+    "geometry_orientation_9",
+    "geometry_fit_quality_3",
+    "betti_raw_3",
+    "betti_rms_normalized_3",
+    "geometry_plus_betti_raw_18",
+    "geometry_plus_betti_rms_normalized_18"
+  ],
+  "fold_for_heldout": 0,
+  "m": 3,
+  "native_tau_ms": 3,
+  "point_definition": "one saved 300-ms trial-stage window",
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "seed": 42,
+  "source_hashes": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_six_stages_cue_offset_correct/BETTI_STAGE_v1/config.json": "965884e563f15cdcf1799ddb265bf81f8552702f259078c3e464f45aeb6a78a2",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_six_stages_cue_offset_correct/STAGE_BETTI_GEOMETRY_SEM_v1/tables/integrated_betti_per_window.csv": "f5f39c16bdf188ad02cacfcef5292545c2755a047f47ffca92141d84efbd65b2",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/config.json": "2b564127b0e580e6b43bc8281d3f3eff0a6b401d44ddfd65d830acccc9156c72",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/features.npz": "348e5de483f66e721cf3088374a5af952d5e773a18627d592da2771eb3b9c6d7",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/tables/features.csv": "bad5fbff988021f1e998c647672fbbc806276fcddd7ae2eaad470feafec8de62"
+  },
+  "stages": [
+    "pre_TC",
+    "post_TC",
+    "pre_SC",
+    "post_SC",
+    "pre_GO",
+    "post_GO"
+  ]
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-label="NeuralFieldManifold Lag Loop logo">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 101 C96 62 138 46 177 57 C215 69 235 106 228 144 C221 184 186 207 148 206 C111 205 79 182 73 147" stroke="#20313B" stroke-width="15"/>
+    <path d="M110 119 C122 94 147 82 170 91 C192 99 201 121 195 143 C189 165 171 178 149 175 C129 173 113 159 107 140" stroke="#AA3D35" stroke-width="7"/>
+    <path d="M20 91 C32 91 38 79 49 84 C59 88 62 107 82 101" stroke="#AA3D35" stroke-width="7"/>
+    <path d="M16 123 C28 123 36 112 47 116 C57 120 62 130 76 126" stroke="#BE6052" stroke-width="7"/>
+    <path d="M20 155 C34 155 40 142 52 146 C61 149 67 151 73 147" stroke="#D18B78" stroke-width="7"/>
+  </g>
+  <text x="277" y="151" font-family="DejaVu Sans, Arial, sans-serif" font-size="53" font-weight="700" fill="#20313B"><tspan>NeuralField</tspan><tspan fill="#AA3D35">Manifold</tspan></text>
+</svg>

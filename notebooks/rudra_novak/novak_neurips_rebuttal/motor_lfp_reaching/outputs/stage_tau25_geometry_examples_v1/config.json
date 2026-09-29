@@ -1,0 +1,53 @@
+{
+  "source": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2",
+  "original_trial_numbers": [
+    6,
+    9,
+    10
+  ],
+  "dimension": 3,
+  "delays_ms": [
+    3,
+    25
+  ],
+  "samples_per_window": 300,
+  "points_per_window": {
+    "3": 294,
+    "25": 250
+  },
+  "selection": "previously established original trial IDs; no new appearance-based selection",
+  "stage_names": [
+    "pre_TC",
+    "post_TC",
+    "pre_SC",
+    "post_SC",
+    "pre_GO",
+    "post_GO"
+  ],
+  "stage_labels": [
+    "Pre-TC",
+    "Post-TC",
+    "Pre-SC",
+    "Post-SC",
+    "Pre-GO",
+    "Post-GO"
+  ],
+  "stage_colors": [
+    "#9AB7D3",
+    "#376D9B",
+    "#E8B1A3",
+    "#BE5A47",
+    "#9DC5B5",
+    "#38816A"
+  ],
+  "coordinates": "x(t), x(t-tau), x(t-2*tau)",
+  "camera": {
+    "elevation": 24,
+    "azimuth": -58
+  },
+  "scale": "common centered limits for both delays and all six stages within each trial",
+  "geometry_refitting": false,
+  "decoding": false,
+  "preprocessing": false,
+  "pca": false
+}

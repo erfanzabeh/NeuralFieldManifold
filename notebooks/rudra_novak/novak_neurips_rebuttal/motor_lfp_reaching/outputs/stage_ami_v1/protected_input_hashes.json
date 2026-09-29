@@ -1,0 +1,10 @@
+{
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/windows.npz": "f323d6b5eae57ff3a298559c43947d7746074e8331dd7f8429e872499b1c85b1",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/window_metadata.csv": "1ccd405fc3d88e50b825632de81588e685e547aedf7906a6806c6e876f9b0efe",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/event_samples.csv": "3921c6c9f779bd8d20babc28451ae136b3fcc7935644963892ef6669ca71b3e4",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/features.npz": "348e5de483f66e721cf3088374a5af952d5e773a18627d592da2771eb3b9c6d7",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/heldout_predictions.npz": "8428ce2904b534d28bc28654785332c1da0adf247087bab272f0a7cf0d85dbf9",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/config.json": "e56a803f174ea3e757eb8ce1dd9045aa641e397c5bc6fde06afc7bd0764d1fc5",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/tables/overall_f1.csv": "afdc7db25db533d576572c10f61103fe8d8270c0e25b253f2348884c8e24c100",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/tables/winners.csv": "6fd5f50d2c68fb8036dcb42fd862363cb2be4b1d650b10aa1f60ab10787fd6f4"
+}

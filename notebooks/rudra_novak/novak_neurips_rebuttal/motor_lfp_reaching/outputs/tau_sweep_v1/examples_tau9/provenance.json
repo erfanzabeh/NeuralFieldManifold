@@ -1,0 +1,18 @@
+{
+  "tau_ms": 9,
+  "variant": "native",
+  "original_trial_numbers": [
+    6,
+    9,
+    10
+  ],
+  "common_axis_limit": 4.5464496412795965,
+  "processed_windows_sha256": "f323d6b5eae57ff3a298559c43947d7746074e8331dd7f8429e872499b1c85b1",
+  "fit_checkpoints_verified": true,
+  "refit": false,
+  "figure_files": [
+    "tau9_native_trial_6.png",
+    "tau9_native_trial_9.png",
+    "tau9_native_trial_10.png"
+  ]
+}

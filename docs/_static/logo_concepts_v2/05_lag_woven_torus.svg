@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-label="NeuralFieldManifold Lag-Woven Torus logo">
+  <defs>
+    <linearGradient id="torus" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3F5960"/>
+      <stop offset=".52" stop-color="#20313B"/>
+      <stop offset="1" stop-color="#16252C"/>
+    </linearGradient>
+    <mask id="hole">
+      <rect width="250" height="250" fill="white"/>
+      <ellipse cx="120" cy="126" rx="45" ry="28" fill="black"/>
+    </mask>
+  </defs>
+  <g mask="url(#hole)">
+    <path d="M225 144 A105 65 0 1 0 15 144 A105 65 0 1 0 225 144 Z M166 144 A46 28 0 1 0 74 144 A46 28 0 1 0 166 144 Z" fill="#142229" fill-rule="evenodd"/>
+    <path d="M225 126 A105 65 0 1 0 15 126 A105 65 0 1 0 225 126 Z M165 126 A45 28 0 1 0 75 126 A45 28 0 1 0 165 126 Z" fill="url(#torus)" fill-rule="evenodd"/>
+  </g>
+  <ellipse cx="120" cy="126" rx="46" ry="29" fill="none" stroke="#91AFAC" stroke-width="4"/>
+  <path d="M25 136 C39 153 49 158 62 153 C75 149 81 165 95 166 C110 168 116 156 129 161 C144 167 153 156 166 152 C183 147 192 130 207 122" fill="none" stroke="#C85B49" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="25" cy="136" r="5" fill="#C85B49"/>
+  <circle cx="207" cy="122" r="5" fill="#C85B49"/>
+  <text x="277" y="151" font-family="DejaVu Sans, Arial, sans-serif" font-size="53" font-weight="700" fill="#20313B"><tspan>NeuralField</tspan><tspan fill="#AA3D35">Manifold</tspan></text>
+</svg>
