@@ -1,0 +1,20 @@
+{
+  "inputs": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_additive_v1/tables/summary.csv": "ef2b8c4c38085085038ae4e92fa44f42760d00c6c6a4ed8777fd9653c9f228f0",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_additive_v1/tables/geometry_lda_projection.csv": "26484f3c21fb9e55571310625ae57b86d186d2c9e921b015eefdcc520b61c510",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_additive_v1/config.json": "a6d33a7d89e1143dd73e69a4ba00d7b127252a6e5dd5e7d196dd694a35d7e61d"
+  },
+  "renderer_sha256": "f8a8395b2ab4b70a8d510ba7672d7830a100954ec3b9b3051621751e7d086d69",
+  "outputs": {
+    "figures/feature_comparison.caption.txt": "471195cb06c4cfa33c0078f6173179a60428f13f73775ad84e1dc2e9e7fec516",
+    "figures/feature_comparison.csv": "af2644ddd9a59d5ddaac1919d8360d0e477a8e4c104e922dd10080a735bd251d",
+    "figures/feature_comparison.pdf": "7e6634510c4da527410600b2b5ef400032965b282bb56766271b92ab8fa888bc",
+    "figures/feature_comparison.png": "c057182791ac12ee087921265b873075bfb1d7c03da6871c156375dcd5732fcd",
+    "figures/feature_comparison.svg": "7239edb4573dc392ff70119fcd75f5de023e6033f17789cdfe4372ddf3323bd0",
+    "figures/geometry_lda_projection.caption.txt": "bebab3d13ec564a41c36ebe43ffd030510fb63bdabaeb5571aaf8666c2674cf7",
+    "figures/geometry_lda_projection.csv": "f88c9508d164edfd4f6b709e0c4eb9e50c950b634fa35a0c1bdfae1967102584",
+    "figures/geometry_lda_projection.pdf": "6f950c7eb5e724d83ac25b47bef66b8afc17248edb0298bf526bec3d0d39f587",
+    "figures/geometry_lda_projection.png": "fb66364036ada57e673d19a1506485d08b540a827db47444f0ef1fe6df65970c",
+    "figures/geometry_lda_projection.svg": "43fca136e0df9810b226551be6dd82b18ebf622d1aee973e1e7898e3e63790bf"
+  }
+}

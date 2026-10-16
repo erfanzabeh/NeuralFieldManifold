@@ -1,0 +1,81 @@
+{
+  "source": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_tau3_envelope_geometry_v1",
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "trial_numbers": [
+    6,
+    9,
+    10
+  ],
+  "stage_names": [
+    "pre_TC",
+    "post_TC",
+    "pre_SC",
+    "post_SC",
+    "pre_GO",
+    "post_GO"
+  ],
+  "stage_labels": [
+    "Pre-TC",
+    "Post-TC",
+    "Pre-SC",
+    "Post-SC",
+    "Pre-GO",
+    "Post-GO"
+  ],
+  "stage_colors": [
+    "#9AB7D3",
+    "#376D9B",
+    "#E8B1A3",
+    "#BE5A47",
+    "#9DC5B5",
+    "#38816A"
+  ],
+  "dimension": 3,
+  "sampling_rate_hz": 1000,
+  "delays_ms": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "window_samples": 300,
+  "methods": [
+    "mad",
+    "envelope"
+  ],
+  "normalization": "window_bandpassed / (trial_envelope_window + 1e-6) * trial_median_envelope",
+  "normalization_recomputed": false,
+  "layout": "MAD left two columns; envelope right two columns; TC/SC/GO row pairs",
+  "camera": {
+    "elevation": 24,
+    "azimuth": -58
+  },
+  "axis_limits": "fixed across all stages and tau per trial and method",
+  "separate_method_units": true,
+  "fitter_called": false,
+  "decoder_called": false,
+  "pca_called": false,
+  "ripser_called": false,
+  "native_point_counts": true
+}

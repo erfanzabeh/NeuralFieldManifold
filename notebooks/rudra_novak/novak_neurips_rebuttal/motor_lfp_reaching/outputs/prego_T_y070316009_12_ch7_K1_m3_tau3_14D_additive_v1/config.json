@@ -1,0 +1,36 @@
+{
+  "source": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_decoding_v1",
+  "n_trials": 198,
+  "directions": 6,
+  "K": 1,
+  "m": 3,
+  "tau_ms": 3,
+  "methods": [
+    "relevant_band",
+    "geometry_relevant_band",
+    "average_psd",
+    "geometry_average_psd",
+    "all_bands",
+    "geometry"
+  ],
+  "dimensions": [
+    1,
+    15,
+    1,
+    15,
+    5,
+    14
+  ],
+  "geometry_refit": false,
+  "relevant_band": "log10 integrated beta PSD, 13-30 Hz; saved all_bands column 3",
+  "average_psd": "log10 mean PSD density over 2-55 Hz; raw pre-GO epochs linearly detrended; Hann Welch nperseg500 noverlap250 nfft10000; no normalization or filtering",
+  "decoder": "saved trial folds; training median + StandardScaler + LDA(lsqr, shrinkage=auto)",
+  "bootstrap": "2000 stratified prediction resamples, seed42000; conditional on fitted models",
+  "new_permutation_tests": false,
+  "nominal_reference": 0.16666666666666666,
+  "projection": "eigen shrinkage LDA; fit only folds!=0; first two LDs; training-centered/unit-SD axes",
+  "projection_holdout_fold": 0,
+  "pca": false,
+  "width_feature": false,
+  "inference": "exploratory single selected recording; no additive superiority tests"
+}

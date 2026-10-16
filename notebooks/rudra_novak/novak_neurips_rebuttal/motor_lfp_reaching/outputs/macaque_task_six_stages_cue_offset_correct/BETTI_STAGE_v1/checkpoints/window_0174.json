@@ -1,0 +1,14 @@
+{
+  "window_index": 174,
+  "original_trial_number": 236,
+  "trial_index": 29,
+  "stage_name": "pre_TC",
+  "n_points": 294,
+  "cloud_sha256": "2837458f90b70abb12d13535b9e51fcafb860d1b84a5c1e3594a22b55f601392",
+  "config_sha256": "965884e563f15cdcf1799ddb265bf81f8552702f259078c3e464f45aeb6a78a2",
+  "status": "success",
+  "reason": "",
+  "diagram_sha256": "e22c750113a16f623c4b8be9f0ac623fda0ed034c26531f7c655eeb625be6996",
+  "elapsed_seconds": 1.8852073920425028,
+  "wall_seconds": 2.1723999900277704
+}

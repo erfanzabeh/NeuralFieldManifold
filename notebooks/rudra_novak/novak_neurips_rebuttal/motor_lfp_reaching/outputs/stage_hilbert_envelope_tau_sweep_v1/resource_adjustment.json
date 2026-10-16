@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-26 21:27:09 UTC",
+  "previous_workers": 12,
+  "resumed_workers": 16,
+  "available_cpus": 20,
+  "reason": "Whole-cohort fits were slower than the three-trial pilot. Increase bounded parallelism without changing inputs, fitter settings, objectives, features, folds or selection rules.",
+  "retained_completed_fits": 5707,
+  "checkpoints_by_delay_at_resume": {"1": 1188, "2": 1188, "3": 1188, "4": 1188, "5": 919, "13": 18, "25": 18},
+  "resume_policy": "Verify every existing checkpoint's input identity and cloud hash, then fit only missing checkpoints. In-flight uncompleted fits are restarted."
+}

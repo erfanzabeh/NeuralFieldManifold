@@ -1,0 +1,10 @@
+analysis_level,analysis_label,comparison,feature_left,feature_right,n_pairs,mean_left,mean_right,mean_difference_left_minus_right,wilcoxon_statistic,p_uncorrected,p_holm,significance
+full_6_direction_lfps,Full 6-direction LFPs,torus_features vs average_psd,torus_features,average_psd,237,0.1806242516881843,0.1585162663392437,0.02210798534894052,6295.0,1.485656588024262e-13,4.4569697640727866e-13,***
+full_6_direction_lfps,Full 6-direction LFPs,torus_features vs best_single_band,torus_features,best_single_band,237,0.1806242516881843,0.16628943880866096,0.014334812879523274,8996.0,1.351114508716775e-06,2.70222901743355e-06,***
+full_6_direction_lfps,Full 6-direction LFPs,best_single_band vs average_psd,best_single_band,average_psd,237,0.16628943880866096,0.1585162663392437,0.00777317246941725,11024.0,0.0035833043182995033,0.0035833043182995033,**
+monkey,Monkey M,torus_features vs average_psd,torus_features,average_psd,135,0.17528798149372585,0.15076449678269868,0.024523484711027155,1984.0,1.0437294020740431e-08,3.131188206222129e-08,***
+monkey,Monkey M,torus_features vs best_single_band,torus_features,best_single_band,135,0.17528798149372585,0.15473525785540704,0.02055272363831879,2182.0,1.2325282576659576e-07,2.465056515331915e-07,***
+monkey,Monkey M,best_single_band vs average_psd,best_single_band,average_psd,135,0.15473525785540704,0.15076449678269868,0.003970761072708367,4020.0,0.2106169641448512,0.2106169641448512,ns
+monkey,Monkey T,torus_features vs average_psd,torus_features,average_psd,102,0.18768696223967332,0.1687759613405533,0.01891100089911998,1244.0,3.930264004508059e-06,7.860528009016119e-06,***
+monkey,Monkey T,torus_features vs best_single_band,torus_features,best_single_band,102,0.18768696223967332,0.1927985855352198,-0.005111623295546469,2342.0,0.3422582357610714,0.3422582357610714,ns
+monkey,Monkey T,best_single_band vs average_psd,best_single_band,average_psd,102,0.1927985855352198,0.1687759613405533,0.024022624194666442,910.0,1.0043705664776362e-08,3.013111699432909e-08,***

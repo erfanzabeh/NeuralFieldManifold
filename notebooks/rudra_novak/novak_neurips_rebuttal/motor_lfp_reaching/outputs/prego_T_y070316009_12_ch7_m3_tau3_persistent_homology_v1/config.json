@@ -1,0 +1,52 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "source": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_decoding_v1",
+  "n_trials": 198,
+  "per_direction": 33,
+  "n_points": 494,
+  "m": 3,
+  "tau_samples": 3,
+  "tau_ms": 3,
+  "fs_hz": 1000,
+  "window_ms": [
+    -500,
+    0
+  ],
+  "ripser_version": "0.6.15",
+  "ripser_parameters": {
+    "maxdim": 2,
+    "coeff": 2,
+    "thresh": "infinity",
+    "n_perm": null,
+    "metric": "euclidean",
+    "distance_matrix": false,
+    "do_cocycles": false
+  },
+  "pilot_rows": [
+    156,
+    194,
+    39,
+    67,
+    1,
+    110
+  ],
+  "example_rows": [
+    1,
+    39,
+    67,
+    110,
+    156,
+    194
+  ],
+  "timeout_seconds": 600,
+  "sequential": true,
+  "input_transform": "none",
+  "geometric_refitting": false,
+  "decoding": false,
+  "loop_summary": "longest finite H1 lifetime; zero only for empty successful H1",
+  "normalized_summary": "lifetime / centered cloud RMS radius; input unchanged",
+  "betti_grid_points": 512,
+  "betti_interval": "birth <= distance < death",
+  "empty_dimension_grid": "H0 finite-death maximum only if dimension has no finite deaths",
+  "inference": "descriptive; no tests or threshold-based counts"
+}

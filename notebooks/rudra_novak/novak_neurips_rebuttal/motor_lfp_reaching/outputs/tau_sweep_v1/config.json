@@ -1,0 +1,73 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "trials": 198,
+  "windows": 1188,
+  "stages": [
+    "pre_TC",
+    "post_TC",
+    "pre_SC",
+    "post_SC",
+    "pre_GO",
+    "post_GO"
+  ],
+  "sampling_rate_hz": 1000,
+  "window_samples": 300,
+  "m": 3,
+  "K": 1,
+  "taus_ms": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "variants": [
+    "native",
+    "matched260"
+  ],
+  "matched_anchors": "samples 40..299 inclusive",
+  "native_points": "300-2*tau",
+  "matched_points": 260,
+  "fitter": {
+    "name": "one_torus",
+    "lam": 0.1,
+    "hole_ratio": 0.5,
+    "regularization_harmonics": 3,
+    "loss": "huber",
+    "max_nfev": 6000
+  },
+  "features": [
+    "R1",
+    "R2",
+    "band_half_width",
+    "mse",
+    "mean_error",
+    "frac_inside",
+    "normal_x",
+    "normal_y",
+    "normal_z",
+    "u_x",
+    "u_y",
+    "u_z",
+    "v_x",
+    "v_y",
+    "v_z"
+  ],
+  "decoder": "saved five trial-grouped folds; training-only median imputation, standard scaling, shrinkage LDA",
+  "ranking": "pooled six-stage macro-F1; exact ties choose smaller tau; exploratory"
+}

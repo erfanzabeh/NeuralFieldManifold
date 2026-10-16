@@ -1,0 +1,7 @@
+stage_name,count,sum,unusable
+post_GO,198,179,19
+post_SC,198,178,20
+post_TC,198,181,17
+pre_GO,198,189,9
+pre_SC,198,179,19
+pre_TC,198,184,14

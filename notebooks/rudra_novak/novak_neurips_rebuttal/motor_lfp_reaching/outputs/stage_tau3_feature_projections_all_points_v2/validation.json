@@ -1,0 +1,13 @@
+{
+  "all_coordinate_tables_checked": true,
+  "all_pngs_checked": true,
+  "all_points_used_to_fit_and_display_each_projection": true,
+  "decoding_calls": 0,
+  "geometric_fitting_calls": 0,
+  "n_feature_sets": 8,
+  "n_figures": 24,
+  "n_trials": 198,
+  "n_windows": 1188,
+  "passed": true,
+  "persistent_homology_calls": 0
+}

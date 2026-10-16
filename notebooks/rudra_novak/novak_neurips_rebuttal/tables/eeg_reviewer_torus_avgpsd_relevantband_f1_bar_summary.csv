@@ -1,0 +1,4 @@
+feature_role,feature_label,mean_f1,std_f1,n_sessions
+torus_features,Torus features,0.6697563098214888,0.05955160311760654,21
+average_psd,Average PSD,0.48520075921329564,0.061980575859606854,21
+relevant_band,Relevant band,0.4697718801046574,0.049742158924460475,21

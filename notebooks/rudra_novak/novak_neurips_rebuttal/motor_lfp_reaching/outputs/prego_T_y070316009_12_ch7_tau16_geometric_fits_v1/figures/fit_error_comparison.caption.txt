@@ -1,0 +1,2 @@
+All finite returned fits retained, including flagged and nonconverged fits. Lines pair the same trial.
+Normalized 3D error = sum(native approximate 3D set distance squared) / sum(centered cloud coordinates squared).

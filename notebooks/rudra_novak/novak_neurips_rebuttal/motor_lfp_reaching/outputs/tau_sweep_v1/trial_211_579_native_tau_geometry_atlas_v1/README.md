@@ -1,0 +1,3 @@
+# Native-delay stage geometry atlases
+
+Two 20-page PDFs per original trial (211 and 579): observed-only and observed with saved fit outlines. Each page is a single delay from 1 through 20 ms and contains the six corrected cue-offset stages. Trajectories use lag coordinates deterministically rebuilt from the frozen 300-ms processed windows; fit outlines come from the saved native-point tau sweep. No preprocessing, fitting, or decoding was rerun. Every page uses the same original-coordinate view and scale across both trials. Unusable fits are explicitly labeled and have no outline. The held-out correct count is descriptive, not a new model evaluation. The page index records counts and fit usability.

@@ -1,0 +1,10 @@
+{
+  "scope": "pre_GO",
+  "bins": 48,
+  "role": "stage_descriptive",
+  "n_windows": 198,
+  "selected_tau_ms": 16,
+  "lower_bin_edge": -2.454178810119629,
+  "upper_bin_edge": 2.4980094432830833,
+  "status": "ok"
+}

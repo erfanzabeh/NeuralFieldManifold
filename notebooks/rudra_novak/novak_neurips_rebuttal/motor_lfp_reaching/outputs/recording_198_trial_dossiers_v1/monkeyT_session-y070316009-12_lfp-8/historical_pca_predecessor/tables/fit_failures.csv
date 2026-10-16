@@ -1,0 +1,13 @@
+recording,monkey,analysis,embedding_fold,raw_trial_index,nfev,cost,mse,action
+monkeyT_session-y070316009-12_lfp-8,T,short,1,47,1200,96.04730628637188,0.3667410526150639,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,short,2,47,1200,95.95459944447948,0.3654410874965839,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,short,3,0,1200,47.945899067677495,0.1734123733593325,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,short,3,179,1200,57.87074618131126,0.1828466412665408,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,short,4,0,1200,48.12369477622591,0.1740186801115521,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,matched_short,0,156,1200,65.55335119336249,0.28974921430124,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,matched_short,2,47,1200,95.74579897084146,0.3630365590153181,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,matched_long,0,234,1200,84.86484525496623,0.340960624201816,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,matched_long,1,234,1200,84.86484525496623,0.340960624201816,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,matched_long,2,234,1200,84.86484525496623,0.340960624201816,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,matched_long,3,234,1200,84.86484525496623,0.340960624201816,training_median_imputation
+monkeyT_session-y070316009-12_lfp-8,T,matched_long,4,234,1200,84.86484525496623,0.340960624201816,training_median_imputation

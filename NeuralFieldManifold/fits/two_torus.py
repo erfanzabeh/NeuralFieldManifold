@@ -3,7 +3,7 @@ from scipy import optimize
 from plotly import graph_objects as go
 
 
-def two_torus_fit(points, lam=0.1, hole_ratio=0.75, n_modes=3):
+def two_torus_fit(points, lam=0.1, hole_ratio=0.75, n_modes=3, *, return_diagnostics=False):
     """
     Fit an elliptical torus to a 3-D point cloud.
 
@@ -16,6 +16,7 @@ def two_torus_fit(points, lam=0.1, hole_ratio=0.75, n_modes=3):
     hole_ratio : tube radius penalised when r > hole_ratio * min(R1,R2)
                  0.75 is a good default — allows a thick tube but keeps
                  a clear hole even with outliers cutting through it
+    return_diagnostics : include optimizer metadata and native per-point distances
     """
     pts = np.asarray(points, dtype=np.float64)
     N   = len(pts)
@@ -158,7 +159,7 @@ def two_torus_fit(points, lam=0.1, hole_ratio=0.75, n_modes=3):
     ss_tot = np.sum(np.sum((pts - pts.mean(axis=0))**2, axis=1))
     r_squared = 1.0 - ss_res / (ss_tot + 1e-12)
 
-    return dict(
+    output = dict(
         center=c, direction=n_ax, u_axis=u_ax, v_axis=v_ax,
         R1=float(R1), R2=float(R2), minor_radius=float(r),
         hole_quality=float(1.0 - r / (min(R1, R2) + 1e-12)),
@@ -170,6 +171,16 @@ def two_torus_fit(points, lam=0.1, hole_ratio=0.75, n_modes=3):
         pc_extents=pc_ext,
         pc_ranges=pc_range,
     )
+    if return_diagnostics:
+        output['diagnostics'] = dict(
+            success=bool(result.success), status=int(result.status), message=str(result.message),
+            nfev=int(result.nfev), njev=int(result.njev or 0), cost=float(result.cost),
+            optimality=float(result.optimality), params=result.x.copy(),
+            lower_bounds=lb.copy(), upper_bounds=ub.copy(), active_mask=result.active_mask.copy(),
+            distance_3d=outside_dist.copy(), signed_tube_residual=signed.copy(),
+            backbone_distance=d.copy(),
+        )
+    return output
 
 def plot_two_torus_fit(entry, n_surf=60, alpha_surf=0.15):
 

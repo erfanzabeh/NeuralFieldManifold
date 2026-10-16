@@ -1,0 +1,30 @@
+{
+  "title": "NeuralFieldManifold Rebuttal Applications",
+  "core_slides": 10,
+  "backup_slides": 0,
+  "pptx": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/presentation/NeuralFieldManifold_rebuttal_applications.pptx",
+  "preview_pdf": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/presentation/NeuralFieldManifold_rebuttal_applications_preview.pdf",
+  "contact_sheet": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/presentation/previews/contact_sheet.png",
+  "speaker_notes": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/presentation/NeuralFieldManifold_rebuttal_applications_notes.md",
+  "cheat_sheet": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/presentation/NeuralFieldManifold_rebuttal_applications_cheat_sheet.md",
+  "pptx_validation": {
+    "slide_count": 10,
+    "titles": [
+      "NEURALFIELDMANIFOLD",
+      "MOUSE EEG",
+      "MOUSE EEG",
+      "MOUSE EEG",
+      "MOUSE EEG",
+      "MOUSE EEG",
+      "MACAQUE LFP",
+      "MACAQUE LFP",
+      "MACAQUE LFP",
+      "MACAQUE LFP"
+    ],
+    "file_size": 1214545
+  },
+  "source_claims": {
+    "eeg_torus_f1": 0.6697563098214888,
+    "motor_torus_f1": 0.1806242516881842
+  }
+}

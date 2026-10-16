@@ -1,0 +1,1 @@
+Stage-wise mean beta0 with interquartile bands across successful trial clouds. Distance convention: raw. Count birth <= distance < death on a shared 512-point grid. Bands show trial variability, not confidence intervals; see data for stage counts.

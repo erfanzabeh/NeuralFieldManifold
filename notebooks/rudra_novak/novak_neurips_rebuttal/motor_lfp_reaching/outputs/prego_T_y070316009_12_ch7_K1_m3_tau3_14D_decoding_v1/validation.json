@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "n_trials": 198,
+  "n_directions": 6,
+  "trials_per_direction": 33,
+  "folds": 5,
+  "n_features": 14,
+  "embedded_points": 494,
+  "usable_fits": 197,
+  "unusable_fits": 1,
+  "unusable_reasons": {
+    "nonconvergence": 1
+  },
+  "active_bound_fits": 12,
+  "near_bound_fits": 13,
+  "preserved_prior_files": 25312,
+  "permutation_count": 1000,
+  "bootstrap_count": 2000,
+  "checks": [
+    "exact frozen epochs and saved trial folds",
+    "494 original-coordinate points per trial",
+    "14 canonical features; no width",
+    "all trials receive OOF predictions",
+    "saved estimators have impute/scale/lda only",
+    "training-only medians and scaling",
+    "saved models reproduce OOF predictions",
+    "spectral features reproduce existing extraction",
+    "confusion rows sum to one",
+    "all null and bootstrap metrics reproduce predictions",
+    "source/input hashes and previous results unchanged"
+  ]
+}

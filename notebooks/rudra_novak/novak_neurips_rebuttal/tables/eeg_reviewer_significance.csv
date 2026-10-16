@@ -1,0 +1,4 @@
+comparison,feature_left,feature_right,n_pairs,mean_left,mean_right,mean_difference_left_minus_right,wilcoxon_statistic,p_uncorrected,p_holm,significance
+torus_features vs average_psd,torus_features,average_psd,21,0.6697563098214887,0.48520075921329564,0.18455555060819323,1.0,1.9073486328125e-06,3.814697265625e-06,***
+torus_features vs best_single_band,torus_features,best_single_band,21,0.6697563098214887,0.6369893763038506,0.03276693351763835,28.0,0.0013742446899414062,0.0013742446899414062,**
+best_single_band vs average_psd,best_single_band,average_psd,21,0.6369893763038506,0.48520075921329564,0.1517886170905549,0.0,9.5367431640625e-07,2.86102294921875e-06,***

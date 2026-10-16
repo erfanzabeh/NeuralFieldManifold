@@ -1,0 +1,1 @@
+All seven methods. Shared color scale 0-1; rows normalized.

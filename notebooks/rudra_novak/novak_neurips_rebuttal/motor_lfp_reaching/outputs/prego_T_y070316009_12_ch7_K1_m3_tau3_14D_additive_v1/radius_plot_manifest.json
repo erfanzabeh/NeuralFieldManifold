@@ -1,0 +1,19 @@
+{
+  "source": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_decoding_v1/tables/features_geometry.csv",
+  "source_sha256": "e9a4c09c96823918b20b01fb26497ca78b06aa0b06908c219b862ec06d7535fb",
+  "renderer_sha256": "c7372f44637929ba962c6b99a262f5b6301a28c06a2c78ef471cd1b692a3e9a7",
+  "rows": 197,
+  "excluded_rows": [
+    69
+  ],
+  "previous_files_unchanged": 74,
+  "outputs": {
+    "figures/geometry_r1_r2.png": "52d262d2a77251d3caeb48e75171974caee2681d0333ef9c5bb5191b7c186300",
+    "figures/geometry_r1_r2.pdf": "54a50c2f54747c7366de550224254c71baef42e781dcef18b14a002498da96d2",
+    "figures/geometry_r1_r2.csv": "ffc75834121ca54016623aae0cedb9f787c4f7c3f697ce0ff8cfcee6b5b4f8a4",
+    "figures/geometry_r1_r2.svg": "d68a9907f4e30b4cadf3d3ca99980fce4ba2a986bf8653d043c2884f10ddaedc",
+    "figures/geometry_r1_r2.caption.txt": "18a8d0b0daa1ea03c551860190c0bb46ff581422671612775846e13b7ed05c3c",
+    "previews/geometry_r1_r2.png": "232e265cf7ed95aadc80195369ace51ffa9401c23ca9b80857291a65a291abf0",
+    "tables/geometry_r1_r2_density.npz": "b8f7574352211f212c573935aba492c6888edcb9161abef63dfdec53737684a4"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "reused_checkpoints": 198,
+  "passed": true,
+  "trials": 198,
+  "direction_counts": {
+    "1": 33,
+    "2": 33,
+    "3": 33,
+    "4": 33,
+    "5": 33,
+    "6": 33
+  },
+  "successes": 198,
+  "failures": 0,
+  "radius_usable": 197,
+  "protected_files_unchanged": 25822,
+  "all_saved_tables_reproduced": true,
+  "clouds_exactly_match_frozen_epochs": true,
+  "infinite_intervals_preserved": true,
+  "decoder_calls": 0,
+  "geometric_fit_calls": 0,
+  "limitations": "Descriptive single-recording PH; no topology significance or parameter retuning."
+}

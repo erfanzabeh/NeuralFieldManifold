@@ -1,0 +1,2 @@
+Lowest original trial ID per direction. Identical full-coordinate clouds, camera, and pairwise scale.
+Collapse/convergence/boundary warnings shown per example. Tube overlays are parametric sweeps, not volume boundaries, and may self-intersect.

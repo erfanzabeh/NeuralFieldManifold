@@ -1,0 +1,22 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "trials": "short-delay",
+  "nominal_durations_ms": {
+    "initial_hold": 700,
+    "temporal_cue": 200,
+    "delay_1": 700,
+    "spatial_cue": 55,
+    "delay_2": 700
+  },
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8152857/",
+  "alignment_sha256": "a5deb1dbe3dee269d2f711e4c05d796062643de7fc3494c0b29e4cdb9c81981d",
+  "illustration_sha256": "b84c0d08dab207a917d20a5df921ec877294634b3ad68b4d30c21dfee9b4f219",
+  "timeline": "Native vector lines and editable text; unchanged raster illustration insert",
+  "png_pixels": [
+    8280,
+    2100
+  ],
+  "png_dpi": 600,
+  "validation": "Text bounding boxes contained and nonoverlapping; nominal interval ratios verified",
+  "note": "Nominal protocol durations, not per-trial measured event intervals. No analysis window displayed."
+}

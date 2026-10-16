@@ -224,9 +224,20 @@ notebooks/data/*
 *.mat
 
 *.DS_Store
+._*
 */__pycache__/*
 # Rebuttal materials (not tracked)
 rebuttal/
+
+# Local slide and poster materials; analysis outputs remain tracked.
+/notebooks/rudra_novak/novak_neurips_rebuttal/presentation/
+
+# Oversized OLS table is tracked as a lossless .csv.gz copy; retain local original.
+/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_ols_audit_v1/tables/inner_validation_scores.csv
+# Redundant bundle includes raw-data caches already excluded above.
+/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/recording_198_trial_dossiers_v1.zip
+# Per-run process locks are machine-local.
+/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/*/run.lock
 
 *.mp4
 *.dat

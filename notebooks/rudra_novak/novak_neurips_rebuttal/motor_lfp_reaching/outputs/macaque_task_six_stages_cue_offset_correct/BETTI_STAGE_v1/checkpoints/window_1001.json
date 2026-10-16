@@ -1,0 +1,14 @@
+{
+  "window_index": 1001,
+  "original_trial_number": 550,
+  "trial_index": 166,
+  "stage_name": "post_GO",
+  "n_points": 294,
+  "cloud_sha256": "761d491b6eef769b7c7de86c004e845a0bd46d3317f40bc6b536a851c2183189",
+  "config_sha256": "965884e563f15cdcf1799ddb265bf81f8552702f259078c3e464f45aeb6a78a2",
+  "status": "success",
+  "reason": "",
+  "diagram_sha256": "9c9f9b3cfa008e1bfb9c4ed180b20ebee2068f1e5ad6b4d18c3da5f2e6c544f9",
+  "elapsed_seconds": 2.1351058080326766,
+  "wall_seconds": 2.4210965500678867
+}

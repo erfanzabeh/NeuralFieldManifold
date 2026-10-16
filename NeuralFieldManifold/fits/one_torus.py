@@ -3,7 +3,7 @@ from scipy import optimize
 from plotly import graph_objects as go
 
 
-def one_torus_fit(points, lam=0.1, hole_ratio=0.5, n_modes=3):
+def one_torus_fit(points, lam=0.1, hole_ratio=0.5, n_modes=3, *, return_diagnostics=False):
     """
     Fit an elliptical annular band (one-torus) to a 3-D point cloud.
 
@@ -22,6 +22,7 @@ def one_torus_fit(points, lam=0.1, hole_ratio=0.5, n_modes=3):
     hole_ratio : inner radius penalised when R1_in < hole_ratio * R1
                  0.5 keeps a clear hole without being overly restrictive
     n_modes    : Fourier modes for angular-homogeneity penalty
+    return_diagnostics : include optimizer metadata and native per-point distances
     """
     pts = np.asarray(points, dtype=np.float64)
     N   = len(pts)
@@ -205,7 +206,7 @@ def one_torus_fit(points, lam=0.1, hole_ratio=0.5, n_modes=3):
     ss_tot = np.sum(np.sum((pts - pts.mean(axis=0))**2, axis=1))
     r_squared = 1.0 - ss_res / (ss_tot + 1e-12)
 
-    return dict(
+    output = dict(
         center=c, direction=n_ax, u_axis=u_ax, v_axis=v_ax,
         R1=float(R1_out), R2=float(R2_out),
         R1_in=float(R1_in), R2_in=float(R2_in),
@@ -219,6 +220,16 @@ def one_torus_fit(points, lam=0.1, hole_ratio=0.5, n_modes=3):
         pc_extents=pc_ext,
         pc_ranges=pc_range,
     )
+    if return_diagnostics:
+        output['diagnostics'] = dict(
+            success=bool(result.success), status=int(result.status), message=str(result.message),
+            nfev=int(result.nfev), njev=int(result.njev or 0), cost=float(result.cost),
+            optimality=float(result.optimality), params=result.x.copy(),
+            lower_bounds=lb.copy(), upper_bounds=ub.copy(), active_mask=result.active_mask.copy(),
+            distance_3d=error_3d.copy(), distance_in_plane=error_2d.copy(),
+            normal_offset=h.copy(),
+        )
+    return output
 
 
 def plot_one_torus_fit(entry, n_surf=60, alpha_surf=0.15):

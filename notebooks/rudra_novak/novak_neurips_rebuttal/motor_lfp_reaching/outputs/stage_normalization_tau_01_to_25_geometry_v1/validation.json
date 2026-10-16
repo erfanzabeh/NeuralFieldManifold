@@ -1,0 +1,64 @@
+{
+  "trial_numbers": [
+    6,
+    9,
+    10
+  ],
+  "delays_ms": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "pdf_count": 3,
+  "total_pages": 75,
+  "observed_clouds": 900,
+  "tau3_matches_previous_clouds_exact": true,
+  "direct_delay_coordinates_verified": true,
+  "vector_pdf_pages_verified": true,
+  "all_page_labels_verified": true,
+  "common_limits_across_tau_per_method": true,
+  "previous_results_unchanged": true,
+  "normalization_recomputed": false,
+  "fitter_called": false,
+  "decoder_called": false,
+  "exports": [
+    {
+      "name": "trial_6_MAD_vs_envelope_tau_01_to_25.pdf",
+      "pages": 25,
+      "sha256": "fe1697192f4d6f215faf4d2f828d821290c3bc33f180dd3c90b72eb5ffb72f8e"
+    },
+    {
+      "name": "trial_9_MAD_vs_envelope_tau_01_to_25.pdf",
+      "pages": 25,
+      "sha256": "e06367accd59d7d70537c84557d35f5d1f0e2839c6ea2abb0813f3bea1414eeb"
+    },
+    {
+      "name": "trial_10_MAD_vs_envelope_tau_01_to_25.pdf",
+      "pages": 25,
+      "sha256": "2eb807bc547bf3efa744c243d7399fd6c79eeb3099734eeb062c35c7f1a5339e"
+    }
+  ],
+  "source_sha256": "acc10aa6da5650fd1927832375989685d584701850ee98c57acff70f5733427c"
+}

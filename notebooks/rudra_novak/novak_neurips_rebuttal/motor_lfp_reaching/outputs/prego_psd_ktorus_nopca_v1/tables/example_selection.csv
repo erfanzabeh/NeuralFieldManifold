@@ -1,0 +1,3 @@
+monkey,recording,reference_fold,K,dimension,tau_samples,raw_trial_index,original_trial_number,direction,training_median_error
+M,monkeyM_session-o080904001-7_lfp-5,0,2,5,44,68,21,4,0.7932222842946202
+T,monkeyT_session-y070306001-5_lfp-5,0,1,3,13,7,60,1,0.8088793515294412

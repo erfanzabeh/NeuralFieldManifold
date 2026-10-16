@@ -1,0 +1,34 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "n_trials": 198,
+  "fs_hz": 1000,
+  "epoch_samples": [
+    4000,
+    4500
+  ],
+  "dimension": 3,
+  "tau_samples": 16,
+  "tau_ms": 16,
+  "points_per_trial": 468,
+  "models": {
+    "one_torus": {
+      "lam": 0.1,
+      "hole_ratio": 0.5,
+      "n_modes": 3,
+      "max_nfev": 6000
+    },
+    "two_torus": {
+      "lam": 0.1,
+      "hole_ratio": 0.75,
+      "n_modes": 3,
+      "max_nfev": 6000
+    }
+  },
+  "loss": "huber",
+  "f_scale": 1.0,
+  "decoding": false,
+  "pca_reduction": false,
+  "preprocessing": "existing per-trial linear detrend, median/MAD normalize, 4th-order zero-phase 2-55 Hz",
+  "context_only_psd_peak_hz": 22.0,
+  "context_only_candidate_K": 1
+}

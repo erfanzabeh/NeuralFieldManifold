@@ -1,0 +1,1 @@
+Each gray point is a within-recording matched difference. Red: recording mean and recording-day cluster-bootstrap 95% CI. Positive favors adding geometry. P-values are Holm-adjusted across all eight planned tests, using paired day summaries.

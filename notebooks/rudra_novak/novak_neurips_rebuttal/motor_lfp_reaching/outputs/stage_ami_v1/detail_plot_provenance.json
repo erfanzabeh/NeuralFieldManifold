@@ -1,0 +1,26 @@
+{
+  "source": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/plot_stage_ami_detail.py",
+  "sha256": "64f95f3a691cc8c23a6486b71a9c6d6bc232d2b64bd09dc7ee04448f1420db20",
+  "pooled_limits": {
+    "delay_ms": [
+      10,
+      40
+    ],
+    "ami_nats": [
+      0,
+      0.14
+    ]
+  },
+  "stage_limits": {
+    "delay_ms": [
+      10,
+      70
+    ],
+    "ami_nats": [
+      0,
+      0.25
+    ]
+  },
+  "input": "tables/ami_curves.csv",
+  "estimation_called": false
+}

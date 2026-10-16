@@ -1,0 +1,79 @@
+{
+  "trials": [
+    211,
+    579
+  ],
+  "taus_ms": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "variant": "native",
+  "pages_per_pdf": 20,
+  "common_coordinate_limit": 5.56511098632599,
+  "protected_hashes": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/windows.npz": "f323d6b5eae57ff3a298559c43947d7746074e8331dd7f8429e872499b1c85b1",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/window_metadata.csv": "1ccd405fc3d88e50b825632de81588e685e547aedf7906a6806c6e876f9b0efe",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/validation.json": "8dc4ef83a7ebe8c5948c09d5dff0dd1855631db5e544fd36a533b6a4c3cad335",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_01.npz": "38d7eedcce3994f943ed32309fa17a02e3b451fe85badda705a7c835193c9fde",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_02.npz": "c5c1d66696e5bec3b2cd32b4fbafeab11fb9e666bc5b0f04c5be43b940cd1c25",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_03.npz": "8428ce2904b534d28bc28654785332c1da0adf247087bab272f0a7cf0d85dbf9",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_04.npz": "259c7262d93635a9b552b95f894cf59dff50048b378904b6a93940361896818e",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_05.npz": "5a913023d44de7ed06343071eb0c3e3ce1f1903b5cf5371e64dbbabf6bf3ece6",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_06.npz": "11c66aa24f31d14cc122ab275e6f50c2862c8cc85cef742eebbe70701396a7c0",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_07.npz": "42578b4e9bfd0b43991e0023c6ab38bf08ca4a2f1d5b9e03760779d9b630f248",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_08.npz": "3e10a9ae1a372dccac978024e8ac32f2d0db0d39f122f0eb70485e2197c0e5e2",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_09.npz": "73f0cfd4268c10282166fae3b8fcbc96acd672fd62309201483c5cf6f4c57ff6",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_10.npz": "28cd71eb592cfe66314114145fab1fdb212aadabe82e7ae85cd8a796e2b5d07d",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_11.npz": "5f12faa97cd1c31894b2dd39882bc9d842a5694029f2babb7fff5de89e48ca17",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_12.npz": "5569d8070a271d419b16498830aba99819c8983f9468cb1685169d541a3a71d1",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_13.npz": "34f9dbe0829f59fdc69ba01ac1aba5f62a086d4647e5459c816c01e1ccfa7fda",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_14.npz": "d2d01b0e2c5b3fcfb1ab7b2fcdc1d992000e78121fa5acfcbd211007423fcffe",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_15.npz": "190380e6a45ba4c614649c4a7087599ec86946b1e106856ae3ef4f5ec147c5d9",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_16.npz": "5245341574677c3a5d0878f296fa58810fd9bb2be9e33816dc10d8300701d91d",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_17.npz": "4966b0421e624070bc8a9fd6ec37da451441cde4ed9e9d9a80dd87ce70a694ed",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_18.npz": "0ae8596f3a356064c0a722272275ed91a810618d003421c848117a47d6015711",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_19.npz": "928de9b3d3e5663acaeea1964e623061ad788e20cc1046a33a51f520726f4113",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/predictions/native_tau_20.npz": "d5da1aab94eb0df02971aae81b4c88fd20f202ea0e5542ce44dbdb6aa22e520d"
+  },
+  "no_fitting_or_decoding": true,
+  "pdfs": [
+    {
+      "path": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/trial_211_579_native_tau_geometry_atlas_v1/trial_211_native_tau_01_to_20_observed.pdf",
+      "sha256": "528d37a2ae245be44f489aea950d7d88cac03ced031e59681abf3b188609bc6d",
+      "bytes": 956240
+    },
+    {
+      "path": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/trial_211_579_native_tau_geometry_atlas_v1/trial_211_native_tau_01_to_20_with_fits.pdf",
+      "sha256": "568d661b735ab74d622f04881e5ec01b25a275552d1a6bf2dad429a988aa27f6",
+      "bytes": 1090303
+    },
+    {
+      "path": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/trial_211_579_native_tau_geometry_atlas_v1/trial_579_native_tau_01_to_20_observed.pdf",
+      "sha256": "106cf91cb8867cd458b08176da7ffaef4c3067e4afa8c81868bc748227caeb33",
+      "bytes": 957675
+    },
+    {
+      "path": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/tau_sweep_v1/trial_211_579_native_tau_geometry_atlas_v1/trial_579_native_tau_01_to_20_with_fits.pdf",
+      "sha256": "1e7338226fe2c94fdc1aeed221e4d1b6bdd5a15866466bf21c71be4d1051ed62",
+      "bytes": 1089139
+    }
+  ]
+}

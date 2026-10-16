@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "tests_passed": 11,
+  "report_words": 269,
+  "standalone_pngs": 18,
+  "all_18_panels_inspected_via_contact_sheets": true,
+  "main_curves_and_normalized_lifetimes_inspected_individually": true,
+  "shared_scales_checked": true,
+  "protected_files_unchanged": 29210,
+  "test_sources": [
+    {
+      "file": "test_stage_persistent_homology.py",
+      "sha256": "78553b6939351edfdd447505d81268f3c28ded1866d78d38fcf8c911909a1ee7"
+    },
+    {
+      "file": "test_stage_persistent_homology_plots.py",
+      "sha256": "93f262eb773891960cc60b11b8b453375a99e95ac01afd07911bd2a7cfc06258"
+    }
+  ]
+}

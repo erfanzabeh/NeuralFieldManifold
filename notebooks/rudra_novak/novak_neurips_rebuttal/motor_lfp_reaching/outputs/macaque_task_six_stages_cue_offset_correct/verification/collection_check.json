@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-09-23T02:40:19.893491+00:00",
+  "passed": true,
+  "trials": 198,
+  "windows": 1188,
+  "macro_f1": 0.2928413893498778,
+  "accuracy": 0.30387205387205385,
+  "frozen_inputs_verified": 6,
+  "validated_png_hashes_verified": 129,
+  "post_TC": "300 ms starting at recorded TC offset (203)",
+  "post_SC": "300 ms starting at recorded SC instruction end / distractor onset (206)",
+  "window_timing_and_trial_grouped_folds_checked": true,
+  "scores_and_confusion_reproduced_from_saved_predictions": true,
+  "analysis_or_plotting_rerun": false,
+  "source_files_unchanged": 2427,
+  "copied_files_verified": 170
+}

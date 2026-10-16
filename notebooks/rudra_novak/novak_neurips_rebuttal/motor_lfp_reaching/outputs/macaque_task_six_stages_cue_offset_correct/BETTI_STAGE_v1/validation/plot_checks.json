@@ -1,0 +1,246 @@
+{
+  "passed": true,
+  "png_count": 18,
+  "protected_files_unchanged": 29210,
+  "analysis_files_unchanged": 2379,
+  "imported_ripser": false,
+  "fitter_calls": 0,
+  "decoder_calls": 0,
+  "source_sha256": "0f9669c9cc7ddd428e7eea0d405887a6fc4ab59558a776a6dbc060e46c2c69cd",
+  "panels": [
+    {
+      "file": "01_betti_h1.png",
+      "sha256": "26dec9b3640cedb1e430e966dfc5a4d79391dc2a0052f3d31496e241f173c882",
+      "pixels": [
+        2280,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "02_betti_h1_rms_normalized.png",
+      "sha256": "1a5cf1126052512f3f77aa795e4a047a05243b8e3ebcdcc5bd789dcf837d2b0a",
+      "pixels": [
+        2280,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "05_betti_h0.png",
+      "sha256": "2e292b0f6ef8796c93a92d84da1bbaf353fb71ecac609dc5ed8040ccd9d74d57",
+      "pixels": [
+        2280,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "06_betti_h2.png",
+      "sha256": "c1e2170bc5bdfb4f020b7ed5fc2e8d123de6db6b07ae4b1e520a5fcf0d48d793",
+      "pixels": [
+        2280,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "03_longest_h1_lifetime.png",
+      "sha256": "da0c7db6eb73afda06e3b2a9bca1a2e3a02a774338a1ef4fea0f7442d0db5042",
+      "pixels": [
+        2340,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "04_longest_h1_lifetime_rms_normalized.png",
+      "sha256": "739fddcc475deeb41dba266684054a6b1450ef4522ac1a6e9f9f0c14881b37d9",
+      "pixels": [
+        2340,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "07_persistence_trial6_pre_TC.png",
+      "sha256": "5bb90ca9926b47deacd445b86916ea7f53aca0a1bcd5b540ac6e9edee9ed4359",
+      "pixels": [
+        2040,
+        1920
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "08_h1_barcode_trial6_pre_TC.png",
+      "sha256": "552c6dfaced9dfe00074c582f2ca5a4291411fe5f5a88baf1b30f23b737dc0da",
+      "pixels": [
+        2040,
+        2328
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "07_persistence_trial6_post_TC.png",
+      "sha256": "601790878095bd14f60ecf55457ec05750e1cfa805439b2fb53a7132a48215f7",
+      "pixels": [
+        2040,
+        1920
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "08_h1_barcode_trial6_post_TC.png",
+      "sha256": "01fafde90c4fd6449fca22f39379d0b889f3cbb861bb614b68264e3cd36d47de",
+      "pixels": [
+        2040,
+        2328
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "07_persistence_trial6_pre_SC.png",
+      "sha256": "2d9bc995a51ece279d08903789454e14666f8c5ff53bf73afd1537678a8b3838",
+      "pixels": [
+        2040,
+        1920
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "08_h1_barcode_trial6_pre_SC.png",
+      "sha256": "98f094f4764d208b6f6f8c76afd1a620678b8cb12caf313c41e5310bf4846fd4",
+      "pixels": [
+        2040,
+        2328
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "07_persistence_trial6_post_SC.png",
+      "sha256": "bb882d6cc510443e3e69acac923ccd02bfac31216aafdc50ce3e61455f63cd96",
+      "pixels": [
+        2040,
+        1920
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "08_h1_barcode_trial6_post_SC.png",
+      "sha256": "e56886c9d180aae62e14801c419e202fdd4d99d1a0a6a716c5c249fdca33c65b",
+      "pixels": [
+        2040,
+        2328
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "07_persistence_trial6_pre_GO.png",
+      "sha256": "736ed69e49f4c714a8adbc4739f294da375bc573829a09b3dd9921688c8cd833",
+      "pixels": [
+        2040,
+        1920
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "08_h1_barcode_trial6_pre_GO.png",
+      "sha256": "740d91adde5ecf0a81ae815e9e3f20e50af5d1556617cf1dae9baef7e0b6fcdd",
+      "pixels": [
+        2040,
+        2328
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "07_persistence_trial6_post_GO.png",
+      "sha256": "b3811794f7f89a56e49573698367def941de32007dda6c9e7708e0ec22549708",
+      "pixels": [
+        2040,
+        1920
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    },
+    {
+      "file": "08_h1_barcode_trial6_post_GO.png",
+      "sha256": "2f1b535254f8e5146edf2d5ca76e80aa9d85e0f41c24f590ab5d1fdb8e447dd9",
+      "pixels": [
+        2040,
+        2328
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "outside_text": []
+    }
+  ]
+}

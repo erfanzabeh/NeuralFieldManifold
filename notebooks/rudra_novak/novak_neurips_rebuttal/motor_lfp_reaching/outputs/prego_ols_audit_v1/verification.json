@@ -1,0 +1,17 @@
+{
+  "recordings": 210,
+  "successful_recordings": 210,
+  "failures": [],
+  "trials": 25806,
+  "verified_outer_folds": 1050,
+  "previous_outputs_unchanged": true,
+  "input_and_source_hashes_verified": true,
+  "saved_trials_and_folds_identical": true,
+  "prediction_and_metric_reconstruction": true,
+  "inner_selection_reproduced": true,
+  "all_targets_before_GO": true,
+  "model_scope": "OLS only; no torus, shape features, PCA, PINN, or decoding",
+  "independent_forecast_absolute_tolerance": 1e-06,
+  "max_independent_forecast_difference": 4.184075739330131e-07,
+  "status": "passed"
+}

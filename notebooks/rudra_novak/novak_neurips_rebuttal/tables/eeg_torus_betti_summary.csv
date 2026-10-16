@@ -1,0 +1,2 @@
+session_id,tau,window_sec,threshold,n_windows,target_beta0,target_beta1,target_beta2,target_count,target_fraction,dominant_beta0,dominant_beta1,dominant_beta2,dominant_count,dominant_fraction,main_elapsed_sec
+session_m0900_0960,40,2.0,0.3,200,1,2,1,0,0.0,1,1,0,76,0.38,20.636110531002487

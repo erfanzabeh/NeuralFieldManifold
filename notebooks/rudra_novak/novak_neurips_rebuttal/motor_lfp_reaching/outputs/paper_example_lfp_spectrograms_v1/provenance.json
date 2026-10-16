@@ -1,0 +1,45 @@
+{
+  "T": {
+    "monkey": "T",
+    "name": "monkeyT_session-y070315015-17_lfp-6",
+    "label": "y070315015-17, LFP 6",
+    "n": 74,
+    "event_positions": {
+      "TC on": -0.879,
+      "TC off": -0.683,
+      "SC on": 0.0,
+      "SC off": 0.054,
+      "GO": 0.737
+    },
+    "raw_go_range": [
+      4500,
+      4500
+    ],
+    "input_hashes": {
+      "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/lfp_converted_data/monkeyT_session-y070315015-17_lfp-6.npz": "669aab9daa0a4420e86fafc34c8c68353e4b3d4b5529bf86c57e6c55527361f6",
+      "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/raw_data/MonkeyT.mat": "65e4714be82c009f3d2169bd32585c284fcc3fd59497df145d3cc2cc983cd235"
+    }
+  },
+  "M": {
+    "monkey": "M",
+    "name": "monkeyM_session-o080520001-6_lfp-2",
+    "label": "o080520001-6, LFP 2",
+    "n": 51,
+    "event_positions": {
+      "TC on": -1.177,
+      "TC off": -0.976,
+      "SC on": 0.0,
+      "SC off": 0.054,
+      "GO": 1.03
+    },
+    "raw_go_range": [
+      5000,
+      5000
+    ],
+    "input_hashes": {
+      "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/lfp_converted_data/monkeyM_session-o080520001-6_lfp-2.npz": "20d940d2fb33cac353cc55876257b97d018f058035978aa7dae81d5fae058ee1",
+      "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/raw_data/MonkeyM.mat": "fcf4afa8dbb34dafbe67918eef504a8b5aaf8daaf9e1bcaffe0c27dc266d7b75"
+    }
+  },
+  "method": "All converted correct short-delay trials for each named LFP; per-trial alignment to raw SC-on event; fourth-order 2-Hz zero-phase high-pass; 300-ms Hann PSD, 50-ms shift, zero-padded 1-Hz frequency grid; linear power averaged across trials; color limits min/max power above 10 Hz per monkey, matching the paper's description. Exact source window taper and colormap were not specified, so the image is a methodological recreation."
+}

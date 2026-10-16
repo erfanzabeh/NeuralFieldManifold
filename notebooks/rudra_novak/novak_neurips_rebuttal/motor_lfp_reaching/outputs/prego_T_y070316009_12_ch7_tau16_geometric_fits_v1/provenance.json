@@ -1,0 +1,12 @@
+{
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/run_prego_geometric_fits.py": "b894a8da543368ec31631c37951e16e76288cfa23dbad2fe907def8c9651ad9c",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/prego_geometric_fits.py": "eb7b1b8a36bc05e9bc3a50d5b15e0cf2953642c368b228d941b70118f537b7a3",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/motor_lfp_utils.py": "15df7c7e8d20e48b3dedcbd95edcfb71623bfed242788ed55ac4f4174a6e634d",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/select_trace_embedding_parameters.py": "70e1715a5cfb13a8ca1f50cc5a243290bbb3c3b79cd3fafa592f007d479c1a1d",
+  "/home/nochen/code/NeuralFieldManifold/NeuralFieldManifold/fits/one_torus.py": "b801df2c0c3f9d373162ecc3941511c8e37b06272a12ea93ee14db5e2d56a8b1",
+  "/home/nochen/code/NeuralFieldManifold/NeuralFieldManifold/fits/two_torus.py": "39f76b718a723cf53231c7bbda0e0c73ca12e7b3182a74d0204ba27a4a866233",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/recording_198_trial_dossiers_v1/monkeyT_session-y070316009-12_lfp-7/inputs/selected_raw_prego_epochs.npz": "541f12b5dc0acd6b158bbd31a91929f4ef2a039972eae3a59a9aad28c8113f61",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/recording_198_trial_dossiers_v1/monkeyT_session-y070316009-12_lfp-7/inputs/selected_trials.csv": "22ce063f4e1e46333c2569c6affe5fd08a3f4dc4743797a81a9235cad2f5e7ba",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/recording_198_trial_dossiers_v1/monkeyT_session-y070316009-12_lfp-7/inputs/audited_alignment.json": "a5deb1dbe3dee269d2f711e4c05d796062643de7fc3494c0b29e4cdb9c81981d",
+  "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/recording_198_trial_dossiers_v1/monkeyT_session-y070316009-12_lfp-7/inputs/full_converted_recording.npz": "44496fb78e75ccd2c39d68a2c83ce090386f26f1ff06cee63278859768038cd4"
+}

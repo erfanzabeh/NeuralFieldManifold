@@ -1,0 +1,1 @@
+Processed audit signals. Examples: first outer-test fold, lowest original trial ID within each direction, not performance-selected.

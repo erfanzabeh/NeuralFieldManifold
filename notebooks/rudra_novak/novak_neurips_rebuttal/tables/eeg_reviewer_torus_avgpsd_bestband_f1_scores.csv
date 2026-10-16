@@ -1,0 +1,64 @@
+session_id,recording_hour,feature_role,feature_label,feature_set,selected_band,selected_band_label,f1
+session_m0120_0180,Hour 3,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.6391040106822209
+session_m0120_0180,Hour 3,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.34801507487711586
+session_m0120_0180,Hour 3,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.5529468109082714
+session_m0180_0240,Hour 4,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.7281687124057518
+session_m0180_0240,Hour 4,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.49773150860927723
+session_m0180_0240,Hour 4,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6508676350328532
+session_m0240_0300,Hour 5,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.6676173507825411
+session_m0240_0300,Hour 5,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.4887624452841844
+session_m0240_0300,Hour 5,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6685290893371504
+session_m0300_0360,Hour 6,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.7224242424242425
+session_m0300_0360,Hour 6,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.5366184203393506
+session_m0300_0360,Hour 6,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.701226309921962
+session_m0360_0420,Hour 7,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.7119479486527541
+session_m0360_0420,Hour 7,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.48919533625415984
+session_m0360_0420,Hour 7,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6761789575708962
+session_m0420_0480,Hour 8,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.7176627022344994
+session_m0420_0480,Hour 8,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.45223109847630627
+session_m0420_0480,Hour 8,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6467619726529684
+session_m0480_0540,Hour 9,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.7442179433241689
+session_m0480_0540,Hour 9,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.5591925589798533
+session_m0480_0540,Hour 9,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.7391821440208536
+session_m0540_0600,Hour 10,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.690890711703274
+session_m0540_0600,Hour 10,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.48512368102404424
+session_m0540_0600,Hour 10,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6766738087992406
+session_m0600_0660,Hour 11,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.6727738453434927
+session_m0600_0660,Hour 11,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.46384127320281393
+session_m0600_0660,Hour 11,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.5967589039775927
+session_m0660_0720,Hour 12,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.597207367795603
+session_m0660_0720,Hour 12,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.4241960953201263
+session_m0660_0720,Hour 12,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.5884851016429965
+session_m0720_0780,Hour 13,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.6362351715242434
+session_m0720_0780,Hour 13,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.4264808728112473
+session_m0720_0780,Hour 13,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.5908808521332983
+session_m0840_0900,Hour 15,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.7416673336001067
+session_m0840_0900,Hour 15,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.5348701685910988
+session_m0840_0900,Hour 15,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6795022412220749
+session_m0900_0960,Hour 16,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.7482185109303753
+session_m0900_0960,Hour 16,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.5632435225869997
+session_m0900_0960,Hour 16,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6827282010334211
+session_m0960_1020,Hour 17,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.6778128640197606
+session_m0960_1020,Hour 17,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.5703455964325529
+session_m0960_1020,Hour 17,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6543793028927788
+session_m1020_1080,Hour 18,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.7219101932659351
+session_m1020_1080,Hour 18,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.47220214117220105
+session_m1020_1080,Hour 18,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.678396194554364
+session_m1080_1140,Hour 19,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.5687984936977183
+session_m1080_1140,Hour 19,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.4002742669409336
+session_m1080_1140,Hour 19,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.5392904503182073
+session_m1140_1200,Hour 20,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.5779552790933296
+session_m1140_1200,Hour 20,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.6062798527914807
+session_m1140_1200,Hour 20,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6355101401613029
+session_m1200_1260,Hour 21,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.6825526562135401
+session_m1200_1260,Hour 21,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.4555442761437472
+session_m1200_1260,Hour 21,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.641451321206924
+session_m1260_1320,Hour 22,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.5699358500564339
+session_m1260_1320,Hour 22,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.44524082716646096
+session_m1260_1320,Hour 22,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.5624505032293463
+session_m1320_1380,Hour 23,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.612319358151088
+session_m1320_1380,Hour 23,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.4666184022293587
+session_m1320_1380,Hour 23,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.6582757361082939
+session_m1380_1440,Hour 24,torus_features,Torus features,all_torus_15,low_gamma,Low gamma (30-50 Hz),0.6354619603501869
+session_m1380_1440,Hour 24,average_psd,Average PSD,average_psd,low_gamma,Low gamma (30-50 Hz),0.5032085242458954
+session_m1380_1440,Hour 24,best_single_band,Best single band,low_gamma,low_gamma,Low gamma (30-50 Hz),0.5563012256560643

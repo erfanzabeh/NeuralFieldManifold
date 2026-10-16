@@ -1,0 +1,12 @@
+{
+  "n_trials": 198,
+  "n_trials_per_direction": 33,
+  "longest_median": 0.6227750703692436,
+  "second_longest_median": 0.4499436989426613,
+  "paired_gap_median": 0.1342276707291603,
+  "paired_gap_q25": 0.05707253888249397,
+  "paired_gap_q75": 0.2734571769833565,
+  "minimum_h1_interval_count": 117,
+  "delta_betti_min": -2.8686868686868685,
+  "delta_betti_max": 2.8939393939393945
+}

@@ -1,0 +1,11 @@
+{
+  "n_trials": 198,
+  "n_model_results": 396,
+  "points_per_cloud": 468,
+  "metric_reproduction": true,
+  "identity_parameter_and_diagnostic_reproduction": true,
+  "previous_output_files_unchanged": 24303,
+  "source_files_unchanged": 10,
+  "no_decoding": true,
+  "no_pca_reduction": true
+}

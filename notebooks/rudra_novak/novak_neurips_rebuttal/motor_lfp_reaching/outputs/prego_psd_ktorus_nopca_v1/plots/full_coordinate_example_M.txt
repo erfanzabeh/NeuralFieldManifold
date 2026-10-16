@@ -1,0 +1,1 @@
+Descriptive held-out trial, monkeyM_session-o080904001-7_lfp-5. Recording selected by median training-only normalized fit error, not decoding. Every retained delay coordinate is shown; no PCA. Fits are read from cache, not recomputed. Coordinate j is x(t-j*tau).

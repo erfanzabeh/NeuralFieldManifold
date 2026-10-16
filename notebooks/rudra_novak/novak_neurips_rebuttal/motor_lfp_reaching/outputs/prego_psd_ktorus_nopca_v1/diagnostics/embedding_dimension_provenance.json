@@ -1,0 +1,19 @@
+{
+  "frozen_artifacts_unchanged": true,
+  "no_refitting_or_decoding": true,
+  "source_hashes": {
+    "embedding_selection.csv": "65fa104673747db1ad00d79bbf5cd6713c52a97ec9122a394f048dc1c46d35ed",
+    "recording_audit.csv": "fa59650aada4b0234cb1135f1b2496d75931f6c94e087931a85e1dc8c57eae44",
+    "fit_diagnostics.csv": "55af9ff20defe912dd27051e69484a7f6db4424069f499025dd9765db412b19d"
+  },
+  "rendering_script_sha256": "f421b4b4a63fa82ae482a0ee0946c36279a66d6b4d3e80bf2f6227cce36bad08",
+  "output_hashes": {
+    "embedding_dimension_distribution.csv": "f1958b4cbe364d7153dc6f067597bcb56317e40f2c304f25fcf77e71172556eb",
+    "embedding_dimension_distribution.pdf": "950f6882d07c2e76526f2495321457de825f65057c96cf282e4ffdb4dd185555",
+    "embedding_dimension_distribution.svg": "46934696c0ef2981dffc7e275ce8b77393d5774c90f7c659039e76bc6a7ac862",
+    "embedding_dimension_distribution.png": "6c76d72b3540f07be2664cfcee48e99f098169e1eba4dd824f87dedf865dc07c",
+    "embedding_dimension_distribution.txt": "a850d2725f27f21b0e1e658d6fd35eecff04bacb6294d5d6a739a8e7c83423a6",
+    "embedding_dimension_per_recording.csv": "a98b7a0d6aa7f6367f1e2819d831cf39ceaecacd0513d41bd58ce6f4a4413a4b",
+    "heldout_residual_summary.csv": "beab258915112ba801959e4ab6e418199372d75e23d8eef0459b7c24fab58dcd"
+  }
+}

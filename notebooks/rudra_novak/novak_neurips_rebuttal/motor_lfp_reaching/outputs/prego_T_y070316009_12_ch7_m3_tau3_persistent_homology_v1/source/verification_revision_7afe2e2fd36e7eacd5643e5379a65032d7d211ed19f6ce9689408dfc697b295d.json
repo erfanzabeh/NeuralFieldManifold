@@ -1,0 +1,6 @@
+{
+  "original_source_sha256": "f58e6e40045e32d6a6ef84ce53dc23b4dce53a08b0b0eb9d6051c172900da916",
+  "revised_source_sha256": "7afe2e2fd36e7eacd5643e5379a65032d7d211ed19f6ce9689408dfc697b295d",
+  "calculation_ast_unchanged": true,
+  "reason": "Missing-value CSV validation and exact example-selection verification; no calculation changes"
+}

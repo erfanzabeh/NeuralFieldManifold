@@ -1,0 +1,7 @@
+{
+  "f1_tau_ms": 21,
+  "f1": 0.3318359346076238,
+  "ami_tau_ms": 23,
+  "f1_selection": "exploratory maximum over 1-25 ms",
+  "ami_selection": "first pooled interior minimum, bins=48"
+}

@@ -1,0 +1,46 @@
+{
+  "recordings": [
+    {
+      "recording": "monkeyM_session-o080506002-22_lfp-1",
+      "trials": 198,
+      "classes": 6,
+      "macro_f1_recomputed": true,
+      "confusion_rows_verified": true,
+      "folds_identical": true,
+      "source_copy_hashes_verified": true
+    },
+    {
+      "recording": "monkeyM_session-o080506002-22_lfp-2",
+      "trials": 198,
+      "classes": 6,
+      "macro_f1_recomputed": true,
+      "confusion_rows_verified": true,
+      "folds_identical": true,
+      "source_copy_hashes_verified": true
+    },
+    {
+      "recording": "monkeyT_session-y070316009-12_lfp-7",
+      "trials": 198,
+      "classes": 6,
+      "macro_f1_recomputed": true,
+      "confusion_rows_verified": true,
+      "folds_identical": true,
+      "source_copy_hashes_verified": true
+    },
+    {
+      "recording": "monkeyT_session-y070316009-12_lfp-8",
+      "trials": 198,
+      "classes": 6,
+      "macro_f1_recomputed": true,
+      "confusion_rows_verified": true,
+      "folds_identical": true,
+      "source_copy_hashes_verified": true
+    }
+  ],
+  "unchanged_source_files": 512,
+  "fitting_performed": false,
+  "decoding_performed": false,
+  "unit_tests_passed": 4,
+  "pdf_pages_rendered": 24,
+  "pdf_text_outside_pages": 0
+}

@@ -1,0 +1,16 @@
+{
+  "selected_delays": [
+    21,
+    23
+  ],
+  "feature_definitions_verified": true,
+  "all_selected_scores_verified_with_sklearn": true,
+  "all_bootstraps_reproduced": true,
+  "paired_intervals_reproduced": true,
+  "all_null_labels_and_scores_reproduced": true,
+  "train_only_scaling_verified": true,
+  "all_event_anchors_compared_to_timestamp_table": true,
+  "source_and_envelope_hashes_disambiguated": true,
+  "protected_results_unchanged": true,
+  "validator_sha256": "cfbcea7acd4f185bbfaa14d4f122f0622c7110928074948cd901ddebd30323be"
+}

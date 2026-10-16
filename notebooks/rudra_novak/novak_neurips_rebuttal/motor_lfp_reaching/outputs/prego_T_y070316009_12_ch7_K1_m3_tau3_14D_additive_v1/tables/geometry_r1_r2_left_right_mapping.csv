@@ -1,0 +1,7 @@
+direction,target_event_code,target_position,reach_side
+1,101,upper right,Rightward
+2,102,right,Rightward
+3,103,lower right,Rightward
+4,104,lower left,Leftward
+5,105,left,Leftward
+6,106,upper left,Leftward

@@ -1,0 +1,6 @@
+recording,monkey,fold,status,K,dimension,tau_samples,condition,feature_count,n_training_trials,frequencies_hz,training_trials_per_feature,harmonic_ambiguities,geometry_evaluable
+monkeyT_session-y070316009-12_lfp-8,T,0,ok,1,3,13.0,1.3136966701741513,10,158,[22.0],15.8,[],True
+monkeyT_session-y070316009-12_lfp-8,T,1,ok,2,5,13.0,3.237366265659866,36,158,"[22.0, 46.0]",4.388888888888889,"[{""lower_hz"": 22.0, ""upper_hz"": 46.0, ""multiple"": 2}]",True
+monkeyT_session-y070316009-12_lfp-8,T,2,ok,2,5,13.0,3.237366265659866,36,158,"[22.0, 46.0]",4.388888888888889,"[{""lower_hz"": 22.0, ""upper_hz"": 46.0, ""multiple"": 2}]",True
+monkeyT_session-y070316009-12_lfp-8,T,3,ok,2,5,13.0,3.237366265659866,36,159,"[22.0, 46.0]",4.416666666666667,"[{""lower_hz"": 22.0, ""upper_hz"": 46.0, ""multiple"": 2}]",True
+monkeyT_session-y070316009-12_lfp-8,T,4,ok,2,5,13.0,3.237366265659866,36,159,"[22.0, 46.0]",4.416666666666667,"[{""lower_hz"": 22.0, ""upper_hz"": 46.0, ""multiple"": 2}]",True

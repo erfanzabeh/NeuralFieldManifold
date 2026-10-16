@@ -1,0 +1,50 @@
+{
+  "columns": [
+    "mse",
+    "mean_error",
+    "frac_inside"
+  ],
+  "dimensions": 3,
+  "heldout_windows": 240,
+  "imputation": "training median",
+  "imputer_statistics": [
+    0.008420251510395256,
+    0.011253612560347228,
+    0.8707482993197279
+  ],
+  "methods": {
+    "lda": {
+      "shrinkage": "auto",
+      "solver": "eigen",
+      "supervised": true
+    },
+    "pca": {
+      "explained_variance_ratio": [
+        0.6300362100891069,
+        0.2830161401576381
+      ]
+    },
+    "umap": {
+      "metric": "euclidean",
+      "min_dist": 0.1,
+      "n_jobs": 1,
+      "n_neighbors": 30,
+      "random_state": 42,
+      "transform_seed": 42
+    }
+  },
+  "missing_rows_imputed": 11,
+  "scaler_mean": [
+    0.008785666579872982,
+    0.011549615759944743,
+    0.8671783059215357
+  ],
+  "scaler_scale": [
+    0.0027398805778213403,
+    0.0026539021964979395,
+    0.03309169065088265
+  ],
+  "scaling": "training StandardScaler",
+  "title": "Geometry: fit quality",
+  "training_windows": 948
+}

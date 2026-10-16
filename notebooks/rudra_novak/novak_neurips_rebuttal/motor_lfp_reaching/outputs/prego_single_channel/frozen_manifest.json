@@ -1,0 +1,36 @@
+{
+  "status": "frozen",
+  "config": {
+    "version": 1,
+    "seed": 42,
+    "core_sha256": "f4dc3f5b890874ea08d87cf98ffaee4fc81d534954a5ee1f8eae57bce60aec49",
+    "window_ms": [
+      -500,
+      0
+    ],
+    "null_permutations": 200,
+    "embedding_bootstraps": 120,
+    "minimum_trials_per_direction": 15,
+    "raw_event_alignment": true
+  },
+  "table_sha256": {
+    "direction_scores.csv": "4b82d160974efca70f2fd80db5ed79304e3381c59055aedcbcb740f5c054c63a",
+    "direction_summary.csv": "f7767b57b7ea115a14cd3c654d4f49274a74fe9fc3216e8a0bb06c54e99c7dc5",
+    "embedding_selection.csv": "75e0ce254c67b31b003de86291c094006b6cf7324bf2a91797f84eadf7b2f249",
+    "example_geometry.csv": "4f028ccf99e73631f55ad941e54d0a47a5eab925d2cdf04759d9e61dce38f786",
+    "example_selection.csv": "1f33e80fcdc199f40dc9cfc2907064a6abcd51026705f43638e49898c2495ac7",
+    "exclusions_geometry.csv": "c28e16c9734dad6e66eafb7f3b74f392b8e01471c99b95daa8894f355ccb6425",
+    "fit_failures.csv": "f968e4cca72cb2542e1cc576029942291221507cd148e29a5f5c47edae064ce6",
+    "heldout_predictions.csv": "b9414c7b8c630e5cc070a48ad52acaaf4bac6a95caa44b88efc33c96be67da3a",
+    "mean_confusions.csv": "536dd84d346229855cc18e4a7b89394c5d4bae315da3d67e0a2d06ff0c05eb0f",
+    "null_recording_scores.csv": "1f6474a18cf969a4f4ad93262b551b82904a0929aee0ff64b3243a7e020c987a",
+    "null_summary.csv": "cda791c7f0205adcee3db039331dc9e2acd7feaecbec9f4868add79ea59e5e5e",
+    "paired_day_means.csv": "6803873f75837b1fff008ee2e0090c2f4612383c68754ae69de40a8e149d4130",
+    "paired_differences.csv": "cbdd6eea04dc5d1e29c5c109f9f28c53f72011e91a9bc3737cdcd6d8885c59f7",
+    "planned_comparisons.csv": "29fd9a65e86422e29ee54a64bad03f6844431da26ee27da15e409af1ab02b65c",
+    "recording_audit.csv": "dcb3430532b3767bba112a334e1768775ae5453fe23d87be64123432fbaec787",
+    "recording_confusions.csv": "735487e45458328b9e54b94a3e38191fb8585f18bda1a4353388cc59bc4ec86f",
+    "recording_scores.csv": "6cd4b581e4cd1fb95170607fca8451269012dec5e7e39ab5c762924ff05aa652",
+    "summary.csv": "fe211e21c642bfff5080e31834f99d19a5b58a34ddaa3891a2fcc751931256aa"
+  }
+}

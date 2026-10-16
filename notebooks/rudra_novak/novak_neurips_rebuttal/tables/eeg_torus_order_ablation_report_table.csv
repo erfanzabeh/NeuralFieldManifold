@@ -1,0 +1,3 @@
+scenario,f1_mean_sd,paired_test
+Correct order encoding,0.670 +/- 0.060 SD,paired Wilcoxon p=0.0822 (ns)
+Incorrect order decoding,0.651 +/- 0.072 SD,

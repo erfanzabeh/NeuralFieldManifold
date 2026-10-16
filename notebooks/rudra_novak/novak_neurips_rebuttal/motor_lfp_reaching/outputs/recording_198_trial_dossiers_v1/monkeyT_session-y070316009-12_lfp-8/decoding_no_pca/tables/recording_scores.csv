@@ -1,0 +1,8 @@
+recording,monkey,day,method,geometry_evaluable,macro_f1,n_trials
+monkeyT_session-y070316009-12_lfp-8,T,2007-03-16,all_bands,True,0.2443393876075823,198
+monkeyT_session-y070316009-12_lfp-8,T,2007-03-16,ktorus,True,0.1711768947340472,198
+monkeyT_session-y070316009-12_lfp-8,T,2007-03-16,ktorus_all_bands,True,0.2208342626299282,198
+monkeyT_session-y070316009-12_lfp-8,T,2007-03-16,ktorus_power_frequency,True,0.2090175947591026,198
+monkeyT_session-y070316009-12_lfp-8,T,2007-03-16,peak_frequency,True,0.2098234444065017,198
+monkeyT_session-y070316009-12_lfp-8,T,2007-03-16,peak_power,True,0.2213236103142445,198
+monkeyT_session-y070316009-12_lfp-8,T,2007-03-16,power_frequency,True,0.2728002394747803,198

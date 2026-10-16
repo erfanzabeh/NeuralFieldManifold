@@ -1,0 +1,235 @@
+{
+  "passed": true,
+  "source_sha256": "79d1dd8afde6f5d32621fee3908fce87ef69f6e401e68fc20d2277693f3a3581",
+  "source_hashes": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_six_stages_cue_offset_correct/BETTI_STAGE_v1/tables/window_measurements.csv": "87dc549f07e39a80d6800905591614ae83d15a4f3170c65ad4c101f5f9e6d715",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_six_stages_cue_offset_correct/BETTI_STAGE_v1/tables/persistence_intervals.csv.gz": "77d37e5fb29776a6c0dcfda6554391e4d4f29f609cc34ee4ae8c508f6a3f8c87",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_six_stages_cue_offset_correct/BETTI_STAGE_v1/tables/grid_definitions.json": "56140ac87c4b2abfd858e93c920283cd9bf772e569c35b6a99425412b25e8e62",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/tables/features.csv": "bad5fbff988021f1e998c647672fbbc806276fcddd7ae2eaad470feafec8de62",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/config.json": "2b564127b0e580e6b43bc8281d3f3eff0a6b401d44ddfd65d830acccc9156c72"
+  },
+  "endpoints": {
+    "raw": 1.3185725212097168,
+    "rms_normalized": 0.5533847013447807
+  },
+  "n_trials": 198,
+  "n_topology_windows": 1188,
+  "n_geometry_usable": 1177,
+  "geometry_counts_by_stage": {
+    "pre_TC": 197,
+    "post_TC": 198,
+    "pre_SC": 196,
+    "post_SC": 195,
+    "pre_GO": 196,
+    "post_GO": 195
+  },
+  "ph_calls": 0,
+  "fitter_calls": 0,
+  "decoder_calls": 0,
+  "files": [
+    {
+      "file": "betti_0_1_2_mean_sem_raw.png",
+      "sha256": "03500175709a732947e5a3ca613727b0b99dfde55f4482e141861c0188ef8b16",
+      "pixels": [
+        3060,
+        2160
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "betti_0_1_2_mean_sem_rms_normalized.png",
+      "sha256": "5a649814164e0e2c1d015a2c6351f1dbde50eba20bb0a63847cb0c9395e57af0",
+      "pixels": [
+        3060,
+        2160
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_R1.png",
+      "sha256": "40bfb2f9c03c56a70bf409bd2ca77c033503aba3821f2c45f7b21a884afafb4b",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_R2.png",
+      "sha256": "ea7863b10614ad266c17e7f9ff7ea01cd27da0f215b968177298a16f5675af26",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_band_half_width.png",
+      "sha256": "ee5d3b3f47055620ef20f4f65885583c3d8376b8b22aaf91f2f0e0e790d3cb08",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_normal_x.png",
+      "sha256": "e460c3228d047b1ddb3f09bb214088213227ac355f063c70c69a5e52c27226ef",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_normal_y.png",
+      "sha256": "fa72657ece10241a361ce71979d91ffd0809748d232ddf964a788d5cc55dbb88",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_normal_z.png",
+      "sha256": "b0fd4ddc9879a409c2e4791f9916d0c3714397e73c3c527bb34d300b3841dd61",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_u_x.png",
+      "sha256": "b13c844b2f9ac26ac8ad5d9cf224ed1c6ca2f5bd352afc3bd87f2b9f628aaf29",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_u_y.png",
+      "sha256": "80985b76d9cb98f387d23cfbaaa1c910d8311e10d58ead41216cbe99d28e119b",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_u_z.png",
+      "sha256": "0caf871b53842f8ae606053e6c77d0e023c92b2627b4517e71564b92350fef60",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_v_x.png",
+      "sha256": "0fd55075fbc28c15cfc0150659a2c32b42f0857db8c745f08a6d97873b2a0bf9",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_v_y.png",
+      "sha256": "efc9b32258c14416d3ce3a9d03d9c44aa7c046e371c2eee2df032c2a101f6203",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_v_z.png",
+      "sha256": "9a1a0bb83d9e35c49d3df3d4edf6d88eba28b06829073c69c982feb562b8dc6e",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_mse.png",
+      "sha256": "ed0d7156c35abff5ec61a760c1e612a96374864e40d06cce307826dbc80e880c",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_mean_error.png",
+      "sha256": "bf4077e99b2d2e27fd0cec84b0aec923dbba50c9985b47e188028cfb5270d258",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "file": "geometry_mean_sem_frac_inside.png",
+      "sha256": "88b9392d70b71a160a7145b51c852095cc6f8fa3b756b39bd72717b70e2f6112",
+      "pixels": [
+        2490,
+        1890
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "columns": [
+    "R1",
+    "R2",
+    "band_half_width"
+  ],
+  "dimensions": 3,
+  "imputation": "median fitted on all 1188 windows",
+  "imputer_statistics": [
+    3.822909365182662,
+    1.2082425513643276,
+    1.0324973000702966
+  ],
+  "methods": {
+    "lda": {
+      "shrinkage": "auto",
+      "solver": "eigen",
+      "uses_stage_labels": true
+    },
+    "pca": {
+      "explained_variance_ratio": [
+        0.8529968022067832,
+        0.13752881620072238
+      ],
+      "uses_stage_labels": false
+    },
+    "umap": {
+      "metric": "euclidean",
+      "min_dist": 0.1,
+      "n_jobs": 1,
+      "n_neighbors": 30,
+      "random_state": 42,
+      "uses_stage_labels": false
+    }
+  },
+  "missing_rows_imputed": 11,
+  "n_windows": 1188,
+  "scaler_mean": [
+    4.0167493427169685,
+    1.229894770599399,
+    1.063084697902201
+  ],
+  "scaler_scale": [
+    0.9783023420706932,
+    0.2637853354408738,
+    0.2859330990314398
+  ],
+  "scaling": "StandardScaler fitted on all 1188 windows",
+  "title": "Geometry: radii and width"
+}

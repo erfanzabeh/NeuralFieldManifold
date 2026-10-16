@@ -1,0 +1,1 @@
+Monkey M: 115 LFP recordings from 48 recording days, 13338 balanced trial observations; one animal. Short-delay pre-GO held-out predictions; each recording's confusion matrix is row-normalized before equal-recording averaging. All matrices share direction order 1-6 and color scale 0-1. Diagonal entries are class recall, not F1.

@@ -1,0 +1,50 @@
+{
+  "columns": [
+    "beta0",
+    "beta1",
+    "beta2"
+  ],
+  "dimensions": 3,
+  "heldout_windows": 240,
+  "imputation": "training median",
+  "imputer_statistics": [
+    35.45621702783805,
+    4.1168622147214595,
+    0.02000883081149713
+  ],
+  "methods": {
+    "lda": {
+      "shrinkage": "auto",
+      "solver": "eigen",
+      "supervised": true
+    },
+    "pca": {
+      "explained_variance_ratio": [
+        0.6340499021663114,
+        0.31878131152831524
+      ]
+    },
+    "umap": {
+      "metric": "euclidean",
+      "min_dist": 0.1,
+      "n_jobs": 1,
+      "n_neighbors": 30,
+      "random_state": 42,
+      "transform_seed": 42
+    }
+  },
+  "missing_rows_imputed": 0,
+  "scaler_mean": [
+    35.75139686771881,
+    4.147975380968584,
+    0.02524031923815378
+  ],
+  "scaler_scale": [
+    5.769141382671347,
+    0.6896740275744272,
+    0.02187812864866733
+  ],
+  "scaling": "training StandardScaler",
+  "title": "Betti: raw distance",
+  "training_windows": 948
+}

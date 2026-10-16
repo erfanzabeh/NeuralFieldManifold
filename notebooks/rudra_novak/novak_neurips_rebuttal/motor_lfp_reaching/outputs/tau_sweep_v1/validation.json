@@ -1,0 +1,9 @@
+{
+  "cells": 40,
+  "windows_per_cell": 1188,
+  "native_tau3_macro_f1": 0.2928413893498778,
+  "old_tau3_macro_f1": 0.2928413893498778,
+  "sources_unchanged": true,
+  "all_saved_predictions_reproduced": true,
+  "all_confusion_rows_normalized": true
+}

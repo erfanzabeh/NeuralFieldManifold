@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "seed": 42,
+  "core_sha256": "f4dc3f5b890874ea08d87cf98ffaee4fc81d534954a5ee1f8eae57bce60aec49",
+  "window_ms": [
+    -500,
+    0
+  ],
+  "null_permutations": 200,
+  "embedding_bootstraps": 120,
+  "minimum_trials_per_direction": 15,
+  "raw_event_alignment": true
+}

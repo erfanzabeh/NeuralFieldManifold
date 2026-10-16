@@ -1,0 +1,31 @@
+{
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "trial_count": 198,
+  "delay": "short",
+  "direction_counts": {
+    "1": 33,
+    "2": 33,
+    "3": 33,
+    "4": 33,
+    "5": 33,
+    "6": 33
+  },
+  "single_trial_original_number": 6,
+  "preprocessing": "fourth-order 2-Hz zero-phase high-pass on complete trial",
+  "spectrogram": "Hann 300 ms, 50 ms shift, FFT interpolated to 1 Hz; PSD averaged in linear units across trials",
+  "shared_db_color_limits": [
+    26.171537699349265,
+    51.50056041443404
+  ],
+  "average_event_positions_seconds": {
+    "TC": -0.879,
+    "SC": 0.0,
+    "GO": 0.737
+  },
+  "input_sha256": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/lfp_converted_data/monkeyT_session-y070316009-12_lfp-7.npz": "44496fb78e75ccd2c39d68a2c83ce090386f26f1ff06cee63278859768038cd4",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/selected_trials.csv": "22ce063f4e1e46333c2569c6affe5fd08a3f4dc4743797a81a9235cad2f5e7ba",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/event_samples.csv": "3921c6c9f779bd8d20babc28451ae136b3fcc7935644963892ef6669ca71b3e4"
+  },
+  "fitting_or_decoding_performed": false
+}

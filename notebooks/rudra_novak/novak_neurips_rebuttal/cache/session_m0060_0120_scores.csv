@@ -1,0 +1,8 @@
+session_id,feature_set,status,accuracy,macro_f1,f1_wake,f1_nrem,f1_rem,wake_count,nrem_count,rem_count
+session_m0060_0120,delta,insufficient_classes,,,,,,697,1103,0
+session_m0060_0120,theta,insufficient_classes,,,,,,697,1103,0
+session_m0060_0120,alpha,insufficient_classes,,,,,,697,1103,0
+session_m0060_0120,sigma,insufficient_classes,,,,,,697,1103,0
+session_m0060_0120,beta,insufficient_classes,,,,,,697,1103,0
+session_m0060_0120,low_gamma,insufficient_classes,,,,,,697,1103,0
+session_m0060_0120,all_torus_15,insufficient_classes,,,,,,697,1103,0

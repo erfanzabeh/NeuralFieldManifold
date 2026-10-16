@@ -1,0 +1,7 @@
+row_index,raw_trial_index,original_trial_number,direction,heldout_fold_zero_based,delay
+1,6,16,1,4,short
+39,50,10,2,0,short
+67,77,14,3,4,short
+110,119,17,4,0,short
+156,168,6,5,4,short
+194,201,9,6,0,short

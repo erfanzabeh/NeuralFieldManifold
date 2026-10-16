@@ -1,0 +1,4 @@
+analysis_set,analysis_label,monkey,feature_role,feature_label,mean_f1,std_f1,n_lfps
+full_6_direction_lfps,Full 6-direction LFPs,M+T,torus_features,Torus features,0.18062425168818422,0.03178586133533207,237
+full_6_direction_lfps,Full 6-direction LFPs,M+T,average_psd,Average PSD,0.15851626633924368,0.03008792441994768,237
+full_6_direction_lfps,Full 6-direction LFPs,M+T,relevant_band,Relevant band,0.15652894678785004,0.028112793635638813,237

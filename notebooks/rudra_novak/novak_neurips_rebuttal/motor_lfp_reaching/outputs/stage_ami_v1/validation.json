@@ -1,0 +1,14 @@
+{
+  "trials": 198,
+  "windows": 1188,
+  "curves": 14,
+  "samples_per_window": 300,
+  "anchors_verified": true,
+  "native_tau3_clouds_exact": true,
+  "trial_grouped_folds": true,
+  "protected_hashes_unchanged": true,
+  "full_pair_counts": true,
+  "geometric_fits_called": false,
+  "decoder_called": false,
+  "runtime_seconds": 10.059394864016213
+}

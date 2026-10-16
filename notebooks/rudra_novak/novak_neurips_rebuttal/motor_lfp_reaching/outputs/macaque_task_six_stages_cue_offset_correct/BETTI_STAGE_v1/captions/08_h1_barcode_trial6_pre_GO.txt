@@ -1,0 +1,1 @@
+Original trial 6, Pre-GO. All H1 intervals, ranked by decreasing lifetime. Shared distance and rank scales across the six stages; rows are not cross-stage matched loops.

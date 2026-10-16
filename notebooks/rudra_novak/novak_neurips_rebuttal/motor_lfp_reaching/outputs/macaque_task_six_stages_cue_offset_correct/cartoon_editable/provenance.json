@@ -1,0 +1,120 @@
+{
+  "source_sha256": "b05dda0b2951db0ea191a5793a69eefb4815eddb53a755c35467b6c719b04d40",
+  "source_hashes": {
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_timeline_v3/assets/macaque_screen.png": "b84c0d08dab207a917d20a5df921ec877294634b3ad68b4d30c21dfee9b4f219",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/prego_T_y070316009_12_ch7_K1_m3_tau3_14D_decoding_v1/inputs/alignment.json": "a5deb1dbe3dee269d2f711e4c05d796062643de7fc3494c0b29e4cdb9c81981d",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/window_metadata.csv": "1ccd405fc3d88e50b825632de81588e685e547aedf7906a6806c6e876f9b0efe",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/inputs/event_samples.csv": "3921c6c9f779bd8d20babc28451ae136b3fcc7935644963892ef6669ca71b3e4",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/tables/features.csv": "bad5fbff988021f1e998c647672fbbc806276fcddd7ae2eaad470feafec8de62",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/heldout_predictions.npz": "8428ce2904b534d28bc28654785332c1da0adf247087bab272f0a7cf0d85dbf9",
+    "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/stage_T_y070316009_12_ch7_K1_m3_tau3_300ms_15D_cue_offset_v2/config.json": "2b564127b0e580e6b43bc8281d3f3eff0a6b401d44ddfd65d830acccc9156c72"
+  },
+  "source_unchanged": true,
+  "illustration_unchanged": true,
+  "recording": "monkeyT_session-y070316009-12_lfp-7",
+  "n_trials": 198,
+  "n_windows": 1188,
+  "nominal_durations_ms": {
+    "initial_hold": 700,
+    "temporal_cue": 200,
+    "delay_1": 700,
+    "spatial_cue": 55,
+    "delay_2": 700
+  },
+  "recorded_interval_ms": {
+    "TC_duration": [
+      194,
+      205
+    ],
+    "SC_duration": [
+      53,
+      54
+    ]
+  },
+  "sampling_windows": [
+    {
+      "stage": 0,
+      "stage_name": "pre_TC",
+      "event": "TC",
+      "anchor": "TC_on",
+      "begin_relative_ms": -300,
+      "end_relative_ms": 0,
+      "drawing_left": 4.4,
+      "drawing_right": 5.300000000000001,
+      "color": "#9AB7D3"
+    },
+    {
+      "stage": 1,
+      "stage_name": "post_TC",
+      "event": "TC",
+      "anchor": "TC_off",
+      "begin_relative_ms": 0,
+      "end_relative_ms": 300,
+      "drawing_left": 5.9,
+      "drawing_right": 6.800000000000001,
+      "color": "#376D9B"
+    },
+    {
+      "stage": 2,
+      "stage_name": "pre_SC",
+      "event": "SC",
+      "anchor": "SC_on",
+      "begin_relative_ms": -300,
+      "end_relative_ms": 0,
+      "drawing_left": 7.1,
+      "drawing_right": 8.0,
+      "color": "#E8B1A3"
+    },
+    {
+      "stage": 3,
+      "stage_name": "post_SC",
+      "event": "SC",
+      "anchor": "SC_off",
+      "begin_relative_ms": 0,
+      "end_relative_ms": 300,
+      "drawing_left": 8.165,
+      "drawing_right": 9.065,
+      "color": "#BE5A47"
+    },
+    {
+      "stage": 4,
+      "stage_name": "pre_GO",
+      "event": "GO",
+      "anchor": "GO",
+      "begin_relative_ms": -300,
+      "end_relative_ms": 0,
+      "drawing_left": 9.364999999999998,
+      "drawing_right": 10.264999999999999,
+      "color": "#9DC5B5"
+    },
+    {
+      "stage": 5,
+      "stage_name": "post_GO",
+      "event": "GO",
+      "anchor": "GO",
+      "begin_relative_ms": 0,
+      "end_relative_ms": 300,
+      "drawing_left": 10.264999999999999,
+      "drawing_right": 11.165,
+      "color": "#38816A"
+    }
+  ],
+  "data_windows_validated": true,
+  "text_overlap_checked": true,
+  "fitting_called": false,
+  "decoding_called": false,
+  "exports": [
+    {
+      "path": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_six_stages_cue_offset_v2/macaque_task_six_stages.png",
+      "sha256": "576055de33b31ef0763aa8a3732c418cd08524550d8999a36919431638a49538"
+    },
+    {
+      "path": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_six_stages_cue_offset_v2/macaque_task_six_stages.svg",
+      "sha256": "512934ed98a54f267323a48b78420ba3f9866f6124a87a1709233ffdcfe9d0b0"
+    },
+    {
+      "path": "/home/nochen/code/NeuralFieldManifold/notebooks/rudra_novak/novak_neurips_rebuttal/motor_lfp_reaching/outputs/macaque_task_six_stages_cue_offset_v2/macaque_task_six_stages.pdf",
+      "sha256": "19c8763a0245f96c99be3709ed91ee04520400019dca79dccab824470b98183a"
+    }
+  ]
+}

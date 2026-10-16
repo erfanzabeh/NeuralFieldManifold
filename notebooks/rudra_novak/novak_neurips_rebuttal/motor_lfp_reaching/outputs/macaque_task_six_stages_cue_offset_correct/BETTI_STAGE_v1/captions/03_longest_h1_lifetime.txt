@@ -1,0 +1,1 @@
+One dot per successful trial window; median and interquartile range. Zero denotes an empty successful H1 diagram, never a failed calculation. RMS normalization is applied only to derived distances, not to Ripser inputs.

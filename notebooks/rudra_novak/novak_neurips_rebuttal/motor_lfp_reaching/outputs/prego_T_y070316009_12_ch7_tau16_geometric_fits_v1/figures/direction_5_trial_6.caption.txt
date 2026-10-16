@@ -1,0 +1,2 @@
+Selected by lowest original trial number within direction, independent of model fit quality.
+Tube overlay is a parametric sweep, not a volume boundary; it can self-intersect for thick tubes.

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-label="NeuralFieldManifold Signal Aperture logo">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M155 42 C113 36 76 57 59 91 C42 125 49 166 76 193 C103 220 142 225 174 209" stroke="#20313B" stroke-width="13"/>
+    <path d="M154 74 C126 69 103 84 92 107 C82 130 89 157 107 173 C124 189 150 190 170 178" stroke="#8BA8A4" stroke-width="8"/>
+    <path d="M22 130 C32 130 36 112 44 112 C53 112 54 150 64 150 C73 150 73 120 83 120 C92 120 93 140 103 140 C113 140 113 131 124 131 C135 131 140 140 149 139 C158 138 164 130 173 130" stroke="#AA3D35" stroke-width="9"/>
+    <path d="M173 130 C190 130 204 141 205 157 C206 172 197 184 182 190" stroke="#AA3D35" stroke-width="9"/>
+    <circle cx="205" cy="157" r="5" fill="#AA3D35" stroke="none"/>
+  </g>
+  <text x="277" y="151" font-family="DejaVu Sans, Arial, sans-serif" font-size="53" font-weight="700" fill="#20313B"><tspan>NeuralField</tspan><tspan fill="#AA3D35">Manifold</tspan></text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-label="NeuralFieldManifold N Orbit logo">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M53 193 L53 62 L173 193 L173 62" stroke="#20313B" stroke-width="18"/>
+    <path d="M43 151 C59 99 116 62 170 74 C200 81 219 104 216 131 C212 166 171 188 128 185 C91 183 67 169 56 150" stroke="#AA3D35" stroke-width="8"/>
+    <circle cx="203" cy="105" r="9" fill="#AA3D35" stroke="none"/>
+  </g>
+  <text x="277" y="151" font-family="DejaVu Sans, Arial, sans-serif" font-size="53" font-weight="700" fill="#20313B"><tspan>NeuralField</tspan><tspan fill="#AA3D35">Manifold</tspan></text>
+</svg>

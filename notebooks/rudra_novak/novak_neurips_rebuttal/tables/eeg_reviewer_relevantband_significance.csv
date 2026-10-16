@@ -1,0 +1,4 @@
+comparison,feature_left,feature_right,n_pairs,mean_left,mean_right,mean_difference_left_minus_right,wilcoxon_statistic,p_uncorrected,p_holm,significance
+torus_features vs average_psd,torus_features,average_psd,21,0.6697563098214887,0.48520075921329564,0.18455555060819323,1.0,1.9073486328125e-06,5.7220458984375e-06,***
+torus_features vs relevant_band,torus_features,relevant_band,21,0.6697563098214887,0.4697718801046575,0.19998442971683147,1.0,1.9073486328125e-06,5.7220458984375e-06,***
+relevant_band vs average_psd,relevant_band,average_psd,21,0.4697718801046575,0.48520075921329564,-0.015428879108638245,84.0,0.2877340316772461,0.2877340316772461,ns

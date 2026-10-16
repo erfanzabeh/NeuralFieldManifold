@@ -1,0 +1,9 @@
+folder,title,dimensions,feature_columns,missing_rows_imputed
+geometry_all_15,Geometry: all 15 features,15,R1;R2;band_half_width;mse;mean_error;frac_inside;normal_x;normal_y;normal_z;u_x;u_y;u_z;v_x;v_y;v_z,11
+geometry_radii_width_3,Geometry: radii and width,3,R1;R2;band_half_width,11
+geometry_orientation_9,Geometry: orientation,9,normal_x;normal_y;normal_z;u_x;u_y;u_z;v_x;v_y;v_z,11
+geometry_fit_quality_3,Geometry: fit quality,3,mse;mean_error;frac_inside,11
+betti_raw_3,Betti: raw distance,3,beta0;beta1;beta2,0
+betti_rms_normalized_3,Betti: RMS-normalized distance,3,beta0;beta1;beta2,0
+geometry_plus_betti_raw_18,Geometry + Betti: raw distance,18,R1;R2;band_half_width;mse;mean_error;frac_inside;normal_x;normal_y;normal_z;u_x;u_y;u_z;v_x;v_y;v_z;beta0;beta1;beta2,11
+geometry_plus_betti_rms_normalized_18,Geometry + Betti: RMS-normalized,18,R1;R2;band_half_width;mse;mean_error;frac_inside;normal_x;normal_y;normal_z;u_x;u_y;u_z;v_x;v_y;v_z;beta0;beta1;beta2,11

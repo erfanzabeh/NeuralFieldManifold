@@ -1,0 +1,9 @@
+{
+  "pandas": "3.0.5",
+  "matplotlib": "3.11.1",
+  "pillow": "12.3.0",
+  "threadpoolctl": "3.6.0",
+  "backend": "Agg",
+  "export_dpi": 600,
+  "font": "DejaVu Sans"
+}

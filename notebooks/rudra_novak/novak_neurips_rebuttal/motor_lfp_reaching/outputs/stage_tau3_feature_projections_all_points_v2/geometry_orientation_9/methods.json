@@ -1,0 +1,74 @@
+{
+  "columns": [
+    "normal_x",
+    "normal_y",
+    "normal_z",
+    "u_x",
+    "u_y",
+    "u_z",
+    "v_x",
+    "v_y",
+    "v_z"
+  ],
+  "dimensions": 9,
+  "imputation": "median fitted on all 1188 windows",
+  "imputer_statistics": [
+    -0.42776270159065993,
+    0.7969132456409044,
+    -0.4272112698380366,
+    0.5638544621895647,
+    0.6040421923253441,
+    0.562974099392082,
+    0.7068354073989036,
+    0.0001467614859827493,
+    -0.7073717756352604
+  ],
+  "methods": {
+    "lda": {
+      "shrinkage": "auto",
+      "solver": "eigen",
+      "uses_stage_labels": true
+    },
+    "pca": {
+      "explained_variance_ratio": [
+        0.5453902969782934,
+        0.3344800742872893
+      ],
+      "uses_stage_labels": false
+    },
+    "umap": {
+      "metric": "euclidean",
+      "min_dist": 0.1,
+      "n_jobs": 1,
+      "n_neighbors": 30,
+      "random_state": 42,
+      "uses_stage_labels": false
+    }
+  },
+  "missing_rows_imputed": 11,
+  "n_windows": 1188,
+  "scaler_mean": [
+    -0.4280698958042211,
+    0.7964007049285852,
+    -0.42699232412829463,
+    0.5634683686513139,
+    0.6046165512610491,
+    0.5628425870511367,
+    0.7065174469468583,
+    0.0003452962539868083,
+    -0.7076512354912217
+  ],
+  "scaler_scale": [
+    0.007764666738805507,
+    0.007044255724404462,
+    0.008655668038995019,
+    0.005505665167317241,
+    0.009240551336323935,
+    0.005685572162490156,
+    0.0026373194316058725,
+    0.007002702279623383,
+    0.0025751780057450143
+  ],
+  "scaling": "StandardScaler fitted on all 1188 windows",
+  "title": "Geometry: orientation"
+}
