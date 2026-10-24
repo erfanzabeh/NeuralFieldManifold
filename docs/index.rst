@@ -15,8 +15,6 @@ Neural Field Manifold
      <a href="citation.html"><img alt="arXiv: XXXX (forthcoming)" src="https://img.shields.io/badge/arXiv-XXXX-B31B1B?logo=arxiv&logoColor=white"></a>
    </div>
 
-**NeurIPS 2026** | :doc:`NeuralFieldManifold: Reconstruction of LFP Manifold with Lag Embedding <citation>`
-
 Connect local signal dynamics to delay-coordinate geometry. Process neural
 recordings, estimate autoregressive dynamics with classical models or
 DeepLagField, and reconstruct and measure their ring and torus geometry.

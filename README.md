@@ -12,8 +12,6 @@
   <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="arXiv: XXXX (forthcoming)" src="https://img.shields.io/badge/arXiv-XXXX-B31B1B?logo=arxiv&logoColor=white"></a>
 </p>
 
-<p align="center"><a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><strong>NeurIPS 2026: NeuralFieldManifold: Reconstruction of LFP Manifold with Lag Embedding</strong></a></p>
-
 ## Overview
 
 **Neural Field Manifold** connects local signal dynamics to the geometry of
