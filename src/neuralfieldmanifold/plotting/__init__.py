@@ -2,6 +2,9 @@
 
 import numpy as np
 
+from .style import prettify, set_style
+from .training import coefficients, training_history
+
 
 def embedding(points, *, ax=None, color="black", linewidth=0.6):
     """Plot a three-coordinate trajectory and return its Matplotlib axes."""

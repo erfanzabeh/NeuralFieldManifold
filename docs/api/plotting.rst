@@ -7,3 +7,17 @@ rotatable three-dimensional Plotly views. Install the ``plot`` or
 
 .. automodule:: neuralfieldmanifold.plotting
    :members:
+
+Tutorial Styling
+----------------
+
+.. autofunction:: neuralfieldmanifold.plotting.set_style
+
+.. autofunction:: neuralfieldmanifold.plotting.prettify
+
+Training and Coefficients
+-------------------------
+
+.. autofunction:: neuralfieldmanifold.plotting.training_history
+
+.. autofunction:: neuralfieldmanifold.plotting.coefficients
