@@ -88,9 +88,9 @@ covers dataset generation, training, evaluation, and checkpoints.
 
 | Tutorial | Topics |
 |---|---|
-| [Monkey LFP](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/monkey.html) | Filtering, AR prediction, and torus fitting |
+| [Monkey LFP](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/monkey.html) | Filtering, AR prediction, and delay geometry |
 | [Mouse LFP: 1-50 Hz](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/mouse.html) | Envelope normalization and delay geometry |
-| [Mouse LFP: 1-20 Hz](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/mouse_lfp.html) | Low-frequency dynamics and ring fitting |
+| [Mouse LFP: 1-20 Hz](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/mouse_lfp.html) | Low-frequency dynamics and delay embedding |
 | [Lorenz dynamics](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/lorenz.html) | Simulation and threshold autoregression |
 | [Oscillatory modes](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/intrinsic_dimension.html) | AR pole pairs and embedding dimension |
 | [DeepLagField](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/deeplagfield.html) | Learned order and time-varying coefficients |

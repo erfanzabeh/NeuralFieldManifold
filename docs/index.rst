@@ -41,9 +41,9 @@ train a model, and evaluate its predictions.
 Tutorials
 ---------
 
-* :doc:`tutorials/monkey`: processing, prediction, and torus fitting.
+* :doc:`tutorials/monkey`: processing, prediction, and delay geometry.
 * :doc:`tutorials/mouse`: mouse LFP dynamics in the 1-50 Hz band.
-* :doc:`tutorials/mouse_lfp`: low-frequency mouse LFP and ring fitting.
+* :doc:`tutorials/mouse_lfp`: low-frequency mouse LFP and delay embedding.
 * :doc:`tutorials/lorenz`: Lorenz simulation and threshold autoregression.
 * :doc:`tutorials/intrinsic_dimension`: oscillatory modes and embedding dimension.
 * :doc:`tutorials/source_mixing`: sensor mixtures and geometric comparison.
