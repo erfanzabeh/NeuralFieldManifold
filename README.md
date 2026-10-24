@@ -1,120 +1,99 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/logo.jpg" alt="NeuralFieldManifold" width="400">
-</p>
+# Neural Field Manifold
 
-<h1 align="center">NeuralFieldManifold</h1>
-<p align="center"><em>Recover low-dimensional manifold geometry from noisy, autocorrelated time series</em></p>
-
-<p align="center">
-  <a href="https://www.python.org/downloads/"><img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-blue.svg"></a>
-  <a href="https://pytorch.org/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg"></a>
-  <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
-  <!-- TODO: Replace with actual arXiv link -->
-  <a href="https://arxiv.org/abs/XXXX.XXXXX"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg"></a>
-  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/"><img alt="Docs" src="https://img.shields.io/badge/docs-readthedocs-blue.svg"></a>
-  <a href="https://github.com/your-org/NeuralFieldManifold/actions"><img alt="CI" src="https://img.shields.io/badge/CI-passing-brightgreen.svg"></a>
-</p>
-
-<!-- docs-start -->
-
----
-
-## Overview
-
-Standard manifold learning methods break down on signals with strong temporal autocorrelation — oscillations, 1/f noise, and nonstationarity corrupt the geometry that dimensionality reduction is meant to reveal.
-
-**NeuralFieldManifold** provides a principled solution grounded in dynamical systems theory: model the signal as a (time-varying) autoregressive process, then exploit the analytical link between oscillatory spectral structure and the topology of delay embeddings. The core theoretical result is that *K* sustained oscillatory modes produce a *K*-torus in the lag-embedded state space — and aperiodic background only adds thickness, not topology.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/overview.jpg" alt="Conceptual framework" width="85%">
-</p>
-
----
-
-## Physics-Informed Reconstruction of the Manifold
-
-To recover the predicted toroidal geometry from real, nonstationary neural recordings, we introduce **DeepLagField** — a deep learning model that estimates time-varying autoregressive (TVAR) coefficients with physics-informed constraints. It features time-varying AR estimation via a neural network backbone with adaptive order selection and physics-informed losses — bounded energy, temporal smoothness of coefficients, and autoregressive reconstruction error.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/arch.jpg" alt="Conceptual framework" width="85%"><br>
-  <sub>The input local field potential (LFP) signal is processed by two coupled modules. The order block predicts a soft selection over candidate autoregressive orders, producing a sparse mask that determines the effective lag set. Conditioned on this mask, the dynamic block outputs time-varying autoregressive coefficients $\{\phi_k(t)\}$, enabling a locally stationary TVAR representation.</sub>
-</p>
-
----
-
-## Installation
-
-```bash
-pip install -e .
-
-# or with dev/docs extras
-pip install -e ".[dev,docs]"
-```
-
-**Requires:** Python ≥ 3.10, PyTorch, JAX, NumPy, SciPy, scikit-learn.
-
----
-
-## Quick Start
+NumPy and PyTorch tools for autoregressive dynamics and delay-coordinate geometry.
 
 ```python
-from NeuralFieldManifold.generators import sinusoid, tvar
-from NeuralFieldManifold.embedders import embed
-from NeuralFieldManifold.models import DeepLagEmbed
+import neuralfieldmanifold as nfm
+```
 
-# generate a synthetic time-varying AR signal
-coeffs = sinusoid(T=10000, order=4)
-x = tvar(coeffs, noise_std=0.1)
+This is the local release candidate. Nothing has been uploaded to PyPI.
 
-# delay embedding
-z = embed(x, m=6, tau=15)
+## Install Locally
 
-# learn time-varying AR coefficients + automatic order selection
-import torch
-model = DeepLagEmbed(seq_len=600, max_ar_order=6)
-coeffs_hat, p_logits, p_hard, x_hat = model(
-    torch.tensor(x[:600], dtype=torch.float32).unsqueeze(0)
+```sh
+python -m pip install ".[tutorials]"
+```
+
+The numerical package depends on NumPy, SciPy, and PyTorch. Plotting and
+notebook dependencies are optional. There is no JAX dependency.
+
+## Recorded Signal
+
+```python
+recording = nfm.datasets.load("monkey_lfp")
+config = nfm.preprocessing.PreprocessConfig(
+    notch_hz=50,
+    band_hz=(1, 50),
+    envelope_band_hz=(1, 80),
+    envelope_lowpass_hz=3,
 )
+processed = nfm.preprocessing.process(
+    recording.signal,
+    sampling_rate_hz=recording.sampling_rate_hz,
+    config=config,
+)
+cloud = nfm.embedding.delay(
+    processed.signal, dimension=3, tau_samples=30,
+)
+fit = nfm.geometry.fit_torus(cloud)
+print(fit.score, fit.error)
 ```
 
-## Gallery
+The bundled data are small 1D raw segments: 20 seconds of monkey LFP at
+500 Hz and five seconds of mouse LFP at 20 kHz. They are not full datasets.
+No animal or channel identifiers are exposed in the sample metadata.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/monkey.jpg" alt="Monkey LFP manifold" width="100%"><br>
-  <sub>Monkey LFP manifold after lag embedding</sub>
-</p>
+## Public API
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/mouse1.jpg" alt="Mouse LFP manifold" width="100%"><br>
-  <sub>Mouse LFP manifold reconstruction</sub>
-</p>
+| Module | Purpose |
+|---|---|
+| `datasets` | Load small recorded 1D signals and sampling rates |
+| `preprocessing` | Explicit filtering, decimation, envelope normalization |
+| `embedding` | Delay coordinates, lag matrices, sliding windows |
+| `models` | OLS AR, threshold AR, DeepLagField |
+| `geometry` | Elliptical ring and torus fits with named outputs |
+| `simulation` | Lorenz, AR/TVAR, coefficient schedules, noise, OU, VAR |
+| `training` | Dataset generation, losses, training, evaluation |
+| `spectral` | Explicit Welch power spectra |
+| `plotting` | Optional Matplotlib and rotatable Plotly figures |
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/refs/heads/main/docs/_static/mouse2.jpg" alt="Mouse EEG manifold" width="100%"><br>
-  <sub>Mouse EEG manifold reconstruction</sub>
-</p>
+Filtering, normalization, delay selection, and variance matching are never
+silently performed by model or embedding calls. Fit scores measure geometric
+containment, not topological recovery. Persistent homology is not part of this
+package's tutorial scope.
 
+## Reproductions
 
----
+New-API notebooks are under `docs/tutorials/`. The original research notebooks
+and documentation remain untouched outside this candidate.
 
-## Citation
-
-If you use this package in your research, please cite:
-
-```bibtex
-@inproceedings{fallah2026neuralfieldmanifold,
-  title     = {{NeuralFieldManifold}: Reconstruction of {LFP} Manifold with Lag Embedding},
-  author    = {Fallah, Kasra and Chen, Haoyu Novak and Singha, Rudramani and Kong, Eunji and Turi, Georgo and Losonczy, Attila and Zabeh, Erfan},
-  booktitle = {Preprint},
-  year      = {2026},
-  url       = {https://arxiv.org/abs/XXXX.XXXXX},
-}
+```sh
+python reproductions/recordings.py --output results/recordings --workers 3
 ```
 
-## Contributors 
+The two mouse processing recipes deliberately retain different passbands:
+1--50 Hz and 1--20 Hz. Reproduction also retains the original training split,
+hybrid-prediction refresh, and delay values. Float32 casting is explicit where
+the original JAX embedding used float32.
 
-<a href="https://github.com/erfanzabeh/NeuralFieldManifold/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=erfanzabeh/NeuralFieldManifold" />
-</a>
+NumPy and JAX do not share seeded random streams. Stochastic replay uses fixed
+inputs; a NumPy seed is not advertised as reproducing JAX's exact samples.
+DeepLagField evaluation is deterministic by default. Set `sample_order=True`
+to reproduce stochastic Gumbel order selection during a reference comparison.
 
----
+## Local Checks
+
+Tests are manual and are not wired into pushes or documentation builds.
+
+```sh
+python -m unittest discover -s tests -v
+```
+
+The tests compare frozen tutorial arrays, AR predictions, embeddings, PSDs,
+geometric fit metrics, neural-network outputs, losses, and gradients. They do
+not rerun the full training benchmark. Build documentation separately:
+
+```sh
+python -m pip install ".[docs]"
+python -m sphinx -b html docs docs/_build/html
+```

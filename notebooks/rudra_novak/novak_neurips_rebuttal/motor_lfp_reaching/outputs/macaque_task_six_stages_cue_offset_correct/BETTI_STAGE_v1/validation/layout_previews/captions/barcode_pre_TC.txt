@@ -1,1 +1,0 @@
-Layout check using actual frozen trial 6 intervals.

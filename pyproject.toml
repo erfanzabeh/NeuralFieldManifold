@@ -1,49 +1,25 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "NeuralFieldManifold"
+name = "neuralfieldmanifold"
 version = "0.1.0"
-description = "Tools for simulating stochastic processes, chaotic systems, and time-varying autoregressive models"
+description = "Delay geometry and time-varying autoregressive models for neural field signals"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = [
-    "numpy>=1.24,<3",
-    "scipy>=1.10",
-    "matplotlib>=3.7",
-    "pandas>=2.0",
-    "jax>=0.4.20",
-    "jaxlib>=0.4.20",
-    "flax>=0.7",
-    "optax>=0.1.7",
-    "torch>=2.0",
-    "mne>=1.4",
-    "statsmodels>=0.14",
-    "PyWavelets>=1.4",
-    "seaborn>=0.13",
-    "plotly>=5.15",
-    "tqdm>=4.65",
-    "scikit-learn>=1.4",
-]
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10", "torch>=2.0"]
 
 [project.optional-dependencies]
-dev = [
-    "pytest",
-    "ipython",
-    "ipykernel",
-    "ipywidgets==8.1.8",
-    "ipympl==0.10.0",
-]
-docs = [
-    "Sphinx==9.1.0",
-    "sphinx-book-theme==1.1.4",
-    "sphinx-autodoc-typehints==3.6.2",
-    "myst-nb==1.3.0",
-    "myst-parser==5.0.0",
-    "nbclient==0.10.4",
-    "jupyter-cache==1.0.1",
-]
+plot = ["matplotlib>=3.7", "plotly>=5.15"]
+tutorials = ["matplotlib>=3.7", "plotly>=5.15", "scikit-learn>=1.4", "ipykernel", "ipywidgets>=8", "nbformat>=5", "nbclient>=0.10"]
+docs = ["sphinx>=7,<9", "myst-nb>=1", "sphinx-book-theme>=1"]
+dev = ["build"]
 
 [tool.setuptools.packages.find]
-include = ["NeuralFieldManifold*"]
+where = ["src"]
+
+[tool.setuptools.package-data]
+neuralfieldmanifold = ["datasets/*.npz"]

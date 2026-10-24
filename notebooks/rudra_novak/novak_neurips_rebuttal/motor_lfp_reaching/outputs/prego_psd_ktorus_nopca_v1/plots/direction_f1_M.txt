@@ -1,1 +1,0 @@
-Mean per-direction F1 +/- SD across matched recordings. Descriptive; no per-direction significance tests.

@@ -1,1 +1,0 @@
-Native radii have model-specific definitions; no decoding feature vector is constructed.
