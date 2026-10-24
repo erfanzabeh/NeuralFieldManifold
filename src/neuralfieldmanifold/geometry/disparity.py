@@ -1,4 +1,4 @@
-"""Cross-signal delay-cloud Procrustes comparison, without topology claims."""
+"""Pairwise Procrustes comparison of delay-coordinate trajectories."""
 
 from dataclasses import dataclass
 
@@ -18,11 +18,25 @@ class Disparity:
 
 
 def pairwise_disparity(signals, *, dimension, tau_samples, target_points=2000):
-    """Procrustes disparities for all pairs of ``(signal, time)`` rows.
+    """Compare delay embeddings of time-aligned signals using Procrustes analysis.
 
-    Uses the tutorial's floor-stride subsampling rule. ``target_points`` is
-    a target, not a strict cap. Preserve correspondence between time samples;
-    unrelated recordings are not interchangeable with simultaneous channels.
+    Parameters
+    ----------
+    signals : array_like, shape (n_signals, n_samples)
+        At least two equal-length signals with corresponding time samples.
+    dimension : int
+        Number of delay coordinates.
+    tau_samples : int
+        Delay between coordinates, in samples.
+    target_points : int
+        Approximate number of points per embedding. Subsampling uses stride
+        max(1, n_points // target_points), so this is not a strict upper bound.
+
+    Returns
+    -------
+    Disparity
+        Pair indices, individual disparities, their mean, and population
+        standard deviation.
     """
     signals = np.asarray(signals)
     target_points = positive_integer(target_points, "target_points")

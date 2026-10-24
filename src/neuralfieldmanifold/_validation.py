@@ -1,4 +1,4 @@
-"""Shared array checks without implicit signal processing."""
+"""Shared validation for signal arrays, dimensions, and sampling rates."""
 
 import numpy as np
 

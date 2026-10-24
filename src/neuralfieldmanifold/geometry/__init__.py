@@ -1,4 +1,4 @@
-"""Elliptical ring and torus fits; geometric containment, not topology tests."""
+"""Elliptical ring and torus fitting and cross-signal geometric comparison."""
 
 from .results import FitConfig, GeometryFit
 from .ring import fit_ring

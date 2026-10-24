@@ -1,4 +1,4 @@
-"""Small 1D recorded segments, loaded locally without a network request."""
+"""Bundled sample neural recordings and their sampling rates."""
 
 from dataclasses import dataclass
 from importlib.resources import as_file, files
@@ -10,6 +10,8 @@ NAMES = ("monkey_lfp", "mouse_lfp")
 
 @dataclass(frozen=True)
 class Recording:
+    """One-dimensional raw sample, sampling rate in Hz, and sample name."""
+
     signal: np.ndarray
     sampling_rate_hz: float
     name: str
@@ -20,11 +22,18 @@ class Recording:
 
 
 def load(name):
-    """Load one recorded 1D array and its sampling rate.
+    """Load a bundled raw neural recording.
 
-    ``monkey_lfp`` is 20 seconds at 500 Hz; ``mouse_lfp`` is five seconds
-    at 20 kHz. These are raw tutorial inputs, not processed substitutes or
-    complete datasets. The arrays contain no animal or channel identifiers.
+    Parameters
+    ----------
+    name : {"monkey_lfp", "mouse_lfp"}
+        Monkey LFP is 20 seconds at 500 Hz. Mouse LFP is five seconds at 20 kHz.
+
+    Returns
+    -------
+    Recording
+        One-dimensional signal, sampling rate in Hz, and sample name.
+        The duration is available as duration_seconds.
     """
     if name not in NAMES:
         raise ValueError(f"Unknown recording {name!r}; choose from {NAMES}")

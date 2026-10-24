@@ -1,4 +1,4 @@
-"""Explicit notebook-equivalent filtering and envelope normalization."""
+"""Filtering, resampling, and envelope normalization for one-dimensional signals."""
 
 from dataclasses import dataclass
 
@@ -10,11 +10,32 @@ from ._validation import sampling_rate, signal_array
 
 @dataclass(frozen=True)
 class PreprocessConfig:
-    """Processing order: notch, bandpass, optional decimation, envelope.
+    """Settings for notch, bandpass, decimation, and envelope processing.
 
-    Bands are in Hz. ``None`` disables that step. ``output_rate_hz`` uses
-    integer IIR decimation, as in the recorded-data tutorials; an exact
-    integer ratio is required instead of silently changing the output rate.
+    Parameters
+    ----------
+    notch_hz : float or None
+        Line frequency to remove, in Hz. None disables notch filtering.
+    notch_quality : float
+        Notch quality factor (center frequency divided by bandwidth).
+    band_hz : tuple of float or None
+        Lower and upper bandpass cutoffs in Hz.
+    filter_order : int
+        Butterworth order used by the bandpass filter.
+    output_rate_hz : float or None
+        Output sampling rate. Must divide the input rate by an integer.
+    envelope_band_hz : tuple of float or None
+        Band in Hz used for envelope normalization, after decimation.
+        None disables normalization.
+    envelope_lowpass_hz : float or None
+        Lowpass cutoff for the Hilbert envelope. None leaves it unsmoothed.
+    envelope_epsilon : float
+        Positive constant added to the envelope before division.
+
+    Notes
+    -----
+    Steps run in the order listed above. All filter cutoffs must lie below
+    Nyquist at the stage where they are applied.
     """
 
     notch_hz: float | None = None
@@ -29,6 +50,20 @@ class PreprocessConfig:
 
 @dataclass(frozen=True)
 class ProcessedSignal:
+    """Processing results and output sampling rate.
+
+    Attributes
+    ----------
+    signal : ndarray
+        Final processed signal.
+    bandpassed : ndarray
+        Signal after filtering and decimation, before envelope processing.
+    envelope : ndarray or None
+        Hilbert amplitude envelope, or None if normalization is disabled.
+    sampling_rate_hz : float
+        Output sampling rate in Hz.
+    """
+
     signal: np.ndarray
     bandpassed: np.ndarray
     envelope: np.ndarray | None
@@ -67,11 +102,34 @@ def notch(x, *, sampling_rate_hz, frequency_hz, quality=30.0):
 
 
 def envelope_normalize(x, *, sampling_rate_hz, band_hz, lowpass_hz=3.0, epsilon=1e-6):
-    """Return normalized signal, envelope-band signal, and Hilbert envelope.
+    """Normalize a bandpassed signal by its Hilbert amplitude envelope.
 
-    Uses transfer-function Butterworth filters and median-envelope rescaling
-    exactly as in the recorded-data notebooks. This differs intentionally
-    from the SOS filter used by :func:`bandpass`.
+    A fourth-order Butterworth bandpass is applied with zero-phase filtering.
+    The Hilbert amplitude can be smoothed by a second-order lowpass filter.
+    The output is the filtered signal divided by ``envelope + epsilon``,
+    then multiplied by the median envelope.
+
+    Parameters
+    ----------
+    x : array_like, shape (n_samples,)
+        Input signal.
+    sampling_rate_hz : float
+        Sampling rate in Hz.
+    band_hz : tuple of float
+        Bandpass cutoffs in Hz.
+    lowpass_hz : float or None
+        Envelope smoothing cutoff in Hz.
+    epsilon : float
+        Positive denominator offset.
+
+    Returns
+    -------
+    normalized : ndarray
+        Envelope-normalized signal.
+    filtered : ndarray
+        Bandpassed signal before normalization.
+    envelope : ndarray
+        Hilbert amplitude envelope, smoothed if requested.
     """
     fs = sampling_rate(sampling_rate_hz)
     if epsilon <= 0:
@@ -90,7 +148,22 @@ def envelope_normalize(x, *, sampling_rate_hz, band_hz, lowpass_hz=3.0, epsilon=
 
 
 def process(x, *, sampling_rate_hz, config):
-    """Process a 1D signal using only the explicitly configured steps."""
+    """Apply the configured processing steps to a one-dimensional signal.
+
+    Parameters
+    ----------
+    x : array_like, shape (n_samples,)
+        Input signal.
+    sampling_rate_hz : float
+        Input sampling rate in Hz.
+    config : PreprocessConfig
+        Filtering, output rate, and envelope settings.
+
+    Returns
+    -------
+    ProcessedSignal
+        Processed signal, pre-normalization signal, envelope, and output rate.
+    """
     fs = sampling_rate(sampling_rate_hz)
     x = signal_array(x)
     if not isinstance(config, PreprocessConfig):

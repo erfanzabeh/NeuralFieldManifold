@@ -5,10 +5,27 @@ from .results import FitConfig, GeometryFit, validate_cloud
 
 
 def fit_ring(points, *, config=None):
-    """Fit an elliptical ring using native containment and compactness residuals.
+    """Fit a planar elliptical annulus to a three-dimensional point cloud.
 
-    Accepts a finite (N, 3) cloud. No scaling or projection is applied.
-    Returns a GeometryFit with optimizer status and native geometric measures."""
+    Parameters
+    ----------
+    points : array_like, shape (n_points, 3)
+        Finite coordinates with at least four points and nonzero extent
+        along each coordinate.
+    config : FitConfig or None
+        Compactness, hole, and angular homogeneity settings.
+
+    Returns
+    -------
+    GeometryFit
+        Center, orientation, inner and outer ellipse radii, fit measures,
+        and optimizer status. Distances are in input coordinate units.
+
+    Notes
+    -----
+    Uses PCA initialization and bounded robust least squares. Containment
+    is measured in the fitted plane; MSE also includes normal offsets.
+    """
     config = FitConfig() if config is None else config
     if not isinstance(config, FitConfig):
         raise TypeError("config must be a FitConfig")

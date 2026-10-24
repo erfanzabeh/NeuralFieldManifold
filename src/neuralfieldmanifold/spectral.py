@@ -1,4 +1,4 @@
-"""Spectral summaries with explicit estimation settings."""
+"""Welch power spectral density estimation."""
 
 from dataclasses import dataclass
 
@@ -11,6 +11,8 @@ from ._validation import sampling_rate, signal_array
 
 @dataclass(frozen=True)
 class PowerSpectrum:
+    """Frequency coordinates in Hz and their power spectral density."""
+
     frequencies_hz: np.ndarray
     density: np.ndarray
 
@@ -25,10 +27,34 @@ def welch(
     frequency_range_hz=None,
     smooth_bins=None,
 ):
-    """Welch PSD in signal-units squared/Hz; optional display smoothing.
+    """Estimate power spectral density with Welch's method.
 
-    A Hamming window and constant segment detrending match the tutorials'
-    MNE Welch calls. Short signals use their full length as the segment.
+    Parameters
+    ----------
+    x : array_like, shape (n_samples,)
+        Input signal.
+    sampling_rate_hz : float
+        Sampling rate in Hz.
+    n_fft : int
+        FFT length and maximum segment length. Short signals use their full
+        length as the segment and are zero-padded to this FFT length.
+    overlap_samples : int
+        Segment overlap, capped at one less than the segment length.
+    window : str or tuple
+        Window specification accepted by scipy.signal.welch.
+    frequency_range_hz : tuple of float or None
+        Inclusive lower and upper frequencies to retain.
+    smooth_bins : float or None
+        Standard deviation of optional Gaussian smoothing, in frequency bins.
+
+    Returns
+    -------
+    PowerSpectrum
+        Frequencies in Hz and density in signal-units squared per Hz.
+
+    Notes
+    -----
+    Each segment is detrended by subtracting its mean.
     """
     x = signal_array(x)
     fs = sampling_rate(sampling_rate_hz)
