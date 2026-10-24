@@ -1,9 +1,9 @@
 Getting Started
 ===============
 
-Install the local candidate with notebook support::
+Install the package with notebook support from GitHub::
 
-   python -m pip install ".[tutorials]"
+   python -m pip install "neuralfieldmanifold[tutorials] @ git+https://github.com/erfanzabeh/NeuralFieldManifold.git@main"
 
 Import the package::
 
@@ -57,8 +57,8 @@ offset. A high containment score alone does not establish topology.
 Reproducibility
 ---------------
 
-Original tutorials are retained unchanged in the reference archive. These
-new notebooks use the public API. Deterministic numerical stages are compared
+Original tutorials are retained unchanged in repository history. These
+notebooks use the public API. Deterministic numerical stages are compared
 to frozen reference arrays. NumPy random generators replace JAX; identical
 integer seeds do not imply identical random draws across those libraries.
 Fixed random inputs are used when a direct stochastic comparison is needed.

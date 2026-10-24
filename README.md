@@ -6,16 +6,25 @@ NumPy and PyTorch tools for autoregressive dynamics and delay-coordinate geometr
 import neuralfieldmanifold as nfm
 ```
 
-This is the local release candidate. Nothing has been uploaded to PyPI.
+Documentation: [User Guide and API](https://erfanzabeh.github.io/NeuralFieldManifold/)
 
-## Install Locally
+## Installation
 
 ```sh
-python -m pip install ".[tutorials]"
+python -m pip install "neuralfieldmanifold @ git+https://github.com/erfanzabeh/NeuralFieldManifold.git@main"
 ```
 
 The numerical package depends on NumPy, SciPy, and PyTorch. Plotting and
-notebook dependencies are optional. There is no JAX dependency.
+notebook dependencies are optional. There is no JAX dependency. PyPI
+publication is a separate release step; the command above installs from GitHub.
+
+For the tutorials and local development:
+
+```sh
+git clone --depth 1 https://github.com/erfanzabeh/NeuralFieldManifold.git
+cd NeuralFieldManifold
+python -m pip install ".[tutorials]"
+```
 
 ## Recorded Signal
 
@@ -64,8 +73,10 @@ package's tutorial scope.
 
 ## Reproductions
 
-New-API notebooks are under `docs/tutorials/`. The original research notebooks
-and documentation remain untouched outside this candidate.
+Notebooks using the public API are under `docs/tutorials/`, with saved outputs
+also available in the [online documentation](https://erfanzabeh.github.io/NeuralFieldManifold/).
+The [original tutorials](https://github.com/erfanzabeh/NeuralFieldManifold/tree/060ea3c60/docs/tutorials)
+and research analyses remain accessible in repository history.
 
 ```sh
 python reproductions/recordings.py --output results/recordings --workers 3

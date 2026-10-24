@@ -18,6 +18,11 @@ tutorials = ["matplotlib>=3.7", "plotly>=5.15", "scikit-learn>=1.4", "ipykernel"
 docs = ["sphinx>=7,<9", "myst-nb>=1", "sphinx-book-theme>=1"]
 dev = ["build"]
 
+[project.urls]
+Documentation = "https://erfanzabeh.github.io/NeuralFieldManifold/"
+Repository = "https://github.com/erfanzabeh/NeuralFieldManifold"
+Issues = "https://github.com/erfanzabeh/NeuralFieldManifold/issues"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 
