@@ -2,7 +2,7 @@
   "autocorrelated_manifolds.ipynb": {
     "cells": 1,
     "markdown": {
-      "0": "67b14a67e93bf089d5fef36f147401d0133cc095e7c8c8a6b9327be2c5d1a6a0"
+      "0": "a77a8bf9bf6ddc53ca32422e203954de905093f639e6e891d5e6313494f51e4d"
     }
   },
   "intrinsic_extrinsic.ipynb": {
@@ -67,11 +67,11 @@
   "upcoming.ipynb": {
     "cells": 1,
     "markdown": {
-      "0": "a8b262ac940cce8e93c650a6788fb19b48e8eff5fda3dd548d6b60edea50f7a7"
+      "0": "f54dac1b220ea78f0ce3b1a427cfc59f1748f6c5d0094d45c129867db4e4e608"
     }
   },
   "volume_conduction_manifold.ipynb": {
-    "cells": 64,
+    "cells": 63,
     "markdown": {
       "0": "1bf3d522cec761714cea3bd20a847a0ed7f57fe09c25bb4108a19fc1a5e44c5f",
       "2": "5fc33f32111e9bf72df714e36c7339c5309016214763b0ee7ae2d65dc2174365",
@@ -104,8 +104,7 @@
       "59": "e87ba9347c1d5c1b9d715071edb910d7167a55db862bd2c5ba962d18a35ced19",
       "60": "9938bdae3532e661a91bea107e2a9a790d90dbc1b8d9b3aa3e68ec20adfc919f",
       "61": "141b7f3ca9c1c7b34271dbd8872166156bd9ea2faf1181219ff12e031088ace9",
-      "62": "e21bd11ca5d4b4757e99855416b588cd12ff305f7f76f600bf5fac1521aae72f",
-      "63": "3b34b87f8fb3bbf77008357c516e33afad8e740e3ce57ea400ce7b8e85bf4a03"
+      "62": "dda3338d7169491a2108ffbf8822208a2cba8679605f8fffde1d29a7ba974625"
     }
   }
 }
