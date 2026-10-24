@@ -1,4 +1,4 @@
-"""AR and TVAR simulation with explicit innovations and power control."""
+"""Autoregressive simulation with fixed or time-varying coefficients."""
 
 import numpy as np
 
@@ -83,12 +83,39 @@ def tvar(
     max_abs=1e6,
     innovations=None,
 ):
-    """Simulate a TVAR coefficient path of shape ``(time, order)``.
+    """Simulate a signal with time-varying autoregressive coefficients.
 
-    With ``target_power=None`` this is the standard TVAR recursion. A power
-    target enables the model tutorial's per-sample multiplicative clamp
-    (0.8--1.2) and final rolling-power rejection. This changes the process
-    and is never enabled implicitly. Innovations include burn-in samples.
+    Parameters
+    ----------
+    coefficients : array_like, shape (n_samples, order)
+        Coefficient path, with lag 1 first.
+    noise_std : float
+        Standard deviation of generated Gaussian innovations.
+    seed : int
+        Random seed.
+    burn_in_samples : int
+        Number of initial samples to discard. Burn-in uses the first
+        coefficient vector.
+    target_power : float or None
+        Optional rolling mean-square power target. Enables per-sample
+        multiplicative correction, clipped to 0.8-1.2, and rejects signals
+        whose final rolling power exceeds the target.
+    power_window_samples : int
+        Window length for power control.
+    max_abs : float
+        Maximum permitted absolute amplitude.
+    innovations : array_like or None
+        Additive noise, already scaled, including burn-in samples.
+
+    Returns
+    -------
+    ndarray, shape (n_samples,)
+        Simulated signal with float32 dtype.
+
+    Raises
+    ------
+    SimulationRejected
+        If the amplitude or rolling-power bounds are exceeded.
     """
     coefficients = np.asarray(coefficients)
     if (

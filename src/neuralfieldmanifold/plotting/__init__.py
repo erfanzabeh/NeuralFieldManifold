@@ -1,4 +1,4 @@
-"""Opt-in scientific plotting. Functions never display or save implicitly."""
+"""Matplotlib trajectories and interactive Plotly geometry plots."""
 
 import numpy as np
 

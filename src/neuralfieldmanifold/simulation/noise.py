@@ -1,4 +1,4 @@
-"""NumPy random signals. Random streams are not JAX seed-compatible."""
+"""White and power-law colored noise generators."""
 
 import numpy as np
 
@@ -13,11 +13,24 @@ def white_noise(n_samples, *, seed=0):
 
 
 def colored_noise(n_samples, *, exponent=1.0, seed=0, spectrum=None):
-    """Unit-variance spectral noise with power proportional to 1/f**exponent.
+    """Generate zero-mean, unit-variance noise with a power-law spectrum.
 
-    ``spectrum`` optionally supplies unshaped complex random Fourier bins
-    for controlled comparisons and replay, independent of the RNG backend.
-    Otherwise real and imaginary components use NumPy's generator.
+    Parameters
+    ----------
+    n_samples : int
+        Number of output samples, at least two.
+    exponent : float
+        Spectral exponent; power is proportional to 1/f**exponent.
+    seed : int
+        Seed for the NumPy random generator.
+    spectrum : array_like of complex or None
+        Optional unweighted Fourier bins, shape (n_samples // 2 + 1,).
+        When supplied, these replace the random Fourier coefficients.
+
+    Returns
+    -------
+    ndarray, shape (n_samples,)
+        Real-valued colored noise.
     """
     n_samples = positive_integer(n_samples, "n_samples")
     if n_samples < 2 or not np.isfinite(exponent):

@@ -16,12 +16,14 @@ def oscillatory_ar(
     random_initialization=False,
     amplitude=1.0,
 ):
-    """Generate a standard-deviation-normalized, float64 oscillatory source.
+    """Generate an oscillatory AR source scaled to the requested amplitude.
 
-    Uses conjugate-pole polynomial construction and ordered scalar AR sums,
-    as in the volume-conduction tutorial. ``random_initialization`` explicitly
-    selects whether the first ``2K`` values are noise or zero. Normalization
-    fixes output standard deviation, not the spectrum or mode amplitudes.
+    The AR characteristic polynomial combines conjugate pole pairs.
+    The output is divided by its standard deviation and multiplied
+    by amplitude.
+
+    ``random_initialization=True`` initializes the lag history with Gaussian
+    draws. Otherwise the initial history is zero.
     """
     fs = sampling_rate(sampling_rate_hz)
     n_samples = positive_integer(n_samples, "n_samples")

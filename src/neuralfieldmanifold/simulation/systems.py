@@ -14,10 +14,24 @@ def lorenz(
     beta=8 / 3,
     initial_state=(1.0, 1.0, 1.0),
 ):
-    """Fourth-order Runge--Kutta trajectory, shape ``(n_samples, 3)``.
+    """Integrate the Lorenz system with fourth-order Runge-Kutta steps.
 
-    The first returned sample is the state after one integration step,
-    matching the original tutorial. No transient is discarded implicitly.
+    Parameters
+    ----------
+    n_samples : int
+        Number of integration steps.
+    dt : float
+        Time step.
+    sigma, rho, beta : float
+        Lorenz system parameters.
+    initial_state : tuple of float
+        Initial x, y, and z coordinates.
+
+    Returns
+    -------
+    ndarray, shape (n_samples, 3)
+        Trajectory beginning after the first integration step. The initial
+        transient is included.
     """
     n_samples = positive_integer(n_samples, "n_samples")
     if not np.isfinite(dt) or dt <= 0:
