@@ -22,7 +22,7 @@
   "model.ipynb": {
     "cells": 24,
     "markdown": {
-      "0": "5587db679b1ef4b22e8c3380fdc00723b8b0c46a4de13ba4d47627b58b5f4afd",
+      "0": "d33cca357f8afe573a95556d23b32e6e6ef4bca96c95063036c7d93385958024",
       "2": "bc6ef35c87cea0bb0f2a4327a3fb15dcb19c8a94ff332e045e8301855327145d",
       "4": "2d614a52413984af09cc18bd5294d24a817d28640d522a149187b604e388de29",
       "6": "e04ddd3f6cf9687bacdb4ba0c788d332d40fd302cbce76335f295fa2bdcfd55c",
@@ -38,25 +38,25 @@
   "monkey.ipynb": {
     "cells": 18,
     "markdown": {
-      "0": "bf0765e0eb0794365de249e3cfae50d2a0d84153bed7c68dc7933d69bce46d39"
+      "0": "e33d8f45acc36e6afcf21b083959e5fa6fdc1bf113ee64f4b4a080912e3db7f1"
     }
   },
   "mouse.ipynb": {
     "cells": 17,
     "markdown": {
-      "0": "fbc956fd7dbafffaacbd5b55ef81dd76fe9637c3edfb3b1d3bc6218931666029"
+      "0": "1444409a235b96994decb832a5418fe4f0631393cf6e7eaa4e3142e8f580d38d"
     }
   },
   "mouse_lfp.ipynb": {
     "cells": 17,
     "markdown": {
-      "0": "72cd0a6d7656ea662f6a0211bdc924aee4ec814cfa9952eab2727d5c70e891e5"
+      "0": "3e0e41df50b35dc628faa025268c77f2ad0b8b4a7476477d27931c1137a10cc7"
     }
   },
   "simulations.ipynb": {
     "cells": 18,
     "markdown": {
-      "0": "efe1fb5eeeeae2087296665f34be55835e70df5e93635265963ef2ca0eb3691a",
+      "0": "817ec58d909473328c7a16993e731df5873f40c9c5753455bf0f69ed782fed0d",
       "2": "330931d8dab706a7f5f68b6f08c99cde8b2f7fee89af76351c89f4c1c60e0ab7",
       "6": "42687c4423a576ad685af5822221e9247d03df9bf02d040145a70778d33bb091",
       "9": "c036b89aed79ba8404582c3321e158859f9e4572ba1ad0e9ad0ed39b8eb5e177",
@@ -73,7 +73,7 @@
   "volume_conduction_manifold.ipynb": {
     "cells": 63,
     "markdown": {
-      "0": "1bf3d522cec761714cea3bd20a847a0ed7f57fe09c25bb4108a19fc1a5e44c5f",
+      "0": "79f2bbac8cd4056cb4cf7f6f4aedfd0802b07a1b1dab1a2e07e3e64668fa357e",
       "2": "5fc33f32111e9bf72df714e36c7339c5309016214763b0ee7ae2d65dc2174365",
       "4": "1f04c21a1aaf5b17f0e18b89f77e4f9ef9cfa3550dbd8a109f0b5c7ace983f14",
       "8": "40845f9215db777181a01434b28f315a80e0b5e3e5620b23674a30d5b906ad4c",

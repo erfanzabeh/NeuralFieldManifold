@@ -10,7 +10,7 @@ Tutorials
 
 .. toctree::
    :maxdepth: 1
-   :caption: Recorded Signals
+   :caption: Manifold Reconstructions
 
    monkey
    mouse

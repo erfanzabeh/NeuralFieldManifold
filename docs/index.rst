@@ -5,82 +5,84 @@ Neural Field Manifold
 
    <p class="project-tagline">Recover low-dimensional manifold geometry from noisy, autocorrelated time series</p>
    <div class="project-badges">
-     <a href="https://erfanzabeh.github.io/NeuralFieldManifold/installation.html"><img alt="Installation" src="https://img.shields.io/badge/python-3.10%2B-blue.svg"></a>
-     <a href="https://erfanzabeh.github.io/NeuralFieldManifold/"><img alt="Documentation" src="https://img.shields.io/badge/docs-online-blue.svg"></a>
-     <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml"><img alt="Documentation build" src="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml/badge.svg"></a>
+     <a href="citation.html"><img alt="NeurIPS 2026 paper" src="https://img.shields.io/badge/NeurIPS-2026-68478D.svg"></a>
+     <a href="installation.html"><img alt="Python 3.10 or later" src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white"></a>
+     <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml"><img alt="Documentation" src="https://img.shields.io/github/actions/workflow/status/erfanzabeh/NeuralFieldManifold/docs.yml?branch=main&label=Documentation&logo=github"></a>
+     <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/build.yml"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/erfanzabeh/NeuralFieldManifold/build.yml?branch=main&label=Build&logo=github"></a>
      <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/erfanzabeh/NeuralFieldManifold"></a>
-     <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="NeurIPS 2026 paper" src="https://img.shields.io/badge/NeurIPS-2026-68478D.svg"></a>
      <a href="https://github.com/erfanzabeh/NeuralFieldManifold/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/erfanzabeh/NeuralFieldManifold"></a>
-     <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/CONTRIBUTING.md"><img alt="Contributing" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg"></a>
+     <a href="installation.html"><img alt="PyPI: XXXX (forthcoming)" src="https://img.shields.io/badge/PyPI-XXXX-3775A9?logo=pypi&logoColor=white"></a>
+     <a href="citation.html"><img alt="arXiv: XXXX (forthcoming)" src="https://img.shields.io/badge/arXiv-XXXX-B31B1B?logo=arxiv&logoColor=white"></a>
    </div>
 
-Explore the relationship between signal dynamics and delay-coordinate
-geometry, then reconstruct manifolds from synthetic and recorded signals.
-The notebooks below cover the complete analyses, including diagnostics,
-parameter sweeps, and comparisons across channels.
+**NeurIPS 2026** | :doc:`NeuralFieldManifold: Reconstruction of LFP Manifold with Lag Embedding <citation>`
+
+Connect local signal dynamics to delay-coordinate geometry. Process neural
+recordings, estimate autoregressive dynamics with classical models or
+DeepLagField, and reconstruct and measure their ring and torus geometry.
 
 .. image:: _static/overview.jpg
    :alt: Oscillatory dynamics and delay-coordinate geometry
    :width: 100%
 
-Start Here
-----------
+Installation
+------------
 
-Install the package with :doc:`installation`, or follow
-:doc:`getting_started` for a short introduction to the Python API.
+Requires Python 3.10 or later. Install from GitHub while the PyPI release
+is being prepared:
+
+.. code-block:: sh
+
+   python -m pip install "neuralfieldmanifold @ git+https://github.com/erfanzabeh/NeuralFieldManifold.git@main"
+
+See :doc:`installation` for plotting, notebook dependencies, and editable installs.
+
+Getting Started
+---------------
+
+Load a bundled recording, process it, and measure its delay geometry:
+
+.. code-block:: python
+
+   import neuralfieldmanifold as nfm
+
+   recording = nfm.datasets.load("monkey_lfp")
+   processed = nfm.preprocessing.process(
+       recording.signal,
+       sampling_rate_hz=recording.sampling_rate_hz,
+       config=nfm.preprocessing.PreprocessConfig(
+           notch_hz=50,
+           band_hz=(1, 50),
+           envelope_band_hz=(1, 80),
+           envelope_lowpass_hz=3,
+       ),
+   )
+   cloud = nfm.embedding.delay(processed.signal, dimension=3, tau_samples=30)
+   fit = nfm.geometry.fit_torus(cloud)
+   print(fit.score, fit.error)
+
+Use your own one-dimensional signal and sampling rate in place of the sample.
+Choose filtering bands and delays appropriate to that recording.
+Continue with :doc:`getting_started` or browse the :doc:`api`.
 
 Foundations
 -----------
 
-* :doc:`tutorials/intrinsic_extrinsic` compares PCA embedding dimensionality,
-  oscillatory AR roots, colored noise, and time-varying dynamics.
-* :doc:`tutorials/simulations` follows the Lorenz system from spectral analysis
-  and AR order selection to residual diagnostics and threshold-AR reconstruction.
+Explore intrinsic and embedding dimensions, oscillatory dynamics, and
+synthetic manifold reconstruction in the :doc:`tutorial library <tutorials/index>`.
 
-Recorded Signals
-----------------
+Demonstrations
+--------------
 
-* :doc:`tutorials/monkey`: monkey V1 LFP reconstruction, prediction diagnostics,
-  time-window comparisons, delay sweeps, and multichannel reconstruction.
-* :doc:`tutorials/mouse`: mice hippocampus reconstruction with the original
-  processing, prediction, and multichannel analyses.
-* :doc:`tutorials/mouse_lfp`: mice hippocampus LFP reconstruction, including
-  residual analysis and window, delay, and channel comparisons.
-
-DeepLagField
-------------
-
-.. image:: _static/arch.jpg
-   :alt: DeepLagField order-selection and dynamics networks
-   :width: 100%
-
-The :doc:`tutorials/model` tutorial covers all eight coefficient-schedule
-families, synthetic-data generation, training, order-classification confusion
-matrices, coefficient-recovery benchmarks, and predicted coefficient trajectories.
-
-Source Mixing
--------------
-
-:doc:`tutorials/volume_conduction_manifold` examines genuine and mixed-source
-delay geometry, mixing-strength sweeps, spatial consistency, synthetic trial
-classification, and multichannel monkey LFP and mouse EEG examples.
-
-Coming Soon
------------
-
-* :doc:`tutorials/upcoming`
-* :doc:`tutorials/autocorrelated_manifolds`
+The :doc:`tutorial library <tutorials/index>` includes monkey V1 LFP,
+mice hippocampus EEG and LFP, and DeepLagField training examples, with
+saved figures and complete analysis code.
 
 .. toctree::
    :hidden:
    :maxdepth: 2
 
    installation
-   getting_started
    tutorials/index
    api
    citation
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

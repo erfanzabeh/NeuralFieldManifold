@@ -2,14 +2,17 @@
 <p align="center"><em>Recover low-dimensional manifold geometry from noisy, autocorrelated time series</em></p>
 
 <p align="center">
-  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/installation.html"><img alt="Installation" src="https://img.shields.io/badge/python-3.10%2B-blue.svg"></a>
-  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/"><img alt="Documentation" src="https://img.shields.io/badge/docs-online-blue.svg"></a>
-  <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml"><img alt="Documentation build" src="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml/badge.svg"></a>
-  <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/erfanzabeh/NeuralFieldManifold"></a>
   <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="NeurIPS 2026 paper" src="https://img.shields.io/badge/NeurIPS-2026-68478D.svg"></a>
+  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/installation.html"><img alt="Python 3.10 or later" src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white"></a>
+  <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml"><img alt="Documentation" src="https://img.shields.io/github/actions/workflow/status/erfanzabeh/NeuralFieldManifold/docs.yml?branch=main&label=Documentation&logo=github"></a>
+  <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/build.yml"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/erfanzabeh/NeuralFieldManifold/build.yml?branch=main&label=Build&logo=github"></a>
+  <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/erfanzabeh/NeuralFieldManifold"></a>
   <a href="https://github.com/erfanzabeh/NeuralFieldManifold/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/erfanzabeh/NeuralFieldManifold"></a>
-  <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/CONTRIBUTING.md"><img alt="Contributing" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg"></a>
+  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/installation.html"><img alt="PyPI: XXXX (forthcoming)" src="https://img.shields.io/badge/PyPI-XXXX-3775A9?logo=pypi&logoColor=white"></a>
+  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="arXiv: XXXX (forthcoming)" src="https://img.shields.io/badge/arXiv-XXXX-B31B1B?logo=arxiv&logoColor=white"></a>
 </p>
+
+<p align="center"><a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><strong>NeurIPS 2026: NeuralFieldManifold: Reconstruction of LFP Manifold with Lag Embedding</strong></a></p>
 
 ## Overview
 
@@ -118,15 +121,15 @@ weights before interpreting its predicted coefficients or order.
 
 | Tutorial | Topics |
 |---|---|
-| [Monkey LFP](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/monkey.html) | Filtering, AR prediction, and delay geometry |
-| [Mice hippocampus](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/mouse.html) | Reconstruction, residual diagnostics, window and delay sweeps |
-| [Mice hippocampus LFP](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/mouse_lfp.html) | Signal processing, prediction, and multichannel comparison |
+| [Monkey V1 LFP](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/monkey.html) | Filtering, AR prediction, and delay geometry |
+| [Mice Hippocampus EEG](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/mouse.html) | Reconstruction, residual diagnostics, window and delay sweeps |
+| [Mice Hippocampus LFP](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/mouse_lfp.html) | Signal processing, prediction, and multichannel comparison |
 | [Intrinsic vs. embedding dimensionality](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/intrinsic_extrinsic.html) | PCA, AR roots, colored noise, and nonstationarity |
 | [Intrinsic manifold reconstruction](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/simulations.html) | Lorenz dynamics, AR order selection, and threshold AR |
 | [DeepLagField](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/model.html) | Schedule families, training, order classification, and coefficient recovery |
 | [Volume conduction](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/volume_conduction_manifold.html) | Source mixing, spatial consistency, and real-data comparisons |
 
-The [tutorial library](https://erfanzabeh.github.io/NeuralFieldManifold/) also
+The [tutorial library](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/index.html) also
 lists upcoming tutorials on strongly autocorrelated signals and DeepLagField
 fine-tuning.
 

@@ -1,0 +1,12 @@
+<nav class="bd-docs-nav bd-links" aria-label="Installation">
+  <p class="bd-links__title" role="heading" aria-level="1">Installation</p>
+  <div class="bd-toc-item navbar-nav">
+    <ul class="nav bd-sidenav">
+      {% for page, title in [("installation", "Installation"), ("getting_started", "Getting Started")] %}
+      <li{% if pagename == page %} class="current active"{% endif %}>
+        <a class="reference internal" href="{{ pathto(page) }}"{% if pagename == page %} aria-current="page"{% endif %}>{{ title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

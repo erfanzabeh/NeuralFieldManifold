@@ -1,0 +1,11 @@
+{% extends "!layout.html" %}
+
+{% block css %}
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = "light";
+    document.documentElement.dataset.theme = "light";
+    localStorage.setItem("mode", "light");
+    localStorage.setItem("theme", "light");
+  </script>
+  {{ super() }}
+{% endblock %}

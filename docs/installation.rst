@@ -4,6 +4,13 @@ Installation
 Neural Field Manifold requires Python 3.10 or later and depends on NumPy,
 SciPy, and PyTorch.
 
+.. toctree::
+   :hidden:
+
+   getting_started
+
+The PyPI release is forthcoming. Install the current package from GitHub.
+
 Install from GitHub
 -------------------
 

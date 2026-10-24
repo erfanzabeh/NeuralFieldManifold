@@ -17,7 +17,14 @@ nb_execution_mode = "off"
 autodoc_member_order = "bysource"
 html_title = "Neural Field Manifold"
 html_static_path = ["_static"]
+templates_path = ["_templates"]
 html_css_files = ["custom.css"]
+html_context = {"default_mode": "light"}
+html_sidebars = {
+    "installation": ["installation-nav.html"],
+    "getting_started": ["installation-nav.html"],
+    "**": ["sidebar-nav-bs.html"],
+}
 html_baseurl = "https://erfanzabeh.github.io/NeuralFieldManifold/"
 html_theme_options = {
     "show_toc_level": 2,
@@ -26,7 +33,7 @@ html_theme_options = {
     "logo": {"text": "Neural Field Manifold"},
     "github_url": "https://github.com/erfanzabeh/NeuralFieldManifold",
     "navbar_start": ["navbar-logo"],
-    "navbar_end": ["theme-switcher", "navbar-icon-links"],
+    "navbar_end": ["navbar-icon-links"],
     "footer_start": ["copyright"],
     "footer_end": [],
 }
