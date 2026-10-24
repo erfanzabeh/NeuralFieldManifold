@@ -15,7 +15,7 @@ dependencies = ["numpy>=1.24,<3", "scipy>=1.10", "torch>=2.0"]
 [project.optional-dependencies]
 plot = ["matplotlib>=3.7", "plotly>=5.15"]
 tutorials = ["matplotlib>=3.7", "plotly>=5.15", "scikit-learn>=1.4", "ipykernel", "ipywidgets>=8", "nbformat>=5", "nbclient>=0.10", "mne", "statsmodels", "PyWavelets", "pandas", "tqdm"]
-docs = ["sphinx>=7,<9", "myst-nb>=1", "sphinx-book-theme>=1"]
+docs = ["sphinx>=7,<9", "myst-nb>=1", "pydata-sphinx-theme>=0.16,<0.18"]
 dev = ["build"]
 
 [project.urls]

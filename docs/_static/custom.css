@@ -1,0 +1,61 @@
+html {
+  --pst-font-size-h1: 2rem;
+  --pst-font-size-h2: 1.5rem;
+  --pst-font-size-h3: 1.2rem;
+  letter-spacing: 0;
+}
+
+html[data-theme="light"] {
+  --pst-color-primary: #981b24;
+  --pst-color-link: #981b24;
+}
+
+.bd-main .bd-content .bd-article-container {
+  max-width: 62rem;
+}
+
+.project-tagline {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-badges img {
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.coming-soon,
+.bd-sidebar-primary a[href$="autocorrelated_manifolds.html"]::after,
+.bd-sidebar-primary a[href$="upcoming.html"]::after {
+  display: inline-block;
+  border: 1px solid #92979c;
+  border-radius: 3px;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.bd-sidebar-primary a[href$="autocorrelated_manifolds.html"]::after,
+.bd-sidebar-primary a[href$="upcoming.html"]::after {
+  content: "Coming Soon";
+  margin-left: 0.35rem;
+}
+
+div.cell details.hide summary {
+  cursor: pointer;
+  padding: 0.35rem 0.65rem;
+}
+
+div.cell details.hide:not([open]) .expanded,
+div.cell details.hide[open] .collapsed {
+  display: none;
+}

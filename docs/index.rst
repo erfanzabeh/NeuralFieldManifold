@@ -1,8 +1,18 @@
 Neural Field Manifold
 =====================
 
-Tutorials and User Guide
--------------------------
+.. raw:: html
+
+   <p class="project-tagline">Recover low-dimensional manifold geometry from noisy, autocorrelated time series</p>
+   <div class="project-badges">
+     <a href="https://erfanzabeh.github.io/NeuralFieldManifold/installation.html"><img alt="Installation" src="https://img.shields.io/badge/python-3.10%2B-blue.svg"></a>
+     <a href="https://erfanzabeh.github.io/NeuralFieldManifold/"><img alt="Documentation" src="https://img.shields.io/badge/docs-online-blue.svg"></a>
+     <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml"><img alt="Documentation build" src="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml/badge.svg"></a>
+     <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/erfanzabeh/NeuralFieldManifold"></a>
+     <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="NeurIPS 2026 paper" src="https://img.shields.io/badge/NeurIPS-2026-68478D.svg"></a>
+     <a href="https://github.com/erfanzabeh/NeuralFieldManifold/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/erfanzabeh/NeuralFieldManifold"></a>
+     <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/CONTRIBUTING.md"><img alt="Contributing" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg"></a>
+   </div>
 
 Explore the relationship between signal dynamics and delay-coordinate
 geometry, then reconstruct manifolds from synthetic and recorded signals.
@@ -26,7 +36,6 @@ Foundations
   oscillatory AR roots, colored noise, and time-varying dynamics.
 * :doc:`tutorials/simulations` follows the Lorenz system from spectral analysis
   and AR order selection to residual diagnostics and threshold-AR reconstruction.
-* :doc:`tutorials/autocorrelated_manifolds` introduces an upcoming tutorial.
 
 Recorded Signals
 ----------------
@@ -48,7 +57,6 @@ DeepLagField
 The :doc:`tutorials/model` tutorial covers all eight coefficient-schedule
 families, synthetic-data generation, training, order-classification confusion
 matrices, coefficient-recovery benchmarks, and predicted coefficient trajectories.
-:doc:`tutorials/upcoming` describes the planned fine-tuning tutorial.
 
 Source Mixing
 -------------
@@ -57,32 +65,19 @@ Source Mixing
 delay geometry, mixing-strength sweeps, spatial consistency, synthetic trial
 classification, and multichannel monkey LFP and mouse EEG examples.
 
+Coming Soon
+-----------
+
+* :doc:`tutorials/upcoming`
+* :doc:`tutorials/autocorrelated_manifolds`
+
 .. toctree::
    :hidden:
-   :caption: Getting Started
+   :maxdepth: 2
 
    installation
    getting_started
-
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   :caption: Tutorials
-
-   tutorials/autocorrelated_manifolds
-   tutorials/intrinsic_extrinsic
-   tutorials/simulations
-   tutorials/monkey
-   tutorials/mouse
-   tutorials/mouse_lfp
-   tutorials/model
-   tutorials/upcoming
-   tutorials/volume_conduction_manifold
-
-.. toctree::
-   :hidden:
-   :caption: Reference
-
+   tutorials/index
    api
    citation
 

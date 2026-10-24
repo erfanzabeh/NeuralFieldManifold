@@ -1,16 +1,14 @@
 <h1 align="center">Neural Field Manifold</h1>
-<p align="center"><em>Autoregressive dynamics and delay-coordinate geometry for neural time series</em></p>
+<p align="center"><em>Recover low-dimensional manifold geometry from noisy, autocorrelated time series</em></p>
 
 <p align="center">
-  <a href="https://www.python.org/downloads/"><img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-blue.svg"></a>
-  <a href="https://pytorch.org/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg"></a>
-  <a href="https://numpy.org/"><img alt="NumPy" src="https://img.shields.io/badge/NumPy-array_computing-013243.svg"></a>
-  <a href="https://scipy.org/"><img alt="SciPy" src="https://img.shields.io/badge/SciPy-scientific_computing-8CAAE6.svg"></a>
-  <a href="https://jupyter.org/"><img alt="Jupyter notebooks" src="https://img.shields.io/badge/Jupyter-tutorials-F37626.svg"></a>
-  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
+  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/installation.html"><img alt="Installation" src="https://img.shields.io/badge/python-3.10%2B-blue.svg"></a>
   <a href="https://erfanzabeh.github.io/NeuralFieldManifold/"><img alt="Documentation" src="https://img.shields.io/badge/docs-online-blue.svg"></a>
   <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml"><img alt="Documentation build" src="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml/badge.svg"></a>
-  <a href="#citation"><img alt="NeurIPS 2026" src="https://img.shields.io/badge/NeurIPS-2026-68478D.svg"></a>
+  <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/erfanzabeh/NeuralFieldManifold"></a>
+  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="NeurIPS 2026 paper" src="https://img.shields.io/badge/NeurIPS-2026-68478D.svg"></a>
+  <a href="https://github.com/erfanzabeh/NeuralFieldManifold/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/erfanzabeh/NeuralFieldManifold"></a>
+  <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/CONTRIBUTING.md"><img alt="Contributing" src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg"></a>
 </p>
 
 ## Overview
