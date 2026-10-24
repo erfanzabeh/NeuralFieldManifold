@@ -14,7 +14,6 @@ exclude_patterns = ["_build"]
 nb_execution_mode = "off"
 autodoc_member_order = "bysource"
 html_title = "Neural Field Manifold"
-html_logo = "_static/logo.jpg"
 html_static_path = ["_static"]
 html_baseurl = "https://erfanzabeh.github.io/NeuralFieldManifold/"
 html_theme_options = {
@@ -27,3 +26,4 @@ html_theme_options = {
     "navigation_with_keys": True,
     "logo": {"text": "Neural Field Manifold"},
 }
+myst_enable_extensions = ["amsmath", "colon_fence", "deflist", "dollarmath", "html_image"]

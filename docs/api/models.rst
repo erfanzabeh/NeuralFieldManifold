@@ -2,7 +2,7 @@ Autoregressive Models
 =====================
 
 Fit a classical AR or threshold AR model, or learn time-varying coefficients
-and order with DeepLagField. See :doc:`../tutorials/deeplagfield` for a
+and order with DeepLagField. See :doc:`../tutorials/model` for a
 complete training example.
 
 Linear AR

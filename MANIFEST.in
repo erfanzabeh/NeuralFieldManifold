@@ -1,5 +1,6 @@
-include LICENSE README.md
-recursive-include docs *.rst *.py *.ipynb
+include LICENSE README.md CONTRIBUTING.md CITATION.bib
+recursive-include docs *.rst *.py *.ipynb *.npz
+recursive-include docs/_static *.jpg *.png *.svg *.css
 recursive-include reproductions *.py
-recursive-include tests *.py *.npz *.md
+recursive-include tests *.py *.npz *.md *.json
 prune docs/_build

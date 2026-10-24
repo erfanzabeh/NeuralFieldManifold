@@ -87,7 +87,7 @@ Learn Time-Varying Dynamics
        output = model(batch)
    print(output.coefficients.shape, output.order)
 
-A new model has untrained weights. The :doc:`tutorials/deeplagfield`
+A new model has untrained weights. The :doc:`tutorials/model`
 tutorial covers training and checkpoint loading. Inputs have shape
 ``(batch, time)``; coefficients have shape ``(batch, time, lag)``.
 Evaluation selects the highest-scoring AR order, while training uses

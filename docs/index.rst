@@ -1,67 +1,61 @@
 Neural Field Manifold
 =====================
 
-.. image:: _static/logo.jpg
-   :alt: Neural Field Manifold
-   :width: 300px
-   :align: center
+Tutorials and User Guide
+-------------------------
 
-Autoregressive dynamics and delay-coordinate geometry for neural time series.
-
-**Neural Field Manifold** connects local signal dynamics to the geometry of
-delay embeddings. Process a recording, estimate autoregressive dynamics,
-reconstruct a trajectory, and quantify its ring or torus geometry through
-a single Python workflow.
+Explore the relationship between signal dynamics and delay-coordinate
+geometry, then reconstruct manifolds from synthetic and recorded signals.
+The notebooks below cover the complete analyses, including diagnostics,
+parameter sweeps, and comparisons across channels.
 
 .. image:: _static/overview.jpg
-   :alt: From oscillatory signals to delay-coordinate geometry
+   :alt: Oscillatory dynamics and delay-coordinate geometry
    :width: 100%
 
-Getting Started
----------------
+Start Here
+----------
 
-Install the package, load a sample recording, and fit your first delay
-embedding in the :doc:`getting_started` guide. The :doc:`api` documents
-parameters, array shapes, and return values.
+Install the package with :doc:`installation`, or follow
+:doc:`getting_started` for a short introduction to the Python API.
+
+Foundations
+-----------
+
+* :doc:`tutorials/intrinsic_extrinsic` compares PCA embedding dimensionality,
+  oscillatory AR roots, colored noise, and time-varying dynamics.
+* :doc:`tutorials/simulations` follows the Lorenz system from spectral analysis
+  and AR order selection to residual diagnostics and threshold-AR reconstruction.
+* :doc:`tutorials/autocorrelated_manifolds` introduces an upcoming tutorial.
+
+Recorded Signals
+----------------
+
+* :doc:`tutorials/monkey`: monkey V1 LFP reconstruction, prediction diagnostics,
+  time-window comparisons, delay sweeps, and multichannel reconstruction.
+* :doc:`tutorials/mouse`: mice hippocampus reconstruction with the original
+  processing, prediction, and multichannel analyses.
+* :doc:`tutorials/mouse_lfp`: mice hippocampus LFP reconstruction, including
+  residual analysis and window, delay, and channel comparisons.
 
 DeepLagField
 ------------
-
-DeepLagField jointly estimates local autoregressive order and time-varying
-coefficients. Its coupled networks are trained using reconstruction,
-order-classification, target-power, and coefficient-smoothness losses.
 
 .. image:: _static/arch.jpg
    :alt: DeepLagField order-selection and dynamics networks
    :width: 100%
 
-Follow the :doc:`tutorials/deeplagfield` tutorial to generate training data,
-train a model, and evaluate its predictions.
+The :doc:`tutorials/model` tutorial covers all eight coefficient-schedule
+families, synthetic-data generation, training, order-classification confusion
+matrices, coefficient-recovery benchmarks, and predicted coefficient trajectories.
+:doc:`tutorials/upcoming` describes the planned fine-tuning tutorial.
 
-Tutorials
----------
+Source Mixing
+-------------
 
-* :doc:`tutorials/monkey`: processing, prediction, and delay geometry.
-* :doc:`tutorials/mouse`: mouse LFP dynamics in the 1-50 Hz band.
-* :doc:`tutorials/mouse_lfp`: low-frequency mouse LFP and delay embedding.
-* :doc:`tutorials/lorenz`: Lorenz simulation and threshold autoregression.
-* :doc:`tutorials/intrinsic_dimension`: oscillatory modes and embedding dimension.
-* :doc:`tutorials/source_mixing`: sensor mixtures and geometric comparison.
-
-Gallery
--------
-
-.. image:: _static/monkey.jpg
-   :alt: Monkey LFP reconstruction
-   :width: 100%
-
-.. image:: _static/mouse1.jpg
-   :alt: Mouse neural recording reconstruction
-   :width: 100%
-
-.. image:: _static/mouse2.jpg
-   :alt: Low-frequency reconstruction
-   :width: 100%
+:doc:`tutorials/volume_conduction_manifold` examines genuine and mixed-source
+delay geometry, mixing-strength sweeps, spatial consistency, synthetic trial
+classification, and multichannel monkey LFP and mouse EEG examples.
 
 .. toctree::
    :hidden:
@@ -72,21 +66,25 @@ Gallery
 
 .. toctree::
    :hidden:
+   :maxdepth: 1
    :caption: Tutorials
 
+   tutorials/autocorrelated_manifolds
+   tutorials/intrinsic_extrinsic
+   tutorials/simulations
    tutorials/monkey
    tutorials/mouse
    tutorials/mouse_lfp
-   tutorials/lorenz
-   tutorials/intrinsic_dimension
-   tutorials/deeplagfield
-   tutorials/source_mixing
+   tutorials/model
+   tutorials/upcoming
+   tutorials/volume_conduction_manifold
 
 .. toctree::
    :hidden:
    :caption: Reference
 
    api
+   citation
 
 * :ref:`genindex`
 * :ref:`modindex`
