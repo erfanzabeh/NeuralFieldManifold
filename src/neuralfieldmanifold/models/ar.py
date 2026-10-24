@@ -1,4 +1,4 @@
-"""Ordinary least-squares autoregression and explicit prediction modes."""
+"""Ordinary least-squares autoregression, prediction, and forecasting."""
 
 from dataclasses import dataclass
 
@@ -10,12 +10,15 @@ from ..embedding import lag_matrix
 
 @dataclass(frozen=True)
 class PredictionMetrics:
+    """Mean squared error, mean absolute error, and Pearson correlation."""
+
     mse: float
     mae: float
     correlation: float
 
 
 def prediction_metrics(observed, predicted):
+    """Compare equal-length one-dimensional observed and predicted signals."""
     observed, predicted = signal_array(observed), signal_array(predicted)
     if observed.shape != predicted.shape:
         raise ValueError("Observed and predicted signals must have the same shape")
@@ -31,6 +34,8 @@ def prediction_metrics(observed, predicted):
 
 @dataclass(frozen=True)
 class ARFit:
+    """Fitted AR intercept and coefficients, ordered from lag 1 onward."""
+
     intercept: float
     coefficients: np.ndarray
 
@@ -51,10 +56,24 @@ class ARFit:
         )
 
     def forecast(self, signal, *, start_sample, n_samples, refresh_samples=None):
-        """Recursive forecast; optionally re-anchor to observed history.
+        """Forecast recursively, optionally refreshing the observed lag history.
 
-        ``None`` is free-running. ``1`` is one-step/teacher-forced. Larger
-        intervals reproduce the tutorials' hybrid prediction exactly.
+        Parameters
+        ----------
+        signal : array_like
+            Observed signal providing the initial lag history and any refreshes.
+        start_sample : int
+            Index of the first predicted sample.
+        n_samples : int
+            Number of predictions.
+        refresh_samples : int or None
+            Number of predictions between observed-history refreshes. None gives
+            a free-running forecast; 1 gives one-step prediction at every sample.
+
+        Returns
+        -------
+        ndarray, shape (n_samples,)
+            Predictions beginning at start_sample.
         """
         x = signal_array(signal, min_samples=self.order)
         n_samples = positive_integer(n_samples, "n_samples")
@@ -95,12 +114,23 @@ class ARFit:
 
 
 class AR:
-    """AR model specification. ``fit`` returns an independent :class:`ARFit`."""
+    """Ordinary least-squares autoregressive model with an intercept.
+
+    Parameters
+    ----------
+    order : int
+        Number of lagged samples used to predict the next sample.
+
+    Notes
+    -----
+    Call fit to estimate the intercept and coefficients and obtain an ARFit.
+    """
 
     def __init__(self, *, order):
         self.order = positive_integer(order, "order")
 
     def fit(self, signal):
+        """Estimate the intercept and lag coefficients by ordinary least squares."""
         predictors, target = lag_matrix(signal, order=self.order)
         design = np.column_stack([np.ones(len(predictors)), predictors])
         weights = np.linalg.lstsq(design, target, rcond=None)[0]

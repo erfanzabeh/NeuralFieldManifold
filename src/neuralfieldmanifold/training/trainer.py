@@ -1,4 +1,4 @@
-"""Training is an explicit call; imports and documentation builds never train."""
+"""Training routines for DeepLagField."""
 
 from dataclasses import dataclass, field
 
@@ -10,6 +10,14 @@ from .losses import LossWeights, compute_losses
 
 @dataclass(frozen=True)
 class TrainingConfig:
+    """Epoch count, Adam learning rate, loss weights, and regularization settings.
+
+    Energy settings control the target prediction power and rolling window.
+    Temperature controls Gumbel order sampling. Validation uses argmax
+    unless stochastic_validation is True. Gradient clipping bounds the
+    parameter gradient norm before each optimizer step.
+    """
+
     epochs: int = 100
     learning_rate: float = 1e-3
     weights: LossWeights = field(default_factory=LossWeights)
@@ -29,12 +37,35 @@ def train(
     device="cpu",
     callback=None,
 ):
-    """Train on ``(signal, actual_order)`` batches and return epoch records.
+    """Train DeepLagField and return per-epoch losses and order accuracy.
 
-    Uses Adam, gradient clipping, and ReduceLROnPlateau. No seed, global
-    device setting, file write, checkpoint, or plot is selected implicitly.
-    Pass ``stochastic_validation=True`` to reproduce Gumbel sampling during
-    validation in the original model tutorial. Losses are batch means.
+    Parameters
+    ----------
+    model : DeepLagField
+        Model to train.
+    train_loader : iterable
+        Batches of (signal, order), with signals shaped (batch, time) and
+        one AR order per signal.
+    validation_loader : iterable or None
+        Optional validation batches with the same structure.
+    config : TrainingConfig or None
+        Optimization and loss settings. None uses TrainingConfig defaults.
+    device : str or torch.device
+        Device used for model parameters and batches.
+    callback : callable or None
+        Called with the metrics dictionary at the end of each epoch.
+
+    Returns
+    -------
+    list of dict
+        Epoch records containing train and optional validation losses,
+        order accuracy, and within-one-order accuracy.
+
+    Notes
+    -----
+    Uses Adam, gradient clipping, and ReduceLROnPlateau. Loss records are
+    averages of batch losses. Validation uses deterministic order selection
+    unless config.stochastic_validation is True.
     """
     config = TrainingConfig() if config is None else config
     if config.epochs < 1 or config.learning_rate <= 0 or config.gradient_clip <= 0:

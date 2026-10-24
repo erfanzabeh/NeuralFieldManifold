@@ -1,4 +1,4 @@
-"""The implemented reconstruction, order, energy, and smoothness losses."""
+"""Reconstruction, order selection, power, and coefficient-smoothness losses."""
 
 from dataclasses import dataclass
 
@@ -8,6 +8,8 @@ from torch.nn import functional as F
 
 @dataclass(frozen=True)
 class LossWeights:
+    """Nonnegative weights for the five components returned by compute_losses."""
+
     reconstruction: float = 1.0
     order_classification: float = 10.0
     energy: float = 0.1
@@ -29,13 +31,39 @@ def compute_losses(
     target_power=0.5,
     energy_window_samples=40,
 ):
-    """Return scalar tensors for each term and their weighted total.
+    """Compute loss components and their weighted sum.
 
-    The energy term matches the implementation used in training: skip the
-    first W predicted samples, then penalize W-sample mean-square power
-    against a fixed target. It is NOT a temporal energy-difference penalty.
-    Smoothness averages time differences of the summed coefficient squares.
-    ``true_order`` contains actual AR orders, never class indices.
+    Reconstruction is prediction MSE after the maximum-order lag context.
+    Order classification is cross-entropy against the supplied AR orders.
+    Energy penalizes rolling mean-square prediction power relative to
+    target_power, after skipping the first energy_window_samples samples.
+    Smoothness penalizes squared successive differences of coefficients,
+    summed over lags and averaged over batch and time.
+    The optional order penalty is the expected index of the candidate order.
+
+    Parameters
+    ----------
+    output : DynamicsOutput
+        Model coefficients, order logits, and signal prediction.
+    signal : torch.Tensor, shape (batch, time)
+        Target sequences.
+    orders : sequence of int
+        Candidate AR orders corresponding to the logit columns.
+    true_order : torch.Tensor, shape (batch,), or None
+        AR order for each sequence. Required when order classification has
+        nonzero weight.
+    weights : LossWeights or None
+        Nonnegative loss weights. None uses LossWeights defaults.
+    target_power : float
+        Target mean-square prediction amplitude.
+    energy_window_samples : int
+        Rolling window length for the energy term.
+
+    Returns
+    -------
+    dict of str to torch.Tensor
+        Scalar reconstruction, order_classification, energy, smoothness,
+        order_penalty, and total losses.
     """
     weights = LossWeights() if weights is None else weights
     p_max = output.coefficients.shape[-1]

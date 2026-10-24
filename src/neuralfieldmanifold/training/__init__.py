@@ -1,4 +1,4 @@
-"""Explicit DeepLagField training, evaluation, and synthetic datasets."""
+"""DeepLagField training, evaluation, and synthetic datasets."""
 
 from .losses import LossWeights, compute_losses
 from .trainer import TrainingConfig, train

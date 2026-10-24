@@ -11,6 +11,21 @@ from .._validation import positive_integer
 
 @dataclass(frozen=True)
 class DynamicsOutput:
+    """Predicted dynamics for a batch of input sequences.
+
+    Attributes
+    ----------
+    coefficients : torch.Tensor, shape (batch, time, max_order)
+        Lag-1-first coefficients, masked beyond each selected order.
+    order_logits : torch.Tensor, shape (batch, n_orders)
+        Unnormalized order-selection scores.
+    order : torch.Tensor, shape (batch,)
+        Selected AR order for each sequence.
+    prediction : torch.Tensor, shape (batch, time)
+        AR reconstruction using observed lag history. Missing history at
+        the start of the sequence is zero-padded.
+    """
+
     coefficients: torch.Tensor
     order_logits: torch.Tensor
     order: torch.Tensor
@@ -18,12 +33,23 @@ class DynamicsOutput:
 
 
 class DeepLagField(nn.Module):
-    """Coupled order and dynamics MLPs with explicit discrete AR orders.
+    """Jointly estimate AR order and time-varying coefficients.
 
-    Inputs have shape ``(batch, sequence_length)``. Training samples a hard
-    straight-through Gumbel order. Evaluation uses argmax unless
-    ``sample_order=True`` is requested. Outputs report actual orders, not
-    zero-based class indices. Coefficients beyond that order are masked.
+    Parameters
+    ----------
+    sequence_length : int
+        Number of time samples per input sequence.
+    orders : tuple of int
+        Increasing candidate AR orders, each smaller than sequence_length.
+    hidden_size : int
+        Hidden width of the order and dynamics multilayer perceptrons.
+
+    Notes
+    -----
+    The order network selects a lag mask that conditions the dynamics network.
+    Coefficients beyond the selected order are zeroed. Training uses hard
+    straight-through Gumbel sampling; evaluation uses argmax unless
+    sample_order=True is passed to forward.
     """
 
     def __init__(self, *, sequence_length=600, orders=(2, 3, 4, 5, 6), hidden_size=128):
@@ -57,6 +83,23 @@ class DeepLagField(nn.Module):
         )
 
     def forward(self, x, *, temperature=1.0, sample_order=None):
+        """Estimate coefficients, select orders, and reconstruct each sequence.
+
+        Parameters
+        ----------
+        x : torch.Tensor, shape (batch, sequence_length)
+            Floating-point input sequences.
+        temperature : float
+            Positive temperature for Gumbel sampling.
+        sample_order : bool or None
+            Sample orders if True, or use argmax if False. None samples
+            in training mode and uses argmax in evaluation mode.
+
+        Returns
+        -------
+        DynamicsOutput
+            Coefficients, order logits, selected orders, and predictions.
+        """
         if (
             x.ndim != 2
             or x.shape[1] != self.sequence_length

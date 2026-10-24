@@ -1,4 +1,4 @@
-"""Small reproducible TVAR datasets without notebook-local dependencies."""
+"""Synthetic time-varying AR datasets and stratified training splits."""
 
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
@@ -21,6 +21,13 @@ FAMILIES = {
 
 @dataclass(frozen=True)
 class TVARDataset:
+    """Synthetic signals, coefficient paths, AR orders, and generation labels.
+
+    Signals have shape (sample, time), coefficients have shape
+    (sample, time, coefficient_width), and per-sample labels have shape
+    (sample,). Coefficients beyond the AR order are zero-padded.
+    """
+
     signals: np.ndarray
     coefficients: np.ndarray
     orders: np.ndarray
@@ -107,10 +114,10 @@ def make_tvar_dataset(
     workers=1,
     max_retries=10000,
 ):
-    """Generate family/order-balanced data with a worker-independent task plan.
+    """Generate synthetic data balanced by coefficient family and AR order.
 
-    ``target_power=None`` disables the benchmark's power-clamping process.
-    Worker count changes scheduling, never the seed assigned to a sample.
+    A fixed seed is assigned to each generation task, keeping the dataset
+    reproducible for a fixed seed across worker counts.
     """
     families = tuple(FAMILIES if families is None else families)
     orders = tuple(orders)
@@ -176,9 +183,9 @@ def make_tvar_dataset(
 
 
 def split_dataset(dataset, *, train_fraction=0.8, seed=42):
-    """Stratify a dataset by actual AR order; return train and validation data.
+    """Split a TVAR dataset into training and validation sets, stratified by AR order.
 
-    Requires the tutorials extra for scikit-learn's established splitter.
+    Requires scikit-learn, available in the tutorials extra.
     """
     from sklearn.model_selection import train_test_split
 

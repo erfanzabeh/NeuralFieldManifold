@@ -11,6 +11,8 @@ from .ar import ARFit
 
 @dataclass(frozen=True)
 class TARFit:
+    """Lower and upper AR regimes, threshold, delay, and residual pools."""
+
     lower: ARFit
     upper: ARFit
     threshold: float
@@ -19,10 +21,11 @@ class TARFit:
     upper_residuals: np.ndarray
 
     def simulate(self, initial_lags, *, n_samples, seed=0, match_reference=None):
-        """Simulate using newest-first initial lags and bootstrapped residuals.
+        """Simulate with bootstrapped residuals and newest-first initial lags.
 
-        Mean/variance matching is performed only when a reference is
-        explicitly supplied. It is not a held-out prediction metric.
+        If match_reference is supplied, the generated signal is rescaled to
+        its mean and standard deviation. This rescaling is intended for
+        distribution-matched simulation, not held-out forecast evaluation.
         """
         n_samples = positive_integer(n_samples, "n_samples")
         state = (
@@ -51,7 +54,17 @@ class TARFit:
 
 
 class TAR:
-    """Fit two OLS regimes separated by a delayed signal threshold."""
+    """Fit two AR regimes separated by a delayed signal threshold.
+
+    Parameters
+    ----------
+    order : int
+        AR order in each regime.
+    delay_samples : int
+        Lag used for threshold comparison, between 1 and order.
+    threshold : float
+        Values at or below the threshold use the lower regime.
+    """
 
     def __init__(self, *, order, delay_samples=1, threshold=0.0):
         self.order = positive_integer(order, "order")
@@ -61,6 +74,7 @@ class TAR:
         self.threshold = float(threshold)
 
     def fit(self, signal):
+        """Estimate both regimes by least squares and return a TARFit."""
         x = signal_array(signal, min_samples=self.order + 2)
         predictors, targets = lag_matrix(x, order=self.order)
         variable = x[self.order - self.delay_samples : len(x) - self.delay_samples]

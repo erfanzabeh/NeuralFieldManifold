@@ -1,4 +1,4 @@
-"""Coefficient, prediction, and order metrics with explicit actual orders."""
+"""Prediction, coefficient, and AR-order evaluation."""
 
 import numpy as np
 import torch
@@ -14,10 +14,16 @@ def evaluate(
     device="cpu",
     sample_order=False,
 ):
-    """Evaluate a model without training or implicit normalization.
+    """Evaluate DeepLagField predictions and optional ground-truth targets.
 
-    Coefficient MSE includes all positions as in the benchmark tutorial;
-    prediction MSE excludes the leading maximum-order lag context.
+    Prediction MSE excludes the leading maximum-order lag context.
+    Coefficient MSE includes all time positions and lag coefficients.
+    When true_orders are supplied, returns exact and within-one order
+    accuracy, mean absolute order error, and mean relative order error.
+
+    Inputs have shape (batch, sequence_length). Returned predictions,
+    coefficients, and selected orders are NumPy arrays. Order selection is
+    deterministic unless sample_order=True.
     """
     if batch_size < 1:
         raise ValueError("batch_size must be positive")
