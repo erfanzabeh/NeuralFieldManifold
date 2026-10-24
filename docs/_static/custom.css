@@ -16,14 +16,27 @@ html[data-theme="light"] {
 
 .project-tagline {
   font-size: 1.15rem;
+  font-style: italic;
+  text-align: center;
   margin-bottom: 1rem;
 }
 
 .project-badges {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.4rem;
   margin-bottom: 1.5rem;
+}
+
+#neural-field-manifold > h1 {
+  text-align: center;
+}
+
+#neural-field-manifold > h1,
+#neural-field-manifold h2 {
+  border-bottom: 1px solid var(--pst-color-border);
+  padding-bottom: 0.4rem;
 }
 
 .project-badges img {

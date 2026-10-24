@@ -15,13 +15,28 @@ Neural Field Manifold
      <a href="citation.html"><img alt="arXiv: XXXX (forthcoming)" src="https://img.shields.io/badge/arXiv-XXXX-B31B1B?logo=arxiv&logoColor=white"></a>
    </div>
 
-Connect local signal dynamics to delay-coordinate geometry. Process neural
-recordings, estimate autoregressive dynamics with classical models or
-DeepLagField, and reconstruct and measure their ring and torus geometry.
+Overview
+--------
+
+**Neural Field Manifold** connects local signal dynamics to the geometry of
+delay embeddings. Use it to process neural recordings, fit autoregressive
+models, reconstruct delay-coordinate trajectories, and quantify ring and
+torus geometry.
+
+The framework models local signals as autoregressive processes and relates
+their oscillatory modes to delay-embedding geometry. Under the paper's
+assumptions, ``K`` sustained oscillatory modes correspond to a ``K``-torus.
+The tutorials examine how noise, nonstationarity, and source mixing affect
+that reconstruction, and compare intrinsic dynamics with PCA dimensionality.
+
+The package includes **DeepLagField**, a PyTorch model that jointly estimates
+autoregressive order and time-varying coefficients. NumPy and SciPy tools
+support classical AR models, synthetic dynamical systems, and geometric fits.
 
 .. image:: _static/overview.jpg
    :alt: Oscillatory dynamics and delay-coordinate geometry
-   :width: 100%
+   :width: 90%
+   :align: center
 
 Installation
 ------------
@@ -35,8 +50,8 @@ is being prepared:
 
 See :doc:`installation` for plotting, notebook dependencies, and editable installs.
 
-Getting Started
----------------
+Quick Start
+-----------
 
 Load a bundled recording, process it, and measure its delay geometry:
 
@@ -57,7 +72,7 @@ Load a bundled recording, process it, and measure its delay geometry:
    )
    cloud = nfm.embedding.delay(processed.signal, dimension=3, tau_samples=30)
    fit = nfm.geometry.fit_torus(cloud)
-   print(fit.score, fit.error)
+   print(f"Torus score: {fit.score:.3f}; error: {fit.error:.3f}")
 
 Use your own one-dimensional signal and sampling rate in place of the sample.
 Choose filtering bands and delays appropriate to that recording.
