@@ -2,14 +2,14 @@
 <p align="center"><em>Recover low-dimensional manifold geometry from noisy, autocorrelated time series</em></p>
 
 <p align="center">
-  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="NeurIPS 2026 paper" src="https://img.shields.io/badge/NeurIPS-2026-68478D.svg"></a>
+  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/installation.html"><img alt="PyPI: XXXX (forthcoming)" src="https://img.shields.io/badge/PyPI-XXXX-3775A9?logo=pypi&logoColor=white"></a>
   <a href="https://erfanzabeh.github.io/NeuralFieldManifold/installation.html"><img alt="Python 3.10 or later" src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white"></a>
+  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="NeurIPS 2026 paper" src="https://img.shields.io/badge/NeurIPS-2026-68478D.svg"></a>
+  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="arXiv: XXXX (forthcoming)" src="https://img.shields.io/badge/arXiv-XXXX-B31B1B?logo=arxiv&logoColor=white"></a>
   <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/docs.yml"><img alt="Documentation" src="https://img.shields.io/github/actions/workflow/status/erfanzabeh/NeuralFieldManifold/docs.yml?branch=main&label=Documentation&logo=github"></a>
   <a href="https://github.com/erfanzabeh/NeuralFieldManifold/actions/workflows/build.yml"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/erfanzabeh/NeuralFieldManifold/build.yml?branch=main&label=Build&logo=github"></a>
   <a href="https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/erfanzabeh/NeuralFieldManifold"></a>
   <a href="https://github.com/erfanzabeh/NeuralFieldManifold/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/erfanzabeh/NeuralFieldManifold"></a>
-  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/installation.html"><img alt="PyPI: XXXX (forthcoming)" src="https://img.shields.io/badge/PyPI-XXXX-3775A9?logo=pypi&logoColor=white"></a>
-  <a href="https://erfanzabeh.github.io/NeuralFieldManifold/citation.html"><img alt="arXiv: XXXX (forthcoming)" src="https://img.shields.io/badge/arXiv-XXXX-B31B1B?logo=arxiv&logoColor=white"></a>
 </p>
 
 ## Overview
