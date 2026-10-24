@@ -34,6 +34,10 @@ html[data-theme="light"] {
   font-weight: 700;
 }
 
+#neural-field-manifold > h1 > .headerlink {
+  display: none;
+}
+
 #neural-field-manifold h2 {
   border-bottom: 1px solid var(--pst-color-border);
   padding-bottom: 0.4rem;
