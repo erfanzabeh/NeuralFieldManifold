@@ -1,5 +1,5 @@
 html {
-  --pst-header-height: 5.875rem;
+  --pst-header-height: 4rem;
   --pst-font-size-h1: 2rem;
   --pst-font-size-h2: 1.5rem;
   --pst-font-size-h3: 1.2rem;
@@ -45,7 +45,7 @@ html[data-theme="light"] {
 }
 
 .navbar-brand.logo img.logo__image {
-  width: 168px;
+  width: 240px;
   max-width: 54vw;
   max-height: calc(var(--pst-header-height) - 1rem);
   height: auto;
