@@ -1,66 +1,94 @@
 Getting Started
 ===============
 
-Install the package with notebook support from GitHub::
+This example processes a bundled recording, fits an autoregressive model,
+and measures its delay-coordinate geometry. See :doc:`installation` for
+installation options.
 
-   python -m pip install "neuralfieldmanifold[tutorials] @ git+https://github.com/erfanzabeh/NeuralFieldManifold.git@main"
+Load and Process a Signal
+-------------------------
 
-Import the package::
+Signals are one-dimensional NumPy arrays. Sampling rates are in Hz;
+window lengths and delays are in samples.
+
+.. code-block:: python
 
    import neuralfieldmanifold as nfm
 
-Signal conventions
-------------------
+   recording = nfm.datasets.load("monkey_lfp")
+   processed = nfm.preprocessing.process(
+       recording.signal,
+       sampling_rate_hz=recording.sampling_rate_hz,
+       config=nfm.preprocessing.PreprocessConfig(
+           notch_hz=50,
+           band_hz=(1, 50),
+           envelope_band_hz=(1, 80),
+           envelope_lowpass_hz=3,
+       ),
+   )
+   x = processed.signal
 
-Single signals are one-dimensional NumPy arrays. Delay coordinates have shape
-``(time, coordinate)`` with the newest sample first. Coefficient schedules have
-shape ``(time, lag)`` with lag 1 first. DeepLagField inputs have shape
-``(batch, time)`` and outputs have named attributes. Orders are actual AR
-orders, not zero-based class indices. Sampling rates are in Hz; embedding and
-prediction delays are in samples.
+Processing applies notch filtering, bandpass filtering, optional integer
+decimation, and optional Hilbert-envelope normalization, in that order.
+Choose bands and an output rate appropriate to your recording; a setting
+of ``None`` disables the corresponding step.
 
-Samples
--------
+Bundled samples are ``monkey_lfp`` (20 seconds at 500 Hz) and ``mouse_lfp``
+(five seconds at 20 kHz). Your own data can be used in place of
+``recording.signal`` by providing its sampling rate.
 
-``nfm.datasets.load("monkey_lfp")`` returns a 20-second raw signal at 500 Hz.
-``nfm.datasets.load("mouse_lfp")`` returns a five-second raw signal at 20 kHz.
-Both return ``signal``, ``sampling_rate_hz``, and ``duration_seconds``.
-
-Processing and prediction
--------------------------
-
-The configurable processing order is notch, bandpass, optional integer IIR
-decimation, then optional Hilbert-envelope normalization. Parameters must be
-chosen for the signal; there is no automatic common passband or sampling rate.
-
-``ARFit.predict`` is one-step prediction. ``ARFit.forecast`` is recursive;
-``refresh_samples=1`` uses observed history each step, larger intervals are
-hybrid predictions, and ``None`` is free-running. Explicit variance matching
-for display or simulation must not be interpreted as held-out prediction.
-
-DeepLagField
-------------
-
-Constructing a model gives randomly initialized weights, not a pretrained
-estimator. Training is an explicit call. Evaluation uses deterministic argmax
-order selection; ``sample_order=True`` requests stochastic Gumbel sampling.
-Checkpoints save architecture settings and model weights.
-
-Geometric fits
---------------
-
-``fit_ring`` fits a planar elliptical annular band. ``fit_torus`` fits a thick
-elliptical torus. Score is the contained fraction and error is the average
-outside distance. Ring error is in-plane; its MSE also includes the normal
-offset. A high containment score alone does not establish topology.
-
-Reproducibility
+Fit an AR Model
 ---------------
 
-Original tutorials are retained unchanged in repository history. These
-notebooks use the public API. Deterministic numerical stages are compared
-to frozen reference arrays. NumPy random generators replace JAX; identical
-integer seeds do not imply identical random draws across those libraries.
-Fixed random inputs are used when a direct stochastic comparison is needed.
+.. code-block:: python
 
-Documentation builds neither execute notebooks nor run tests.
+   split = int(0.8 * len(x))
+   model = nfm.models.AR(order=4).fit(x[:split])
+   predicted = model.predict(x[split - model.order:])
+   metrics = nfm.models.prediction_metrics(x[split:], predicted)
+   print(metrics)
+
+``predict`` uses observed lag history for each one-step prediction.
+``forecast`` instead feeds predictions back into the model; its
+``refresh_samples`` option periodically replaces that history with observed
+samples. Use a temporal train/test split to evaluate prediction on later data.
+
+Embed and Fit Geometry
+----------------------
+
+.. code-block:: python
+
+   cloud = nfm.embedding.delay(x, dimension=3, tau_samples=30)
+   fit = nfm.geometry.fit_torus(cloud)
+   print(fit.major_radii, fit.tube_radius)
+   print(fit.score, fit.error)
+
+Each row contains the current sample followed by delayed samples:
+``[x(t), x(t-tau), x(t-2*tau)]``. Select a delay that resolves the dynamics
+of interest. Three-dimensional clouds can be fitted with ``fit_ring`` or
+``fit_torus``; ``FitConfig`` controls regularization and hole size.
+
+The score is the fraction of points inside the fitted geometry, and the
+error is the mean distance outside it. These quantify geometric fit, not
+topological recovery. Ring containment is measured in the fitted plane;
+ring MSE also includes the out-of-plane distance.
+
+Learn Time-Varying Dynamics
+---------------------------
+
+.. code-block:: python
+
+   import torch
+
+   model = nfm.models.DeepLagField(sequence_length=600, orders=(2, 3, 4, 5, 6))
+   model.eval()
+   batch = torch.tensor(x[:600], dtype=torch.float32).unsqueeze(0)
+   with torch.no_grad():
+       output = model(batch)
+   print(output.coefficients.shape, output.order)
+
+A new model has untrained weights. The :doc:`tutorials/deeplagfield`
+tutorial covers training and checkpoint loading. Inputs have shape
+``(batch, time)``; coefficients have shape ``(batch, time, lag)``.
+Evaluation selects the highest-scoring AR order, while training uses
+straight-through Gumbel sampling.
