@@ -100,7 +100,7 @@ def calculate(name):
 
 
 def figure(name, result):
-    """Show tutorial quantities directly; no screenshot composition."""
+    """Plot the recording, spectrum, prediction, and delay geometry."""
     import matplotlib.pyplot as plt
 
     fig = plt.figure(figsize=(10, 6), layout="constrained")

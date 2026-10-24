@@ -1,11 +1,14 @@
-# Manual Regression Checks
+# Numerical Regression Tests
 
-Run `python -m unittest discover -s tests -v` from an installed candidate.
-No CI hook or documentation command runs these tests.
+Run from the repository root after installing the package:
 
-Fixtures record numerical outputs from the frozen source routines. Checks
+```sh
+python -m unittest discover -s tests -v
+```
+
+Fixtures contain reference numerical outputs. Checks
 cover the monkey and two distinct mouse processing recipes, AR predictions,
-float32 delay coordinates, PSD, both geometric fit models, DeepLagField
+delay coordinates, PSD, both geometric fit models, DeepLagField
 outputs/losses/gradients, a single training step, and checkpoint round trips.
 
 Signal arrays and neural calculations are compared exactly. Spectra tolerate
