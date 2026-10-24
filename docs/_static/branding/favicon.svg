@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title">
+  <title id="title">Neural Field Manifold</title>
+  <defs>
+    <mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="320" height="320">
+      <rect width="320" height="320" fill="#fff" />
+      <path d="M224 148H294V172H224ZM150 204H170V268H150Z" fill="#000" />
+    </mask>
+  </defs>
+  <g transform="rotate(-28 160 160)" mask="url(#cut)">
+    <path fill="none" fill-rule="evenodd" d="M286 160A126 94 0 1 1 34 160A126 94 0 1 1 286 160ZM230 160A70 48 0 1 1 90 160A70 48 0 1 1 230 160Z" stroke="#202124" stroke-width="3.5" />
+    <path d="M286 160A126 94 0 0 1 160 254L160 208A70 48 0 0 0 230 160Z" fill="#a52b32" />
+  </g>
+</svg>

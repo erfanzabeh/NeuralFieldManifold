@@ -1,6 +1,11 @@
 Neural Field Manifold
 =====================
 
+.. image:: _static/branding/monkey-mice-paired.svg
+   :alt: Animated monkey and mouse LFP delay trajectories
+   :align: center
+   :class: landing-animation
+
 .. raw:: html
 
    <p class="project-tagline">Recover low-dimensional manifold geometry from noisy, autocorrelated time series</p>

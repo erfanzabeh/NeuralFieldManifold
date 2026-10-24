@@ -31,12 +31,26 @@ html[data-theme="light"] {
 
 #neural-field-manifold > h1 {
   text-align: center;
+  font-weight: 700;
 }
 
-#neural-field-manifold > h1,
 #neural-field-manifold h2 {
   border-bottom: 1px solid var(--pst-color-border);
   padding-bottom: 0.4rem;
+}
+
+.navbar-brand.logo img.logo__image {
+  width: 240px;
+  max-width: 54vw;
+  height: auto;
+}
+
+.landing-animation {
+  display: block;
+  width: 480px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1.25rem;
 }
 
 .project-badges img {

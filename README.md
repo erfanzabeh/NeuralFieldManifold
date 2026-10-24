@@ -1,4 +1,4 @@
-<h1 align="center">Neural Field Manifold</h1>
+<p align="center"><img src="docs/_static/branding/nfm-stacked-red.svg" alt="Neural Field Manifold" width="420"></p>
 <p align="center"><em>Recover low-dimensional manifold geometry from noisy, autocorrelated time series</em></p>
 
 <p align="center">
