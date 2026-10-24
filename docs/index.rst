@@ -1,10 +1,10 @@
-Neural Field Manifold
-=====================
-
 .. image:: _static/branding/monkey-mice-paired.svg
    :alt: Animated monkey and mouse LFP delay trajectories
    :align: center
    :class: landing-animation
+
+Neural Field Manifold
+=====================
 
 .. raw:: html
 
