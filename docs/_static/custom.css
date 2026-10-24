@@ -45,7 +45,7 @@ html[data-theme="light"] {
 }
 
 .navbar-brand.logo img.logo__image {
-  width: 300px;
+  width: 212.751px;
   max-width: 54vw;
   max-height: calc(var(--pst-header-height) - 1rem);
   height: auto;
