@@ -7,4 +7,3 @@ sample first; rows advance in time.
 
 .. automodule:: neuralfieldmanifold.embedding
    :members:
-

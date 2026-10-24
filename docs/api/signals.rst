@@ -21,4 +21,3 @@ Power Spectra
 
 .. automodule:: neuralfieldmanifold.spectral
    :members:
-

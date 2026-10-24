@@ -36,4 +36,3 @@ DeepLagField
 
 .. autoclass:: neuralfieldmanifold.models.DynamicsOutput
    :members:
-

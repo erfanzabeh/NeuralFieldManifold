@@ -29,4 +29,3 @@ Trajectory Comparison
 
 .. autoclass:: neuralfieldmanifold.geometry.Disparity
    :members:
-

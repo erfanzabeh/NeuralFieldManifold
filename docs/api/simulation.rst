@@ -44,4 +44,3 @@ Coefficient Schedules
 
 .. automodule:: neuralfieldmanifold.simulation.schedules
    :members:
-

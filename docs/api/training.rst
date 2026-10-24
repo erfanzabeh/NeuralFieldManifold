@@ -35,4 +35,3 @@ Evaluation
 ----------
 
 .. autofunction:: neuralfieldmanifold.training.evaluate
-
