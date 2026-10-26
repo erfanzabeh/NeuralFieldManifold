@@ -1,8 +1,8 @@
 """Sphinx configuration for Neural Field Manifold."""
 
 project = "Neural Field Manifold"
-author = "Erfan Zabeh and contributors"
-copyright = "2026, Erfan Zabeh and contributors"
+author = "Neural Manifold Team"
+copyright = "2026, Neural Manifold Team"
 release = "1.0.0"
 extensions = [
     "sphinx.ext.autodoc",
