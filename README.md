@@ -184,8 +184,6 @@ If you use this package in your research, please cite:
 
 ## Contributors
 
-Maintained by [Erfan Zabeh](https://github.com/erfanzabeh).
-
 <a href="https://github.com/erfanzabeh/NeuralFieldManifold/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=erfanzabeh/NeuralFieldManifold" alt="Contributors">
 </a>
