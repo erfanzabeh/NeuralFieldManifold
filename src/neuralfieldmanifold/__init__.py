@@ -8,7 +8,7 @@ from importlib import import_module
 
 from . import datasets, embedding, geometry, preprocessing, simulation, spectral
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 __all__ = [
     "datasets",
     "embedding",

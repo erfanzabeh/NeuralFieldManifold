@@ -33,3 +33,25 @@ Documentation builds use saved notebook outputs and do not execute notebooks.
 Document public functions with NumPy-style docstrings.
 
 Keep changes focused and use short, descriptive commit messages.
+
+## Releases
+
+Erfan Zabeh maintains the package. PyPI project ownership is configured in
+PyPI, independently of the author and maintainer metadata.
+
+Before the first release, Erfan should register a pending Trusted Publisher
+from his PyPI account with these settings:
+
+| Setting | Value |
+|---|---|
+| PyPI project | `neuralfieldmanifold` |
+| GitHub owner | `erfanzabeh` |
+| Repository | `NeuralFieldManifold` |
+| Workflow | `publish.yml` |
+| Environment | `pypi` |
+
+Configure the GitHub `pypi` environment with a required release approver.
+Publishing a GitHub release tagged `v1.0.0` builds and checks the distributions,
+then uploads them through Trusted Publishing after any required environment
+approval. The tag must match the package version. Ordinary pushes only build
+the package and documentation; they do not publish to PyPI.

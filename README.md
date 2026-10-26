@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/_static/branding/nfm-stacked-red.svg" alt="Neural Field Manifold" width="420"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/main/docs/_static/branding/nfm-stacked-red.svg" alt="Neural Field Manifold" width="420"></p>
 <p align="center"><em>Recover low-dimensional manifold geometry from noisy, autocorrelated time series</em></p>
 
 <p align="center">
@@ -30,7 +30,7 @@ autoregressive order and time-varying coefficients. NumPy and SciPy tools
 support classical AR models, synthetic dynamical systems, and geometric fits.
 
 <p align="center">
-  <img src="docs/_static/overview.jpg" alt="From oscillatory signals to delay-coordinate geometry" width="90%">
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/main/docs/_static/overview.jpg" alt="From oscillatory signals to delay-coordinate geometry" width="90%">
 </p>
 
 ## Installation
@@ -84,7 +84,7 @@ reconstruction, supervised order selection, target-power regularization, and
 temporal smoothness.
 
 <p align="center">
-  <img src="docs/_static/arch.jpg" alt="DeepLagField order-selection and dynamics networks" width="90%">
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/main/docs/_static/arch.jpg" alt="DeepLagField order-selection and dynamics networks" width="90%">
   <br><sub>The order block selects the active autoregressive lags. Conditioned on that selection, the dynamics block estimates time-varying coefficients that reconstruct the signal from its lag history.</sub>
 </p>
 
@@ -150,15 +150,15 @@ documents parameters, array shapes, and returned results.
 ## Gallery
 
 <p align="center">
-  <img src="docs/_static/monkey.jpg" alt="Monkey LFP delay geometry and reconstruction" width="100%">
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/main/docs/_static/monkey.jpg" alt="Monkey LFP delay geometry and reconstruction" width="100%">
   <br><sub>Monkey LFP reconstruction</sub>
 </p>
 <p align="center">
-  <img src="docs/_static/mouse1.jpg" alt="Mouse neural recording delay geometry and reconstruction" width="100%">
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/main/docs/_static/mouse1.jpg" alt="Mouse neural recording delay geometry and reconstruction" width="100%">
   <br><sub>Mouse neural recording reconstruction</sub>
 </p>
 <p align="center">
-  <img src="docs/_static/mouse2.jpg" alt="Mouse neural recording low-frequency reconstruction" width="100%">
+  <img src="https://raw.githubusercontent.com/erfanzabeh/NeuralFieldManifold/main/docs/_static/mouse2.jpg" alt="Mouse neural recording low-frequency reconstruction" width="100%">
   <br><sub>Low-frequency reconstruction</sub>
 </p>
 
@@ -167,7 +167,7 @@ documents parameters, array shapes, and returned results.
 See the [user guide](https://erfanzabeh.github.io/NeuralFieldManifold/getting_started.html)
 and [API reference](https://erfanzabeh.github.io/NeuralFieldManifold/api.html).
 Report bugs or request features in [GitHub Issues](https://github.com/erfanzabeh/NeuralFieldManifold/issues).
-Development instructions are in [CONTRIBUTING.md](CONTRIBUTING.md).
+Development instructions are in [CONTRIBUTING.md](https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/CONTRIBUTING.md).
 
 ## Citation
 
@@ -184,10 +184,12 @@ If you use this package in your research, please cite:
 
 ## Contributors
 
+Maintained by [Erfan Zabeh](https://github.com/erfanzabeh).
+
 <a href="https://github.com/erfanzabeh/NeuralFieldManifold/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=erfanzabeh/NeuralFieldManifold" alt="Contributors">
 </a>
 
 ## License
 
-Released under the [MIT license](LICENSE).
+Released under the [MIT license](https://github.com/erfanzabeh/NeuralFieldManifold/blob/main/LICENSE).
