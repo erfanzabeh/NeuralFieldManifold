@@ -36,11 +36,7 @@ Keep changes focused and use short, descriptive commit messages.
 
 ## Releases
 
-Erfan Zabeh maintains the package. PyPI project ownership is configured in
-PyPI, independently of the author and maintainer metadata.
-
-Before the first release, Erfan should register a pending Trusted Publisher
-from his PyPI account with these settings:
+Before the first release, configure a pending Trusted Publisher on PyPI:
 
 | Setting | Value |
 |---|---|
