@@ -96,6 +96,13 @@ The :doc:`tutorial library <tutorials/index>` includes monkey V1 LFP,
 mice hippocampus EEG and LFP, and DeepLagField training examples, with
 saved figures and complete analysis code.
 
+Contributors
+------------
+
+.. image:: https://contrib.rocks/image?repo=erfanzabeh/NeuralFieldManifold
+   :alt: Contributors
+   :target: https://github.com/erfanzabeh/NeuralFieldManifold/graphs/contributors
+
 Citation
 --------
 
@@ -103,13 +110,6 @@ If you use Neural Field Manifold in your research, please cite:
 
 .. literalinclude:: ../CITATION.bib
    :language: bibtex
-
-Contributors
-------------
-
-.. image:: https://contrib.rocks/image?repo=erfanzabeh/NeuralFieldManifold
-   :alt: Contributors
-   :target: https://github.com/erfanzabeh/NeuralFieldManifold/graphs/contributors
 
 .. toctree::
    :hidden:
