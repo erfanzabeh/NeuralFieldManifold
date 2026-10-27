@@ -66,7 +66,6 @@ html[data-theme="light"] {
 }
 
 .coming-soon,
-.bd-sidebar-primary a[href$="autocorrelated_manifolds.html"]::after,
 .bd-sidebar-primary a[href$="upcoming.html"]::after {
   display: inline-block;
   border: 1px solid #92979c;
@@ -77,7 +76,6 @@ html[data-theme="light"] {
   line-height: 1.4;
 }
 
-.bd-sidebar-primary a[href$="autocorrelated_manifolds.html"]::after,
 .bd-sidebar-primary a[href$="upcoming.html"]::after {
   content: "Coming Soon";
   margin-left: 0.35rem;

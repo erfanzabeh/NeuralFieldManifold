@@ -28,4 +28,3 @@ Tutorials
    :caption: Coming Soon
 
    upcoming
-   autocorrelated_manifolds

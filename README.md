@@ -128,8 +128,7 @@ weights before interpreting its predicted coefficients or order.
 | [Volume conduction](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/volume_conduction_manifold.html) | Source mixing, spatial consistency, and real-data comparisons |
 
 The [tutorial library](https://erfanzabeh.github.io/NeuralFieldManifold/tutorials/index.html) also
-lists upcoming tutorials on strongly autocorrelated signals and DeepLagField
-fine-tuning.
+lists an upcoming tutorial on DeepLagField fine-tuning.
 
 ## Package Structure
 
